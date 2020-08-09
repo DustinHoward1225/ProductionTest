@@ -668,3 +668,6 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.08.09-01.01.39:429][972]LogSlate: Window 'Rob_BP' being destroyed
 [2020.08.09-01.01.39:506][972]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
 [2020.08.09-01.01.39:506][972]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.09-01.11.09:268][  8]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2020.08.09-01.11.10:142][108]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2020.08.09-01.20.12:380][306]LogAudioMixer: Display: Audio Buffer Underrun detected.
