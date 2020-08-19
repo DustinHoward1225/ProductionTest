@@ -664,3 +664,12 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.08.19-04.00.31:471][787]AssetCheck: New page: Asset Save: blehbp
 [2020.08.19-04.00.31:472][787]LogContentValidation: Display: Validating Blueprint /Game/blehbp.blehbp
 [2020.08.19-04.00.33:835][974]LogUObjectHash: Compacting FUObjectHashTables data took   3.93ms
+[2020.08.19-04.01.03:165][315]LogSlate: Window 'Pick Parent Class' being destroyed
+[2020.08.19-04.01.14:809][419]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/imblueprint.imblueprint
+[2020.08.19-04.01.41:367][745]BlueprintLog: New page: Compile imblueprint
+[2020.08.19-04.01.41:466][745]LogUObjectHash: Compacting FUObjectHashTables data took   4.87ms
+[2020.08.19-04.01.41:911][781]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/imblueprint" FILE="../../../../../../GitHub/ProductionTest/MasterProject/Content/imblueprint.uasset" SILENT=true
+[2020.08.19-04.01.41:938][781]LogSavePackage: Moving '../../../../../../GitHub/ProductionTest/MasterProject/Saved/imblueprint4867CACA4E714400F9B4B7B1168A6A91.tmp' to '../../../../../../GitHub/ProductionTest/MasterProject/Content/imblueprint.uasset'
+[2020.08.19-04.01.41:958][781]AssetCheck: New page: Asset Save: imblueprint
+[2020.08.19-04.01.41:959][781]LogContentValidation: Display: Validating Blueprint /Game/imblueprint.imblueprint
+[2020.08.19-04.01.44:572][  6]LogUObjectHash: Compacting FUObjectHashTables data took   3.79ms
