@@ -2914,3 +2914,963 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.08.31-00.51.21:766][923]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun179AD37A45F29F74F899CCB90094CB33.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
 [2020.08.31-00.51.21:788][923]AssetCheck: New page: Asset Save: VeryPlaceholderGun
 [2020.08.31-00.51.21:788][923]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-00.55.12:264][708]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun1F755547467918D66B4C728914A945B3.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-00.55.12:288][708]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-00.55.12:288][708]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-00.55.22:095][290]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun4147FAAE43F1939714747A8EDAF1D137.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-00.55.22:116][290]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-00.55.22:116][290]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-00.55.40:909][389]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunEFEBE13B448ACCA0203057BBB7FF44C8.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-00.55.40:929][389]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-00.55.40:929][389]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-00.55.45:774][667]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunB56835144981ED3DFEEE8DAD15ED9687.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-00.55.45:798][667]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-00.55.45:798][667]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-00.57.34:915][ 92]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.08.31-00.57.41:411][457]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.08.31-00.57.41:413][457]LogBlueprint: Error: [Compiler VeryPlaceholderGun] The current value of the ' Spawn Transform ' pin is invalid: 'Spawn Transform' in action 'Begin Deferred Actor Spawn from Class' must have an input wired into it ("by ref" params expect a valid input to operate on).
+[2020.08.31-00.57.41:414][457]LogBlueprint: Error: [Compiler VeryPlaceholderGun] The current value of the ' Spawn Transform ' pin is invalid: 'Spawn Transform' in action 'Finish Spawning Actor' must have an input wired into it ("by ref" params expect a valid input to operate on).
+[2020.08.31-00.57.41:500][457]LogUObjectHash: Compacting FUObjectHashTables data took   5.49ms
+[2020.08.31-00.58.54:695][618]LogEditorViewport: Clicking on Actor (LMB): VeryPlaceholderGun_C (VeryPlaceholderGun)
+[2020.08.31-00.59.06:960][324]LogUObjectHash: Compacting FUObjectHashTables data took   8.77ms
+[2020.08.31-00.59.06:989][324]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/RobertsWorld564FA88146C2D2C84703CEB07453D35D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/RobertsWorld.umap'
+[2020.08.31-00.59.07:049][324]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.08.31-00.59.07:049][324]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.08.31-00.59.16:239][805]LogActorFactory: Actor Factory created Cube
+[2020.08.31-00.59.17:281][865]LogActorFactory: Actor Factory created Cube
+[2020.08.31-00.59.38:157][ 89]LogEditorViewport: Clicking on Actor (LMB): VeryPlaceholderGun_C (VeryPlaceholderGun)
+[2020.08.31-00.59.40:024][199]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2020.08.31-00.59.45:000][494]LogEditorViewport: Clicking on Actor (LMB): VeryPlaceholderGun_C (VeryPlaceholderGun)
+[2020.08.31-00.59.46:045][555]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2020.08.31-00.59.57:725][247]Cmd: DELETE
+[2020.08.31-00.59.57:725][247]Cmd: ACTOR DELETE
+[2020.08.31-00.59.58:097][247]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.08.31-00.59.58:145][247]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2020.08.31-00.59.58:149][247]LogEditorActor: Deleted 1 Actors (0.121 secs)
+[2020.08.31-01.00.34:518][295]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.08.31-01.00.34:601][295]LogUObjectHash: Compacting FUObjectHashTables data took   4.91ms
+[2020.08.31-01.00.35:229][325]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunED52447F494721A8F3869A8778A976B5.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.00.35:250][325]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.00.35:250][325]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.00.55:147][461]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun4E36F12944A8705B21EF60BEACD19517.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.00.55:168][461]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.00.55:168][461]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.01.12:287][449]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.01.12:306][449]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.01.12:306][449]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.01.12:451][449]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.01.12:451][449]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:01:12 PM)
+[2020.08.31-01.01.12:452][449]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.01.12:456][449]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004530s)
+[2020.08.31-01.01.12:458][449]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.01.12:458][449]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002714AD94400), frame # 329449
+[2020.08.31-01.01.12:458][449]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000270E0234A40), frame # 329449
+[2020.08.31-01.01.12:458][449]LogPlayLevel: PIE: World Init took: (0.001444s)
+[2020.08.31-01.01.12:458][449]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006176s)
+[2020.08.31-01.01.12:515][449]LogUObjectHash: Compacting FUObjectHashTables data took   6.22ms
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.01.12:518][449]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.01.12:518][449]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.01.12:518][449]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.01.12:523][449]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.01.12:523][449]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.01.12:525][449]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.01.12:525][449]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.01.12:527][449]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.01.12:527][449]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.01.12:543][449]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.01.12:543][449]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.01.12:544][449]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.01.12:544][449]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.01.12:544][449]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.01.12:560][449]LogInit: FAudioDevice initialized.
+[2020.08.31-01.01.12:569][449]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.01.12:619][449]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.01.12:624][449]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.01.12
+[2020.08.31-01.01.12:625][449]LogWorld: Bringing up level for play took: 0.002338
+[2020.08.31-01.01.12:625][449]LogOnline: OSS: Creating online subsystem instance for: :Context_47
+[2020.08.31-01.01.12:641][449]PIE: Server logged in
+[2020.08.31-01.01.12:649][449]PIE: Play in editor total start time 0.343 seconds.
+[2020.08.31-01.01.12:649][449]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.01.12:658][449]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.01.12:745][452]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.01.25:128][278]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.26:021][340]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.27:772][469]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.27:773][469]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.29:406][585]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.30:295][655]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.31:778][772]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.31:815][775]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.31:816][775]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.31:995][789]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.32:008][790]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.32:008][790]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.01.34:226][952]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.01.34:226][952]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.01.34:276][952]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.01.34:314][952]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.01.34:316][952]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.01.34:370][952]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.01.34:383][952]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.01.34:476][952]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000270E0234A40), frame # 330952
+[2020.08.31-01.01.34:476][952]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002714AD94400), frame # 330952
+[2020.08.31-01.01.34:481][952]LogUObjectHash: Compacting FUObjectHashTables data took   4.61ms
+[2020.08.31-01.01.34:524][953]LogPlayLevel: Display: Destroying online subsystem :Context_47
+[2020.08.31-01.01.34:548][953]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.03.46:454][578]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.08.31-01.03.46:547][578]LogUObjectHash: Compacting FUObjectHashTables data took   6.12ms
+[2020.08.31-01.03.46:982][596]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun8D31BB46475DFBBC181E4F8CB4B36E10.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.03.47:007][596]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.03.47:007][596]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.03.49:937][759]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.08.31-01.03.50:026][759]LogUObjectHash: Compacting FUObjectHashTables data took   6.18ms
+[2020.08.31-01.03.50:497][779]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun0AEADB2B45F6C9BB8851B0ACD4D09F88.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.03.50:518][779]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.03.50:518][779]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.03.53:321][944]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.03.53:341][944]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.03.53:341][944]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.03.53:483][944]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.03.53:483][944]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:03:53 PM)
+[2020.08.31-01.03.53:483][944]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.03.53:488][944]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004992s)
+[2020.08.31-01.03.53:489][944]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.03.53:490][944]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000027138227600), frame # 338944
+[2020.08.31-01.03.53:490][944]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000270C3AD6200), frame # 338944
+[2020.08.31-01.03.53:490][944]LogPlayLevel: PIE: World Init took: (0.001567s)
+[2020.08.31-01.03.53:490][944]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006731s)
+[2020.08.31-01.03.53:546][944]LogUObjectHash: Compacting FUObjectHashTables data took   6.40ms
+[2020.08.31-01.03.53:547][944]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.03.53:547][944]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.03.53:547][944]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.03.53:547][944]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.03.53:547][944]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.03.53:547][944]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.03.53:547][944]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.03.53:547][944]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.03.53:548][944]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.03.53:548][944]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.03.53:551][944]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.03.53:551][944]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.03.53:553][944]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.03.53:553][944]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.03.53:555][944]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.03.53:555][944]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.03.53:575][944]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.03.53:575][944]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.03.53:575][944]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.03.53:575][944]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.03.53:576][944]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.03.53:592][944]LogInit: FAudioDevice initialized.
+[2020.08.31-01.03.53:603][944]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.03.53:645][944]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.03.53:649][944]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.03.53
+[2020.08.31-01.03.53:651][944]LogWorld: Bringing up level for play took: 0.004837
+[2020.08.31-01.03.53:651][944]LogOnline: OSS: Creating online subsystem instance for: :Context_48
+[2020.08.31-01.03.53:665][944]PIE: Server logged in
+[2020.08.31-01.03.53:675][944]PIE: Play in editor total start time 0.334 seconds.
+[2020.08.31-01.03.53:675][944]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.03.53:690][944]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.03.53:775][947]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.04.06:199][500]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.07:297][540]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.10:403][671]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.10:724][684]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.10:749][685]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.15:949][895]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.18:923][ 26]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.21:197][122]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.21:401][130]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.22:873][189]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.23:419][209]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.04.25:622][294]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.04.25:622][294]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.04.25:755][294]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.04.25:783][294]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.04.25:783][294]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.04.25:812][294]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.04.25:821][294]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.04.25:914][294]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000270C3AD6200), frame # 340294
+[2020.08.31-01.04.25:914][294]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000027138227600), frame # 340294
+[2020.08.31-01.04.25:919][294]LogUObjectHash: Compacting FUObjectHashTables data took   4.22ms
+[2020.08.31-01.04.25:997][295]LogPlayLevel: Display: Destroying online subsystem :Context_48
+[2020.08.31-01.04.26:021][295]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.04.39:540][ 89]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.08.31-01.04.39:630][ 89]LogUObjectHash: Compacting FUObjectHashTables data took   4.64ms
+[2020.08.31-01.04.40:157][112]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun17EC3B714B519051077AEB916C664EAC.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.04.40:183][112]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.04.40:183][112]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.04.55:820][ 17]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.08.31-01.04.55:910][ 17]LogUObjectHash: Compacting FUObjectHashTables data took   6.27ms
+[2020.08.31-01.04.56:365][ 35]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunD8977ECA46B12D1937BA73AEFB0E217A.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.04.56:386][ 35]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.04.56:386][ 35]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.05.07:268][644]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.05.07:361][644]LogUObjectHash: Compacting FUObjectHashTables data took   5.93ms
+[2020.08.31-01.05.07:778][660]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet8F263BD74DAA6B80FC678B8A32A037E5.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.05.07:798][660]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.05.07:798][660]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.05.16:949][194]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.05.16:971][194]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.05.16:972][194]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.05.17:136][194]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.05.17:137][194]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:05:17 PM)
+[2020.08.31-01.05.17:137][194]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.05.17:142][194]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004550s)
+[2020.08.31-01.05.17:144][194]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.05.17:144][194]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002713B0A3400), frame # 343194
+[2020.08.31-01.05.17:144][194]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002713C3B7600), frame # 343194
+[2020.08.31-01.05.17:144][194]LogPlayLevel: PIE: World Init took: (0.001880s)
+[2020.08.31-01.05.17:144][194]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006569s)
+[2020.08.31-01.05.17:199][194]LogUObjectHash: Compacting FUObjectHashTables data took   6.94ms
+[2020.08.31-01.05.17:201][194]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.05.17:202][194]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.05.17:202][194]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.05.17:202][194]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.05.17:202][194]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.05.17:202][194]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.05.17:202][194]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.05.17:202][194]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.05.17:202][194]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.05.17:202][194]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.05.17:206][194]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.05.17:206][194]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.05.17:208][194]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.05.17:208][194]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.05.17:211][194]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.05.17:211][194]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.05.17:233][194]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.05.17:234][194]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.05.17:234][194]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.05.17:234][194]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.05.17:234][194]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.05.17:255][194]LogInit: FAudioDevice initialized.
+[2020.08.31-01.05.17:266][194]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.05.17:342][194]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.05.17:345][194]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.05.17
+[2020.08.31-01.05.17:346][194]LogWorld: Bringing up level for play took: 0.002452
+[2020.08.31-01.05.17:346][194]LogOnline: OSS: Creating online subsystem instance for: :Context_49
+[2020.08.31-01.05.17:369][194]PIE: Server logged in
+[2020.08.31-01.05.17:374][194]PIE: Play in editor total start time 0.403 seconds.
+[2020.08.31-01.05.17:374][194]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.05.17:382][194]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.05.17:470][197]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.06.04:645][586]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.06.04:645][586]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.06.04:701][586]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.06.04:743][586]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.06.04:744][586]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.06.04:761][586]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.06.04:778][586]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.06.04:881][586]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002713C3B7600), frame # 346586
+[2020.08.31-01.06.04:881][586]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002713B0A3400), frame # 346586
+[2020.08.31-01.06.04:893][586]LogUObjectHash: Compacting FUObjectHashTables data took  11.67ms
+[2020.08.31-01.06.05:050][587]LogPlayLevel: Display: Destroying online subsystem :Context_49
+[2020.08.31-01.06.05:074][587]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.06.54:007][300]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.06.54:100][300]LogUObjectHash: Compacting FUObjectHashTables data took   6.91ms
+[2020.08.31-01.06.54:449][313]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBulletFA97030F422BD24BAA2298A9851C4E20.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.06.54:475][313]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.06.54:475][313]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.07.00:823][674]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.07.00:908][674]LogUObjectHash: Compacting FUObjectHashTables data took   6.37ms
+[2020.08.31-01.07.01:350][692]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet2048B80046BA5498A555BDAE47592A18.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.07.01:379][692]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.07.01:379][692]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.07.02:836][767]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.07.02:856][767]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.07.02:856][767]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.07.03:000][767]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.07.03:001][767]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:07:03 PM)
+[2020.08.31-01.07.03:001][767]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.07.03:006][767]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004385s)
+[2020.08.31-01.07.03:007][767]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.07.03:007][767]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002707A4FB400), frame # 349767
+[2020.08.31-01.07.03:007][767]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002712BEE1940), frame # 349767
+[2020.08.31-01.07.03:007][767]LogPlayLevel: PIE: World Init took: (0.001522s)
+[2020.08.31-01.07.03:007][767]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006041s)
+[2020.08.31-01.07.03:063][767]LogUObjectHash: Compacting FUObjectHashTables data took   7.47ms
+[2020.08.31-01.07.03:064][767]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.07.03:064][767]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.07.03:064][767]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.07.03:064][767]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.07.03:064][767]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.07.03:064][767]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.07.03:064][767]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.07.03:064][767]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.07.03:065][767]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.07.03:065][767]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.07.03:068][767]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.07.03:068][767]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.07.03:070][767]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.07.03:070][767]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.07.03:072][767]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.07.03:072][767]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.07.03:093][767]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.07.03:094][767]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.07.03:094][767]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.07.03:094][767]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.07.03:094][767]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.07.03:114][767]LogInit: FAudioDevice initialized.
+[2020.08.31-01.07.03:127][767]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.07.03:165][767]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.07.03:168][767]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.07.03
+[2020.08.31-01.07.03:169][767]LogWorld: Bringing up level for play took: 0.002455
+[2020.08.31-01.07.03:169][767]LogOnline: OSS: Creating online subsystem instance for: :Context_50
+[2020.08.31-01.07.03:189][767]PIE: Server logged in
+[2020.08.31-01.07.03:194][767]PIE: Play in editor total start time 0.339 seconds.
+[2020.08.31-01.07.03:195][767]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.07.03:207][767]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.07.03:291][770]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.07.15:849][688]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.16:332][727]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.16:405][733]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.16:902][770]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.16:986][776]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.19:768][996]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.20:870][ 85]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.21:223][114]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.21:454][131]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.21:549][139]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.25:061][411]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.26:184][501]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.26:616][536]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.27:693][622]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.28:605][693]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.28:835][708]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.28:984][720]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.29:094][728]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.29:386][751]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.07.31:437][907]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.07.31:437][907]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.07.31:480][907]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.07.31:513][907]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.07.31:513][907]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.07.31:529][907]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.07.31:537][907]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.07.31:630][907]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002712BEE1940), frame # 351907
+[2020.08.31-01.07.31:630][907]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002707A4FB400), frame # 351907
+[2020.08.31-01.07.31:639][907]LogUObjectHash: Compacting FUObjectHashTables data took   8.73ms
+[2020.08.31-01.07.31:689][908]LogPlayLevel: Display: Destroying online subsystem :Context_50
+[2020.08.31-01.07.31:709][908]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.07.54:956][147]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun211B8AD946EDAD236C9A6184277BCBB6.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.07.54:977][147]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.07.54:977][147]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.08.03:341][627]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.08.31-01.08.03:428][627]LogUObjectHash: Compacting FUObjectHashTables data took   4.94ms
+[2020.08.31-01.08.03:787][639]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun96249F4A4AF8ACDF8F98F295C8121B19.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.08.31-01.08.03:813][639]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.08.31-01.08.03:813][639]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.08.31-01.08.05:989][762]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.08.06:009][762]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.08.06:009][762]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.08.06:157][762]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.08.06:158][762]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:08:06 PM)
+[2020.08.31-01.08.06:158][762]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.08.06:162][762]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003908s)
+[2020.08.31-01.08.06:164][762]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.08.06:164][762]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002713F286600), frame # 353762
+[2020.08.31-01.08.06:164][762]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002713BB5E5C0), frame # 353762
+[2020.08.31-01.08.06:164][762]LogPlayLevel: PIE: World Init took: (0.001989s)
+[2020.08.31-01.08.06:164][762]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006046s)
+[2020.08.31-01.08.06:222][762]LogUObjectHash: Compacting FUObjectHashTables data took   6.38ms
+[2020.08.31-01.08.06:223][762]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.08.06:223][762]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.08.06:223][762]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.08.06:224][762]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.08.06:224][762]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.08.06:224][762]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.08.06:224][762]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.08.06:224][762]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.08.06:224][762]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.08.06:224][762]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.08.06:227][762]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.08.06:227][762]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.08.06:229][762]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.08.06:229][762]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.08.06:231][762]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.08.06:231][762]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.08.06:251][762]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.08.06:251][762]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.08.06:251][762]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.08.06:251][762]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.08.06:251][762]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.08.06:268][762]LogInit: FAudioDevice initialized.
+[2020.08.31-01.08.06:279][762]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.08.06:351][762]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.08.06:354][762]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.08.06
+[2020.08.31-01.08.06:355][762]LogWorld: Bringing up level for play took: 0.002202
+[2020.08.31-01.08.06:355][762]LogOnline: OSS: Creating online subsystem instance for: :Context_51
+[2020.08.31-01.08.06:375][762]PIE: Server logged in
+[2020.08.31-01.08.06:380][762]PIE: Play in editor total start time 0.372 seconds.
+[2020.08.31-01.08.06:380][762]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.08.06:391][762]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.08.06:467][765]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.08.19:059][614]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.24:702][ 51]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.32:783][690]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.33:673][760]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.39:307][209]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.41:108][352]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.41:449][380]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.41:628][395]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.41:677][398]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.45:652][713]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.48:260][919]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.53:285][309]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.53:565][331]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.53:566][331]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.54:868][434]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.55:146][455]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.55:350][472]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.55:821][508]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.08.56:219][540]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.09.00:165][849]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.09.00:449][871]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.09.00:777][898]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.09.04:209][154]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.09.04:209][154]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.09.04:261][154]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.09.04:293][154]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.09.04:294][154]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.09.04:377][154]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.09.04:388][154]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.09.04:503][154]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002713BB5E5C0), frame # 358154
+[2020.08.31-01.09.04:503][154]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002713F286600), frame # 358154
+[2020.08.31-01.09.04:517][154]LogUObjectHash: Compacting FUObjectHashTables data took  13.69ms
+[2020.08.31-01.09.04:566][155]LogPlayLevel: Display: Destroying online subsystem :Context_51
+[2020.08.31-01.09.04:586][155]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.09.17:340][770]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.09.17:434][770]LogUObjectHash: Compacting FUObjectHashTables data took   5.05ms
+[2020.08.31-01.09.17:862][787]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet500BAC264917AFFB4153328118A63EF3.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.09.17:882][787]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.09.17:882][787]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.09.27:788][346]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.09.27:870][346]LogUObjectHash: Compacting FUObjectHashTables data took   6.13ms
+[2020.08.31-01.09.28:374][367]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBulletF742F81E483FE6FEC54AD78513CFAF90.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.09.28:395][367]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.09.28:395][367]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.09.40:485][ 56]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.09.40:511][ 56]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.09.40:511][ 56]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.09.40:697][ 56]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.09.40:698][ 56]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:09:40 PM)
+[2020.08.31-01.09.40:698][ 56]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.09.40:706][ 56]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007243s)
+[2020.08.31-01.09.40:707][ 56]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.09.40:707][ 56]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000270091B7400), frame # 360056
+[2020.08.31-01.09.40:707][ 56]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002708A20CE00), frame # 360056
+[2020.08.31-01.09.40:708][ 56]LogPlayLevel: PIE: World Init took: (0.001991s)
+[2020.08.31-01.09.40:708][ 56]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.009451s)
+[2020.08.31-01.09.40:774][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   6.38ms
+[2020.08.31-01.09.40:779][ 56]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.09.40:779][ 56]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.09.40:779][ 56]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.09.40:779][ 56]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.09.40:779][ 56]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.09.40:779][ 56]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.09.40:779][ 56]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.09.40:779][ 56]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.09.40:780][ 56]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.09.40:780][ 56]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.09.40:783][ 56]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.09.40:783][ 56]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.09.40:784][ 56]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.09.40:785][ 56]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.09.40:787][ 56]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.09.40:787][ 56]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.09.40:811][ 56]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.09.40:811][ 56]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.09.40:811][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.09.40:811][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.09.40:811][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.09.40:831][ 56]LogInit: FAudioDevice initialized.
+[2020.08.31-01.09.40:842][ 56]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.09.40:894][ 56]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.09.40:897][ 56]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.09.40
+[2020.08.31-01.09.40:898][ 56]LogWorld: Bringing up level for play took: 0.002166
+[2020.08.31-01.09.40:898][ 56]LogOnline: OSS: Creating online subsystem instance for: :Context_52
+[2020.08.31-01.09.40:918][ 56]PIE: Server logged in
+[2020.08.31-01.09.40:926][ 56]PIE: Play in editor total start time 0.416 seconds.
+[2020.08.31-01.09.40:926][ 56]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.09.40:941][ 56]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.09.41:075][ 59]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.09.53:580][616]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.23:188][962]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.23:462][975]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.29:147][232]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.29:973][280]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.31:445][350]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.34:889][517]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.35:804][572]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.36:835][618]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.46:438][ 87]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.51:383][328]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.53:084][422]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.53:562][441]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.55:766][529]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.56:265][549]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.56:514][559]LogBlueprintUserMessages: [EnemyBase2_5] Hello
+[2020.08.31-01.10.58:387][631]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.10.58:387][631]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.10.58:558][631]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.10.58:613][631]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.10.58:613][631]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.10.58:635][631]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.10.58:643][631]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.10.58:729][631]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002708A20CE00), frame # 363631
+[2020.08.31-01.10.58:729][631]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000270091B7400), frame # 363631
+[2020.08.31-01.10.58:733][631]LogUObjectHash: Compacting FUObjectHashTables data took   4.45ms
+[2020.08.31-01.10.58:800][632]LogPlayLevel: Display: Destroying online subsystem :Context_52
+[2020.08.31-01.10.58:814][632]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.11.25:140][197]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet52A16EE343578B7E12193BBE48E952F8.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.11.25:160][197]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.11.25:160][197]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.12.10:579][832]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.12.10:668][832]LogUObjectHash: Compacting FUObjectHashTables data took   4.98ms
+[2020.08.31-01.12.11:159][853]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet520170A44EAAD6219275C3A2F8B96DE2.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.12.11:178][853]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.12.11:178][853]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.12.29:678][486]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBulletCB16F0B548116081E891EB932F1BE3D1.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.12.29:697][486]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.12.29:697][486]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.13.04:133][478]LogUObjectHash: Compacting FUObjectHashTables data took   6.96ms
+[2020.08.31-01.13.04:235][478]LogUObjectHash: Compacting FUObjectHashTables data took   1.07ms
+[2020.08.31-01.13.04:264][478]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/RobertsWorld5CA5F3474AC647ABE5775F94D806DD08.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/RobertsWorld.umap'
+[2020.08.31-01.13.04:300][478]LogFileHelpers: Saving map 'RobertsWorld' took 0.116
+[2020.08.31-01.13.04:321][478]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.08.31-01.13.04:321][478]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.08.31-01.13.40:290][572]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase7CD9BCC74594FF4EBC467BB6680C2A8A.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.13.40:317][572]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.13.40:317][572]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.14.18:433][771]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.14.18:530][771]LogUObjectHash: Compacting FUObjectHashTables data took   5.77ms
+[2020.08.31-01.14.18:997][790]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBaseEEDBD34C44D305EC1F9A328BBBD2C96C.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.14.19:021][790]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.14.19:021][790]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.14.44:459][278]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.14.44:553][278]LogUObjectHash: Compacting FUObjectHashTables data took   7.36ms
+[2020.08.31-01.14.44:973][296]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase30AF93714B4B8C8F83C258BB644B4B76.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.14.44:998][296]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.14.44:998][296]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.14.54:672][852]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.14.54:767][852]LogUObjectHash: Compacting FUObjectHashTables data took   6.68ms
+[2020.08.31-01.14.55:216][872]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase62DD28EA4F8B92012951DB8D964FAF40.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.14.55:236][872]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.14.55:236][872]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.15.52:815][137]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.08.31-01.16.00:541][590]LogEditorTransaction: Undo Delete current selection
+[2020.08.31-01.16.14:737][395]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.16.14:845][395]LogUObjectHash: Compacting FUObjectHashTables data took   6.44ms
+[2020.08.31-01.16.15:169][406]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase2E5985AB4797B74795C416A92EB25CED.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.16.15:190][406]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.16.15:190][406]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.16.29:582][228]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.16.29:679][228]LogUObjectHash: Compacting FUObjectHashTables data took   6.59ms
+[2020.08.31-01.16.30:032][241]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBaseE4F61FB84284BAED23264FADD584810E.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.16.30:057][241]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.16.30:057][241]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.16.32:957][408]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBaseBDA4DAFB4E958B6A83D25E9B686EF74E.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.16.32:978][408]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.16.32:978][408]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.16.44:797][ 90]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.16.44:894][ 90]LogUObjectHash: Compacting FUObjectHashTables data took   7.85ms
+[2020.08.31-01.16.45:277][105]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase6625B0F14AC605A6023DB4A8A81BA5D8.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.16.45:303][105]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.16.45:304][105]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.17.00:310][955]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.17.00:410][955]LogUObjectHash: Compacting FUObjectHashTables data took   5.69ms
+[2020.08.31-01.17.00:805][971]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase84BFB6D045F8F7ACA03B39B5CCB73A1C.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.17.00:829][971]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.17.00:829][971]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.17.05:285][233]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase21E5726645DACDB9682D2FB73E1B3084.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.17.05:307][233]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.17.05:307][233]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.17.10:588][543]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.17.10:607][543]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.17.10:607][543]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.17.10:748][543]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.17.10:749][543]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:17:10 PM)
+[2020.08.31-01.17.10:749][543]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.17.10:753][543]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004558s)
+[2020.08.31-01.17.10:755][543]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.17.10:755][543]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002715BF95000), frame # 384543
+[2020.08.31-01.17.10:755][543]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000270FA48BD80), frame # 384543
+[2020.08.31-01.17.10:755][543]LogPlayLevel: PIE: World Init took: (0.001517s)
+[2020.08.31-01.17.10:755][543]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006216s)
+[2020.08.31-01.17.10:807][543]LogUObjectHash: Compacting FUObjectHashTables data took   6.32ms
+[2020.08.31-01.17.10:809][543]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.17.10:809][543]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.17.10:809][543]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.17.10:809][543]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.17.10:809][543]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.17.10:809][543]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.17.10:809][543]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.17.10:809][543]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.17.10:810][543]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.17.10:810][543]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.17.10:815][543]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.17.10:815][543]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.17.10:817][543]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.17.10:817][543]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.17.10:820][543]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.17.10:820][543]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.17.10:840][543]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.17.10:841][543]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.17.10:841][543]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.17.10:841][543]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.17.10:841][543]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.17.10:865][543]LogInit: FAudioDevice initialized.
+[2020.08.31-01.17.10:877][543]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.17.10:950][543]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.17.10:953][543]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.17.10
+[2020.08.31-01.17.10:953][543]LogWorld: Bringing up level for play took: 0.002155
+[2020.08.31-01.17.10:954][543]LogOnline: OSS: Creating online subsystem instance for: :Context_53
+[2020.08.31-01.17.10:969][543]PIE: Server logged in
+[2020.08.31-01.17.10:977][543]PIE: Play in editor total start time 0.371 seconds.
+[2020.08.31-01.17.10:977][543]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.17.10:987][543]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.17.11:064][546]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B561B6353-4CC1-D46C-F4CE-DB8B4C8AA770%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=3979783f4f30d8e28a95e3b1989f5d24%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cb389f866-6ce3-4d0d-8d68-106a3ee608e0&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: request failed, libcurl error: 0 (No error)
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x26fe67b7f70 [can pipeline])
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 1 (Re-using existing connection! (#59) with host datarouter.ol.epicgames.com)
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (52.6.184.73) port 443 (#59))
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 3 (We are completely uploaded and fine)
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2020.08.31-01.17.29:625][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2020.08.31-01.17.29:626][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2020.08.31-01.17.29:626][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 7 (Closing connection 59)
+[2020.08.31-01.17.29:626][619]LogHttp: Warning: 0000027175525600: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2020.08.31-01.17.29:626][619]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B561B6353-4CC1-D46C-F4CE-DB8B4C8AA770%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=3979783f4f30d8e28a95e3b1989f5d24%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cb389f866-6ce3-4d0d-8d68-106a3ee608e0&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2020.08.31-01.17.34:812][959]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.17.34:812][959]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.17.34:875][959]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.17.34:973][959]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.17.34:974][959]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.17.35:045][959]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.17.35:053][959]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.17.35:146][959]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000270FA48BD80), frame # 385959
+[2020.08.31-01.17.35:146][959]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002715BF95000), frame # 385959
+[2020.08.31-01.17.35:151][959]LogUObjectHash: Compacting FUObjectHashTables data took   4.49ms
+[2020.08.31-01.17.35:196][960]LogPlayLevel: Display: Destroying online subsystem :Context_53
+[2020.08.31-01.17.35:220][960]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.17.48:206][614]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet27B4A5A342744A6560A104A2752A860F.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.17.48:234][614]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.17.48:234][614]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.18.05:767][564]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet06EDD1BC45215A78A68860BA2A11A0C1.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.18.05:790][564]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.18.05:790][564]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.18.13:536][995]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.08.31-01.18.15:808][117]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.18.15:898][117]LogUObjectHash: Compacting FUObjectHashTables data took   5.68ms
+[2020.08.31-01.18.16:327][134]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet8E45BAAF4D2AB24649F7A6BBF9F5AC51.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.18.16:347][134]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.18.16:347][134]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.18.26:804][725]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase9BAC25F040F66A39FA5979AA6C9B09BA.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.18.26:829][725]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.18.26:829][725]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.18.34:001][125]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.08.31-01.18.38:903][408]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.18.39:003][408]LogUObjectHash: Compacting FUObjectHashTables data took   6.89ms
+[2020.08.31-01.18.39:353][419]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase07E1EE77446315B0150CA186068D5991.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.18.39:379][419]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.18.39:379][419]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.18.46:984][852]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.18.47:006][852]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.18.47:006][852]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.18.47:166][852]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.18.47:167][852]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:18:47 PM)
+[2020.08.31-01.18.47:168][852]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.18.47:174][852]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006569s)
+[2020.08.31-01.18.47:176][852]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.18.47:177][852]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002711E0BE600), frame # 389852
+[2020.08.31-01.18.47:177][852]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000270DE28AD40), frame # 389852
+[2020.08.31-01.18.47:177][852]LogPlayLevel: PIE: World Init took: (0.002599s)
+[2020.08.31-01.18.47:177][852]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.009381s)
+[2020.08.31-01.18.47:238][852]LogUObjectHash: Compacting FUObjectHashTables data took   7.62ms
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.18.47:241][852]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.18.47:241][852]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.18.47:241][852]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.18.47:245][852]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.18.47:245][852]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.18.47:248][852]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.18.47:248][852]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.18.47:251][852]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.18.47:251][852]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.18.47:272][852]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.18.47:272][852]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.18.47:272][852]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.18.47:272][852]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.18.47:273][852]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.18.47:291][852]LogInit: FAudioDevice initialized.
+[2020.08.31-01.18.47:299][852]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.18.47:377][852]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.18.47:380][852]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.18.47
+[2020.08.31-01.18.47:381][852]LogWorld: Bringing up level for play took: 0.002530
+[2020.08.31-01.18.47:381][852]LogOnline: OSS: Creating online subsystem instance for: :Context_54
+[2020.08.31-01.18.47:403][852]PIE: Server logged in
+[2020.08.31-01.18.47:408][852]PIE: Play in editor total start time 0.403 seconds.
+[2020.08.31-01.18.47:409][852]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.18.47:422][852]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.18.47:505][855]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.19.41:711][748]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.19.41:711][748]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.19.41:796][748]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.19.41:833][748]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.19.41:834][748]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.19.41:879][748]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.19.41:891][748]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.19.41:975][748]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000270DE28AD40), frame # 393748
+[2020.08.31-01.19.41:975][748]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002711E0BE600), frame # 393748
+[2020.08.31-01.19.41:983][748]LogUObjectHash: Compacting FUObjectHashTables data took   7.69ms
+[2020.08.31-01.19.42:030][749]LogPlayLevel: Display: Destroying online subsystem :Context_54
+[2020.08.31-01.19.42:049][749]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.20.11:362][309]BlueprintLog: New page: Compile EnemyBase
+[2020.08.31-01.20.11:459][309]LogUObjectHash: Compacting FUObjectHashTables data took   4.91ms
+[2020.08.31-01.20.12:045][334]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase4B3A1BA64332079D4ADC9B9967CECEF2.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.20.12:066][334]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.20.12:066][334]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.20.13:660][422]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.20.13:678][422]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.20.13:678][422]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.20.13:813][422]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.20.13:814][422]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:20:13 PM)
+[2020.08.31-01.20.13:815][422]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.20.13:820][422]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004827s)
+[2020.08.31-01.20.13:821][422]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.20.13:821][422]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002706C074600), frame # 395422
+[2020.08.31-01.20.13:821][422]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000271475DCB80), frame # 395422
+[2020.08.31-01.20.13:821][422]LogPlayLevel: PIE: World Init took: (0.001350s)
+[2020.08.31-01.20.13:821][422]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006342s)
+[2020.08.31-01.20.13:872][422]LogUObjectHash: Compacting FUObjectHashTables data took   6.27ms
+[2020.08.31-01.20.13:874][422]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.20.13:874][422]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.20.13:874][422]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.20.13:874][422]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.20.13:874][422]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.20.13:874][422]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.20.13:874][422]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.20.13:874][422]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.20.13:875][422]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.20.13:875][422]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.20.13:878][422]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.20.13:878][422]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.20.13:879][422]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.20.13:879][422]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.20.13:882][422]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.20.13:882][422]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.20.13:901][422]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.20.13:901][422]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.20.13:901][422]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.20.13:901][422]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.20.13:902][422]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.20.13:917][422]LogInit: FAudioDevice initialized.
+[2020.08.31-01.20.13:929][422]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.20.13:974][422]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.20.13:978][422]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.20.13
+[2020.08.31-01.20.13:978][422]LogWorld: Bringing up level for play took: 0.002177
+[2020.08.31-01.20.13:978][422]LogOnline: OSS: Creating online subsystem instance for: :Context_55
+[2020.08.31-01.20.13:989][422]PIE: Server logged in
+[2020.08.31-01.20.13:993][422]PIE: Play in editor total start time 0.315 seconds.
+[2020.08.31-01.20.13:993][422]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.20.14:000][422]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.20.14:072][425]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.20.23:478][ 41]LogScript: Warning: Attempted to access Box via property Box, but Box is pending kill
+	EnemyBase_C /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld:PersistentLevel.EnemyBase2_5
+	Function /Game/RobertFunZone/Characters/EnemyBase.EnemyBase_C:ExecuteUbergraph_EnemyBase:0344
+[2020.08.31-01.20.23:478][ 41]PIE: Error: Blueprint Runtime Error: "Attempted to access Box via property Box, but Box is pending kill". Blueprint:  EnemyBase Function:  Execute Ubergraph Enemy Base Graph:  ForEachLoopWithBreak Node:  Branch
+[2020.08.31-01.20.23:506][ 43]LogScript: Warning: Attempted to access Box via property Box, but Box is pending kill
+	EnemyBase_C /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld:PersistentLevel.EnemyBase_2
+	Function /Game/RobertFunZone/Characters/EnemyBase.EnemyBase_C:ExecuteUbergraph_EnemyBase:0344
+[2020.08.31-01.20.23:506][ 43]PIE: Error: Blueprint Runtime Error: "Attempted to access Box via property Box, but Box is pending kill". Blueprint:  EnemyBase Function:  Execute Ubergraph Enemy Base Graph:  ForEachLoopWithBreak Node:  Branch
+[2020.08.31-01.20.32:101][671]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.20.32:101][671]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.20.32:160][671]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.20.32:202][671]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.20.32:202][671]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.20.32:274][671]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.20.32:291][671]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.20.32:383][671]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000271475DCB80), frame # 396671
+[2020.08.31-01.20.32:383][671]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002706C074600), frame # 396671
+[2020.08.31-01.20.32:390][671]LogUObjectHash: Compacting FUObjectHashTables data took   7.53ms
+[2020.08.31-01.20.32:587][672]LogPlayLevel: Display: Destroying online subsystem :Context_55
+[2020.08.31-01.20.32:608][672]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.20.40:674][151]LogSlate: Window 'Message Log' being destroyed
+[2020.08.31-01.20.40:681][151]LogSlate: Window 'Message Log' being destroyed
+[2020.08.31-01.20.48:283][512]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase07098F7B42E49D75F0367885D8412D4D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.20.48:304][512]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.20.48:304][512]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.21.12:514][917]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.21.12:597][917]LogUObjectHash: Compacting FUObjectHashTables data took   5.73ms
+[2020.08.31-01.21.13:150][942]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet5417D1514C6BAB6F662B31A6E60E017A.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.21.13:171][942]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.21.13:171][942]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.21.26:211][677]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.21.26:298][677]LogUObjectHash: Compacting FUObjectHashTables data took   6.73ms
+[2020.08.31-01.21.26:601][688]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet3CD4157D4967C363830D0284171742B3.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.21.26:620][688]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.21.26:620][688]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.21.39:523][446]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.21.39:542][446]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.21.39:542][446]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.21.39:691][446]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.21.39:692][446]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:21:39 PM)
+[2020.08.31-01.21.39:693][446]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.21.39:697][446]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004294s)
+[2020.08.31-01.21.39:698][446]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.21.39:698][446]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000027182C11600), frame # 400446
+[2020.08.31-01.21.39:698][446]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000027147EDCCC0), frame # 400446
+[2020.08.31-01.21.39:699][446]LogPlayLevel: PIE: World Init took: (0.001625s)
+[2020.08.31-01.21.39:699][446]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006051s)
+[2020.08.31-01.21.39:754][446]LogUObjectHash: Compacting FUObjectHashTables data took   6.12ms
+[2020.08.31-01.21.39:756][446]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.21.39:756][446]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.21.39:756][446]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.21.39:756][446]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.21.39:756][446]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.21.39:756][446]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.21.39:756][446]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.21.39:756][446]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.21.39:757][446]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.21.39:757][446]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.21.39:760][446]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.21.39:760][446]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.21.39:762][446]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.21.39:762][446]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.21.39:764][446]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.21.39:764][446]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.21.39:787][446]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.21.39:787][446]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.21.39:787][446]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.21.39:787][446]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.21.39:788][446]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.21.39:803][446]LogInit: FAudioDevice initialized.
+[2020.08.31-01.21.39:816][446]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.21.39:868][446]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.21.39:870][446]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.21.39
+[2020.08.31-01.21.39:870][446]LogWorld: Bringing up level for play took: 0.001959
+[2020.08.31-01.21.39:871][446]LogOnline: OSS: Creating online subsystem instance for: :Context_56
+[2020.08.31-01.21.39:886][446]PIE: Server logged in
+[2020.08.31-01.21.39:894][446]PIE: Play in editor total start time 0.353 seconds.
+[2020.08.31-01.21.39:895][446]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.21.39:906][446]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.21.39:987][449]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.21.58:335][852]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.21.58:335][852]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.21.58:389][852]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.21.58:432][852]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.21.58:433][852]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.21.58:513][852]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.21.58:536][852]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.21.58:622][852]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027147EDCCC0), frame # 401852
+[2020.08.31-01.21.58:623][852]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000027182C11600), frame # 401852
+[2020.08.31-01.21.58:631][852]LogUObjectHash: Compacting FUObjectHashTables data took   7.95ms
+[2020.08.31-01.21.58:678][853]LogPlayLevel: Display: Destroying online subsystem :Context_56
+[2020.08.31-01.21.58:697][853]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.22.57:520][693]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.22.57:603][693]LogUObjectHash: Compacting FUObjectHashTables data took   4.87ms
+[2020.08.31-01.22.58:187][718]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet83364E7E4801FB2D781E38A4163B7014.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.22.58:210][718]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.22.58:210][718]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.23.03:253][ 17]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.23.03:340][ 17]LogUObjectHash: Compacting FUObjectHashTables data took   6.85ms
+[2020.08.31-01.23.03:809][ 38]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBulletC4CE09C44891B48D84AC07AF90ECB4E2.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.23.03:829][ 38]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.23.03:829][ 38]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.23.09:938][388]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBulletD22D867A4EAB44BB16B898B29AA704AE.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.23.09:962][388]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.23.09:962][388]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.23.17:498][817]BlueprintLog: New page: Compile VeryPlaceholderBullet
+[2020.08.31-01.23.17:581][817]LogUObjectHash: Compacting FUObjectHashTables data took   6.81ms
+[2020.08.31-01.23.17:990][834]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderBullet7488CB0D42BFB8E23B1AE1A798553AF4.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderBullet.uasset'
+[2020.08.31-01.23.18:011][834]AssetCheck: New page: Asset Save: VeryPlaceholderBullet
+[2020.08.31-01.23.18:011][834]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.08.31-01.23.26:646][343]LogTemp: Repeating last play command: VR Preview
+[2020.08.31-01.23.26:664][343]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.08.31-01.23.26:665][343]LogHMD: Initializing OVRPlugin session
+[2020.08.31-01.23.26:806][343]LogHMD: Allocating Oculus 3008 x 1616 rendertarget swapchain
+[2020.08.31-01.23.26:807][343]PIE: New page: PIE session: RobertsWorld (Aug 30, 2020, 5:23:26 PM)
+[2020.08.31-01.23.26:807][343]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.23.26:812][343]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004789s)
+[2020.08.31-01.23.26:813][343]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.08.31-01.23.26:814][343]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000270DDE27E00), frame # 404343
+[2020.08.31-01.23.26:814][343]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000270EB04AAC0), frame # 404343
+[2020.08.31-01.23.26:814][343]LogPlayLevel: PIE: World Init took: (0.001592s)
+[2020.08.31-01.23.26:814][343]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.006511s)
+[2020.08.31-01.23.26:872][343]LogUObjectHash: Compacting FUObjectHashTables data took   6.74ms
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.08.31-01.23.26:874][343]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.08.31-01.23.26:874][343]LogAudio: Display: Using built-in audio occlusion.
+[2020.08.31-01.23.26:874][343]LogAudioMixer: Display: Initializing audio mixer.
+[2020.08.31-01.23.26:878][343]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.23.26:878][343]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.23.26:879][343]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.23.26:879][343]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.23.26:882][343]LogAudioMixer: Display: 0: FrontLeft
+[2020.08.31-01.23.26:882][343]LogAudioMixer: Display: 1: FrontRight
+[2020.08.31-01.23.26:904][343]LogAudioMixer: Display: Using Audio Device Headphones (3- Rift S)
+[2020.08.31-01.23.26:904][343]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.08.31-01.23.26:904][343]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.08.31-01.23.26:904][343]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.08.31-01.23.26:904][343]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.08.31-01.23.26:921][343]LogInit: FAudioDevice initialized.
+[2020.08.31-01.23.26:932][343]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.23.27:007][343]LogLoad: Game class is 'GameModeBase'
+[2020.08.31-01.23.27:009][343]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.08.30-21.23.27
+[2020.08.31-01.23.27:010][343]LogWorld: Bringing up level for play took: 0.001716
+[2020.08.31-01.23.27:010][343]LogOnline: OSS: Creating online subsystem instance for: :Context_57
+[2020.08.31-01.23.27:028][343]PIE: Server logged in
+[2020.08.31-01.23.27:032][343]PIE: Play in editor total start time 0.368 seconds.
+[2020.08.31-01.23.27:032][343]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.23.27:040][343]LogHMD: Allocating Oculus 3008 x 1616 depth rendertarget swapchain
+[2020.08.31-01.23.27:124][346]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.08.31-01.23.38:911][155]LogScript: Warning: Attempted to access Box via property Box, but Box is pending kill
+	EnemyBase_C /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld:PersistentLevel.EnemyBase2_5
+	Function /Game/RobertFunZone/Characters/EnemyBase.EnemyBase_C:ExecuteUbergraph_EnemyBase:0344
+[2020.08.31-01.23.38:911][155]PIE: Error: Blueprint Runtime Error: "Attempted to access Box via property Box, but Box is pending kill". Blueprint:  EnemyBase Function:  Execute Ubergraph Enemy Base Graph:  ForEachLoopWithBreak Node:  Branch
+[2020.08.31-01.23.41:605][356]LogScript: Warning: Attempted to access Box via property Box, but Box is pending kill
+	EnemyBase_C /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld:PersistentLevel.EnemyBase_2
+	Function /Game/RobertFunZone/Characters/EnemyBase.EnemyBase_C:ExecuteUbergraph_EnemyBase:0344
+[2020.08.31-01.23.41:605][356]PIE: Error: Blueprint Runtime Error: "Attempted to access Box via property Box, but Box is pending kill". Blueprint:  EnemyBase Function:  Execute Ubergraph Enemy Base Graph:  ForEachLoopWithBreak Node:  Branch
+[2020.08.31-01.24.06:129][ 79]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.08.31-01.24.06:129][ 79]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.08.31-01.24.06:230][ 79]LogSlate: Window 'vrexperimenting Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.08.31-01.24.06:273][ 79]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.08.31-01.24.06:274][ 79]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.24.06:291][ 79]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.08.31-01.24.06:305][ 79]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.08.31-01.24.06:393][ 79]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000270EB04AAC0), frame # 407079
+[2020.08.31-01.24.06:394][ 79]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000270DDE27E00), frame # 407079
+[2020.08.31-01.24.06:401][ 79]LogUObjectHash: Compacting FUObjectHashTables data took   7.51ms
+[2020.08.31-01.24.06:588][ 80]LogPlayLevel: Display: Destroying online subsystem :Context_57
+[2020.08.31-01.24.06:597][ 80]LogEngine: Changing dynamic resolution state.
+[2020.08.31-01.24.20:330][756]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase503F86D64EE8C3EB6BE09FBC9D2F9246.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.24.20:350][756]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.24.20:351][756]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.24.31:727][410]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase89536FF34A83BD5DFEEE2787D34271F9.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.24.31:750][410]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.24.31:750][410]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.08.31-01.24.39:178][827]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase3F7D9FA14C82D1CBA6B789907EC5E336.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.08.31-01.24.39:200][827]AssetCheck: New page: Asset Save: EnemyBase
+[2020.08.31-01.24.39:200][827]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
