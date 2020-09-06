@@ -6493,3 +6493,212 @@ BP_Sky_Sphere
 [2020.09.06-16.27.33:371][224]AssetCheck: New page: Asset Save: Title
 [2020.09.06-16.27.33:371][224]LogContentValidation: Display: Validating World /Game/RobertFunZone/Title.Title
 [2020.09.06-16.27.37:242][447]LogUObjectHash: Compacting FUObjectHashTables data took   2.39ms
+[2020.09.06-16.31.48:612][192]LogUObjectHash: Compacting FUObjectHashTables data took   3.41ms
+[2020.09.06-16.31.48:625][192]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/RobertFunZone/UI/WeaponSelectActor.
+[2020.09.06-16.31.50:555][300]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/UI/WeaponSelectActor.WeaponSelectActor
+[2020.09.06-16.31.50:947][300]LogSlate: Took 0.000235 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.09.06-16.32.00:405][853]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.09.06-16.32.04:168][ 63]BlueprintLog: New page: Compile WeaponSelectActor
+[2020.09.06-16.32.04:236][ 63]LogUObjectHash: Compacting FUObjectHashTables data took   3.66ms
+[2020.09.06-16.32.04:811][ 86]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/WeaponSelectActor789E2B5B433BD820B8E0D4939CE86031.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/WeaponSelectActor.uasset'
+[2020.09.06-16.32.04:822][ 86]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/RobertFunZone/UI/WeaponSelectActor.
+[2020.09.06-16.32.04:833][ 86]AssetCheck: New page: Asset Save: WeaponSelectActor
+[2020.09.06-16.32.04:833][ 86]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/WeaponSelectActor.WeaponSelectActor
+[2020.09.06-16.32.26:137][194]LogSlate: Took 0.000319 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.09.06-16.32.31:814][518]BlueprintLog: New page: Compile GunSelect
+[2020.09.06-16.32.31:903][518]LogUObjectHash: Compacting FUObjectHashTables data took   4.43ms
+[2020.09.06-16.32.32:337][536]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelect9D57B4E348AD874E28B6DFB94E674E1D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.32.32:355][536]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.32.32:355][536]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.32.52:076][501]BlueprintLog: New page: Compile GunSelect
+[2020.09.06-16.32.52:150][501]LogUObjectHash: Compacting FUObjectHashTables data took   4.81ms
+[2020.09.06-16.32.52:754][530]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelect3B07117F4B859A7F9247D2BAED63A235.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.32.52:771][530]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.32.52:771][530]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.33.09:704][485]BlueprintLog: New page: Compile GunSelect
+[2020.09.06-16.33.09:796][485]LogUObjectHash: Compacting FUObjectHashTables data took   5.28ms
+[2020.09.06-16.33.10:284][507]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelect462E9CE744874F4A96DE99ADBA9B3EB9.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.33.10:302][507]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.33.10:302][507]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.33.17:014][900]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelect2DF146DA4CBC5ED2690827894087FE2E.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.33.17:029][900]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.33.17:029][900]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.33.38:228][135]BlueprintLog: New page: Compile GunSelect
+[2020.09.06-16.33.38:300][135]LogUObjectHash: Compacting FUObjectHashTables data took   4.71ms
+[2020.09.06-16.33.38:776][157]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelect7EC60467492BAD57485AF38A8154C49E.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.33.38:793][157]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.33.38:793][157]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.33.41:924][337]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelect99BA93814DE7D69FDDB834AEEA8230ED.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.33.41:938][337]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.33.41:938][337]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.34.00:240][423]BlueprintLog: New page: Compile GunSelect
+[2020.09.06-16.34.00:311][423]LogUObjectHash: Compacting FUObjectHashTables data took   4.78ms
+[2020.09.06-16.34.00:836][446]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelect345AB1A94CF796852EF2B989DD2D7648.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.34.00:852][446]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.34.00:853][446]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.34.20:685][460]BlueprintLog: New page: Compile WeaponSelectActor
+[2020.09.06-16.34.20:756][460]LogUObjectHash: Compacting FUObjectHashTables data took   4.65ms
+[2020.09.06-16.34.24:318][664]BlueprintLog: New page: Compile WeaponSelectActor
+[2020.09.06-16.34.24:386][664]LogUObjectHash: Compacting FUObjectHashTables data took   4.61ms
+[2020.09.06-16.34.24:885][684]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/WeaponSelectActor59B370A74892BFDE94E64DB75EE95DB5.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/WeaponSelectActor.uasset'
+[2020.09.06-16.34.24:901][684]AssetCheck: New page: Asset Save: WeaponSelectActor
+[2020.09.06-16.34.24:901][684]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/WeaponSelectActor.WeaponSelectActor
+[2020.09.06-16.34.32:034][ 86]BlueprintLog: New page: Compile WeaponSelectActor
+[2020.09.06-16.34.32:103][ 86]LogUObjectHash: Compacting FUObjectHashTables data took   4.25ms
+[2020.09.06-16.36.42:983][879]BlueprintLog: New page: Compile WeaponSelectActor
+[2020.09.06-16.36.43:053][879]LogUObjectHash: Compacting FUObjectHashTables data took   4.27ms
+[2020.09.06-16.36.43:593][903]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/WeaponSelectActor327E981C410716DC85C072B6822CEBA2.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/WeaponSelectActor.uasset'
+[2020.09.06-16.36.43:610][903]AssetCheck: New page: Asset Save: WeaponSelectActor
+[2020.09.06-16.36.43:610][903]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/WeaponSelectActor.WeaponSelectActor
+[2020.09.06-16.36.47:864][129]BlueprintLog: New page: Compile TitleActor
+[2020.09.06-16.36.47:935][129]LogSlate: Slate User Unregistered.  User Index 8
+[2020.09.06-16.36.47:935][129]LogSlate: Slate User Destroyed.  User Index 8, Is Virtual User: 1
+[2020.09.06-16.36.47:940][129]LogUObjectHash: Compacting FUObjectHashTables data took   5.09ms
+[2020.09.06-16.36.48:448][151]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleActor76FA0D114E749C23E8510EB8ED54FE6D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleActor.uasset'
+[2020.09.06-16.36.48:465][151]AssetCheck: New page: Asset Save: TitleActor
+[2020.09.06-16.36.48:465][151]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/TitleActor.TitleActor
+[2020.09.06-16.36.59:978][819]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.37.07:881][228]LogSlate: New Slate User Created.  User Index 8, Is Virtual User: 1
+[2020.09.06-16.37.07:882][228]LogSlate: Slate User Registered.  User Index 8, Is Virtual User: 1
+[2020.09.06-16.37.24:543][797]BlueprintLog: New page: Compile BP_MotionController
+[2020.09.06-16.37.24:702][797]LogUObjectHash: Compacting FUObjectHashTables data took   5.41ms
+[2020.09.06-16.37.25:195][804]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionController908DB75F44D35B16E7DC4CA3B9375D78.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.37.25:220][804]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.37.25:220][804]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.37.34:611][347]BlueprintLog: New page: Compile BP_MotionController
+[2020.09.06-16.37.34:760][347]LogUObjectHash: Compacting FUObjectHashTables data took   5.47ms
+[2020.09.06-16.37.35:587][378]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionController124E65DB4E67606669457BABA4309CAC.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.37.35:607][378]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.37.35:608][378]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.38.01:453][566]LogUObjectHash: Compacting FUObjectHashTables data took   4.47ms
+[2020.09.06-16.38.01:488][566]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Title_Auto237D8E8A24E0134AA1045E1A5F80AAB99.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Autosaves/Game/RobertFunZone/Title_Auto2.umap'
+[2020.09.06-16.38.01:490][566]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/RobertFunZone/Title' took 0.088
+[2020.09.06-16.38.01:490][566]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.088
+[2020.09.06-16.39.02:184][152]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionControllerEB62FC6243C3FAA75ACDFA856EE75A47.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.39.02:203][152]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.39.02:204][152]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.41.56:940][280]BlueprintLog: New page: Compile BP_MotionController
+[2020.09.06-16.41.57:131][280]LogUObjectHash: Compacting FUObjectHashTables data took   7.58ms
+[2020.09.06-16.42.16:053][360]BlueprintLog: New page: Compile BP_MotionController
+[2020.09.06-16.42.16:218][360]LogUObjectHash: Compacting FUObjectHashTables data took   6.73ms
+[2020.09.06-16.42.16:783][376]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionController215350E542B9EA6A1B589584D7652F86.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.42.16:801][376]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.42.16:801][376]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.42.26:959][970]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionController46808B6E403A11F342186F9074C5F61E.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.42.26:981][970]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.42.26:982][970]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.42.32:139][264]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionController34E0FF164249C58E52D616983ACC6D5E.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.42.32:162][264]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.42.32:162][264]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.42.40:979][539]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionControllerC7E0EDA14DE7F58E75623E9606452B85.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.42.40:998][539]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.42.40:998][539]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.42.51:527][142]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionControllerEEBE320749715C9E3EB4DCBDA985A4FB.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.42.51:548][142]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.42.51:548][142]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.43.09:515][184]LogUObjectHash: Compacting FUObjectHashTables data took   5.29ms
+[2020.09.06-16.43.09:600][184]LogUObjectHash: Compacting FUObjectHashTables data took   0.96ms
+[2020.09.06-16.43.09:732][184]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Title4F6022964356BDF4D46EDB8D5EE37F10.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Title.umap'
+[2020.09.06-16.43.09:770][184]LogEditorTransaction: Non zero active count in UTransBuffer::Reset
+ActiveCount : 1
+SessionName : 
+Reason      : Map Saved
+
+Purging the undo buffer...
+
+[2020.09.06-16.43.09:774][184]LogFileHelpers: Saving map 'Title' took 0.224
+[2020.09.06-16.43.09:884][184]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionController31095D22452DFB72B0561CB6DEA6C6E4.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.43.09:908][184]AssetCheck: New page: Asset Save: multiple assets
+[2020.09.06-16.43.09:909][184]LogContentValidation: Display: Validating World /Game/RobertFunZone/Title.Title
+[2020.09.06-16.43.09:909][184]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.43.11:153][258]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2020.09.06-16.43.28:440][294]LogEditorViewport: Clicking on Actor (LMB): TitleActor_C (TitleActor)
+[2020.09.06-16.43.32:327][411]LogEditorViewport: Clicking on Actor (LMB): TitleActor_C (TitleActor)
+[2020.09.06-16.43.57:829][771]BlueprintLog: New page: Compile TitleActor
+[2020.09.06-16.43.57:926][771]LogUObjectHash: Compacting FUObjectHashTables data took   5.91ms
+[2020.09.06-16.43.58:410][792]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleActorD10E85514308AEC91255ECBE3EADEF71.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleActor.uasset'
+[2020.09.06-16.43.58:427][792]AssetCheck: New page: Asset Save: TitleActor
+[2020.09.06-16.43.58:427][792]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/TitleActor.TitleActor
+[2020.09.06-16.44.06:478][263]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/GunSelectFC30B5DF488A2782774DFA9A49ABAC19.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/GunSelect.uasset'
+[2020.09.06-16.44.06:495][263]AssetCheck: New page: Asset Save: GunSelect
+[2020.09.06-16.44.06:495][263]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GunSelect.GunSelect
+[2020.09.06-16.44.28:758][562]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.09.06-16.45.16:890][371]BlueprintLog: New page: Compile TitleScreen
+[2020.09.06-16.45.17:000][371]LogUObjectHash: Compacting FUObjectHashTables data took   5.94ms
+[2020.09.06-16.45.17:480][394]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleScreen0ABB78B64F277A28081D0A830EBEB27F.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleScreen.uasset'
+[2020.09.06-16.45.17:504][394]AssetCheck: New page: Asset Save: TitleScreen
+[2020.09.06-16.45.17:504][394]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/TitleScreen.TitleScreen
+[2020.09.06-16.45.37:169][539]BlueprintLog: New page: Compile TitleScreen
+[2020.09.06-16.45.37:272][539]LogUObjectHash: Compacting FUObjectHashTables data took   6.09ms
+[2020.09.06-16.45.37:685][559]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleScreen6A4061314BB5CE47849F048DA25FB490.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleScreen.uasset'
+[2020.09.06-16.45.37:703][559]AssetCheck: New page: Asset Save: TitleScreen
+[2020.09.06-16.45.37:703][559]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/TitleScreen.TitleScreen
+[2020.09.06-16.45.49:350][239]BlueprintLog: New page: Compile TitleScreen
+[2020.09.06-16.45.49:456][239]LogUObjectHash: Compacting FUObjectHashTables data took   6.19ms
+[2020.09.06-16.45.49:964][264]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleScreenA1E9A00349488E90529AFD899356ACDD.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleScreen.uasset'
+[2020.09.06-16.45.49:987][264]AssetCheck: New page: Asset Save: TitleScreen
+[2020.09.06-16.45.49:987][264]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/TitleScreen.TitleScreen
+[2020.09.06-16.46.14:159][658]BlueprintLog: New page: Compile TitleScreen
+[2020.09.06-16.46.14:264][658]LogUObjectHash: Compacting FUObjectHashTables data took   5.59ms
+[2020.09.06-16.46.14:675][677]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleScreen1EBD051748A20215124F858353E93B83.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleScreen.uasset'
+[2020.09.06-16.46.14:692][677]AssetCheck: New page: Asset Save: TitleScreen
+[2020.09.06-16.46.14:692][677]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/TitleScreen.TitleScreen
+[2020.09.06-16.46.18:856][912]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleScreen05E45D6C41559FD96882A884F052C8B0.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleScreen.uasset'
+[2020.09.06-16.46.18:876][912]AssetCheck: New page: Asset Save: TitleScreen
+[2020.09.06-16.46.18:876][912]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/TitleScreen.TitleScreen
+[2020.09.06-16.47.04:214][455]LogUObjectHash: Compacting FUObjectHashTables data took   6.22ms
+[2020.09.06-16.47.04:243][455]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Title4C53BEB84CC1ECFDECCA259D397FE911.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Title.umap'
+[2020.09.06-16.47.04:302][455]AssetCheck: New page: Asset Save: Title
+[2020.09.06-16.47.04:302][455]LogContentValidation: Display: Validating World /Game/RobertFunZone/Title.Title
+[2020.09.06-16.47.19:630][342]BlueprintLog: New page: Compile WeaponSelectActor
+[2020.09.06-16.47.19:722][342]LogUObjectHash: Compacting FUObjectHashTables data took   4.68ms
+[2020.09.06-16.47.20:147][359]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/WeaponSelectActor70D0B998498C7568FF3813AB528E8940.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/WeaponSelectActor.uasset'
+[2020.09.06-16.47.20:167][359]AssetCheck: New page: Asset Save: WeaponSelectActor
+[2020.09.06-16.47.20:167][359]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/WeaponSelectActor.WeaponSelectActor
+[2020.09.06-16.47.33:439][137]LogUObjectHash: Compacting FUObjectHashTables data took   5.48ms
+[2020.09.06-16.47.33:465][137]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Title675C2F414A5271F13590CDA178C1E178.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Title.umap'
+[2020.09.06-16.47.33:519][137]AssetCheck: New page: Asset Save: Title
+[2020.09.06-16.47.33:519][137]LogContentValidation: Display: Validating World /Game/RobertFunZone/Title.Title
+[2020.09.06-16.47.41:568][608]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.09.06-16.47.41:593][608]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleFD7DEC7D44C6B6C9BE41598AE52FB0DE.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Title.umap'
+[2020.09.06-16.47.41:652][608]AssetCheck: New page: Asset Save: Title
+[2020.09.06-16.47.41:652][608]LogContentValidation: Display: Validating World /Game/RobertFunZone/Title.Title
+[2020.09.06-16.47.42:247][644]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2020.09.06-16.47.42:868][680]LogEditorViewport: Clicking on Actor (LMB): TitleActor_C (TitleActor)
+[2020.09.06-16.47.46:535][889]LogUObjectHash: Compacting FUObjectHashTables data took   3.38ms
+[2020.09.06-16.47.46:562][889]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Title5EACF9EE46952C5D22EE899B3AFD05C1.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Title.umap'
+[2020.09.06-16.47.46:619][889]AssetCheck: New page: Asset Save: Title
+[2020.09.06-16.47.46:619][889]LogContentValidation: Display: Validating World /Game/RobertFunZone/Title.Title
+[2020.09.06-16.48.30:718][252]LogUObjectHash: Compacting FUObjectHashTables data took   3.17ms
+[2020.09.06-16.48.58:301][802]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/TitleScreenF4FF79D749BED414B1E19EA6B905A31D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/TitleScreen.uasset'
+[2020.09.06-16.48.58:319][802]AssetCheck: New page: Asset Save: TitleScreen
+[2020.09.06-16.48.58:319][802]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/TitleScreen.TitleScreen
+[2020.09.06-16.49.27:081][443]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/BP_MotionController79E5C6D940C2191A0216B0AC2A5758CE.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.09.06-16.49.27:104][443]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.09.06-16.49.27:104][443]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.09.06-16.49.30:731][646]LogSlate: Window 'BP_MotionController' being destroyed
+[2020.09.06-16.49.30:735][646]LogSlate: Window 'BP_MotionController' being destroyed
+[2020.09.06-16.49.30:762][646]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.30:762][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.30:901][646]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.30:901][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.30:970][646]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.30:970][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.31:022][646]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.31:022][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.31:045][646]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.31:046][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.31:098][646]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.31:098][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.31:104][646]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.31:105][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.31:176][646]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.09.06-16.49.31:176][646]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.31:177][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.31:246][646]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.09.06-16.49.31:246][646]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.31:246][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.31:329][646]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.09.06-16.49.31:329][646]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-16.49.31:329][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-16.49.34:466][818]LogUObjectHash: Compacting FUObjectHashTables data took   4.26ms
