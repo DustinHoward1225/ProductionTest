@@ -7013,3 +7013,13 @@ Purging the undo buffer...
 [2020.09.06-17.48.16:150][856]OBJ SavePackage: Finished generating thumbnails for package [/Game/RobertFunZone/Characters/EnemyBase]
 [2020.09.06-17.48.16:191][856]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase_Auto39E4AAE724125B564A428BB8CB93BA381.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Autosaves/Game/RobertFunZone/Characters/EnemyBase_Auto3.uasset'
 [2020.09.06-17.48.16:192][856]LogFileHelpers: Auto-saving content packages took 0.043
+[2020.09.06-17.48.44:834][198]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2020.09.06-17.48.46:147][198]LogSlate: Window 'Save Content' being destroyed
+[2020.09.06-17.48.48:140][299]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2020.09.06-17.48.48:203][299]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2020.09.06-17.48.48:233][299]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Title61D2B41D4B31D29F22F92199E0675E5F.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Title.umap'
+[2020.09.06-17.48.48:380][299]LogFileHelpers: Saving map 'Title' took 0.209
+[2020.09.06-17.48.48:413][299]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase207A4FFF4240CFDCC915E6883631C062.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.09.06-17.48.48:441][299]AssetCheck: New page: Asset Save: multiple assets
+[2020.09.06-17.48.48:441][299]LogContentValidation: Display: Validating World /Game/RobertFunZone/Title.Title
+[2020.09.06-17.48.48:441][299]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
