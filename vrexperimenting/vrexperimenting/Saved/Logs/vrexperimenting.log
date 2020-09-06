@@ -6702,3 +6702,314 @@ Purging the undo buffer...
 [2020.09.06-16.49.31:329][646]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
 [2020.09.06-16.49.31:329][646]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
 [2020.09.06-16.49.34:466][818]LogUObjectHash: Compacting FUObjectHashTables data took   4.26ms
+[2020.09.06-17.03.09:936][782]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2020.09.06-17.03.10:679][825]Cmd: SELECT NONE
+[2020.09.06-17.16.28:603][343]LogPackageName: SearchForPackageOnDisk took   0.000s, but failed to resolve /Game/RobertFunZone/UI/Cooldown.
+[2020.09.06-17.16.31:300][496]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.16.35:565][708]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.16.35:741][708]LogUObjectHash: Compacting FUObjectHashTables data took   6.63ms
+[2020.09.06-17.16.38:956][879]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/RobertFunZone/UI/HealthBar.HealthBar
+[2020.09.06-17.16.55:709][660]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.16.55:736][660]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2020.09.06-17.17.02:826][ 30]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.17.02:854][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   3.60ms
+[2020.09.06-17.17.03:583][ 62]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown2785E9DC4B2FB63E6B8774AD6CEB65E2.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.17.03:594][ 62]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/RobertFunZone/UI/Cooldown.
+[2020.09.06-17.17.03:606][ 62]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.17.03:606][ 62]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.17.08:655][347]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.17.08:682][347]LogUObjectHash: Compacting FUObjectHashTables data took   2.50ms
+[2020.09.06-17.17.09:275][377]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/CooldownB8089D274D8A9DEB036C36BEF9B36540.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.17.09:293][377]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.17.09:293][377]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.17.22:676][166]LogSlate: Took 0.000315 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2020.09.06-17.17.51:228][839]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.17.51:258][839]LogUObjectHash: Compacting FUObjectHashTables data took   3.83ms
+[2020.09.06-17.17.51:877][870]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown285A9770486D5794719BABAF515D7056.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.17.51:894][870]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.17.51:894][870]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.18.15:503][270]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.18.15:530][270]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2020.09.06-17.18.16:002][293]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/CooldownE29D860749CBFC2BC57FA09014A9031B.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.18.16:017][293]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.18.16:017][293]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.18.45:986][ 48]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.18.46:014][ 48]LogUObjectHash: Compacting FUObjectHashTables data took   2.50ms
+[2020.09.06-17.18.46:499][ 71]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/CooldownAB7FCB084D969912932B85BBBC70661A.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.18.46:519][ 71]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.18.46:519][ 71]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.19.00:321][863]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/HealthBar0401ADD94756F5DE72D21597CBC70A16.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/HealthBar.uasset'
+[2020.09.06-17.19.00:337][863]AssetCheck: New page: Asset Save: HealthBar
+[2020.09.06-17.19.00:337][863]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/HealthBar.HealthBar
+[2020.09.06-17.19.14:977][716]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.19.15:007][716]LogUObjectHash: Compacting FUObjectHashTables data took   3.06ms
+[2020.09.06-17.19.15:488][739]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown1CAB16AB496A0E2D7A248BBEC879D0C7.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.19.15:508][739]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.19.15:508][739]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.19.39:586][109]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.19.39:619][109]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2020.09.06-17.19.40:435][142]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/CooldownE03916FF4D57A3D6581DCFB4BE7D01FF.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.19.40:451][142]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.19.40:452][142]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.20.10:617][913]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.20.10:659][913]LogUObjectHash: Compacting FUObjectHashTables data took   5.29ms
+[2020.09.06-17.20.11:128][934]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown735BA9D34FFBFE525772B9B108B8F25D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.20.11:144][934]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.20.11:144][934]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.20.32:288][132]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.20.32:316][132]LogUObjectHash: Compacting FUObjectHashTables data took   3.36ms
+[2020.09.06-17.20.32:771][152]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown7D7451124775F553C24BC5B895421179.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.20.32:796][152]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.20.32:796][152]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.20.38:088][450]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown041BE4BF4540160ABEC07C86C5E968B4.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.20.38:106][450]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.20.38:106][450]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.20.43:485][761]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown59580C23497FE2D4CCF99CA4E41CDDA9.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.20.43:506][761]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.20.43:506][761]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.20.43:919][785]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.20.43:920][785]LogBlueprint: Error: [Compiler Cooldown] Binding: Property ' /Script/UMG.ProgressBar:FillColorAndOpacityDelegate ' on Widget ' ProgressBar_93 ': Member:GetFillColorAndOpacity_0 Has the wrong number of arguments, it needs to return 1 value and take no parameters.
+[2020.09.06-17.20.43:950][785]LogUObjectHash: Compacting FUObjectHashTables data took   3.80ms
+[2020.09.06-17.20.58:480][598]LogSlate: Window 'Color Picker' being destroyed
+[2020.09.06-17.21.17:378][966]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.21.17:409][966]LogUObjectHash: Compacting FUObjectHashTables data took   4.38ms
+[2020.09.06-17.21.18:027][988]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown77009DF34AD6BE1A5C38CEA0D60D5E81.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.21.18:043][988]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.21.18:043][988]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.21.50:239][884]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.21.50:268][884]LogUObjectHash: Compacting FUObjectHashTables data took   4.74ms
+[2020.09.06-17.21.50:887][908]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown0132CB944221C0DAFDE823A8ADA88E05.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.21.50:907][908]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.21.50:907][908]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.22.14:720][242]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.22.42:274][828]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderBullet.VeryPlaceholderBullet
+[2020.09.06-17.23.01:523][926]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.09.06-17.23.13:568][593]BlueprintLog: New page: Compile EnemyBase
+[2020.09.06-17.23.13:643][593]LogUObjectHash: Compacting FUObjectHashTables data took   4.43ms
+[2020.09.06-17.23.14:335][619]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBaseADFB4D784F50BD8A9421FBAD408C20BE.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.09.06-17.23.14:352][619]AssetCheck: New page: Asset Save: EnemyBase
+[2020.09.06-17.23.14:352][619]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.09.06-17.23.40:562][132]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.09.06-17.24.03:770][462]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.24.03:886][462]LogUObjectHash: Compacting FUObjectHashTables data took   3.28ms
+[2020.09.06-17.24.04:300][472]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunB18568754FB5C6142283A8A15F176196.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.24.04:320][472]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.24.04:320][472]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.24.10:773][849]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunE3FDE7FA4ECF110A05E5639E5F083B3D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.24.10:791][849]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.24.10:791][849]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.24.18:043][215]LogEditorViewport: Clicking on Actor (LMB): VeryPlaceholderGun_C (VeryPlaceholderGun)
+[2020.09.06-17.24.45:110][717]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.24.45:208][717]LogUObjectHash: Compacting FUObjectHashTables data took   3.26ms
+[2020.09.06-17.24.45:645][728]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun679DFF7547801DFBEDE8D49FCF952C72.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.24.45:663][728]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.24.45:663][728]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.24.54:742][109]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunB992146346635EB50ED13891DE369250.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.24.54:759][109]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.24.54:759][109]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.25.17:444][399]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.25.17:542][399]LogUObjectHash: Compacting FUObjectHashTables data took   3.12ms
+[2020.09.06-17.25.18:084][415]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun435E4C97402EEF40FFBB688DBAA042B0.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.25.18:103][415]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.25.18:103][415]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.26.09:993][289]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.26.10:086][289]LogUObjectHash: Compacting FUObjectHashTables data took   4.25ms
+[2020.09.06-17.26.10:578][302]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunA0CE413B40F16C9754B0488513274731.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.26.10:597][302]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.26.10:597][302]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.26.55:968][823]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.26.56:064][823]LogUObjectHash: Compacting FUObjectHashTables data took   3.17ms
+[2020.09.06-17.26.56:646][841]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun5985A2F0488E5E29769180B78ED9FAEF.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.26.56:664][841]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.26.56:664][841]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.27.58:619][306]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunE5C7C9B943D0BD19B0A8879D04D386D6.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.27.58:638][306]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.27.58:638][306]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.28.16:683][330]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.28.16:775][330]LogUObjectHash: Compacting FUObjectHashTables data took   3.95ms
+[2020.09.06-17.28.17:527][357]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun44934A5C4AA5400D651C38AA066709DC.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.28.17:547][357]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.28.17:548][357]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.28.29:249][998]LogSlate: Window 'Color Picker' being destroyed
+[2020.09.06-17.28.47:953][ 97]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.28.48:057][ 97]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2020.09.06-17.28.48:670][114]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunF95F44554F2C98177790BC8B29D5950E.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.28.48:690][114]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.28.48:690][114]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.30.21:247][376]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.30.21:335][376]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2020.09.06-17.30.21:966][396]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun4B2150F1412B2D5336AC5F8F33874B31.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.30.21:989][396]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.30.21:989][396]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.30.40:958][500]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.30.41:047][500]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2020.09.06-17.30.41:588][514]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun7C3CBAF949EE28EAD897AEABB6803A61.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.30.41:605][514]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.30.41:606][514]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.31.08:516][880]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.31.08:604][880]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2020.09.06-17.31.23:062][684]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.31.23:148][684]LogUObjectHash: Compacting FUObjectHashTables data took   3.25ms
+[2020.09.06-17.31.23:942][715]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun58FBCFAD485595188AA1C4B9B3683A0A.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.31.23:960][715]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.31.23:960][715]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.31.27:214][899]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.31.27:298][899]LogUObjectHash: Compacting FUObjectHashTables data took   3.02ms
+[2020.09.06-17.31.27:813][913]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunD36F60B94ABB3B65707AEAB1DB31A999.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.31.27:836][913]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.31.27:836][913]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.32.41:553][186]BlueprintLog: New page: Compile EnemyBase
+[2020.09.06-17.32.41:635][186]LogUObjectHash: Compacting FUObjectHashTables data took   3.75ms
+[2020.09.06-17.32.42:116][201]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase8662375B438459E684DD519612454E33.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.09.06-17.32.42:134][201]AssetCheck: New page: Asset Save: EnemyBase
+[2020.09.06-17.32.42:134][201]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.09.06-17.33.29:069][886]BlueprintLog: New page: Compile EnemyBase
+[2020.09.06-17.33.29:147][886]LogUObjectHash: Compacting FUObjectHashTables data took   4.91ms
+[2020.09.06-17.33.29:762][909]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase9EABDF1D44B835FB2556A18D8ABBDDAB.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.09.06-17.33.29:788][909]AssetCheck: New page: Asset Save: EnemyBase
+[2020.09.06-17.33.29:788][909]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.09.06-17.33.50:689][138]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase2306E37A4D4D77C46F3A15B8E275AA33.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.09.06-17.33.50:707][138]AssetCheck: New page: Asset Save: EnemyBase
+[2020.09.06-17.33.50:707][138]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.09.06-17.34.02:656][836]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase1842DCC94F691D274B7426AB12892D17.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Characters/EnemyBase.uasset'
+[2020.09.06-17.34.02:679][836]AssetCheck: New page: Asset Save: EnemyBase
+[2020.09.06-17.34.02:679][836]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Characters/EnemyBase.EnemyBase
+[2020.09.06-17.34.54:866][801]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.34.55:163][801]LogUObjectHash: Compacting FUObjectHashTables data took   3.83ms
+[2020.09.06-17.34.55:385][807]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown932BC06C4C7D16205D654682FB553ACD.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.34.55:402][807]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.34.55:402][807]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.35.12:107][768]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.35.12:378][768]LogUObjectHash: Compacting FUObjectHashTables data took   2.96ms
+[2020.09.06-17.35.12:642][777]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Cooldown97CB744B4984D8A630B04590150998B5.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.35.12:660][777]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.35.12:661][777]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.35.34:920][101]BlueprintLog: New page: Compile Cooldown
+[2020.09.06-17.35.35:164][101]LogUObjectHash: Compacting FUObjectHashTables data took   3.69ms
+[2020.09.06-17.35.35:518][115]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/CooldownCA9130AB4AE6A0B8628149B8CE58C81C.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.35.35:541][115]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.35.35:541][115]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.36.06:776][952]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/CooldownDA495A29481FA053B46417A47BA2AF87.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/UI/Cooldown.uasset'
+[2020.09.06-17.36.06:792][952]AssetCheck: New page: Asset Save: Cooldown
+[2020.09.06-17.36.06:792][952]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/Cooldown.Cooldown
+[2020.09.06-17.36.22:923][869]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.36.23:012][869]LogUObjectHash: Compacting FUObjectHashTables data took   3.78ms
+[2020.09.06-17.36.23:658][893]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun6297AD0B4935CAADC8F64F844664B48D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.36.23:680][893]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.36.23:680][893]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.36.38:931][763]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2020.09.06-17.36.38:931][763]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.09.06-17.37.00:496][  2]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.37.00:587][  2]LogUObjectHash: Compacting FUObjectHashTables data took   3.73ms
+[2020.09.06-17.37.01:097][ 19]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun5D75EFB9441EAFCCEB8F2293A1C20DA6.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.37.01:116][ 19]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.37.01:116][ 19]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.37.12:229][673]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.37.12:316][673]LogUObjectHash: Compacting FUObjectHashTables data took   3.70ms
+[2020.09.06-17.37.19:360][ 72]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.37.19:446][ 72]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2020.09.06-17.37.19:924][ 86]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunE04309BF480BFF15D258668E921D2C36.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.37.19:943][ 86]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.37.19:943][ 86]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.37.24:841][357]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.37.24:926][357]LogUObjectHash: Compacting FUObjectHashTables data took   3.44ms
+[2020.09.06-17.37.25:485][377]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunE91DC0254E14E1D4149B7183C9C1F397.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.37.25:506][377]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.37.25:506][377]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.37.32:422][777]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunE2D429E8493078CAC157CB803C0C0F4A.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.37.32:441][777]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.37.32:441][777]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.38.49:076][170]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.38.49:171][170]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2020.09.06-17.38.49:660][183]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunB8AA13A3404473634ADC4485E465226A.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.38.49:684][183]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.38.49:684][183]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.39.35:911][246]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.39.36:005][246]LogUObjectHash: Compacting FUObjectHashTables data took   4.13ms
+[2020.09.06-17.39.36:543][263]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun0AD6B42A4F8132649906E79E30F94D0B.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.39.36:566][263]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.39.36:566][263]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.39.48:498][901]LogSlate: Window 'Color Picker' being destroyed
+[2020.09.06-17.40.12:025][275]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.40.12:135][275]LogUObjectHash: Compacting FUObjectHashTables data took   3.49ms
+[2020.09.06-17.40.12:606][287]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunA1C09F654DFB142C1306CF8D87D0D1BB.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.40.12:628][287]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.40.12:628][287]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.40.16:182][481]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunA657ADAB423C94B3CD44AAB86F70B198.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.40.16:209][481]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.40.16:209][481]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.41.01:408][ 24]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.41.01:508][ 24]LogUObjectHash: Compacting FUObjectHashTables data took   4.62ms
+[2020.09.06-17.41.01:961][ 36]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun7AECFCC64E6DCAC6917909BE3AFD9603.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.41.01:984][ 36]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.41.01:984][ 36]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.41.09:989][503]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun832D0CFF49D77AD00E4F0380F136D5F0.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.41.10:004][503]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.41.10:004][503]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.42.14:671][230]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.42.14:766][230]LogUObjectHash: Compacting FUObjectHashTables data took   5.36ms
+[2020.09.06-17.42.15:345][249]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun17121DDC49ED595F225D6291AFC1CF84.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.42.15:364][249]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.42.15:364][249]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.42.37:114][460]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.42.37:210][460]LogUObjectHash: Compacting FUObjectHashTables data took   4.90ms
+[2020.09.06-17.42.37:652][471]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun3ECD44254D66AE8DCBECD2A774D12C41.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.42.37:671][471]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.42.37:672][471]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.43.27:220][266]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.43.27:319][266]LogUObjectHash: Compacting FUObjectHashTables data took   3.56ms
+[2020.09.06-17.43.27:917][286]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunFE0319BE47AAA3951A4BD4AD74E31C3D.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.43.27:936][286]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.43.27:936][286]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.43.47:002][357]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.43.47:101][357]LogUObjectHash: Compacting FUObjectHashTables data took   4.65ms
+[2020.09.06-17.43.47:584][370]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun298437894370F44EC8A5E2A28C381AFA.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.43.47:605][370]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.43.47:605][370]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.44.07:093][478]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.44.07:190][478]LogUObjectHash: Compacting FUObjectHashTables data took   5.29ms
+[2020.09.06-17.44.07:653][489]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun566A846D41636FC6B6E5CBAA0629C916.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.44.07:677][489]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.44.07:677][489]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.44.29:050][716]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun222642D84147A0236F72C4B50A37512F.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.44.29:070][716]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.44.29:070][716]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.45.03:515][642]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.45.03:614][642]LogUObjectHash: Compacting FUObjectHashTables data took   4.83ms
+[2020.09.06-17.45.04:093][653]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun8E0B4E084273B7F6027A7984485BBCA7.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.45.04:118][653]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.45.04:118][653]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.45.08:311][891]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.45.08:409][891]LogUObjectHash: Compacting FUObjectHashTables data took   4.67ms
+[2020.09.06-17.45.09:118][917]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunF4F0994E43F6BD5DD9844BAE39A4BAE7.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.45.09:139][917]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.45.09:139][917]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.45.52:135][408]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.45.52:232][408]LogUObjectHash: Compacting FUObjectHashTables data took   3.71ms
+[2020.09.06-17.45.52:723][423]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunDFCB68AF4B3045C8B0AC32A20C48FDCB.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.45.52:740][423]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.45.52:740][423]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.46.28:181][448]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.46.28:282][448]LogUObjectHash: Compacting FUObjectHashTables data took   3.48ms
+[2020.09.06-17.46.28:832][464]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun87CC3C3143360525FEF5918B83A29C54.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.46.28:851][464]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.46.28:851][464]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.47.04:735][496]BlueprintLog: New page: Compile VeryPlaceholderGun
+[2020.09.06-17.47.04:838][496]LogUObjectHash: Compacting FUObjectHashTables data took   3.49ms
+[2020.09.06-17.47.05:322][510]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunD2AC980F49CFD9425441AA8EABD2A26B.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.47.05:341][510]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.47.05:341][510]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.47.18:365][879]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGun1674321D4798F25E8F1EC599210E8470.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.47.18:385][879]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.47.18:385][879]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.47.51:081][774]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/VeryPlaceholderGunC5A89CDE40F2774250682DB3B42020C6.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Content/RobertFunZone/Gun/VeryPlaceholderGun.uasset'
+[2020.09.06-17.47.51:102][774]AssetCheck: New page: Asset Save: VeryPlaceholderGun
+[2020.09.06-17.47.51:102][774]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/Gun/VeryPlaceholderGun.VeryPlaceholderGun
+[2020.09.06-17.48.16:102][856]LogUObjectHash: Compacting FUObjectHashTables data took   3.10ms
+[2020.09.06-17.48.16:147][856]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Title_Auto33648CF45488CE524EA03959DC44DDB71.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Autosaves/Game/RobertFunZone/Title_Auto3.umap'
+[2020.09.06-17.48.16:148][856]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/RobertFunZone/Title' took 0.078
+[2020.09.06-17.48.16:148][856]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.078
+[2020.09.06-17.48.16:150][856]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/RobertFunZone/Characters/EnemyBase] ([1] browsable assets)...
+[2020.09.06-17.48.16:150][856]OBJ SavePackage: Finished generating thumbnails for package [/Game/RobertFunZone/Characters/EnemyBase]
+[2020.09.06-17.48.16:191][856]LogSavePackage: Moving '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/EnemyBase_Auto39E4AAE724125B564A428BB8CB93BA381.tmp' to '../../../../../../GitHub/ProductionVR/ProductionTest/vrexperimenting/vrexperimenting/Saved/Autosaves/Game/RobertFunZone/Characters/EnemyBase_Auto3.uasset'
+[2020.09.06-17.48.16:192][856]LogFileHelpers: Auto-saving content packages took 0.043
