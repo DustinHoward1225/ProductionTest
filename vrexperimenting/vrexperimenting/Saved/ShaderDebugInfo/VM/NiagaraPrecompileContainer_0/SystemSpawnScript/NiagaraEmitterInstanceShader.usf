@@ -486,7 +486,7 @@ struct FParamMap0_Engine_Owner
 	float3 Position;
 };
 
-struct FParamMap0_Engine_Empty
+struct FParamMap0_Engine_EmitterA
 {
 	int NumParticles;
 };
@@ -500,19 +500,26 @@ struct FParamMap0_Engine
 {
 	float DeltaTime;
 	FParamMap0_Engine_Emitter Emitter;
-	FParamMap0_Engine_Empty Empty;
+	FParamMap0_Engine_EmitterA EmitterA;
 	float InverseDeltaTime;
 	FParamMap0_Engine_Owner Owner;
 	float RealTime;
 	float Time;
 };
 
-struct FParamMap0_Empty_Scalability
+struct FParamMap0_EmitterState
+{
+	float LoopDelay;
+	float LoopDuration;
+	bool RecalculateDurationEachLoop;
+};
+
+struct FParamMap0_EmitterA_Scalability
 {
 	float DistanceFraction;
 };
 
-struct FParamMap0_Empty
+struct FParamMap0_EmitterA
 {
 	float Age;
 	float CurrentLoopDuration;
@@ -522,14 +529,7 @@ struct FParamMap0_Empty
 	int LoopCount;
 	float LoopedAge;
 	float NormalizedLoopAge;
-	FParamMap0_Empty_Scalability Scalability;
-};
-
-struct FParamMap0_EmitterState
-{
-	float LoopDelay;
-	float LoopDuration;
-	bool RecalculateDurationEachLoop;
+	FParamMap0_EmitterA_Scalability Scalability;
 };
 
 struct FParamMap0_Emitter
@@ -546,8 +546,8 @@ struct FParamMap0
 {
 	FParamMap0_DataInstance DataInstance;
 	FParamMap0_Emitter Emitter;
+	FParamMap0_EmitterA EmitterA;
 	FParamMap0_EmitterState EmitterState;
-	FParamMap0_Empty Empty;
 	FParamMap0_Engine Engine;
 	FParamMap0_InitializeParticle InitializeParticle;
 	FParamMap0_Local Local;
@@ -565,9 +565,9 @@ struct FSimulationContext
 };
 
 static float HackSpawnInterp = 1.0;
-void Empty_Func_(inout FSimulationContext Context);
+void EmitterA_Func_(inout FSimulationContext Context);
 float GetSpawnInterpolation();
-void Empty_Func_(inout FSimulationContext Context)
+void EmitterA_Func_(inout FSimulationContext Context)
 {
 
 }
@@ -590,27 +590,27 @@ void Simulate(inout FSimulationContext Context)
 	EnterStatScope(0 );
 
 	int Constant = 0;
-	Context.Map.Empty.ExecutionState = Constant;
+	Context.Map.EmitterA.ExecutionState = Constant;
 	float Constant1 = 0;
-	Context.Map.Empty.Age = Constant1;
+	Context.Map.EmitterA.Age = Constant1;
 	float Constant2 = 0;
-	Context.Map.Empty.CurrentLoopDuration = Constant2;
+	Context.Map.EmitterA.CurrentLoopDuration = Constant2;
 	float Constant3 = 0;
-	Context.Map.Empty.LoopedAge = Constant3;
+	Context.Map.EmitterA.LoopedAge = Constant3;
 	int Constant4 = 0;
-	Context.Map.Empty.LoopCount = Constant4;
+	Context.Map.EmitterA.LoopCount = Constant4;
 	float Constant5 = (0.0);
-	Context.Map.Empty.NormalizedLoopAge = Constant5;
+	Context.Map.EmitterA.NormalizedLoopAge = Constant5;
 	float Constant6 = (0.0);
-	Context.Map.Empty.Scalability.DistanceFraction = Constant6;
+	Context.Map.EmitterA.Scalability.DistanceFraction = Constant6;
 	int Constant7 = 0;
 	Context.Map.System.ExecutionState = Constant7;
 	int Constant8 = 0;
 	Context.Map.System.ExecutionStateSource = Constant8;
 	int Constant9 = 0;
-	Context.Map.Empty.ExecutionStateSource = Constant9;
+	Context.Map.EmitterA.ExecutionStateSource = Constant9;
 	bool Constant10 = false;
-	Context.Map.Empty.LocalSpace = Constant10;
+	Context.Map.EmitterA.LocalSpace = Constant10;
 	float Constant11 = 0;
 	Context.Map.System.Age = Constant11;
 	float Constant12 = 0;
@@ -625,7 +625,7 @@ void Simulate(inout FSimulationContext Context)
 	Context.Map.System.bCompleteOnInactive = Constant16;
 
 	EnterStatScope(1 );
-	Empty_Func_(Context);
+	EmitterA_Func_(Context);
 	ExitStatScope( );
 
 
@@ -639,15 +639,15 @@ EnterStatScope(2 );
 
 	FSimulationContext Context = (FSimulationContext)0;
 	Context.Map.Emitter.RandomSeed = 0;
-	Context.Map.Empty.Age = 0.0f;
-	Context.Map.Empty.CurrentLoopDuration = 0.0f;
-	Context.Map.Empty.ExecutionState = 0;
-	Context.Map.Empty.ExecutionStateSource = 0;
-	Context.Map.Empty.LocalSpace = false;
-	Context.Map.Empty.LoopCount = 0;
-	Context.Map.Empty.LoopedAge = 0.0f;
-	Context.Map.Empty.NormalizedLoopAge = 0.0f;
-	Context.Map.Empty.Scalability.DistanceFraction = 0.0f;
+	Context.Map.EmitterA.Age = 0.0f;
+	Context.Map.EmitterA.CurrentLoopDuration = 0.0f;
+	Context.Map.EmitterA.ExecutionState = 0;
+	Context.Map.EmitterA.ExecutionStateSource = 0;
+	Context.Map.EmitterA.LocalSpace = false;
+	Context.Map.EmitterA.LoopCount = 0;
+	Context.Map.EmitterA.LoopedAge = 0.0f;
+	Context.Map.EmitterA.NormalizedLoopAge = 0.0f;
+	Context.Map.EmitterA.Scalability.DistanceFraction = 0.0f;
 	Context.Map.System.Age = 0.0f;
 	Context.Map.System.bCompleteOnInactive = false;
 	Context.Map.System.CurrentLoopDuration = 0.0f;
@@ -664,15 +664,15 @@ EnterStatScope(2 );
 	{
 	int TmpWriteIndex = OutputIndex(0, false, true);
 	OutputDataInt(0, 0, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
-	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.Empty.Age);
-	OutputDataFloat(0, 2, TmpWriteIndex, Context.Map.Empty.CurrentLoopDuration);
-	OutputDataInt(0, 3, TmpWriteIndex, Context.Map.Empty.ExecutionState);
-	OutputDataInt(0, 4, TmpWriteIndex, Context.Map.Empty.ExecutionStateSource);
-	OutputDataBool(0, 5, TmpWriteIndex, Context.Map.Empty.LocalSpace);
-	OutputDataInt(0, 6, TmpWriteIndex, Context.Map.Empty.LoopCount);
-	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.Empty.LoopedAge);
-	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.Empty.NormalizedLoopAge);
-	OutputDataFloat(0, 9, TmpWriteIndex, Context.Map.Empty.Scalability.DistanceFraction);
+	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.EmitterA.Age);
+	OutputDataFloat(0, 2, TmpWriteIndex, Context.Map.EmitterA.CurrentLoopDuration);
+	OutputDataInt(0, 3, TmpWriteIndex, Context.Map.EmitterA.ExecutionState);
+	OutputDataInt(0, 4, TmpWriteIndex, Context.Map.EmitterA.ExecutionStateSource);
+	OutputDataBool(0, 5, TmpWriteIndex, Context.Map.EmitterA.LocalSpace);
+	OutputDataInt(0, 6, TmpWriteIndex, Context.Map.EmitterA.LoopCount);
+	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.EmitterA.LoopedAge);
+	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.EmitterA.NormalizedLoopAge);
+	OutputDataFloat(0, 9, TmpWriteIndex, Context.Map.EmitterA.Scalability.DistanceFraction);
 	OutputDataFloat(0, 10, TmpWriteIndex, Context.Map.System.Age);
 	OutputDataBool(0, 11, TmpWriteIndex, Context.Map.System.bCompleteOnInactive);
 	OutputDataFloat(0, 12, TmpWriteIndex, Context.Map.System.CurrentLoopDuration);
