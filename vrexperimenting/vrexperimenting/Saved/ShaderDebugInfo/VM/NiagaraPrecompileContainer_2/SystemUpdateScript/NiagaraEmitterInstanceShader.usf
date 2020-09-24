@@ -371,11 +371,11 @@ cbuffer FNiagaraExternalParameters
 {
 	float Constants_SystemState_LoopDelay;
 	float Constants_SystemState_LoopDuration;
-	float Constants_D_Dust_Emitter_EmitterState_LoopDuration;
-	float Constants_D_Dust_Emitter_EmitterState_LoopDelay;
-	float Constants_D_Dust_Emitter_SpawnRate_SpawnRate;
-	int Constants_D_Dust_Emitter_SpawnRate_SpawnGroup;
-	float Constants_D_Dust_Emitter_SpawnRate_SpawnProbability;
+	float Constants_Reverse_Emitter_EmitterState_LoopDuration;
+	float Constants_Reverse_Emitter_EmitterState_LoopDelay;
+	float Constants_Reverse_Emitter_SpawnRate_SpawnRate;
+	int Constants_Reverse_Emitter_SpawnRate_SpawnGroup;
+	float Constants_Reverse_Emitter_SpawnRate_SpawnProbability;
 	int Emitter_RandomSeed;
 }
 
@@ -501,6 +501,31 @@ struct FParamMap0_ScaleColor
 	float4 ColorValueToScale;
 	float ScaleAlpha;
 	float3 ScaleRGB;
+};
+
+struct FParamMap0_Reverse_Emitter_SpawnRate
+{
+	NiagaraSpawnInfo SpawnOutputInfo;
+	float SpawnRemainder;
+};
+
+struct FParamMap0_Reverse_Emitter_Scalability
+{
+	float DistanceFraction;
+};
+
+struct FParamMap0_Reverse_Emitter
+{
+	float Age;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	bool LocalSpace;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+	FParamMap0_Reverse_Emitter_Scalability Scalability;
+	FParamMap0_Reverse_Emitter_SpawnRate SpawnRate;
 };
 
 struct FParamMap0_ParticleState
@@ -642,6 +667,12 @@ struct FParamMap0_FloatFromCurve
 	float ScaleCurve;
 };
 
+struct FParamMap0_Engine_Reverse_Emitter
+{
+	int NumParticles;
+	float SpawnCountScale;
+};
+
 struct FParamMap0_Engine_Owner
 {
 	int ExecutionState;
@@ -658,20 +689,14 @@ struct FParamMap0_Engine_Emitter
 	int TotalSpawnedParticles;
 };
 
-struct FParamMap0_Engine_D_Dust_Emitter
-{
-	int NumParticles;
-	float SpawnCountScale;
-};
-
 struct FParamMap0_Engine
 {
-	FParamMap0_Engine_D_Dust_Emitter D_Dust_Emitter;
 	float DeltaTime;
 	FParamMap0_Engine_Emitter Emitter;
 	float InverseDeltaTime;
 	FParamMap0_Engine_Owner Owner;
 	float RealTime;
+	FParamMap0_Engine_Reverse_Emitter Reverse_Emitter;
 	float Time;
 };
 
@@ -698,59 +723,34 @@ struct FParamMap0_DataInstance
 	bool Alive;
 };
 
-struct FParamMap0_D_Dust_Emitter_SpawnRate
-{
-	NiagaraSpawnInfo SpawnOutputInfo;
-	float SpawnRemainder;
-};
-
-struct FParamMap0_D_Dust_Emitter_Scalability
-{
-	float DistanceFraction;
-};
-
-struct FParamMap0_D_Dust_Emitter
-{
-	float Age;
-	float CurrentLoopDuration;
-	int ExecutionState;
-	int ExecutionStateSource;
-	bool LocalSpace;
-	int LoopCount;
-	float LoopedAge;
-	float NormalizedLoopAge;
-	FParamMap0_D_Dust_Emitter_Scalability Scalability;
-	FParamMap0_D_Dust_Emitter_SpawnRate SpawnRate;
-};
-
 struct FParamMap0_Constants_SystemState
 {
 	float LoopDelay;
 	float LoopDuration;
 };
 
-struct FParamMap0_Constants_D_Dust_Emitter_SpawnRate
+struct FParamMap0_Constants_Reverse_Emitter_SpawnRate
 {
 	int SpawnGroup;
 	float SpawnProbability;
 	float SpawnRate;
 };
 
-struct FParamMap0_Constants_D_Dust_Emitter_EmitterState
+struct FParamMap0_Constants_Reverse_Emitter_EmitterState
 {
 	float LoopDelay;
 	float LoopDuration;
 };
 
-struct FParamMap0_Constants_D_Dust_Emitter
+struct FParamMap0_Constants_Reverse_Emitter
 {
-	FParamMap0_Constants_D_Dust_Emitter_EmitterState EmitterState;
-	FParamMap0_Constants_D_Dust_Emitter_SpawnRate SpawnRate;
+	FParamMap0_Constants_Reverse_Emitter_EmitterState EmitterState;
+	FParamMap0_Constants_Reverse_Emitter_SpawnRate SpawnRate;
 };
 
 struct FParamMap0_Constants
 {
-	FParamMap0_Constants_D_Dust_Emitter D_Dust_Emitter;
+	FParamMap0_Constants_Reverse_Emitter Reverse_Emitter;
 	FParamMap0_Constants_SystemState SystemState;
 };
 
@@ -769,7 +769,6 @@ struct FParamMap0
 {
 	FParamMap0_AddVelocityInCone AddVelocityInCone;
 	FParamMap0_Constants Constants;
-	FParamMap0_D_Dust_Emitter D_Dust_Emitter;
 	FParamMap0_DataInstance DataInstance;
 	FParamMap0_Drag Drag;
 	FParamMap0_Emitter Emitter;
@@ -783,6 +782,7 @@ struct FParamMap0
 	FParamMap0_OUTPUT_VAR OUTPUT_VAR;
 	FParamMap0_Particles Particles;
 	FParamMap0_ParticleState ParticleState;
+	FParamMap0_Reverse_Emitter Reverse_Emitter;
 	FParamMap0_ScaleColor ScaleColor;
 	FParamMap0_SolveForcesAndVelocity SolveForcesAndVelocity;
 	FParamMap0_SpawnRate SpawnRate;
@@ -806,12 +806,12 @@ void SystemState_SystemChangeState002_Func_(int In_NewState, bool In_Condition, 
 void SystemState_SystemChangeState_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
 void SystemState_SystemChangeState001_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
 void SystemState_Func_(inout FSimulationContext Context);
-void EmitterState_EmitterChangeState002_D_Dust_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
-void EmitterState_EmitterChangeState005_D_Dust_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
-void EmitterState_EmitterChangeState003_D_Dust_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
-void EmitterState_D_Dust_Emitter_Func_(inout FSimulationContext Context);
-void SpawnRate_D_Dust_Emitter_Func_(inout FSimulationContext Context);
-void D_Dust_Emitter_Func_(inout FSimulationContext Context);
+void EmitterState_EmitterChangeState002_Reverse_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState005_Reverse_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState003_Reverse_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_Reverse_Emitter_Func_(inout FSimulationContext Context);
+void SpawnRate_Reverse_Emitter_Func_(inout FSimulationContext Context);
+void Reverse_Emitter_Func_(inout FSimulationContext Context);
 float GetSpawnInterpolation();
 void SystemState_SystemChangeState002_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
@@ -947,15 +947,15 @@ void SystemState_Func_(inout FSimulationContext Context)
 	SystemState_SystemChangeState001_Func_(Context.Map.Engine.Owner.ExecutionState, Result15, Constant15, Context);
 }
 
-void EmitterState_EmitterChangeState002_D_Dust_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+void EmitterState_EmitterChangeState002_Reverse_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
 	int Constant27 = 3;
-	bool Result32 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionState != Constant27);
+	bool Result32 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionState != Constant27);
 	int Constant28 = 4;
-	bool Result33 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionState != Constant28);
+	bool Result33 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionState != Constant28);
 	bool Result34 = Result32 && Result33;
 	bool Result35 = In_Condition && Result34;
-	bool Result36 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionStateSource <= In_NewStateSource);
+	bool Result36 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionStateSource <= In_NewStateSource);
 	bool Result37 = Result35 && Result36;
 	int ENiagaraExecutionState_IfResult3;
 	int ENiagaraExecutionStateSource_IfResult3;
@@ -966,22 +966,22 @@ void EmitterState_EmitterChangeState002_D_Dust_Emitter_Func_(int In_NewState, bo
 	}
 	else
 	{
-	ENiagaraExecutionState_IfResult3 = Context.Map.D_Dust_Emitter.ExecutionState;
-	ENiagaraExecutionStateSource_IfResult3 = Context.Map.D_Dust_Emitter.ExecutionStateSource;
+	ENiagaraExecutionState_IfResult3 = Context.Map.Reverse_Emitter.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult3 = Context.Map.Reverse_Emitter.ExecutionStateSource;
 	}
-	Context.Map.D_Dust_Emitter.ExecutionState = ENiagaraExecutionState_IfResult3;
-	Context.Map.D_Dust_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult3;
+	Context.Map.Reverse_Emitter.ExecutionState = ENiagaraExecutionState_IfResult3;
+	Context.Map.Reverse_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult3;
 }
 
-void EmitterState_EmitterChangeState005_D_Dust_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+void EmitterState_EmitterChangeState005_Reverse_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
 	int Constant33 = 3;
-	bool Result41 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionState != Constant33);
+	bool Result41 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionState != Constant33);
 	int Constant34 = 4;
-	bool Result42 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionState != Constant34);
+	bool Result42 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionState != Constant34);
 	bool Result43 = Result41 && Result42;
 	bool Result44 = In_Condition && Result43;
-	bool Result45 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionStateSource <= In_NewStateSource);
+	bool Result45 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionStateSource <= In_NewStateSource);
 	bool Result46 = Result44 && Result45;
 	int ENiagaraExecutionState_IfResult4;
 	int ENiagaraExecutionStateSource_IfResult4;
@@ -992,22 +992,22 @@ void EmitterState_EmitterChangeState005_D_Dust_Emitter_Func_(int In_NewState, bo
 	}
 	else
 	{
-	ENiagaraExecutionState_IfResult4 = Context.Map.D_Dust_Emitter.ExecutionState;
-	ENiagaraExecutionStateSource_IfResult4 = Context.Map.D_Dust_Emitter.ExecutionStateSource;
+	ENiagaraExecutionState_IfResult4 = Context.Map.Reverse_Emitter.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult4 = Context.Map.Reverse_Emitter.ExecutionStateSource;
 	}
-	Context.Map.D_Dust_Emitter.ExecutionState = ENiagaraExecutionState_IfResult4;
-	Context.Map.D_Dust_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult4;
+	Context.Map.Reverse_Emitter.ExecutionState = ENiagaraExecutionState_IfResult4;
+	Context.Map.Reverse_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult4;
 }
 
-void EmitterState_EmitterChangeState003_D_Dust_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+void EmitterState_EmitterChangeState003_Reverse_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
 	int Constant39 = 3;
-	bool Result51 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionState != Constant39);
+	bool Result51 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionState != Constant39);
 	int Constant40 = 4;
-	bool Result52 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionState != Constant40);
+	bool Result52 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionState != Constant40);
 	bool Result53 = Result51 && Result52;
 	bool Result54 = In_Condition && Result53;
-	bool Result55 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionStateSource <= In_NewStateSource);
+	bool Result55 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionStateSource <= In_NewStateSource);
 	bool Result56 = Result54 && Result55;
 	int ENiagaraExecutionState_IfResult5;
 	int ENiagaraExecutionStateSource_IfResult5;
@@ -1018,21 +1018,21 @@ void EmitterState_EmitterChangeState003_D_Dust_Emitter_Func_(int In_NewState, bo
 	}
 	else
 	{
-	ENiagaraExecutionState_IfResult5 = Context.Map.D_Dust_Emitter.ExecutionState;
-	ENiagaraExecutionStateSource_IfResult5 = Context.Map.D_Dust_Emitter.ExecutionStateSource;
+	ENiagaraExecutionState_IfResult5 = Context.Map.Reverse_Emitter.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult5 = Context.Map.Reverse_Emitter.ExecutionStateSource;
 	}
-	Context.Map.D_Dust_Emitter.ExecutionState = ENiagaraExecutionState_IfResult5;
-	Context.Map.D_Dust_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult5;
+	Context.Map.Reverse_Emitter.ExecutionState = ENiagaraExecutionState_IfResult5;
+	Context.Map.Reverse_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult5;
 }
 
-void EmitterState_D_Dust_Emitter_Func_(inout FSimulationContext Context)
+void EmitterState_Reverse_Emitter_Func_(inout FSimulationContext Context)
 {
-	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.D_Dust_Emitter.ExecutionState;
+	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.Reverse_Emitter.ExecutionState;
 	float Constant16 = 0.016667;
-	float Result18 = max(Context.Map.Constants.D_Dust_Emitter.EmitterState.LoopDuration, Constant16);
+	float Result18 = max(Context.Map.Constants.Reverse_Emitter.EmitterState.LoopDuration, Constant16);
 	Context.Map.Local.EmitterState.LoopDuration = Result18;
 	float Constant17 = 0;
-	bool Result19 = NiagaraAll(Context.Map.D_Dust_Emitter.Age == Constant17);
+	bool Result19 = NiagaraAll(Context.Map.Reverse_Emitter.Age == Constant17);
 	float Duration_IfResult1;
 	if(Result19)
 	{
@@ -1040,27 +1040,27 @@ void EmitterState_D_Dust_Emitter_Func_(inout FSimulationContext Context)
 	}
 	else
 	{
-	Duration_IfResult1 = Context.Map.D_Dust_Emitter.CurrentLoopDuration;
+	Duration_IfResult1 = Context.Map.Reverse_Emitter.CurrentLoopDuration;
 	}
 	float Constant18 = 0;
-	Context.Map.D_Dust_Emitter.CurrentLoopDuration = Duration_IfResult1;
+	Context.Map.Reverse_Emitter.CurrentLoopDuration = Duration_IfResult1;
 	Context.Map.EmitterState.LoopDelay = Constant18;
-	float Result20 = Context.Map.D_Dust_Emitter.Age + Context.Map.Engine.DeltaTime;
-	float Result21 = Context.Map.Engine.DeltaTime + Context.Map.D_Dust_Emitter.LoopedAge;
-	float Result22 = Result21 / Context.Map.D_Dust_Emitter.CurrentLoopDuration;
+	float Result20 = Context.Map.Reverse_Emitter.Age + Context.Map.Engine.DeltaTime;
+	float Result21 = Context.Map.Engine.DeltaTime + Context.Map.Reverse_Emitter.LoopedAge;
+	float Result22 = Result21 / Context.Map.Reverse_Emitter.CurrentLoopDuration;
 	int Count1;
 	Count1 = Result22;
 	int Constant19 = 0;
 	int Result23 = max(Count1, Constant19);
-	float Result24 = Result23 * Context.Map.D_Dust_Emitter.CurrentLoopDuration;
+	float Result24 = Result23 * Context.Map.Reverse_Emitter.CurrentLoopDuration;
 	float Result25 = Result21 - Result24;
 	int Constant20 = 0;
 	bool Result26 = NiagaraAll(Result23 > Constant20);
-	int Result27 = Result23 + Context.Map.D_Dust_Emitter.LoopCount;
-	Context.Map.D_Dust_Emitter.Age = Result20;
-	Context.Map.D_Dust_Emitter.LoopedAge = Result25;
+	int Result27 = Result23 + Context.Map.Reverse_Emitter.LoopCount;
+	Context.Map.Reverse_Emitter.Age = Result20;
+	Context.Map.Reverse_Emitter.LoopedAge = Result25;
 	Context.Map.Local.EmitterState.LoopCountIncreased = Result26;
-	Context.Map.D_Dust_Emitter.LoopCount = Result27;
+	Context.Map.Reverse_Emitter.LoopCount = Result27;
 	bool Constant21 = false;
 	Context.Map.EmitterState.RecalculateDurationEachLoop = Constant21;
 	float float_IfResult1;
@@ -1070,36 +1070,36 @@ void EmitterState_D_Dust_Emitter_Func_(inout FSimulationContext Context)
 	}
 	else
 	{
-	float_IfResult1 = Context.Map.D_Dust_Emitter.CurrentLoopDuration;
+	float_IfResult1 = Context.Map.Reverse_Emitter.CurrentLoopDuration;
 	}
 	float CurrentLoopDuration_IfResult1;
 	float LoopedAge_IfResult1;
 	if(Context.Map.Local.EmitterState.LoopCountIncreased)
 	{
 	CurrentLoopDuration_IfResult1 = float_IfResult1;
-	LoopedAge_IfResult1 = Context.Map.D_Dust_Emitter.LoopedAge;
+	LoopedAge_IfResult1 = Context.Map.Reverse_Emitter.LoopedAge;
 	}
 	else
 	{
-	CurrentLoopDuration_IfResult1 = Context.Map.D_Dust_Emitter.CurrentLoopDuration;
-	LoopedAge_IfResult1 = Context.Map.D_Dust_Emitter.LoopedAge;
+	CurrentLoopDuration_IfResult1 = Context.Map.Reverse_Emitter.CurrentLoopDuration;
+	LoopedAge_IfResult1 = Context.Map.Reverse_Emitter.LoopedAge;
 	}
-	Context.Map.D_Dust_Emitter.CurrentLoopDuration = CurrentLoopDuration_IfResult1;
-	Context.Map.D_Dust_Emitter.LoopedAge = LoopedAge_IfResult1;
-	float Result28 = Context.Map.D_Dust_Emitter.LoopedAge / Context.Map.D_Dust_Emitter.CurrentLoopDuration;
-	Context.Map.D_Dust_Emitter.NormalizedLoopAge = Result28;
+	Context.Map.Reverse_Emitter.CurrentLoopDuration = CurrentLoopDuration_IfResult1;
+	Context.Map.Reverse_Emitter.LoopedAge = LoopedAge_IfResult1;
+	float Result28 = Context.Map.Reverse_Emitter.LoopedAge / Context.Map.Reverse_Emitter.CurrentLoopDuration;
+	Context.Map.Reverse_Emitter.NormalizedLoopAge = Result28;
 	float Constant22 = 0;
 	float Constant23 = 1.0001;
 	float Result29 = clamp(Context.Map.Engine.Owner.LODDistanceFraction,Constant22,Constant23);
-	Context.Map.D_Dust_Emitter.Scalability.DistanceFraction = Result29;
+	Context.Map.Reverse_Emitter.Scalability.DistanceFraction = Result29;
 	int Constant24 = 0;
 	Context.Map.Transient.ScalabilityEmitterExecutionState = Constant24;
 	int Constant25 = 0;
-	bool Result30 = NiagaraAll(Context.Map.Engine.D_Dust_Emitter.NumParticles == Constant25);
+	bool Result30 = NiagaraAll(Context.Map.Engine.Reverse_Emitter.NumParticles == Constant25);
 	Context.Map.Local.EmitterState.NoActiveEmitterParticles = Result30;
 	int Constant26 = 0;
 	bool Result31 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant26);
-	EmitterState_EmitterChangeState002_D_Dust_Emitter_Func_(Context.Map.System.ExecutionState, Result31, Context.Map.System.ExecutionStateSource, Context);
+	EmitterState_EmitterChangeState002_Reverse_Emitter_Func_(Context.Map.System.ExecutionState, Result31, Context.Map.System.ExecutionStateSource, Context);
 	int Constant29 = 1;
 	int Constant30 = 0;
 	bool Result38 = NiagaraAll(Context.Map.System.ExecutionState != Constant30);
@@ -1107,31 +1107,31 @@ void EmitterState_D_Dust_Emitter_Func_(inout FSimulationContext Context)
 	bool Result39 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant31);
 	bool Result40 = Result38 && Result39;
 	int Constant32 = 1;
-	EmitterState_EmitterChangeState005_D_Dust_Emitter_Func_(Constant29, Result40, Constant32, Context);
+	EmitterState_EmitterChangeState005_Reverse_Emitter_Func_(Constant29, Result40, Constant32, Context);
 	int Constant35 = 3;
 	int Constant36 = 0;
-	bool Result47 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionState != Constant36);
+	bool Result47 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionState != Constant36);
 	int Constant37 = 0;
-	bool Result48 = NiagaraAll(Context.Map.D_Dust_Emitter.ExecutionStateSource != Constant37);
+	bool Result48 = NiagaraAll(Context.Map.Reverse_Emitter.ExecutionStateSource != Constant37);
 	bool Result49 = Result47 && Result48;
 	bool Result50 = Context.Map.Local.EmitterState.NoActiveEmitterParticles && Result49;
 	int Constant38 = 3;
-	EmitterState_EmitterChangeState003_D_Dust_Emitter_Func_(Constant35, Result50, Constant38, Context);
+	EmitterState_EmitterChangeState003_Reverse_Emitter_Func_(Constant35, Result50, Constant38, Context);
 }
 
-void SpawnRate_D_Dust_Emitter_Func_(inout FSimulationContext Context)
+void SpawnRate_Reverse_Emitter_Func_(inout FSimulationContext Context)
 {
 	float Constant41 = 1;
 	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant41;
-	float Result57 = Context.Map.Constants.D_Dust_Emitter.SpawnRate.SpawnRate * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.D_Dust_Emitter.SpawnCountScale;
+	float Result57 = Context.Map.Constants.Reverse_Emitter.SpawnRate.SpawnRate * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.Reverse_Emitter.SpawnCountScale;
 	float Result58 = Reciprocal(Result57);
-	float Result59 = 1 - Context.Map.D_Dust_Emitter.SpawnRate.SpawnRemainder;
+	float Result59 = 1 - Context.Map.Reverse_Emitter.SpawnRate.SpawnRemainder;
 	float Result60 = Result58 * Result59;
 	Context.Map.Local.SpawnRate.SpawnRate = Result57;
 	Context.Map.Local.SpawnRate.IntervalDT = Result58;
 	Context.Map.Local.SpawnRate.InterpStartDT = Result60;
 	float Constant42 = 0;
-	bool Result61 = NiagaraAll(Context.Map.D_Dust_Emitter.LoopedAge >= Constant42);
+	bool Result61 = NiagaraAll(Context.Map.Reverse_Emitter.LoopedAge >= Constant42);
 	float Constant43 = 1;
 	float Constant44 = 0;
 	float float_IfResult2;
@@ -1144,28 +1144,28 @@ void SpawnRate_D_Dust_Emitter_Func_(inout FSimulationContext Context)
 	float_IfResult2 = Constant44;
 	}
 	float Result62 = Context.Map.Local.SpawnRate.SpawnRate * float_IfResult2;
-	float Result63 = Result62 * Context.Map.Engine.DeltaTime + Context.Map.D_Dust_Emitter.SpawnRate.SpawnRemainder;
+	float Result63 = Result62 * Context.Map.Engine.DeltaTime + Context.Map.Reverse_Emitter.SpawnRate.SpawnRemainder;
 	float Result64 = floor(Result63);
 	float Result65 = Result63 - Result64;
 	Context.Map.Local.SpawnRate.SpawnCount = Result64;
-	Context.Map.D_Dust_Emitter.SpawnRate.SpawnRemainder = Result65;
+	Context.Map.Reverse_Emitter.SpawnRate.SpawnRemainder = Result65;
 	NiagaraSpawnInfo Output1;
 	Output1.Count = Context.Map.Local.SpawnRate.SpawnCount;
 	Output1.InterpStartDt = Context.Map.Local.SpawnRate.InterpStartDT;
 	Output1.IntervalDt = Context.Map.Local.SpawnRate.IntervalDT;
-	Output1.SpawnGroup = Context.Map.Constants.D_Dust_Emitter.SpawnRate.SpawnGroup;
+	Output1.SpawnGroup = Context.Map.Constants.Reverse_Emitter.SpawnRate.SpawnGroup;
 	bool Constant45 = true;
-	Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo = Output1;
+	Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo = Output1;
 	Context.Map.Transient.SpawningbCanEverSpawn = Constant45;
 }
 
-void D_Dust_Emitter_Func_(inout FSimulationContext Context)
+void Reverse_Emitter_Func_(inout FSimulationContext Context)
 {
 	EnterStatScope(3 );
-	EmitterState_D_Dust_Emitter_Func_(Context);
+	EmitterState_Reverse_Emitter_Func_(Context);
 	ExitStatScope( );
 	EnterStatScope(4 );
-	SpawnRate_D_Dust_Emitter_Func_(Context);
+	SpawnRate_Reverse_Emitter_Func_(Context);
 	ExitStatScope( );
 }
 
@@ -1197,7 +1197,7 @@ void Simulate(inout FSimulationContext Context)
 	SystemState_Func_(Context);
 	ExitStatScope( );
 	EnterStatScope(2 );
-	D_Dust_Emitter_Func_(Context);
+	Reverse_Emitter_Func_(Context);
 	ExitStatScope( );
 	ExitStatScope( );
 }
@@ -1206,21 +1206,21 @@ void SimulateMain()
 EnterStatScope(5 );
 
 	FSimulationContext Context = (FSimulationContext)0;
-	Context.Map.D_Dust_Emitter.Age = InputDataFloat(0, 0);
-	Context.Map.D_Dust_Emitter.CurrentLoopDuration = InputDataFloat(0, 1);
-	Context.Map.D_Dust_Emitter.ExecutionState = InputDataInt(0, 2);
-	Context.Map.D_Dust_Emitter.ExecutionStateSource = InputDataInt(0, 3);
-	Context.Map.D_Dust_Emitter.LocalSpace = InputDataBool(0, 4);
-	Context.Map.D_Dust_Emitter.LoopCount = InputDataInt(0, 5);
-	Context.Map.D_Dust_Emitter.LoopedAge = InputDataFloat(0, 6);
-	Context.Map.D_Dust_Emitter.NormalizedLoopAge = InputDataFloat(0, 7);
-	Context.Map.D_Dust_Emitter.Scalability.DistanceFraction = InputDataFloat(0, 8);
-	Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.Count = 0;
-	Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.InterpStartDt = 0.0f;
-	Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.IntervalDt = 0.0f;
-	Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.SpawnGroup = 0;
-	Context.Map.D_Dust_Emitter.SpawnRate.SpawnRemainder = InputDataFloat(0, 13);
-	Context.Map.Emitter.RandomSeed = InputDataInt(0, 14);
+	Context.Map.Emitter.RandomSeed = InputDataInt(0, 0);
+	Context.Map.Reverse_Emitter.Age = InputDataFloat(0, 1);
+	Context.Map.Reverse_Emitter.CurrentLoopDuration = InputDataFloat(0, 2);
+	Context.Map.Reverse_Emitter.ExecutionState = InputDataInt(0, 3);
+	Context.Map.Reverse_Emitter.ExecutionStateSource = InputDataInt(0, 4);
+	Context.Map.Reverse_Emitter.LocalSpace = InputDataBool(0, 5);
+	Context.Map.Reverse_Emitter.LoopCount = InputDataInt(0, 6);
+	Context.Map.Reverse_Emitter.LoopedAge = InputDataFloat(0, 7);
+	Context.Map.Reverse_Emitter.NormalizedLoopAge = InputDataFloat(0, 8);
+	Context.Map.Reverse_Emitter.Scalability.DistanceFraction = InputDataFloat(0, 9);
+	Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.Count = 0;
+	Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.InterpStartDt = 0.0f;
+	Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.IntervalDt = 0.0f;
+	Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.SpawnGroup = 0;
+	Context.Map.Reverse_Emitter.SpawnRate.SpawnRemainder = InputDataFloat(0, 14);
 	Context.Map.System.Age = InputDataFloat(0, 15);
 	Context.Map.System.bCompleteOnInactive = InputDataBool(0, 16);
 	Context.Map.System.CurrentLoopDuration = InputDataFloat(0, 17);
@@ -1229,40 +1229,40 @@ EnterStatScope(5 );
 	Context.Map.System.LoopCount = InputDataInt(0, 20);
 	Context.Map.System.LoopedAge = InputDataFloat(0, 21);
 	Context.Map.System.NormalizedLoopAge = InputDataFloat(0, 22);
-	Context.Map.Engine.D_Dust_Emitter.NumParticles = InputDataInt(1, 0);
-	Context.Map.Engine.D_Dust_Emitter.SpawnCountScale = InputDataFloat(1, 1);
-	Context.Map.Engine.Emitter.TotalSpawnedParticles = InputDataInt(1, 2);
-	Context.Map.Engine.Owner.ExecutionState = InputDataInt(1, 3);
-	Context.Map.Engine.Owner.LODDistanceFraction = InputDataFloat(1, 4);
+	Context.Map.Engine.Emitter.TotalSpawnedParticles = InputDataInt(1, 0);
+	Context.Map.Engine.Owner.ExecutionState = InputDataInt(1, 1);
+	Context.Map.Engine.Owner.LODDistanceFraction = InputDataFloat(1, 2);
+	Context.Map.Engine.Reverse_Emitter.NumParticles = InputDataInt(1, 3);
+	Context.Map.Engine.Reverse_Emitter.SpawnCountScale = InputDataFloat(1, 4);
 	Context.Map.Constants.SystemState.LoopDelay = Constants_SystemState_LoopDelay;
 	Context.Map.Constants.SystemState.LoopDuration = Constants_SystemState_LoopDuration;
 	Context.Map.Engine.DeltaTime = Engine_DeltaTime;
-	Context.Map.Constants.D_Dust_Emitter.EmitterState.LoopDuration = Constants_D_Dust_Emitter_EmitterState_LoopDuration;
-	Context.Map.Constants.D_Dust_Emitter.EmitterState.LoopDelay = Constants_D_Dust_Emitter_EmitterState_LoopDelay;
-	Context.Map.Constants.D_Dust_Emitter.SpawnRate.SpawnRate = Constants_D_Dust_Emitter_SpawnRate_SpawnRate;
-	Context.Map.Constants.D_Dust_Emitter.SpawnRate.SpawnGroup = Constants_D_Dust_Emitter_SpawnRate_SpawnGroup;
-	Context.Map.Constants.D_Dust_Emitter.SpawnRate.SpawnProbability = Constants_D_Dust_Emitter_SpawnRate_SpawnProbability;
+	Context.Map.Constants.Reverse_Emitter.EmitterState.LoopDuration = Constants_Reverse_Emitter_EmitterState_LoopDuration;
+	Context.Map.Constants.Reverse_Emitter.EmitterState.LoopDelay = Constants_Reverse_Emitter_EmitterState_LoopDelay;
+	Context.Map.Constants.Reverse_Emitter.SpawnRate.SpawnRate = Constants_Reverse_Emitter_SpawnRate_SpawnRate;
+	Context.Map.Constants.Reverse_Emitter.SpawnRate.SpawnGroup = Constants_Reverse_Emitter_SpawnRate_SpawnGroup;
+	Context.Map.Constants.Reverse_Emitter.SpawnRate.SpawnProbability = Constants_Reverse_Emitter_SpawnRate_SpawnProbability;
 	Context.Map.Emitter.RandomSeed = Emitter_RandomSeed;
 	ReadDataSets(Context);
 	Simulate(Context);
 	WriteDataSets(Context);
 	{
 	int TmpWriteIndex = OutputIndex(0, false, true);
-	OutputDataFloat(0, 0, TmpWriteIndex, Context.Map.D_Dust_Emitter.Age);
-	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.D_Dust_Emitter.CurrentLoopDuration);
-	OutputDataInt(0, 2, TmpWriteIndex, Context.Map.D_Dust_Emitter.ExecutionState);
-	OutputDataInt(0, 3, TmpWriteIndex, Context.Map.D_Dust_Emitter.ExecutionStateSource);
-	OutputDataBool(0, 4, TmpWriteIndex, Context.Map.D_Dust_Emitter.LocalSpace);
-	OutputDataInt(0, 5, TmpWriteIndex, Context.Map.D_Dust_Emitter.LoopCount);
-	OutputDataFloat(0, 6, TmpWriteIndex, Context.Map.D_Dust_Emitter.LoopedAge);
-	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.D_Dust_Emitter.NormalizedLoopAge);
-	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.D_Dust_Emitter.Scalability.DistanceFraction);
-	OutputDataInt(0, 9, TmpWriteIndex, Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.Count);
-	OutputDataFloat(0, 10, TmpWriteIndex, Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.InterpStartDt);
-	OutputDataFloat(0, 11, TmpWriteIndex, Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.IntervalDt);
-	OutputDataInt(0, 12, TmpWriteIndex, Context.Map.D_Dust_Emitter.SpawnRate.SpawnOutputInfo.SpawnGroup);
-	OutputDataFloat(0, 13, TmpWriteIndex, Context.Map.D_Dust_Emitter.SpawnRate.SpawnRemainder);
-	OutputDataInt(0, 14, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
+	OutputDataInt(0, 0, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
+	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.Reverse_Emitter.Age);
+	OutputDataFloat(0, 2, TmpWriteIndex, Context.Map.Reverse_Emitter.CurrentLoopDuration);
+	OutputDataInt(0, 3, TmpWriteIndex, Context.Map.Reverse_Emitter.ExecutionState);
+	OutputDataInt(0, 4, TmpWriteIndex, Context.Map.Reverse_Emitter.ExecutionStateSource);
+	OutputDataBool(0, 5, TmpWriteIndex, Context.Map.Reverse_Emitter.LocalSpace);
+	OutputDataInt(0, 6, TmpWriteIndex, Context.Map.Reverse_Emitter.LoopCount);
+	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.Reverse_Emitter.LoopedAge);
+	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.Reverse_Emitter.NormalizedLoopAge);
+	OutputDataFloat(0, 9, TmpWriteIndex, Context.Map.Reverse_Emitter.Scalability.DistanceFraction);
+	OutputDataInt(0, 10, TmpWriteIndex, Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.Count);
+	OutputDataFloat(0, 11, TmpWriteIndex, Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.InterpStartDt);
+	OutputDataFloat(0, 12, TmpWriteIndex, Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.IntervalDt);
+	OutputDataInt(0, 13, TmpWriteIndex, Context.Map.Reverse_Emitter.SpawnRate.SpawnOutputInfo.SpawnGroup);
+	OutputDataFloat(0, 14, TmpWriteIndex, Context.Map.Reverse_Emitter.SpawnRate.SpawnRemainder);
 	OutputDataFloat(0, 15, TmpWriteIndex, Context.Map.System.Age);
 	OutputDataBool(0, 16, TmpWriteIndex, Context.Map.System.bCompleteOnInactive);
 	OutputDataFloat(0, 17, TmpWriteIndex, Context.Map.System.CurrentLoopDuration);
