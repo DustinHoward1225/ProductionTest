@@ -690,3 +690,7 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.10.02-01.30.44:806][359]AssetCheck: New page: Asset Save: multiple assets
 [2020.10.02-01.30.44:806][359]LogContentValidation: Display: Validating World /Game/MadisonsFolder/Env_Map.Env_Map
 [2020.10.02-01.30.44:806][359]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/MadisonsFolder/Env_Map_BuiltData.Env_Map_BuiltData
+[2020.10.02-01.31.30:558][368]LogTexture: Display: Building textures: Texture2D_2 (G8, 128X128)
+[2020.10.02-01.31.30:580][368]LogSlate: Took 0.000158 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.10.02-01.31.38:405][295]LogTexture: Display: Building textures: Texture2D_0 (BGRA8, 256X256)
+[2020.10.02-01.31.38:450][295]LogSlate: WidgetSwitcher ('None') active index changed to 1
