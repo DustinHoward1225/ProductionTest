@@ -2105,7 +2105,8 @@ void GravityForce_Emitter_Func_(inout FSimulationContext Context)
 
 void Drag_Emitter_Func_(inout FSimulationContext Context)
 {
-	Context.MapUpdate.Transient.PhysicsDrag = Context.MapUpdate.Transient.PhysicsDrag;
+	float Result128 = Context.MapUpdate.Constants.Emitter.Drag.Drag + Context.MapUpdate.Transient.PhysicsDrag;
+	Context.MapUpdate.Transient.PhysicsDrag = Result128;
 	Context.MapUpdate.Transient.PhysicsRotationalDrag = Context.MapUpdate.Transient.PhysicsRotationalDrag;
 }
 
@@ -2113,8 +2114,8 @@ void FloatFromCurve_Emitter_Func_(out float Out_Value, inout FSimulationContext 
 {
 	float SampleCurve_EmitterValueScaleFactorFloatCurveOutput_Value;
 	SampleCurve_EmitterValueScaleFactorFloatCurve(Context.MapUpdate.FloatFromCurve.CurveIndex, SampleCurve_EmitterValueScaleFactorFloatCurveOutput_Value);
-	float Result128 = SampleCurve_EmitterValueScaleFactorFloatCurveOutput_Value * Context.MapUpdate.Constants.Emitter.FloatFromCurve.ScaleCurve;
-	Out_Value = Result128;
+	float Result129 = SampleCurve_EmitterValueScaleFactorFloatCurveOutput_Value * Context.MapUpdate.Constants.Emitter.FloatFromCurve.ScaleCurve;
+	Out_Value = Result129;
 }
 
 void Vector2DFromFloat_Emitter_Func_(out float2 Out_Vec2, inout FSimulationContext Context)
@@ -2127,18 +2128,18 @@ void Vector2DFromFloat_Emitter_Func_(out float2 Out_Vec2, inout FSimulationConte
 
 void SpriteSizeScale_Emitter_Func_(inout FSimulationContext Context)
 {
-	float2 Result129 = Context.MapUpdate.SpriteSizeScale.ScaleFactor * Context.MapUpdate.Transient.SpriteSizeScaleFactor;
-	float2 Result130 = Context.MapUpdate.SpriteSizeScale.InitialSpriteSize * Result129;
-	Context.MapUpdate.Particles.SpriteSize = Result130;
-	Context.MapUpdate.Transient.SpriteSizeScaleFactor = Result129;
+	float2 Result130 = Context.MapUpdate.SpriteSizeScale.ScaleFactor * Context.MapUpdate.Transient.SpriteSizeScaleFactor;
+	float2 Result131 = Context.MapUpdate.SpriteSizeScale.InitialSpriteSize * Result130;
+	Context.MapUpdate.Particles.SpriteSize = Result131;
+	Context.MapUpdate.Transient.SpriteSizeScaleFactor = Result130;
 }
 
 void FloatFromCurve001_Emitter_Func_(out float Out_Value, inout FSimulationContext Context)
 {
 	float SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value;
 	SampleCurve_EmitterScaleAlphaFloatCurve(Context.MapUpdate.FloatFromCurve001.CurveIndex, SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value);
-	float Result131 = SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value * Context.MapUpdate.Constants.Emitter.FloatFromCurve001.ScaleCurve;
-	Out_Value = Result131;
+	float Result132 = SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value * Context.MapUpdate.Constants.Emitter.FloatFromCurve001.ScaleCurve;
+	Out_Value = Result132;
 }
 
 void ScaleColor_Emitter_Func_(inout FSimulationContext Context)
@@ -2148,10 +2149,10 @@ void ScaleColor_Emitter_Func_(inout FSimulationContext Context)
 	Output0.g = Context.MapUpdate.Constants.Emitter.ScaleColor.ScaleRGB.y;
 	Output0.b = Context.MapUpdate.Constants.Emitter.ScaleColor.ScaleRGB.z;
 	Output0.a = Context.MapUpdate.ScaleColor.ScaleAlpha;
-	float4 Result132 = Context.MapUpdate.Transient.ParticleColorScaleFactor * Output0;
-	float4 Result133 = Context.MapUpdate.ScaleColor.ColorValueToScale * Result132;
-	Context.MapUpdate.Particles.Color = Result133;
-	Context.MapUpdate.Transient.ParticleColorScaleFactor = Result132;
+	float4 Result133 = Context.MapUpdate.Transient.ParticleColorScaleFactor * Output0;
+	float4 Result134 = Context.MapUpdate.ScaleColor.ColorValueToScale * Result133;
+	Context.MapUpdate.Particles.Color = Result134;
+	Context.MapUpdate.Transient.ParticleColorScaleFactor = Result133;
 }
 
 void UniformRangedVector_Emitter_Func_(out float3 Out_UniformRangedVector, inout FSimulationContext Context)
@@ -2183,35 +2184,35 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.MapUpdate.SolveForcesAndVelocity.Velocity;
 	Context.MapUpdate.Local.SolveForcesAndVelocity.Mass = Context.MapUpdate.SolveForcesAndVelocity.Mass;
 	float Constant186 = 0.0001;
-	float Result134 = max(Context.MapUpdate.Local.SolveForcesAndVelocity.Mass, Constant186);
-	float Result135 = Reciprocal(Result134);
-	float3 Result136 = Result135 * Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce;
-	Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce = Result136;
-	float3 Result137 = Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
+	float Result135 = max(Context.MapUpdate.Local.SolveForcesAndVelocity.Mass, Constant186);
+	float Result136 = Reciprocal(Result135);
+	float3 Result137 = Result136 * Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce;
+	Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce = Result137;
+	float3 Result138 = Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
 	float Constant187 = 0;
-	float Result138 = max(Context.MapUpdate.Transient.PhysicsDrag, Constant187);
-	float Result139 = Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime * Result138;
+	float Result139 = max(Context.MapUpdate.Transient.PhysicsDrag, Constant187);
+	float Result140 = Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime * Result139;
 	float Constant188 = 1;
-	float Result140 = Result139 + Constant188;
-	float3 Result141 = Result137 / Result140;
-	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result141;
+	float Result141 = Result140 + Constant188;
+	float3 Result142 = Result138 / Result141;
+	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result142;
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.IncomingPhysicsDrag = Context.MapUpdate.Transient.PhysicsDrag;
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
-	float3 Result142 = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity - Context.MapUpdate.SolveForcesAndVelocity.PreviousVelocity;
+	float3 Result143 = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity - Context.MapUpdate.SolveForcesAndVelocity.PreviousVelocity;
 	float3 Constant189 = float3(0,0,0);
 	float Constant190 = 1e-05;
 	float Constant191 = 1;
 	float3 DirectionAndLengthSafe_Func_Output_Direction1;
 	float DirectionAndLengthSafe_Func_Output_Length1;
 	bool DirectionAndLengthSafe_Func_Output_BelowThreshold1;
-	DirectionAndLengthSafe_Func_(Result142, Constant189, Constant190, Constant191, DirectionAndLengthSafe_Func_Output_Direction1, DirectionAndLengthSafe_Func_Output_Length1, DirectionAndLengthSafe_Func_Output_BelowThreshold1, Context);
+	DirectionAndLengthSafe_Func_(Result143, Constant189, Constant190, Constant191, DirectionAndLengthSafe_Func_Output_Direction1, DirectionAndLengthSafe_Func_Output_Length1, DirectionAndLengthSafe_Func_Output_BelowThreshold1, Context);
 	float Constant192 = 0;
-	float Result143 = clamp(DirectionAndLengthSafe_Func_Output_Length1,Constant192,Context.MapUpdate.Constants.Emitter.SolveForcesAndVelocity.AccelerationLimit);
-	float3 Result144 = DirectionAndLengthSafe_Func_Output_Direction1 * Result143;
-	float3 Result145 = Result144 + Context.MapUpdate.SolveForcesAndVelocity.PreviousVelocity;
-	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result145;
-	float3 Result146 = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.SolveForcesAndVelocity.Position;
-	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result146;
+	float Result144 = clamp(DirectionAndLengthSafe_Func_Output_Length1,Constant192,Context.MapUpdate.Constants.Emitter.SolveForcesAndVelocity.AccelerationLimit);
+	float3 Result145 = DirectionAndLengthSafe_Func_Output_Direction1 * Result144;
+	float3 Result146 = Result145 + Context.MapUpdate.SolveForcesAndVelocity.PreviousVelocity;
+	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result146;
+	float3 Result147 = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.SolveForcesAndVelocity.Position;
+	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result147;
 	float3 Position_IfResult;
 	float3 Velocity_IfResult;
 	float3 PreviousVelocity_IfResult;
@@ -2366,6 +2367,7 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 	bool Constant45 = false;
 	float3 ParticleOwnerPosition_Emitter_Func_Output_OutPosition;
 	ParticleOwnerPosition_Emitter_Func_(ParticleOwnerPosition_Emitter_Func_Output_OutPosition, Context);
+	bool Constant48 = true;
 	Context.MapSpawn.InitializeParticle.Lifetime = UniformRangedFloat003_Emitter_Func_Output_UniformRangedFloat;
 	Context.MapSpawn.InitializeParticle.Mass = UniformRangedFloat005_Emitter_Func_Output_UniformRangedFloat;
 	Context.MapSpawn.InitializeParticle.WriteColor = Constant41;
@@ -2373,10 +2375,9 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 	Context.MapSpawn.InitializeParticle.SpriteRotation = NormalizedAngleToDegrees001_Emitter_Func_Output_NewOutput;
 	Context.MapSpawn.InitializeParticle.WritePosition = Constant44;
 	Context.MapSpawn.InitializeParticle.Position = ParticleOwnerPosition_Emitter_Func_Output_OutPosition;
-	bool Constant48 = true;
-	Context.MapSpawn.InitializeParticle.WriteLifetime = Constant48;
+	Context.MapSpawn.InitializeParticle.WriteMass = Constant48;
 	bool Constant49 = true;
-	Context.MapSpawn.InitializeParticle.WriteMass = Constant49;
+	Context.MapSpawn.InitializeParticle.WriteLifetime = Constant49;
 	bool Constant50 = false;
 	Context.MapSpawn.InitializeParticle.WriteSpriteSize = Constant50;
 	bool Constant51 = false;
