@@ -333,10 +333,24 @@ int rand_int(int x, int Seed1, int Seed2, int Seed3)
 
 
 
+struct NiagaraSpawnInfo
+{
+	int Count;
+	float InterpStartDt;
+	float IntervalDt;
+	int SpawnGroup;
+};
+
 struct NiagaraID
 {
 	int Index;
 	int AcquireTag;
+};
+
+struct MeshTriCoordinate
+{
+	int Tri;
+	float3 BaryCoord;
 };
 
 cbuffer FNiagaraGlobalParameters
@@ -363,36 +377,69 @@ cbuffer FNiagaraExternalParameters
 {
 	float Constants_SystemState_LoopDelay;
 	float Constants_SystemState_LoopDuration;
-	float Constants_UFOTrail_Emitter_EmitterState_LoopDuration;
-	float Constants_UFOTrail_Emitter_EmitterState_LoopDelay;
+	float Constants_Donut_Emitter_EmitterState_LoopDuration;
+	float Constants_Donut_Emitter_EmitterState_LoopDelay;
+	float Constants_Donut_Emitter_FloatFromCurve002_ScaleCurve;
+	int Constants_Donut_Emitter_SpawnRate_SpawnGroup;
+	float Constants_Donut_Emitter_SpawnRate_SpawnProbability;
 	int Emitter_RandomSeed;
 }
 
-struct FParamMap0_UFOTrail_Emitter_Scalability
+struct FParamMap0_Vector2DFromFloat002
 {
-	float DistanceFraction;
+	float Value;
 };
 
-struct FParamMap0_UFOTrail_Emitter
+struct FParamMap0_Vector2DFromFloat
 {
-	float Age;
-	float CurrentLoopDuration;
-	int ExecutionState;
-	int ExecutionStateSource;
-	bool LocalSpace;
-	int LoopCount;
-	float LoopedAge;
-	float NormalizedLoopAge;
-	FParamMap0_UFOTrail_Emitter_Scalability Scalability;
+	float Value;
+};
+
+struct FParamMap0_UniformRangedFloat005
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat004
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat002
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
 };
 
 struct FParamMap0_Transient
 {
+	float4 ParticleColorScaleFactor;
 	float PhysicsDeltaTime;
 	float PhysicsDrag;
 	float3 PhysicsForce;
+	float PhysicsRotationalDrag;
 	int ScalabilityEmitterExecutionState;
+	float ScalabilityEmitterSpawnCountScale;
 	int ScalabilityExecutionState;
+	bool SpawningbCanEverSpawn;
+	float2 SpriteSizeScaleFactor;
 };
 
 struct FParamMap0_SystemState
@@ -414,6 +461,30 @@ struct FParamMap0_System
 	float NormalizedLoopAge;
 };
 
+struct FParamMap0_StaticMeshLocation
+{
+	bool EnableAxisConstraint;
+	float NormalOffset;
+	float3 SampledMeshNormal;
+	float3 SampledMeshPosition;
+	float3 WorldAxisConstraint;
+	float WorldAxisConstraintThreshold;
+	bool WriteToIntrinsicParameters;
+};
+
+struct FParamMap0_SpriteSizeScale
+{
+	float2 InitialSpriteSize;
+	float2 ScaleFactor;
+};
+
+struct FParamMap0_SpawnRate
+{
+	int SpawnGroup;
+	float SpawnProbability;
+	float SpawnRate;
+};
+
 struct FParamMap0_SolveForcesAndVelocity
 {
 	float AccelerationLimit;
@@ -427,27 +498,60 @@ struct FParamMap0_SolveForcesAndVelocity
 	bool WritetoIntrinsicProperties;
 };
 
+struct FParamMap0_ScaleColor
+{
+	float4 ColorValueToScale;
+	float ScaleAlpha;
+	float3 ScaleRGB;
+};
+
 struct FParamMap0_ParticleState
 {
 	float DeltaTime;
 	float Lifetime;
 };
 
+struct FParamMap0_Particles_SampleStaticMesh
+{
+	float4 MeshColor;
+	float3 MeshNormal;
+	float3 MeshPosition;
+	MeshTriCoordinate MeshSampleCoord;
+	float3 MeshTangent;
+	float2 MeshUV;
+	float3 MeshVelocity;
+};
+
+struct FParamMap0_Particles_Initial
+{
+	float4 Color;
+	float2 SpriteSize;
+};
+
 struct FParamMap0_Particles
 {
 	float Age;
 	float4 Color;
+	FParamMap0_Particles_Initial Initial;
+	float JitterDelayTimer;
 	float Lifetime;
 	float Mass;
 	float MaterialRandom;
 	float NormalizedAge;
 	float3 Position;
 	float3 PreviousVelocity;
+	FParamMap0_Particles_SampleStaticMesh SampleStaticMesh;
 	float3 Scale;
 	float SpriteRotation;
 	float2 SpriteSize;
 	int UniqueID;
 	float3 Velocity;
+};
+
+struct FParamMap0_OUTPUT_VAR_StaticMeshLocation
+{
+	bool Alive;
+	float3 Position;
 };
 
 struct FParamMap0_OUTPUT_VAR_SolveForcesAndVelocity
@@ -467,6 +571,12 @@ struct FParamMap0_OUTPUT_VAR
 {
 	FParamMap0_OUTPUT_VAR_ParticleState ParticleState;
 	FParamMap0_OUTPUT_VAR_SolveForcesAndVelocity SolveForcesAndVelocity;
+	FParamMap0_OUTPUT_VAR_StaticMeshLocation StaticMeshLocation;
+};
+
+struct FParamMap0_NormalizedAngleToDegrees001
+{
+	float NormalizedAngle;
 };
 
 struct FParamMap0_Local_SystemState
@@ -474,11 +584,24 @@ struct FParamMap0_Local_SystemState
 	bool LoopCountIncreased;
 };
 
+struct FParamMap0_Local_SpawnRate
+{
+	float InterpStartDT;
+	float IntervalDT;
+	int SpawnCount;
+	float SpawnRate;
+};
+
 struct FParamMap0_Local_SolveForcesAndVelocity
 {
 	float DeltaTime;
 	float Mass;
 	float3 PhysicsForce;
+};
+
+struct FParamMap0_Local_JitterPosition
+{
+	float3 ModuleJitterOffset;
 };
 
 struct FParamMap0_Local_EmitterState
@@ -492,8 +615,17 @@ struct FParamMap0_Local_EmitterState
 struct FParamMap0_Local
 {
 	FParamMap0_Local_EmitterState EmitterState;
+	FParamMap0_Local_JitterPosition JitterPosition;
 	FParamMap0_Local_SolveForcesAndVelocity SolveForcesAndVelocity;
+	FParamMap0_Local_SpawnRate SpawnRate;
 	FParamMap0_Local_SystemState SystemState;
+};
+
+struct FParamMap0_JitterPosition
+{
+	float JitterAmount;
+	float JitterDelay;
+	float3 JitterOffset;
 };
 
 struct FParamMap0_InitializeParticle
@@ -516,9 +648,22 @@ struct FParamMap0_InitializeParticle
 	bool WriteSpriteSize;
 };
 
-struct FParamMap0_Engine_UFOTrail_Emitter
+struct FParamMap0_FloatFromCurve002
 {
-	int NumParticles;
+	float CurveIndex;
+	float ScaleCurve;
+};
+
+struct FParamMap0_FloatFromCurve001
+{
+	float CurveIndex;
+	float ScaleCurve;
+};
+
+struct FParamMap0_FloatFromCurve
+{
+	float CurveIndex;
+	float ScaleCurve;
 };
 
 struct FParamMap0_Engine_Owner
@@ -526,6 +671,10 @@ struct FParamMap0_Engine_Owner
 	int ExecutionState;
 	float LODDistanceFraction;
 	float3 Position;
+	float4x4 SystemLocalToWorld;
+	float4x4 SystemLocalToWorldNoScale;
+	float4x4 SystemWorldToLocal;
+	float4x4 SystemWorldToLocalNoScale;
 };
 
 struct FParamMap0_Engine_Emitter
@@ -533,15 +682,21 @@ struct FParamMap0_Engine_Emitter
 	int TotalSpawnedParticles;
 };
 
+struct FParamMap0_Engine_Donut_Emitter
+{
+	int NumParticles;
+	float SpawnCountScale;
+};
+
 struct FParamMap0_Engine
 {
 	float DeltaTime;
+	FParamMap0_Engine_Donut_Emitter Donut_Emitter;
 	FParamMap0_Engine_Emitter Emitter;
 	float InverseDeltaTime;
 	FParamMap0_Engine_Owner Owner;
 	float RealTime;
 	float Time;
-	FParamMap0_Engine_UFOTrail_Emitter UFOTrail_Emitter;
 };
 
 struct FParamMap0_EmitterState
@@ -556,20 +711,40 @@ struct FParamMap0_Emitter
 	int RandomSeed;
 };
 
+struct FParamMap0_Drag
+{
+	float Drag;
+	float RotationalDrag;
+};
+
+struct FParamMap0_Donut_Emitter_SpawnRate
+{
+	NiagaraSpawnInfo SpawnOutputInfo;
+	float SpawnRemainder;
+};
+
+struct FParamMap0_Donut_Emitter_Scalability
+{
+	float DistanceFraction;
+};
+
+struct FParamMap0_Donut_Emitter
+{
+	float Age;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	bool LocalSpace;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+	FParamMap0_Donut_Emitter_Scalability Scalability;
+	FParamMap0_Donut_Emitter_SpawnRate SpawnRate;
+};
+
 struct FParamMap0_DataInstance
 {
 	bool Alive;
-};
-
-struct FParamMap0_Constants_UFOTrail_Emitter_EmitterState
-{
-	float LoopDelay;
-	float LoopDuration;
-};
-
-struct FParamMap0_Constants_UFOTrail_Emitter
-{
-	FParamMap0_Constants_UFOTrail_Emitter_EmitterState EmitterState;
 };
 
 struct FParamMap0_Constants_SystemState
@@ -578,29 +753,68 @@ struct FParamMap0_Constants_SystemState
 	float LoopDuration;
 };
 
+struct FParamMap0_Constants_Donut_Emitter_SpawnRate
+{
+	int SpawnGroup;
+	float SpawnProbability;
+};
+
+struct FParamMap0_Constants_Donut_Emitter_FloatFromCurve002
+{
+	float ScaleCurve;
+};
+
+struct FParamMap0_Constants_Donut_Emitter_EmitterState
+{
+	float LoopDelay;
+	float LoopDuration;
+};
+
+struct FParamMap0_Constants_Donut_Emitter
+{
+	FParamMap0_Constants_Donut_Emitter_EmitterState EmitterState;
+	FParamMap0_Constants_Donut_Emitter_FloatFromCurve002 FloatFromCurve002;
+	FParamMap0_Constants_Donut_Emitter_SpawnRate SpawnRate;
+};
+
 struct FParamMap0_Constants
 {
+	FParamMap0_Constants_Donut_Emitter Donut_Emitter;
 	FParamMap0_Constants_SystemState SystemState;
-	FParamMap0_Constants_UFOTrail_Emitter UFOTrail_Emitter;
 };
 
 struct FParamMap0
 {
 	FParamMap0_Constants Constants;
 	FParamMap0_DataInstance DataInstance;
+	FParamMap0_Donut_Emitter Donut_Emitter;
+	FParamMap0_Drag Drag;
 	FParamMap0_Emitter Emitter;
 	FParamMap0_EmitterState EmitterState;
 	FParamMap0_Engine Engine;
+	FParamMap0_FloatFromCurve FloatFromCurve;
+	FParamMap0_FloatFromCurve001 FloatFromCurve001;
+	FParamMap0_FloatFromCurve002 FloatFromCurve002;
 	FParamMap0_InitializeParticle InitializeParticle;
+	FParamMap0_JitterPosition JitterPosition;
 	FParamMap0_Local Local;
+	FParamMap0_NormalizedAngleToDegrees001 NormalizedAngleToDegrees001;
 	FParamMap0_OUTPUT_VAR OUTPUT_VAR;
 	FParamMap0_Particles Particles;
 	FParamMap0_ParticleState ParticleState;
+	FParamMap0_ScaleColor ScaleColor;
 	FParamMap0_SolveForcesAndVelocity SolveForcesAndVelocity;
+	FParamMap0_SpawnRate SpawnRate;
+	FParamMap0_SpriteSizeScale SpriteSizeScale;
+	FParamMap0_StaticMeshLocation StaticMeshLocation;
 	FParamMap0_System System;
 	FParamMap0_SystemState SystemState;
 	FParamMap0_Transient Transient;
-	FParamMap0_UFOTrail_Emitter UFOTrail_Emitter;
+	FParamMap0_UniformRangedFloat002 UniformRangedFloat002;
+	FParamMap0_UniformRangedFloat004 UniformRangedFloat004;
+	FParamMap0_UniformRangedFloat005 UniformRangedFloat005;
+	FParamMap0_Vector2DFromFloat Vector2DFromFloat;
+	FParamMap0_Vector2DFromFloat002 Vector2DFromFloat002;
 };
 
 struct FSimulationContext
@@ -613,11 +827,14 @@ void SystemState_SystemChangeState002_Func_(int In_NewState, bool In_Condition, 
 void SystemState_SystemChangeState_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
 void SystemState_SystemChangeState001_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
 void SystemState_Func_(inout FSimulationContext Context);
-void EmitterState_EmitterChangeState002_UFOTrail_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
-void EmitterState_EmitterChangeState005_UFOTrail_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
-void EmitterState_EmitterChangeState003_UFOTrail_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
-void EmitterState_UFOTrail_Emitter_Func_(inout FSimulationContext Context);
-void UFOTrail_Emitter_Func_(inout FSimulationContext Context);
+void EmitterState_EmitterChangeState002_Donut_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState005_Donut_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState003_Donut_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_Donut_Emitter_Func_(inout FSimulationContext Context);
+void SampleCurve_Donut_EmitterSpawnRateFloatCurve(float In_X, out float Out_Value);
+void FloatFromCurve002_Donut_Emitter_Func_(out float Out_Value, inout FSimulationContext Context);
+void SpawnRate_Donut_Emitter_Func_(inout FSimulationContext Context);
+void Donut_Emitter_Func_(inout FSimulationContext Context);
 float GetSpawnInterpolation();
 void SystemState_SystemChangeState002_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
@@ -753,15 +970,15 @@ void SystemState_Func_(inout FSimulationContext Context)
 	SystemState_SystemChangeState001_Func_(Context.Map.Engine.Owner.ExecutionState, Result15, Constant15, Context);
 }
 
-void EmitterState_EmitterChangeState002_UFOTrail_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+void EmitterState_EmitterChangeState002_Donut_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
 	int Constant27 = 3;
-	bool Result32 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionState != Constant27);
+	bool Result32 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionState != Constant27);
 	int Constant28 = 4;
-	bool Result33 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionState != Constant28);
+	bool Result33 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionState != Constant28);
 	bool Result34 = Result32 && Result33;
 	bool Result35 = In_Condition && Result34;
-	bool Result36 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionStateSource <= In_NewStateSource);
+	bool Result36 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionStateSource <= In_NewStateSource);
 	bool Result37 = Result35 && Result36;
 	int ENiagaraExecutionState_IfResult3;
 	int ENiagaraExecutionStateSource_IfResult3;
@@ -772,22 +989,22 @@ void EmitterState_EmitterChangeState002_UFOTrail_Emitter_Func_(int In_NewState, 
 	}
 	else
 	{
-	ENiagaraExecutionState_IfResult3 = Context.Map.UFOTrail_Emitter.ExecutionState;
-	ENiagaraExecutionStateSource_IfResult3 = Context.Map.UFOTrail_Emitter.ExecutionStateSource;
+	ENiagaraExecutionState_IfResult3 = Context.Map.Donut_Emitter.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult3 = Context.Map.Donut_Emitter.ExecutionStateSource;
 	}
-	Context.Map.UFOTrail_Emitter.ExecutionState = ENiagaraExecutionState_IfResult3;
-	Context.Map.UFOTrail_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult3;
+	Context.Map.Donut_Emitter.ExecutionState = ENiagaraExecutionState_IfResult3;
+	Context.Map.Donut_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult3;
 }
 
-void EmitterState_EmitterChangeState005_UFOTrail_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+void EmitterState_EmitterChangeState005_Donut_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
 	int Constant33 = 3;
-	bool Result41 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionState != Constant33);
+	bool Result41 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionState != Constant33);
 	int Constant34 = 4;
-	bool Result42 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionState != Constant34);
+	bool Result42 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionState != Constant34);
 	bool Result43 = Result41 && Result42;
 	bool Result44 = In_Condition && Result43;
-	bool Result45 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionStateSource <= In_NewStateSource);
+	bool Result45 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionStateSource <= In_NewStateSource);
 	bool Result46 = Result44 && Result45;
 	int ENiagaraExecutionState_IfResult4;
 	int ENiagaraExecutionStateSource_IfResult4;
@@ -798,47 +1015,47 @@ void EmitterState_EmitterChangeState005_UFOTrail_Emitter_Func_(int In_NewState, 
 	}
 	else
 	{
-	ENiagaraExecutionState_IfResult4 = Context.Map.UFOTrail_Emitter.ExecutionState;
-	ENiagaraExecutionStateSource_IfResult4 = Context.Map.UFOTrail_Emitter.ExecutionStateSource;
+	ENiagaraExecutionState_IfResult4 = Context.Map.Donut_Emitter.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult4 = Context.Map.Donut_Emitter.ExecutionStateSource;
 	}
-	Context.Map.UFOTrail_Emitter.ExecutionState = ENiagaraExecutionState_IfResult4;
-	Context.Map.UFOTrail_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult4;
+	Context.Map.Donut_Emitter.ExecutionState = ENiagaraExecutionState_IfResult4;
+	Context.Map.Donut_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult4;
 }
 
-void EmitterState_EmitterChangeState003_UFOTrail_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+void EmitterState_EmitterChangeState003_Donut_Emitter_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
 {
 	int Constant39 = 3;
-	bool Result51 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionState != Constant39);
+	bool Result50 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionState != Constant39);
 	int Constant40 = 4;
-	bool Result52 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionState != Constant40);
-	bool Result53 = Result51 && Result52;
-	bool Result54 = In_Condition && Result53;
-	bool Result55 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionStateSource <= In_NewStateSource);
-	bool Result56 = Result54 && Result55;
+	bool Result51 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionState != Constant40);
+	bool Result52 = Result50 && Result51;
+	bool Result53 = In_Condition && Result52;
+	bool Result54 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionStateSource <= In_NewStateSource);
+	bool Result55 = Result53 && Result54;
 	int ENiagaraExecutionState_IfResult5;
 	int ENiagaraExecutionStateSource_IfResult5;
-	if(Result56)
+	if(Result55)
 	{
 	ENiagaraExecutionState_IfResult5 = In_NewState;
 	ENiagaraExecutionStateSource_IfResult5 = In_NewStateSource;
 	}
 	else
 	{
-	ENiagaraExecutionState_IfResult5 = Context.Map.UFOTrail_Emitter.ExecutionState;
-	ENiagaraExecutionStateSource_IfResult5 = Context.Map.UFOTrail_Emitter.ExecutionStateSource;
+	ENiagaraExecutionState_IfResult5 = Context.Map.Donut_Emitter.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult5 = Context.Map.Donut_Emitter.ExecutionStateSource;
 	}
-	Context.Map.UFOTrail_Emitter.ExecutionState = ENiagaraExecutionState_IfResult5;
-	Context.Map.UFOTrail_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult5;
+	Context.Map.Donut_Emitter.ExecutionState = ENiagaraExecutionState_IfResult5;
+	Context.Map.Donut_Emitter.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult5;
 }
 
-void EmitterState_UFOTrail_Emitter_Func_(inout FSimulationContext Context)
+void EmitterState_Donut_Emitter_Func_(inout FSimulationContext Context)
 {
-	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.UFOTrail_Emitter.ExecutionState;
+	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.Donut_Emitter.ExecutionState;
 	float Constant16 = 0.016667;
-	float Result18 = max(Context.Map.Constants.UFOTrail_Emitter.EmitterState.LoopDuration, Constant16);
+	float Result18 = max(Context.Map.Constants.Donut_Emitter.EmitterState.LoopDuration, Constant16);
 	Context.Map.Local.EmitterState.LoopDuration = Result18;
 	float Constant17 = 0;
-	bool Result19 = NiagaraAll(Context.Map.UFOTrail_Emitter.Age == Constant17);
+	bool Result19 = NiagaraAll(Context.Map.Donut_Emitter.Age == Constant17);
 	float Duration_IfResult1;
 	if(Result19)
 	{
@@ -846,27 +1063,27 @@ void EmitterState_UFOTrail_Emitter_Func_(inout FSimulationContext Context)
 	}
 	else
 	{
-	Duration_IfResult1 = Context.Map.UFOTrail_Emitter.CurrentLoopDuration;
+	Duration_IfResult1 = Context.Map.Donut_Emitter.CurrentLoopDuration;
 	}
 	float Constant18 = 0;
-	Context.Map.UFOTrail_Emitter.CurrentLoopDuration = Duration_IfResult1;
+	Context.Map.Donut_Emitter.CurrentLoopDuration = Duration_IfResult1;
 	Context.Map.EmitterState.LoopDelay = Constant18;
-	float Result20 = Context.Map.UFOTrail_Emitter.Age + Context.Map.Engine.DeltaTime;
-	float Result21 = Context.Map.Engine.DeltaTime + Context.Map.UFOTrail_Emitter.LoopedAge;
-	float Result22 = Result21 / Context.Map.UFOTrail_Emitter.CurrentLoopDuration;
+	float Result20 = Context.Map.Donut_Emitter.Age + Context.Map.Engine.DeltaTime;
+	float Result21 = Context.Map.Engine.DeltaTime + Context.Map.Donut_Emitter.LoopedAge;
+	float Result22 = Result21 / Context.Map.Donut_Emitter.CurrentLoopDuration;
 	int Count1;
 	Count1 = Result22;
 	int Constant19 = 0;
 	int Result23 = max(Count1, Constant19);
-	float Result24 = Result23 * Context.Map.UFOTrail_Emitter.CurrentLoopDuration;
+	float Result24 = Result23 * Context.Map.Donut_Emitter.CurrentLoopDuration;
 	float Result25 = Result21 - Result24;
 	int Constant20 = 0;
 	bool Result26 = NiagaraAll(Result23 > Constant20);
-	int Result27 = Result23 + Context.Map.UFOTrail_Emitter.LoopCount;
-	Context.Map.UFOTrail_Emitter.Age = Result20;
-	Context.Map.UFOTrail_Emitter.LoopedAge = Result25;
+	int Result27 = Result23 + Context.Map.Donut_Emitter.LoopCount;
+	Context.Map.Donut_Emitter.Age = Result20;
+	Context.Map.Donut_Emitter.LoopedAge = Result25;
 	Context.Map.Local.EmitterState.LoopCountIncreased = Result26;
-	Context.Map.UFOTrail_Emitter.LoopCount = Result27;
+	Context.Map.Donut_Emitter.LoopCount = Result27;
 	bool Constant21 = false;
 	Context.Map.EmitterState.RecalculateDurationEachLoop = Constant21;
 	float float_IfResult1;
@@ -876,36 +1093,36 @@ void EmitterState_UFOTrail_Emitter_Func_(inout FSimulationContext Context)
 	}
 	else
 	{
-	float_IfResult1 = Context.Map.UFOTrail_Emitter.CurrentLoopDuration;
+	float_IfResult1 = Context.Map.Donut_Emitter.CurrentLoopDuration;
 	}
 	float CurrentLoopDuration_IfResult1;
 	float LoopedAge_IfResult1;
 	if(Context.Map.Local.EmitterState.LoopCountIncreased)
 	{
 	CurrentLoopDuration_IfResult1 = float_IfResult1;
-	LoopedAge_IfResult1 = Context.Map.UFOTrail_Emitter.LoopedAge;
+	LoopedAge_IfResult1 = Context.Map.Donut_Emitter.LoopedAge;
 	}
 	else
 	{
-	CurrentLoopDuration_IfResult1 = Context.Map.UFOTrail_Emitter.CurrentLoopDuration;
-	LoopedAge_IfResult1 = Context.Map.UFOTrail_Emitter.LoopedAge;
+	CurrentLoopDuration_IfResult1 = Context.Map.Donut_Emitter.CurrentLoopDuration;
+	LoopedAge_IfResult1 = Context.Map.Donut_Emitter.LoopedAge;
 	}
-	Context.Map.UFOTrail_Emitter.CurrentLoopDuration = CurrentLoopDuration_IfResult1;
-	Context.Map.UFOTrail_Emitter.LoopedAge = LoopedAge_IfResult1;
-	float Result28 = Context.Map.UFOTrail_Emitter.LoopedAge / Context.Map.UFOTrail_Emitter.CurrentLoopDuration;
-	Context.Map.UFOTrail_Emitter.NormalizedLoopAge = Result28;
+	Context.Map.Donut_Emitter.CurrentLoopDuration = CurrentLoopDuration_IfResult1;
+	Context.Map.Donut_Emitter.LoopedAge = LoopedAge_IfResult1;
+	float Result28 = Context.Map.Donut_Emitter.LoopedAge / Context.Map.Donut_Emitter.CurrentLoopDuration;
+	Context.Map.Donut_Emitter.NormalizedLoopAge = Result28;
 	float Constant22 = 0;
 	float Constant23 = 1.0001;
 	float Result29 = clamp(Context.Map.Engine.Owner.LODDistanceFraction,Constant22,Constant23);
-	Context.Map.UFOTrail_Emitter.Scalability.DistanceFraction = Result29;
+	Context.Map.Donut_Emitter.Scalability.DistanceFraction = Result29;
 	int Constant24 = 0;
 	Context.Map.Transient.ScalabilityEmitterExecutionState = Constant24;
 	int Constant25 = 0;
-	bool Result30 = NiagaraAll(Context.Map.Engine.UFOTrail_Emitter.NumParticles == Constant25);
+	bool Result30 = NiagaraAll(Context.Map.Engine.Donut_Emitter.NumParticles == Constant25);
 	Context.Map.Local.EmitterState.NoActiveEmitterParticles = Result30;
 	int Constant26 = 0;
 	bool Result31 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant26);
-	EmitterState_EmitterChangeState002_UFOTrail_Emitter_Func_(Context.Map.System.ExecutionState, Result31, Context.Map.System.ExecutionStateSource, Context);
+	EmitterState_EmitterChangeState002_Donut_Emitter_Func_(Context.Map.System.ExecutionState, Result31, Context.Map.System.ExecutionStateSource, Context);
 	int Constant29 = 1;
 	int Constant30 = 0;
 	bool Result38 = NiagaraAll(Context.Map.System.ExecutionState != Constant30);
@@ -913,22 +1130,76 @@ void EmitterState_UFOTrail_Emitter_Func_(inout FSimulationContext Context)
 	bool Result39 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant31);
 	bool Result40 = Result38 && Result39;
 	int Constant32 = 1;
-	EmitterState_EmitterChangeState005_UFOTrail_Emitter_Func_(Constant29, Result40, Constant32, Context);
+	EmitterState_EmitterChangeState005_Donut_Emitter_Func_(Constant29, Result40, Constant32, Context);
 	int Constant35 = 3;
 	int Constant36 = 0;
-	bool Result47 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionState != Constant36);
-	int Constant37 = 0;
-	bool Result48 = NiagaraAll(Context.Map.UFOTrail_Emitter.ExecutionStateSource != Constant37);
+	bool Result47 = NiagaraAll(Context.Map.Donut_Emitter.ExecutionState != Constant36);
+	int Constant37 = 2;
+	bool Result48 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant37);
 	bool Result49 = Result47 && Result48;
-	bool Result50 = Context.Map.Local.EmitterState.NoActiveEmitterParticles && Result49;
 	int Constant38 = 3;
-	EmitterState_EmitterChangeState003_UFOTrail_Emitter_Func_(Constant35, Result50, Constant38, Context);
+	EmitterState_EmitterChangeState003_Donut_Emitter_Func_(Constant35, Result49, Constant38, Context);
 }
 
-void UFOTrail_Emitter_Func_(inout FSimulationContext Context)
+void FloatFromCurve002_Donut_Emitter_Func_(out float Out_Value, inout FSimulationContext Context)
+{
+	Context.Map.FloatFromCurve002.CurveIndex = Context.Map.Donut_Emitter.NormalizedLoopAge;
+	float SampleCurve_Donut_EmitterSpawnRateFloatCurveOutput_Value;
+	SampleCurve_Donut_EmitterSpawnRateFloatCurve(Context.Map.FloatFromCurve002.CurveIndex, SampleCurve_Donut_EmitterSpawnRateFloatCurveOutput_Value);
+	float Result56 = SampleCurve_Donut_EmitterSpawnRateFloatCurveOutput_Value * Context.Map.Constants.Donut_Emitter.FloatFromCurve002.ScaleCurve;
+	Out_Value = Result56;
+}
+
+void SpawnRate_Donut_Emitter_Func_(inout FSimulationContext Context)
+{
+	float Constant41 = 1;
+	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant41;
+	float Result57 = Context.Map.SpawnRate.SpawnRate * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.Donut_Emitter.SpawnCountScale;
+	float Result58 = Reciprocal(Result57);
+	float Result59 = 1 - Context.Map.Donut_Emitter.SpawnRate.SpawnRemainder;
+	float Result60 = Result58 * Result59;
+	Context.Map.Local.SpawnRate.SpawnRate = Result57;
+	Context.Map.Local.SpawnRate.IntervalDT = Result58;
+	Context.Map.Local.SpawnRate.InterpStartDT = Result60;
+	float Constant42 = 0;
+	bool Result61 = NiagaraAll(Context.Map.Donut_Emitter.LoopedAge >= Constant42);
+	float Constant43 = 1;
+	float Constant44 = 0;
+	float float_IfResult2;
+	if(Result61)
+	{
+	float_IfResult2 = Constant43;
+	}
+	else
+	{
+	float_IfResult2 = Constant44;
+	}
+	float Result62 = Context.Map.Local.SpawnRate.SpawnRate * float_IfResult2;
+	float Result63 = Result62 * Context.Map.Engine.DeltaTime + Context.Map.Donut_Emitter.SpawnRate.SpawnRemainder;
+	float Result64 = floor(Result63);
+	float Result65 = Result63 - Result64;
+	Context.Map.Local.SpawnRate.SpawnCount = Result64;
+	Context.Map.Donut_Emitter.SpawnRate.SpawnRemainder = Result65;
+	NiagaraSpawnInfo Output1;
+	Output1.Count = Context.Map.Local.SpawnRate.SpawnCount;
+	Output1.InterpStartDt = Context.Map.Local.SpawnRate.InterpStartDT;
+	Output1.IntervalDt = Context.Map.Local.SpawnRate.IntervalDT;
+	Output1.SpawnGroup = Context.Map.Constants.Donut_Emitter.SpawnRate.SpawnGroup;
+	bool Constant45 = true;
+	Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo = Output1;
+	Context.Map.Transient.SpawningbCanEverSpawn = Constant45;
+}
+
+void Donut_Emitter_Func_(inout FSimulationContext Context)
 {
 	EnterStatScope(3 );
-	EmitterState_UFOTrail_Emitter_Func_(Context);
+	EmitterState_Donut_Emitter_Func_(Context);
+	ExitStatScope( );
+	float FloatFromCurve002_Donut_Emitter_Func_Output_Value;
+	FloatFromCurve002_Donut_Emitter_Func_(FloatFromCurve002_Donut_Emitter_Func_Output_Value, Context);
+	Context.Map.SpawnRate.SpawnRate = FloatFromCurve002_Donut_Emitter_Func_Output_Value;
+	EnterStatScope(4 );
+	SpawnRate_Donut_Emitter_Func_(Context);
 	ExitStatScope( );
 }
 
@@ -960,66 +1231,80 @@ void Simulate(inout FSimulationContext Context)
 	SystemState_Func_(Context);
 	ExitStatScope( );
 	EnterStatScope(2 );
-	UFOTrail_Emitter_Func_(Context);
+	Donut_Emitter_Func_(Context);
 	ExitStatScope( );
 	ExitStatScope( );
 }
 void SimulateMain()
 {
-EnterStatScope(4 );
+EnterStatScope(5 );
 
 	FSimulationContext Context = (FSimulationContext)0;
-	Context.Map.Emitter.RandomSeed = InputDataInt(0, 0);
-	Context.Map.System.Age = InputDataFloat(0, 1);
-	Context.Map.System.bCompleteOnInactive = InputDataBool(0, 2);
-	Context.Map.System.CurrentLoopDuration = InputDataFloat(0, 3);
-	Context.Map.System.ExecutionState = InputDataInt(0, 4);
-	Context.Map.System.ExecutionStateSource = InputDataInt(0, 5);
-	Context.Map.System.LoopCount = InputDataInt(0, 6);
-	Context.Map.System.LoopedAge = InputDataFloat(0, 7);
-	Context.Map.System.NormalizedLoopAge = InputDataFloat(0, 8);
-	Context.Map.UFOTrail_Emitter.Age = InputDataFloat(0, 9);
-	Context.Map.UFOTrail_Emitter.CurrentLoopDuration = InputDataFloat(0, 10);
-	Context.Map.UFOTrail_Emitter.ExecutionState = InputDataInt(0, 11);
-	Context.Map.UFOTrail_Emitter.ExecutionStateSource = InputDataInt(0, 12);
-	Context.Map.UFOTrail_Emitter.LocalSpace = InputDataBool(0, 13);
-	Context.Map.UFOTrail_Emitter.LoopCount = InputDataInt(0, 14);
-	Context.Map.UFOTrail_Emitter.LoopedAge = InputDataFloat(0, 15);
-	Context.Map.UFOTrail_Emitter.NormalizedLoopAge = InputDataFloat(0, 16);
-	Context.Map.UFOTrail_Emitter.Scalability.DistanceFraction = InputDataFloat(0, 17);
-	Context.Map.Engine.Emitter.TotalSpawnedParticles = InputDataInt(1, 0);
-	Context.Map.Engine.Owner.ExecutionState = InputDataInt(1, 1);
-	Context.Map.Engine.Owner.LODDistanceFraction = InputDataFloat(1, 2);
-	Context.Map.Engine.UFOTrail_Emitter.NumParticles = InputDataInt(1, 3);
+	Context.Map.Donut_Emitter.Age = InputDataFloat(0, 0);
+	Context.Map.Donut_Emitter.CurrentLoopDuration = InputDataFloat(0, 1);
+	Context.Map.Donut_Emitter.ExecutionState = InputDataInt(0, 2);
+	Context.Map.Donut_Emitter.ExecutionStateSource = InputDataInt(0, 3);
+	Context.Map.Donut_Emitter.LocalSpace = InputDataBool(0, 4);
+	Context.Map.Donut_Emitter.LoopCount = InputDataInt(0, 5);
+	Context.Map.Donut_Emitter.LoopedAge = InputDataFloat(0, 6);
+	Context.Map.Donut_Emitter.NormalizedLoopAge = InputDataFloat(0, 7);
+	Context.Map.Donut_Emitter.Scalability.DistanceFraction = InputDataFloat(0, 8);
+	Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.Count = 0;
+	Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.InterpStartDt = 0.0f;
+	Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.IntervalDt = 0.0f;
+	Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.SpawnGroup = 0;
+	Context.Map.Donut_Emitter.SpawnRate.SpawnRemainder = InputDataFloat(0, 13);
+	Context.Map.Emitter.RandomSeed = InputDataInt(0, 14);
+	Context.Map.System.Age = InputDataFloat(0, 15);
+	Context.Map.System.bCompleteOnInactive = InputDataBool(0, 16);
+	Context.Map.System.CurrentLoopDuration = InputDataFloat(0, 17);
+	Context.Map.System.ExecutionState = InputDataInt(0, 18);
+	Context.Map.System.ExecutionStateSource = InputDataInt(0, 19);
+	Context.Map.System.LoopCount = InputDataInt(0, 20);
+	Context.Map.System.LoopedAge = InputDataFloat(0, 21);
+	Context.Map.System.NormalizedLoopAge = InputDataFloat(0, 22);
+	Context.Map.Engine.Donut_Emitter.NumParticles = InputDataInt(1, 0);
+	Context.Map.Engine.Donut_Emitter.SpawnCountScale = InputDataFloat(1, 1);
+	Context.Map.Engine.Emitter.TotalSpawnedParticles = InputDataInt(1, 2);
+	Context.Map.Engine.Owner.ExecutionState = InputDataInt(1, 3);
+	Context.Map.Engine.Owner.LODDistanceFraction = InputDataFloat(1, 4);
 	Context.Map.Constants.SystemState.LoopDelay = Constants_SystemState_LoopDelay;
 	Context.Map.Constants.SystemState.LoopDuration = Constants_SystemState_LoopDuration;
 	Context.Map.Engine.DeltaTime = Engine_DeltaTime;
-	Context.Map.Constants.UFOTrail_Emitter.EmitterState.LoopDuration = Constants_UFOTrail_Emitter_EmitterState_LoopDuration;
-	Context.Map.Constants.UFOTrail_Emitter.EmitterState.LoopDelay = Constants_UFOTrail_Emitter_EmitterState_LoopDelay;
+	Context.Map.Constants.Donut_Emitter.EmitterState.LoopDuration = Constants_Donut_Emitter_EmitterState_LoopDuration;
+	Context.Map.Constants.Donut_Emitter.EmitterState.LoopDelay = Constants_Donut_Emitter_EmitterState_LoopDelay;
+	Context.Map.Constants.Donut_Emitter.FloatFromCurve002.ScaleCurve = Constants_Donut_Emitter_FloatFromCurve002_ScaleCurve;
+	Context.Map.Constants.Donut_Emitter.SpawnRate.SpawnGroup = Constants_Donut_Emitter_SpawnRate_SpawnGroup;
+	Context.Map.Constants.Donut_Emitter.SpawnRate.SpawnProbability = Constants_Donut_Emitter_SpawnRate_SpawnProbability;
 	Context.Map.Emitter.RandomSeed = Emitter_RandomSeed;
 	ReadDataSets(Context);
 	Simulate(Context);
 	WriteDataSets(Context);
 	{
 	int TmpWriteIndex = OutputIndex(0, false, true);
-	OutputDataInt(0, 0, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
-	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.System.Age);
-	OutputDataBool(0, 2, TmpWriteIndex, Context.Map.System.bCompleteOnInactive);
-	OutputDataFloat(0, 3, TmpWriteIndex, Context.Map.System.CurrentLoopDuration);
-	OutputDataInt(0, 4, TmpWriteIndex, Context.Map.System.ExecutionState);
-	OutputDataInt(0, 5, TmpWriteIndex, Context.Map.System.ExecutionStateSource);
-	OutputDataInt(0, 6, TmpWriteIndex, Context.Map.System.LoopCount);
-	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.System.LoopedAge);
-	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.System.NormalizedLoopAge);
-	OutputDataFloat(0, 9, TmpWriteIndex, Context.Map.UFOTrail_Emitter.Age);
-	OutputDataFloat(0, 10, TmpWriteIndex, Context.Map.UFOTrail_Emitter.CurrentLoopDuration);
-	OutputDataInt(0, 11, TmpWriteIndex, Context.Map.UFOTrail_Emitter.ExecutionState);
-	OutputDataInt(0, 12, TmpWriteIndex, Context.Map.UFOTrail_Emitter.ExecutionStateSource);
-	OutputDataBool(0, 13, TmpWriteIndex, Context.Map.UFOTrail_Emitter.LocalSpace);
-	OutputDataInt(0, 14, TmpWriteIndex, Context.Map.UFOTrail_Emitter.LoopCount);
-	OutputDataFloat(0, 15, TmpWriteIndex, Context.Map.UFOTrail_Emitter.LoopedAge);
-	OutputDataFloat(0, 16, TmpWriteIndex, Context.Map.UFOTrail_Emitter.NormalizedLoopAge);
-	OutputDataFloat(0, 17, TmpWriteIndex, Context.Map.UFOTrail_Emitter.Scalability.DistanceFraction);
+	OutputDataFloat(0, 0, TmpWriteIndex, Context.Map.Donut_Emitter.Age);
+	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.Donut_Emitter.CurrentLoopDuration);
+	OutputDataInt(0, 2, TmpWriteIndex, Context.Map.Donut_Emitter.ExecutionState);
+	OutputDataInt(0, 3, TmpWriteIndex, Context.Map.Donut_Emitter.ExecutionStateSource);
+	OutputDataBool(0, 4, TmpWriteIndex, Context.Map.Donut_Emitter.LocalSpace);
+	OutputDataInt(0, 5, TmpWriteIndex, Context.Map.Donut_Emitter.LoopCount);
+	OutputDataFloat(0, 6, TmpWriteIndex, Context.Map.Donut_Emitter.LoopedAge);
+	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.Donut_Emitter.NormalizedLoopAge);
+	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.Donut_Emitter.Scalability.DistanceFraction);
+	OutputDataInt(0, 9, TmpWriteIndex, Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.Count);
+	OutputDataFloat(0, 10, TmpWriteIndex, Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.InterpStartDt);
+	OutputDataFloat(0, 11, TmpWriteIndex, Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.IntervalDt);
+	OutputDataInt(0, 12, TmpWriteIndex, Context.Map.Donut_Emitter.SpawnRate.SpawnOutputInfo.SpawnGroup);
+	OutputDataFloat(0, 13, TmpWriteIndex, Context.Map.Donut_Emitter.SpawnRate.SpawnRemainder);
+	OutputDataInt(0, 14, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
+	OutputDataFloat(0, 15, TmpWriteIndex, Context.Map.System.Age);
+	OutputDataBool(0, 16, TmpWriteIndex, Context.Map.System.bCompleteOnInactive);
+	OutputDataFloat(0, 17, TmpWriteIndex, Context.Map.System.CurrentLoopDuration);
+	OutputDataInt(0, 18, TmpWriteIndex, Context.Map.System.ExecutionState);
+	OutputDataInt(0, 19, TmpWriteIndex, Context.Map.System.ExecutionStateSource);
+	OutputDataInt(0, 20, TmpWriteIndex, Context.Map.System.LoopCount);
+	OutputDataFloat(0, 21, TmpWriteIndex, Context.Map.System.LoopedAge);
+	OutputDataFloat(0, 22, TmpWriteIndex, Context.Map.System.NormalizedLoopAge);
 	}
 ExitStatScope( );
 }
