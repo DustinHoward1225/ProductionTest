@@ -1,0 +1,1337 @@
+﻿Log file open, 10/19/20 18:27:30
+LogInit: Display: Running engine for game: DriveInDisaster
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 71 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.167731
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin NiagaraExtras
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogInit: Build: ++UE4+Release-4.25-CL-13942748
+LogInit: Engine Version: 4.25.3-13942748+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: AMD Ryzen 9 3900X 12-Core Processor            , GPU: AMD Radeon RX 5700 XT
+LogInit: Compiled (64-bit): Jul 25 2020 02:07:48
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Unreal/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[vr.InstancedStereo:1]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.HZBOcclusion:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.SSR.MaxRoughness:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[r.rhicmdbypass:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+[2020.10.19-22.27.31:100][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.10.19-22.27.31:100][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.10.19-22.27.31:101][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.10.19-22.27.31:101][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.10.19-22.27.31:101][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.10.19-22.27.31:101][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.10.19-22.27.31:101][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.10.19-22.27.31:101][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.10.19-22.27.31:101][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+[2020.10.19-22.27.31:101][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+[2020.10.19-22.27.31:107][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.BloomQuality:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:4]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SSR.Quality:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SceneColorFormat:2]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.10.19-22.27.31:107][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.10.19-22.27.31:108][  0]LogInit: Selected Device Profile: [Windows]
+[2020.10.19-22.27.31:108][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.10.19-22.27.31:108][  0]LogHAL: Display: Platform has ~ 32 GB [34263732224 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.10.19-22.27.31:108][  0]LogInit: Going up to parent DeviceProfile []
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.BloomQuality:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:4]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SSR.Quality:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.SceneColorFormat:2]]
+[2020.10.19-22.27.31:108][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Scalability.ini]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.10.19-22.27.31:109][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Config/Windows/Engine.ini]
+[2020.10.19-22.27.31:109][  0]LogInit: Computer: DESKTOP-75GSR9F
+[2020.10.19-22.27.31:109][  0]LogInit: User: RobMa
+[2020.10.19-22.27.31:109][  0]LogInit: CPU Page size=4096, Cores=12
+[2020.10.19-22.27.31:109][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.10.19-22.27.31:109][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2020.10.19-22.27.31:109][  0]LogMemory: Platform Memory Stats for Windows
+[2020.10.19-22.27.31:109][  0]LogMemory: Process Physical Memory: 122.88 MB used, 122.89 MB peak
+[2020.10.19-22.27.31:109][  0]LogMemory: Process Virtual Memory: 126.23 MB used, 126.23 MB peak
+[2020.10.19-22.27.31:109][  0]LogMemory: Physical Memory: 9084.35 MB used,  23592.09 MB free, 32676.44 MB total
+[2020.10.19-22.27.31:109][  0]LogMemory: Virtual Memory: 5293.05 MB used,  134212432.00 MB free, 134217728.00 MB total
+[2020.10.19-22.27.31:115][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.10.19-22.27.31:139][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.10.19-22.27.31:140][  0]LogInit: Using OS detected language (en-US).
+[2020.10.19-22.27.31:140][  0]LogInit: Using OS detected locale (en-US).
+[2020.10.19-22.27.31:141][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.10.19-22.27.31:305][  0]LogInit: Setting process to per monitor DPI aware
+[2020.10.19-22.27.31:336][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.10.19-22.27.31:336][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.10.19-22.27.31:507][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.10.19-22.27.31:507][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.10.19-22.27.31:507][  0]LogD3D11RHI: D3D11 adapters:
+[2020.10.19-22.27.31:546][  0]LogD3D11RHI:    0. 'AMD Radeon RX 5700 XT' (Feature Level 11_0)
+[2020.10.19-22.27.31:546][  0]LogD3D11RHI:       8152/0/16338 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x1002
+[2020.10.19-22.27.31:548][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.10.19-22.27.31:548][  0]LogD3D11RHI:       0/0/16338 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.10.19-22.27.31:548][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.10.19-22.27.31:556][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.10.19-22.27.31:556][  0]LogD3D11RHI:     GPU DeviceId: 0x731f (for the marketing name, search the web for "GPU Device Id")
+[2020.10.19-22.27.31:556][  0]LogWindows: EnumDisplayDevices:
+[2020.10.19-22.27.31:556][  0]LogWindows:    0. 'AMD Radeon RX 5700 XT' (P:1 D:1)
+[2020.10.19-22.27.31:556][  0]LogWindows:    1. 'AMD Radeon RX 5700 XT' (P:0 D:1)
+[2020.10.19-22.27.31:556][  0]LogWindows:    2. 'AMD Radeon RX 5700 XT' (P:0 D:0)
+[2020.10.19-22.27.31:557][  0]LogWindows:    3. 'AMD Radeon RX 5700 XT' (P:0 D:0)
+[2020.10.19-22.27.31:557][  0]LogWindows:    4. 'AMD Radeon RX 5700 XT' (P:0 D:0)
+[2020.10.19-22.27.31:557][  0]LogWindows:    5. 'AMD Radeon RX 5700 XT' (P:0 D:0)
+[2020.10.19-22.27.31:557][  0]LogWindows:    6. 'AMD Radeon RX 5700 XT' (P:0 D:0)
+[2020.10.19-22.27.31:557][  0]LogWindows:    7. 'AMD Radeon RX 5700 XT' (P:0 D:0)
+[2020.10.19-22.27.31:558][  0]LogWindows: DebugString: FoundDriverCount:8 
+[2020.10.19-22.27.31:558][  0]LogD3D11RHI:     Adapter Name: AMD Radeon RX 5700 XT
+[2020.10.19-22.27.31:558][  0]LogD3D11RHI:   Driver Version: Adrenalin 2020 20.9.1 (internal:27.20.12029.1000, unified:27.20.12029.1000)
+[2020.10.19-22.27.31:558][  0]LogD3D11RHI:      Driver Date: 9-9-2020
+[2020.10.19-22.27.31:558][  0]LogRHI: Texture pool is 5168 MB (70% of 7384 MB)
+[2020.10.19-22.27.31:601][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.10.19-22.27.31:601][  0]LogD3D11RHI: Async texture creation enabled
+[2020.10.19-22.27.31:601][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.10.19-22.27.31:617][  0]LogD3D11RHI: GPU Timing Frequency: 100.000000 (Debug: 2 1)
+[2020.10.19-22.27.31:836][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.10.19-22.27.31:856][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.10.19-22.27.31:878][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.10.19-22.27.31:878][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.10.19-22.27.31:887][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2020.10.19-22.27.31:896][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.10.19-22.27.31:904][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.10.19-22.27.31:912][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.10.19-22.27.31:922][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.10.19-22.27.31:930][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.10.19-22.27.31:939][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.10.19-22.27.31:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.10.19-22.27.31:965][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.10.19-22.27.31:980][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.10.19-22.27.31:980][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.10.19-22.27.31:990][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.10.19-22.27.31:999][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.10.19-22.27.32:008][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.10.19-22.27.32:017][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.10.19-22.27.32:017][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.10.19-22.27.32:024][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.10.19-22.27.32:076][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Intermediate/Shaders/WorkingDirectory/10908/).
+[2020.10.19-22.27.32:076][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/RobMa/AppData/Local/Temp/UnrealShaderWorkingDir/4183EE894B74F3DF3154EBA93A4306F8/'.
+[2020.10.19-22.27.32:077][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.10.19-22.27.32:077][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.10.19-22.27.32:077][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.10.19-22.27.32:753][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.10.19-22.27.32:804][  0]LogDerivedDataCache: Loaded boot cache 0.05s 98MB C:/Users/RobMa/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.10.19-22.27.32:804][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/RobMa/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2020.10.19-22.27.32:804][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.10.19-22.27.32:804][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.10.19-22.27.32:804][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.10.19-22.27.32:804][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.10.19-22.27.32:815][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.10.19-22.27.32:815][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.10.19-22.27.32:815][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.10.19-22.27.32:816][  0]LogDerivedDataCache: Using Local data cache path C:/Users/RobMa/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.10.19-22.27.32:816][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.10.19-22.27.32:816][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.10.19-22.27.32:861][  0]LogSlate: Using FreeType 2.10.0
+[2020.10.19-22.27.32:861][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.10.19-22.27.32:886][  0]LogAssetRegistry: FAssetRegistry took 0.0027 seconds to start up
+[2020.10.19-22.27.33:107][  0]LogInit: Selected Device Profile: [Windows]
+[2020.10.19-22.27.33:203][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.10.19-22.27.33:203][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.10.19-22.27.33:203][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.10.19-22.27.33:203][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.10.19-22.27.33:203][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.10.19-22.27.33:221][  0]LogNetVersion: DriveInDisaster 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1073708691)
+[2020.10.19-22.27.33:592][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001E83B661B40), frame # 0
+[2020.10.19-22.27.33:592][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E83B5D8900), frame # 0
+[2020.10.19-22.27.33:593][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E83B5FA400), frame # 0
+[2020.10.19-22.27.33:653][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.054762 seconds
+[2020.10.19-22.27.33:659][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2020.10.19-22.27.33:659][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2020.10.19-22.27.33:659][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.10.19-22.27.33:952][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.10.19-22.27.33:956][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.10.19-22.27.34:023][  0]SourceControl: Source control is disabled
+[2020.10.19-22.27.34:023][  0]SourceControl: Source control is disabled
+[2020.10.19-22.27.34:026][  0]SourceControl: Source control is disabled
+[2020.10.19-22.27.34:028][  0]SourceControl: Source control is disabled
+[2020.10.19-22.27.34:033][  0]SourceControl: Source control is disabled
+[2020.10.19-22.27.34:044][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
+[2020.10.19-22.27.34:044][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
+[2020.10.19-22.27.34:244][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.10.19-22.27.34:262][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.10.19-22.27.34:262][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.10.19-22.27.34:305][  0]LogOcInput: OculusInput pre-init called
+[2020.10.19-22.27.34:519][  0]LogEngine: Initializing Engine...
+[2020.10.19-22.27.34:520][  0]LogHMD: Oculus plugin initialized. Version: 4.25.3-13942748+++UE4+Release-4.25, OVRPlugin: 1.44.0
+[2020.10.19-22.27.34:521][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.10.19-22.27.34:618][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.10.19-22.27.34:625][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.10.19-22.27.34:625][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E84865FC00), frame # 0
+[2020.10.19-22.27.34:626][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E8486A2980), frame # 0
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.19-22.27.34:639][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.19-22.27.34:639][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.19-22.27.34:639][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.19-22.27.34:651][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-22.27.34:651][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-22.27.34:729][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2020.10.19-22.27.34:730][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.19-22.27.34:732][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.19-22.27.34:732][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.19-22.27.34:734][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.19-22.27.34:734][  0]LogInit: FAudioDevice initialized.
+[2020.10.19-22.27.34:735][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.10.19-22.27.34:827][  0]LogDerivedDataCache: Saved boot cache 0.09s 98MB C:/Users/RobMa/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.10.19-22.27.34:832][  0]LogInit: Texture streaming: Enabled
+[2020.10.19-22.27.34:846][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.10.19-22.27.34:846][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.10.19-22.27.34:847][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.10.19-22.27.34:919][  0]LogInit: Transaction tracking system initialized
+[2020.10.19-22.27.34:938][  0]BlueprintLog: New page: Editor Load
+[2020.10.19-22.27.34:999][  0]LocalizationService: Localization service is disabled
+[2020.10.19-22.27.35:085][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
+[2020.10.19-22.27.35:086][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
+[2020.10.19-22.27.35:239][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.10.19-22.27.35:239][  0]LogCook: Display: Mobile HDR setting 1
+[2020.10.19-22.27.35:346][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/' took 0.02s
+[2020.10.19-22.27.35:491][  0]SourceControl: Source control is disabled
+[2020.10.19-22.27.35:491][  0]LogUnrealEdMisc: Loading editor; pre map load, took 5.930
+[2020.10.19-22.27.35:491][  0]Cmd: MAP LOAD FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Maps/StartupMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.10.19-22.27.35:497][  0]LightingResults: New page: Lighting Build
+[2020.10.19-22.27.35:498][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-22.27.35:498][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-22.27.35:498][  0]MapCheck: New page: Map Check
+[2020.10.19-22.27.35:498][  0]LightingResults: New page: Lighting Build
+[2020.10.19-22.27.35:523][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E84865FC00), frame # 0
+[2020.10.19-22.27.35:523][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E8486A2980), frame # 0
+[2020.10.19-22.27.35:524][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2020.10.19-22.27.35:836][  0]LogAIModule: Creating AISystem for world StartupMap
+[2020.10.19-22.27.35:836][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E82CA69200), frame # 0
+[2020.10.19-22.27.35:837][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E82CAEAD40), frame # 0
+[2020.10.19-22.27.35:871][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.10.19-22.27.35:886][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2020.10.19-22.27.35:886][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.10.19-22.27.35:886][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.083ms to complete.
+[2020.10.19-22.27.35:886][  0]LogFileHelpers: Loading map 'StartupMap' took 0.395
+[2020.10.19-22.27.35:888][  0]LogUnrealEdMisc: Total Editor Startup Time, took 6.327
+[2020.10.19-22.27.36:054][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-22.27.36:060][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-22.27.36:065][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-22.27.36:071][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-22.27.36:084][  0]LogCollectionManager: Loaded 0 collections in 0.000958 seconds
+[2020.10.19-22.27.36:107][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Collections/' took 0.00s
+[2020.10.19-22.27.36:107][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/Developers/RobMa/Collections/' took 0.00s
+[2020.10.19-22.27.36:107][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/Collections/' took 0.00s
+[2020.10.19-22.27.36:107][  0]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 3427 classes and 821 folders.
+[2020.10.19-22.27.36:112][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.10.19-22.27.36:555][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.10.19-22.27.36:558][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2020.10.19-22.27.36:681][  0]LogSlate: Took 0.000177 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.10.19-22.27.36:683][  0]LogSlate: Took 0.000173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.10.19-22.27.36:692][  0]LogSlate: Took 0.005659 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.10.19-22.27.36:812][  0]LogRenderer: Reallocating scene render targets to support 1300x528 Format 26 NumSamples 1 (Frame:1).
+[2020.10.19-22.27.36:951][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.10.19-22.27.36:951][  0]LogLoad: (Engine Initialization) Total time: 7.39 seconds
+[2020.10.19-22.27.36:951][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.10.19-22.27.36:966][  0]LogOcInput: OculusInput is initialized
+[2020.10.19-22.27.36:984][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.10.19-22.27.41:024][432]LogSlate: Took 0.004623 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.10.19-22.27.42:022][522]LogFileCache: Retrieving MD5 hashes for directory 'D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/' took 5.05s
+[2020.10.19-22.27.49:193][234]LogAssetRegistry: Asset discovery search completed in 16.3077 seconds
+[2020.10.19-22.27.49:196][234]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000001 seconds (updated 0 objects)
+[2020.10.19-22.27.55:408][964]LogSlate: Took 0.000208 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.10.19-22.27.56:413][964]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 24
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 22
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 20
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 18
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 16
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 14
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 12
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 10
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 8
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 6
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 4
+[2020.10.19-22.27.56:511][964]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 2
+[2020.10.19-22.27.56:625][964]LogMaterial: Display: Missing cached shader map for material FireThingMat, compiling. 
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 72
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 68
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 64
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 60
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 56
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 52
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 48
+[2020.10.19-22.27.57:063][964]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 44
+[2020.10.19-22.27.57:703][964]LogSlate: New Slate User Created.  User Index 8, Is Virtual User: 1
+[2020.10.19-22.27.57:706][964]LogSlate: Slate User Registered.  User Index 8, Is Virtual User: 1
+[2020.10.19-22.27.57:722][964]LogAssetEditorSubsystem: Opening Asset editor for World /Game/MadisonsFolder/Env_Map.Env_Map
+[2020.10.19-22.27.57:761][964]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2020.10.19-22.27.57:766][964]Cmd: MAP LOAD FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/MadisonsFolder/Env_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.10.19-22.27.57:767][964]LightingResults: New page: Lighting Build
+[2020.10.19-22.27.57:767][964]LoadErrors: New page: Loading map: Env_Map.umap
+[2020.10.19-22.27.57:768][964]LogWorld: UWorld::CleanupWorld for StartupMap, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-22.27.57:768][964]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-22.27.57:768][964]MapCheck: New page: Map Check
+[2020.10.19-22.27.57:768][964]LightingResults: New page: Lighting Build
+[2020.10.19-22.27.57:789][964]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E82CA69200), frame # 1964
+[2020.10.19-22.27.57:789][964]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E82CAEAD40), frame # 1964
+[2020.10.19-22.27.57:791][964]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2020.10.19-22.27.58:003][964]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 40
+[2020.10.19-22.27.58:389][964]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 37
+[2020.10.19-22.27.58:392][964]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.10.19-22.27.58:392][964]LogAIModule: Creating AISystem for world Env_Map
+[2020.10.19-22.27.58:392][964]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E874E04A00), frame # 1964
+[2020.10.19-22.27.58:392][964]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E86FF256C0), frame # 1964
+[2020.10.19-22.27.58:433][964]LogUObjectHash: Compacting FUObjectHashTables data took   3.04ms
+[2020.10.19-22.27.58:523][964]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 35
+[2020.10.19-22.27.58:523][964]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.10.19-22.27.58:524][964]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.294ms to complete.
+[2020.10.19-22.27.58:524][964]LogFileHelpers: Loading map 'Env_Map' took 0.758
+[2020.10.19-22.27.58:611][964]LogShaderCompilers: Display: Worker (1/21): shaders left to compile 33
+[2020.10.19-22.27.58:640][964]LogShaderCompilers: Display: Worker (3/21): shaders left to compile 31
+[2020.10.19-22.27.58:901][965]LogShaderCompilers: Display: Worker (8/21): shaders left to compile 29
+[2020.10.19-22.27.58:920][965]LogShaderCompilers: Display: Worker (6/21): shaders left to compile 27
+[2020.10.19-22.27.58:936][965]LogShaderCompilers: Display: Worker (11/21): shaders left to compile 25
+[2020.10.19-22.27.59:143][967]LogShaderCompilers: Display: Worker (7/21): shaders left to compile 23
+[2020.10.19-22.27.59:231][970]LogShaderCompilers: Display: Worker (2/21): shaders left to compile 21
+[2020.10.19-22.27.59:237][970]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 19
+[2020.10.19-22.27.59:255][970]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 18
+[2020.10.19-22.27.59:615][978]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 17
+[2020.10.19-22.27.59:716][981]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 16
+[2020.10.19-22.27.59:868][984]LogShaderCompilers: Display: Worker (19/21): shaders left to compile 15
+[2020.10.19-22.27.59:886][984]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 14
+[2020.10.19-22.27.59:898][984]LogShaderCompilers: Display: Worker (15/21): shaders left to compile 13
+[2020.10.19-22.27.59:898][984]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 12
+[2020.10.19-22.27.59:921][984]LogShaderCompilers: Display: Worker (17/21): shaders left to compile 11
+[2020.10.19-22.27.59:932][984]LogShaderCompilers: Display: Worker (10/21): shaders left to compile 10
+[2020.10.19-22.28.00:022][987]LogShaderCompilers: Display: Worker (14/21): shaders left to compile 9
+[2020.10.19-22.28.00:099][989]LogShaderCompilers: Display: Worker (16/21): shaders left to compile 8
+[2020.10.19-22.28.00:135][990]LogShaderCompilers: Display: Worker (5/21): shaders left to compile 7
+[2020.10.19-22.28.00:169][991]LogShaderCompilers: Display: Worker (12/21): shaders left to compile 6
+[2020.10.19-22.28.00:174][991]LogShaderCompilers: Display: Worker (9/21): shaders left to compile 5
+[2020.10.19-22.28.00:584][  2]LogShaderCompilers: Display: Worker (4/21): shaders left to compile 4
+[2020.10.19-22.28.00:652][  3]LogShaderCompilers: Display: Worker (13/21): shaders left to compile 3
+[2020.10.19-22.28.00:669][  4]LogShaderCompilers: Display: Worker (18/21): shaders left to compile 2
+[2020.10.19-22.28.00:710][  5]LogShaderCompilers: Display: Worker (20/21): shaders left to compile 1
+[2020.10.19-22.28.07:112][677]LogAssetEditorSubsystem: Opening Asset editor for World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-22.28.07:129][677]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2020.10.19-22.28.07:131][677]Cmd: MAP LOAD FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.10.19-22.28.07:131][677]LightingResults: New page: Lighting Build
+[2020.10.19-22.28.07:131][677]LoadErrors: New page: Loading map: RobertsWorld.umap
+[2020.10.19-22.28.07:165][677]LogWorld: UWorld::CleanupWorld for Env_Map, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-22.28.07:165][677]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-22.28.07:165][677]MapCheck: New page: Map Check
+[2020.10.19-22.28.07:165][677]LightingResults: New page: Lighting Build
+[2020.10.19-22.28.07:184][677]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E86FF256C0), frame # 2677
+[2020.10.19-22.28.07:184][677]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E874E04A00), frame # 2677
+[2020.10.19-22.28.07:186][677]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2020.10.19-22.28.07:587][677]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.10.19-22.28.07:587][677]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.10.19-22.28.07:587][677]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E880B1EE00), frame # 2677
+[2020.10.19-22.28.07:587][677]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E8664E47C0), frame # 2677
+[2020.10.19-22.28.07:606][677]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2020.10.19-22.28.07:649][677]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.10.19-22.28.07:650][677]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1.198ms to complete.
+[2020.10.19-22.28.07:650][677]LogFileHelpers: Loading map 'RobertsWorld' took 0.519
+[2020.10.19-22.28.30:594][382]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.10.19-22.28.30:790][382]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 125 classes and 0 folders.
+[2020.10.19-22.28.31:624][382]LogSlate: Took 0.000251 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.10.19-22.28.34:952][661]LogRenderer: Reallocating scene render targets to support 1300x576 Format 26 NumSamples 1 (Frame:1).
+[2020.10.19-22.28.41:296][294]LogSlate: Took 0.005967 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.10.19-22.29.04:160][820]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.29.04:827][820]LogSlate: Took 0.005658 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.10.19-22.30.50:493][879]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-22.30.50:627][879]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2020.10.19-22.30.55:048][332]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawnA00910CB46DD45175EEA75A27E100817.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-22.30.55:066][332]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-22.30.55:066][332]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.31.01:745][980]LogEditorViewport: Clicking on Actor (LMB): MotionControllerPawn_C (MotionControllerPawn)
+[2020.10.19-22.38.06:932][445]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2020.10.19-22.38.07:040][445]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld_Auto1BB754F65411355BE4027479FC039684F.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Autosaves/Game/RobertFunZone/RobertsWorld_Auto1.umap'
+[2020.10.19-22.38.07:041][445]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/RobertFunZone/RobertsWorld' took 0.137
+[2020.10.19-22.38.07:041][445]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.137
+[2020.10.19-22.38.07:042][445]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/VirtualRealityBP/Blueprints/BP_MotionController] ([1] browsable assets)...
+[2020.10.19-22.38.07:054][445]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController]
+[2020.10.19-22.38.07:054][445]OBJ SavePackage: Finished generating thumbnails for package [/Game/VirtualRealityBP/Blueprints/BP_MotionController]
+[2020.10.19-22.38.07:155][445]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/BP_MotionController_Auto1E7B5DCA14EA00CCB31E1049B231AEF32.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Autosaves/Game/VirtualRealityBP/Blueprints/BP_MotionController_Auto1.uasset'
+[2020.10.19-22.38.07:156][445]LogFileHelpers: Auto-saving content packages took 0.115
+[2020.10.19-22.48.07:345][937]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/Engine.GameInstance
+[2020.10.19-22.48.07:510][937]LogSlate: Window 'Tutorials' being destroyed
+[2020.10.19-22.48.24:595][246]LogSlate: Window 'Project Settings' being destroyed
+[2020.10.19-22.48.24:601][246]LogSlate: Window 'Project Settings' being destroyed
+[2020.10.19-22.48.43:051][315]LogUObjectHash: Compacting FUObjectHashTables data took   3.69ms
+[2020.10.19-22.48.43:149][315]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorldA8BA26E04BEFB1140EEE339C0ADBF7F5.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-22.48.43:208][315]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-22.48.43:208][315]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-22.49.45:917][515]LogSlate: Window 'Create New Blueprint' being destroyed
+[2020.10.19-22.49.45:991][515]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-22.49.49:554][791]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance36A02A974BF9B86A93C4888F7C468CAB.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-22.49.49:570][791]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-22.49.49:570][791]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-22.52.08:550][229]LogSlate: Took 0.005024 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2020.10.19-22.52.11:593][514]BlueprintLog: New page: Compile VRGameInstance
+[2020.10.19-22.52.11:630][514]LogUObjectHash: Compacting FUObjectHashTables data took   3.54ms
+[2020.10.19-22.52.12:133][551]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance0F6F481B451D6A8AD6D410A3258DB82D.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-22.52.12:146][551]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-22.52.12:146][551]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-22.52.18:656][ 90]BlueprintLog: New page: Compile VRGameInstance
+[2020.10.19-22.52.18:687][ 90]LogUObjectHash: Compacting FUObjectHashTables data took   2.96ms
+[2020.10.19-22.52.19:074][116]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance552074AF4BCB6A0441057AAB601204D0.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-22.52.19:087][116]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-22.52.19:087][116]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-22.53.19:167][673]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.10.19-22.53.38:753][ 12]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-22.53.38:872][ 12]LogUObjectHash: Compacting FUObjectHashTables data took   3.58ms
+[2020.10.19-22.53.39:429][ 25]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn8DF5A3B247CF7B793FC68BB1A21FDC22.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-22.53.39:443][ 25]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-22.53.39:443][ 25]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.53.55:086][127]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.10.19-22.54.09:061][106]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-22.54.09:176][106]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
+[2020.10.19-22.54.09:598][110]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn361E611C4B7714C4F6FC419B3B4D99E9.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-22.54.09:613][110]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-22.54.09:613][110]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.54.46:414][712]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-22.54.46:530][712]LogUObjectHash: Compacting FUObjectHashTables data took   4.38ms
+[2020.10.19-22.54.47:020][721]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn7ED92883413F8583CE1801BA6AD84C8C.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-22.54.47:033][721]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-22.54.47:033][721]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.55.03:345][862]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-22.55.03:464][862]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.10.19-22.55.04:122][881]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn2726A7A644690C3E9397378888FAFF3A.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-22.55.04:137][881]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-22.55.04:137][881]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.55.08:262][198]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstanceFD328EBA4EE0EB9B536DC190AF7C71DB.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-22.55.08:274][198]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-22.55.08:274][198]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-22.55.15:803][736]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn29BE0D07444A18D06E881D9B3C60685A.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-22.55.15:817][736]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-22.55.15:817][736]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.55.19:357][ 42]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.10.19-22.55.23:030][432]LogSlate: Window 'Project Settings' being destroyed
+[2020.10.19-22.55.23:035][432]LogSlate: Window 'Project Settings' being destroyed
+[2020.10.19-22.55.24:587][603]LogUObjectHash: Compacting FUObjectHashTables data took   3.68ms
+[2020.10.19-22.55.24:686][603]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld5D4B7495472B023FF01324B9F34AD18D.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-22.55.24:744][603]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-22.55.24:744][603]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-22.55.27:409][874]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2020.10.19-22.55.27:559][874]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/BP_MotionController50EC321647B03DCBDBD4E29AFD9F0DD6.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/BP_MotionController.uasset'
+[2020.10.19-22.55.27:586][874]AssetCheck: New page: Asset Save: BP_MotionController
+[2020.10.19-22.55.27:586][874]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/BP_MotionController.BP_MotionController
+[2020.10.19-22.56.13:746][922]LogSlate: Window 'Change Variable Type' being destroyed
+[2020.10.19-22.56.18:093][316]LogSlate: Window 'Find in Blueprints' being destroyed
+[2020.10.19-22.56.18:099][316]LogSlate: Window 'Find in Blueprints' being destroyed
+[2020.10.19-22.56.25:518][958]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-22.56.25:635][958]LogUObjectHash: Compacting FUObjectHashTables data took   3.52ms
+[2020.10.19-22.56.26:305][984]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn686A3A47447F52B6B4E46B9FDD1AD5E2.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-22.56.26:322][984]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-22.56.26:322][984]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-22.56.27:375][ 70]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance5E27480B4E546C119FFADFB210D49BE0.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-22.56.27:386][ 70]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-22.56.27:387][ 70]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-22.56.36:313][ 62]LogSlate: Window 'VRGameInstance' being destroyed
+[2020.10.19-22.56.36:319][ 62]LogSlate: Window 'VRGameInstance' being destroyed
+[2020.10.19-22.56.36:347][ 62]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-22.56.36:347][ 62]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-22.56.36:414][ 62]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.10.19-22.56.36:414][ 62]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-22.56.36:414][ 62]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-22.56.36:510][ 62]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-22.56.36:510][ 62]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-22.56.37:743][189]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
+[2020.10.19-22.56.37:835][189]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld2D22AC894ABEB7532CFCEDA7DBB84FA8.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-22.56.37:892][189]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-22.56.37:892][189]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-22.56.39:921][409]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2020.10.19-22.59.12:333][ 55]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2020.10.19-22.59.12:422][ 55]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld31520CCC44207B7E765409A8692D6AC4.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-22.59.12:480][ 55]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-22.59.12:480][ 55]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-22.59.28:515][678]LogSlate: Window 'Project Settings' being destroyed
+[2020.10.19-22.59.28:519][678]LogSlate: Window 'Project Settings' being destroyed
+[2020.10.19-22.59.34:535][382]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-22.59.43:558][403]BlueprintLog: New page: Compile VRGameInstance
+[2020.10.19-22.59.43:582][403]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2020.10.19-22.59.44:741][531]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstanceC1CBCDBD46B28ED676C13AB324C86093.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-22.59.44:754][531]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-22.59.44:754][531]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.00.00:346][349]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.00.48:330][ 98]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.00.48:437][ 98]LogUObjectHash: Compacting FUObjectHashTables data took   2.56ms
+[2020.10.19-23.00.49:459][154]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn2144688F4D7F8DE83BCB68A2BA0697A5.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.00.49:473][154]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.00.49:473][154]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.01.14:882][509]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.01.14:990][509]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
+[2020.10.19-23.01.15:484][522]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn9925B7A54425843CBB71CF957DC6F2DA.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.01.15:499][522]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.01.15:499][522]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.01.58:695][720]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2020.10.19-23.01.58:790][720]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld56008F5A4476EE6156AFE1A9BD581686.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-23.01.58:846][720]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-23.01.58:846][720]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-23.02.07:648][754]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.19-23.02.07:648][754]LogHMD: Initializing OVRPlugin session
+[2020.10.19-23.02.07:705][754]LogHMD: Allocating Oculus 3296 x 1776 rendertarget swapchain
+[2020.10.19-23.02.07:706][754]PIE: New page: PIE session: RobertsWorld (Oct 19, 2020, 3:02:07 PM)
+[2020.10.19-23.02.07:707][754]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.10.19-23.02.07:708][754]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.10.19-23.02.07:708][754]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.10.19-23.02.07:738][754]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029482s)
+[2020.10.19-23.02.07:738][754]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.10.19-23.02.07:739][754]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E8F0E7BE00), frame # 154754
+[2020.10.19-23.02.07:739][754]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E8F2E61D00), frame # 154754
+[2020.10.19-23.02.07:739][754]LogPlayLevel: PIE: World Init took: (0.001025s)
+[2020.10.19-23.02.07:739][754]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.030635s)
+[2020.10.19-23.02.07:765][754]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2020.10.19-23.02.07:768][754]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.19-23.02.07:768][754]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.19-23.02.07:768][754]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.19-23.02.07:768][754]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.19-23.02.07:768][754]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.19-23.02.07:768][754]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.19-23.02.07:768][754]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.19-23.02.07:768][754]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.19-23.02.07:769][754]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.19-23.02.07:769][754]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.19-23.02.07:792][754]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.02.07:792][754]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.02.07:793][754]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.02.07:793][754]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.02.07:794][754]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.02.07:794][754]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.02.07:795][754]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.02.07:795][754]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.02.07:856][754]LogAudioMixer: Display: Using Audio Device Headphones (2- Rift S)
+[2020.10.19-23.02.07:856][754]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.19-23.02.07:856][754]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.19-23.02.07:856][754]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.19-23.02.07:857][754]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.19-23.02.07:866][754]LogInit: FAudioDevice initialized.
+[2020.10.19-23.02.07:876][754]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-23.02.07:935][754]LogLoad: Game class is 'GameModeBase'
+[2020.10.19-23.02.07:939][754]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.10.19-19.02.07
+[2020.10.19-23.02.07:942][754]LogWorld: Bringing up level for play took: 0.006624
+[2020.10.19-23.02.07:943][754]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2020.10.19-23.02.07:944][754]LogLevel: Warning: EnableInput on a LevelScript actor can not be specified for only one PlayerController.  Enabling for all PlayerControllers.
+[2020.10.19-23.02.07:981][754]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2020.10.19-23.02.07:989][754]LogPlayerController: Error: EnableInput can only be specified on a PlayerController for itself
+[2020.10.19-23.02.07:990][754]LogPlayerController: Error: EnableInput can only be specified on a PlayerController for itself
+[2020.10.19-23.02.08:000][754]PIE: Server logged in
+[2020.10.19-23.02.08:010][754]PIE: Play in editor total start time 0.362 seconds.
+[2020.10.19-23.02.08:011][754]LogEngine: Changing dynamic resolution state.
+[2020.10.19-23.02.08:018][754]LogAudio: Warning: Detected orphaned looping sound 'Starter_Music01'.
+[2020.10.19-23.02.08:036][754]LogRenderer: Warning: Resizing VR buffer to 3296 by 1776
+[2020.10.19-23.02.08:036][754]LogRenderer: Reallocating scene render targets to support 3296x1776 Format 26 NumSamples 1 (Frame:1).
+[2020.10.19-23.02.08:036][754]LogHMD: Allocating Oculus 3296 x 1776 depth rendertarget swapchain
+[2020.10.19-23.02.08:504][757]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.10.19-23.02.22:789][862]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=5267.000 Y=2861.000 Z=-42.000] for [EnemyBase_C]
+[2020.10.19-23.02.33:840][746]LogBlueprintUserMessages: [MotionControllerPawn_2] Hello
+[2020.10.19-23.02.41:531][354]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-23.02.41:531][354]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.10.19-23.02.41:571][354]LogSlate: Window 'DriveInDisaster Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.10.19-23.02.41:608][354]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.02.41:609][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.02.41:656][354]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.19-23.02.41:662][354]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.02.41:715][354]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E8F2E61D00), frame # 157354
+[2020.10.19-23.02.41:716][354]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E8F0E7BE00), frame # 157354
+[2020.10.19-23.02.41:739][354]LogUObjectHash: Compacting FUObjectHashTables data took   4.00ms
+[2020.10.19-23.02.41:777][355]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2020.10.19-23.02.41:808][355]LogEngine: Changing dynamic resolution state.
+[2020.10.19-23.03.12:910][273]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.03.12:946][273]LogBlueprint: Error: [Compiler MotionControllerPawn] This blueprint (self) is not a VRGameInstance_C, therefore ' Target ' must have a connection.
+[2020.10.19-23.03.12:946][273]LogBlueprint: Error: [Compiler MotionControllerPawn] Variable node  Set PlayerHealth  uses an invalid target.  It may depend on a node that is not connected to the execution chain, and got purged.
+[2020.10.19-23.03.13:013][273]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2020.10.19-23.03.13:602][298]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn727FE78D4197AE9720EA3ABA2D213269.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.03.13:616][298]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.03.13:616][298]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.03.22:635][249]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.03.22:732][249]LogUObjectHash: Compacting FUObjectHashTables data took   3.36ms
+[2020.10.19-23.03.23:426][286]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawnB21D6B4D49BF24564331B5BCCF6139CB.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.03.23:442][286]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.03.23:442][286]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.03.32:927][289]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.03.33:025][289]LogUObjectHash: Compacting FUObjectHashTables data took   3.41ms
+[2020.10.19-23.03.34:256][386]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn0DF11718417A94CE54D50292AB45A356.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.03.34:271][386]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.03.34:271][386]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.03.41:046][115]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.03.41:142][115]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2020.10.19-23.03.41:712][137]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn140BC27249F72A0F66C31CB36FA61560.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.03.41:727][137]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.03.41:727][137]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.04.21:445][722]BlueprintLog: New page: Compile VRGameInstance
+[2020.10.19-23.04.21:523][722]LogUObjectHash: Compacting FUObjectHashTables data took   3.26ms
+[2020.10.19-23.04.22:442][822]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstanceD7ECC6214D128E7CB2C7E79EDFB09F37.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.04.22:456][822]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.04.22:456][822]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.05.22:001][759]BlueprintLog: New page: Compile VRGameInstance
+[2020.10.19-23.05.22:040][759]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.10.19-23.05.22:457][798]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance9D1139D347DC57D095B3E0B2CA8EEF09.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.05.22:471][798]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.05.22:471][798]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.05.28:441][484]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance2C86EFE54645C4B2620A00A6139BED42.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.05.28:455][484]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.05.28:455][484]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.05.46:426][269]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance787CA8D24AE393FAADEE77B36459DB0F.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.05.46:439][269]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.05.46:439][269]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.05.50:562][742]LogTemp: Repeating last play command: VR Preview
+[2020.10.19-23.05.50:587][742]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.10.19-23.05.50:587][742]LogHMD: Initializing OVRPlugin session
+[2020.10.19-23.05.50:636][742]LogHMD: Allocating Oculus 3296 x 1776 rendertarget swapchain
+[2020.10.19-23.05.50:636][742]PIE: New page: PIE session: RobertsWorld (Oct 19, 2020, 3:05:50 PM)
+[2020.10.19-23.05.50:636][742]LogPlayLevel: Creating play world package: /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.10.19-23.05.50:656][742]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020441s)
+[2020.10.19-23.05.50:657][742]LogAIModule: Creating AISystem for world RobertsWorld
+[2020.10.19-23.05.50:657][742]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001E8B003DE00), frame # 177742
+[2020.10.19-23.05.50:657][742]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001E8F4B06FC0), frame # 177742
+[2020.10.19-23.05.50:658][742]LogPlayLevel: PIE: World Init took: (0.001097s)
+[2020.10.19-23.05.50:658][742]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/RobertFunZone/RobertsWorld.RobertsWorld to /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld (0.021652s)
+[2020.10.19-23.05.50:689][742]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2020.10.19-23.05.50:692][742]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.10.19-23.05.50:693][742]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.10.19-23.05.50:693][742]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.10.19-23.05.50:693][742]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.10.19-23.05.50:693][742]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.10.19-23.05.50:693][742]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.10.19-23.05.50:693][742]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.10.19-23.05.50:693][742]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.10.19-23.05.50:693][742]LogAudio: Display: Using built-in audio occlusion.
+[2020.10.19-23.05.50:693][742]LogAudioMixer: Display: Initializing audio mixer.
+[2020.10.19-23.05.50:695][742]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.05.50:695][742]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.05.50:696][742]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.05.50:696][742]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.05.50:697][742]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.05.50:697][742]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.05.50:698][742]LogAudioMixer: Display: 0: FrontLeft
+[2020.10.19-23.05.50:699][742]LogAudioMixer: Display: 1: FrontRight
+[2020.10.19-23.05.50:760][742]LogAudioMixer: Display: Using Audio Device Headphones (2- Rift S)
+[2020.10.19-23.05.50:760][742]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.10.19-23.05.50:760][742]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.10.19-23.05.50:760][742]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.10.19-23.05.50:761][742]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.10.19-23.05.50:770][742]LogInit: FAudioDevice initialized.
+[2020.10.19-23.05.50:780][742]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-23.05.50:841][742]LogLoad: Game class is 'GameModeBase'
+[2020.10.19-23.05.50:845][742]LogWorld: Bringing World /Game/RobertFunZone/UEDPIE_0_RobertsWorld.RobertsWorld up for play (max tick rate 0) at 2020.10.19-19.05.50
+[2020.10.19-23.05.50:846][742]LogWorld: Bringing up level for play took: 0.003820
+[2020.10.19-23.05.50:846][742]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2020.10.19-23.05.50:847][742]LogLevel: Warning: EnableInput on a LevelScript actor can not be specified for only one PlayerController.  Enabling for all PlayerControllers.
+[2020.10.19-23.05.50:853][742]LogPlayerController: Error: EnableInput can only be specified on a PlayerController for itself
+[2020.10.19-23.05.50:854][742]LogPlayerController: Error: EnableInput can only be specified on a PlayerController for itself
+[2020.10.19-23.05.50:857][742]PIE: Server logged in
+[2020.10.19-23.05.50:859][742]PIE: Play in editor total start time 0.272 seconds.
+[2020.10.19-23.05.50:859][742]LogEngine: Changing dynamic resolution state.
+[2020.10.19-23.05.50:863][742]LogAudio: Warning: Detected orphaned looping sound 'Starter_Music01'.
+[2020.10.19-23.05.50:872][742]LogHMD: Allocating Oculus 3296 x 1776 depth rendertarget swapchain
+[2020.10.19-23.05.50:972][745]LogProfilingDebugging: Allocated a 1024 x 1024 texture for HMD canvas layer
+[2020.10.19-23.06.24:336][423]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.10.19-23.06.24:336][423]LogWorld: BeginTearingDown for /Game/RobertFunZone/UEDPIE_0_RobertsWorld
+[2020.10.19-23.06.24:381][423]LogSlate: Window 'DriveInDisaster Preview [NetMode: Standalone] (64-bit/Windows) OculusHMD' being destroyed
+[2020.10.19-23.06.24:419][423]LogWorld: UWorld::CleanupWorld for RobertsWorld, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.06.24:420][423]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.06.24:430][423]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.10.19-23.06.24:435][423]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.06.24:479][423]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001E8F4B06FC0), frame # 180423
+[2020.10.19-23.06.24:479][423]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001E8B003DE00), frame # 180423
+[2020.10.19-23.06.24:482][423]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2020.10.19-23.06.24:528][424]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2020.10.19-23.06.24:550][424]LogEngine: Changing dynamic resolution state.
+[2020.10.19-23.07.24:292][150]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance1642C5874FDF54BEC901829AAF7D0646.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.07.24:307][150]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.07.24:307][150]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.07.35:268][442]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance9F9E0BE14670617E734260B1F1BC7647.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.07.35:283][442]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.07.35:283][442]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.07.58:302][827]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.07.58:399][827]LogUObjectHash: Compacting FUObjectHashTables data took   2.99ms
+[2020.10.19-23.07.58:997][851]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn368E2F9440B2EA72D8F967A7937FE29A.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.07.59:012][851]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.07.59:013][851]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.11.09:934][861]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn31407D6C495CB06D281913BA115AA26F.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.11.09:953][861]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.11.09:953][861]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.11.25:521][672]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance65B8D2F141FD7102D666A3A7D34ED954.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.11.25:536][672]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.11.25:536][672]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.12.54:073][190]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance97F204534AFCF4C39B683F99DE31AFD2.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.12.54:088][190]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.12.54:088][190]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.12.55:957][396]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/VRGameInstance659B66414666EE34138E63B61613C252.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/GameInstance/VRGameInstance.uasset'
+[2020.10.19-23.12.55:970][396]AssetCheck: New page: Asset Save: VRGameInstance
+[2020.10.19-23.12.55:970][396]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/GameInstance/VRGameInstance.VRGameInstance
+[2020.10.19-23.13.29:714][580]LogUObjectHash: Compacting FUObjectHashTables data took   3.75ms
+[2020.10.19-23.13.38:916][624]LogUObjectHash: Compacting FUObjectHashTables data took   2.74ms
+[2020.10.19-23.13.42:077][972]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2020.10.19-23.13.42:138][972]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2020.10.19-23.13.42:233][972]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorldF236E87B4D724BB0F78F2DA6C7D15F5E.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-23.13.42:278][972]LogFileHelpers: Saving map 'RobertsWorld' took 0.165
+[2020.10.19-23.13.42:278][972]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOver" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset" SILENT=true
+[2020.10.19-23.13.42:287][972]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOverC16366BD4ABA6F11D4F935983E97B1A3.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset'
+[2020.10.19-23.13.42:288][972]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOverActor" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset" SILENT=true
+[2020.10.19-23.13.42:295][972]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOverActor437C1A364974E9312E276BB16441269B.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset'
+[2020.10.19-23.13.42:324][972]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.19-23.13.42:324][972]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-23.13.42:324][972]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GameOver.GameOver
+[2020.10.19-23.13.42:324][972]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/GameOverActor.GameOverActor
+[2020.10.19-23.15.35:451][142]AssetReimport: New page: Outstanding source content changes 3:15:35 PM
+[2020.10.19-23.15.35:452][142]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/UI_Assets/GameOver/Game Over.png)
+[2020.10.19-23.15.35:643][142]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Game_OverE62FA7D7463BEC61272062918113D160.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/UI_Assets/GameOver/Game_Over.uasset'
+[2020.10.19-23.15.35:761][143]AssetCheck: New page: Asset Save: Game_Over
+[2020.10.19-23.15.35:761][143]LogContentValidation: Display: Validating Texture2D /Game/RobertFunZone/UI/UI_Assets/GameOver/Game_Over.Game_Over
+[2020.10.19-23.15.38:796][294]AssetReimport: Importing new asset /Game/RobertFunZone/UI/UI_Assets/GameOver/Game_Over.
+[2020.10.19-23.18.21:004][242]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/RobertFunZone/UI/GameOver.GameOver
+[2020.10.19-23.18.40:912][980]BlueprintLog: New page: Compile GameOver
+[2020.10.19-23.18.40:980][980]LogUObjectHash: Compacting FUObjectHashTables data took   4.85ms
+[2020.10.19-23.18.41:526][ 16]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOver" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset" SILENT=true
+[2020.10.19-23.18.41:546][ 16]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOver317BF5AD43FDCE6092F8EAAF3619EDCC.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset'
+[2020.10.19-23.18.41:562][ 16]AssetCheck: New page: Asset Save: GameOver
+[2020.10.19-23.18.41:562][ 16]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GameOver.GameOver
+[2020.10.19-23.18.48:766][779]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/UI/GameOverActor.GameOverActor
+[2020.10.19-23.18.54:605][288]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.10.19-23.18.58:090][618]BlueprintLog: New page: Compile GameOverActor
+[2020.10.19-23.18.58:148][618]LogUObjectHash: Compacting FUObjectHashTables data took   4.66ms
+[2020.10.19-23.19.01:464][925]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOverActor" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset" SILENT=true
+[2020.10.19-23.19.01:482][925]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOverActorA5B52D734103532D5E34C5AB9BA319A0.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset'
+[2020.10.19-23.19.01:499][925]AssetCheck: New page: Asset Save: GameOverActor
+[2020.10.19-23.19.01:499][925]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/GameOverActor.GameOverActor
+[2020.10.19-23.19.29:456][745]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOverActor" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset" SILENT=true
+[2020.10.19-23.19.29:472][745]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOverActorBD378C934DD679911623888D191BDF22.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset'
+[2020.10.19-23.19.29:488][745]AssetCheck: New page: Asset Save: GameOverActor
+[2020.10.19-23.19.29:488][745]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/GameOverActor.GameOverActor
+[2020.10.19-23.19.43:226][ 79]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn5E5207874495667325C6418BA0941FA9.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.19.43:244][ 79]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.19.43:244][ 79]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.20.01:649][823]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.20.01:760][823]LogUObjectHash: Compacting FUObjectHashTables data took   4.29ms
+[2020.10.19-23.20.02:388][848]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn48DC441B452EB6822EF8F4AC32832FE0.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.20.02:408][848]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.20.02:408][848]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.20.33:711][810]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.20.33:826][810]LogUObjectHash: Compacting FUObjectHashTables data took   4.70ms
+[2020.10.19-23.20.34:403][825]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn4C56D9CB4C7AC6448E685FBB6617B5B2.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.20.34:430][825]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.20.34:430][825]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.21.02:509][139]LogSlate: Window 'Color Picker' being destroyed
+[2020.10.19-23.21.51:606][352]BlueprintLog: New page: Compile MotionControllerPawn
+[2020.10.19-23.21.51:740][352]LogUObjectHash: Compacting FUObjectHashTables data took   4.96ms
+[2020.10.19-23.22.21:079][940]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn53E7C0684569A8F78D45FAB98D67822B.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.22.21:099][940]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.22.21:099][940]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.22.27:550][462]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawnBE67E6074074C191A529E0A7C734DBDA.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.22.27:569][462]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.22.27:569][462]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.22.58:915][892]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MotionControllerPawn9ED7C1EA451952B98611248F780BE77D.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2020.10.19-23.22.58:933][892]AssetCheck: New page: Asset Save: MotionControllerPawn
+[2020.10.19-23.22.58:933][892]LogContentValidation: Display: Validating Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
+[2020.10.19-23.23.03:207][303]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOver" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset" SILENT=true
+[2020.10.19-23.23.03:222][303]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOverF153CC7C4E37E95359F0BCBFDBEC40EA.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset'
+[2020.10.19-23.23.03:238][303]AssetCheck: New page: Asset Save: GameOver
+[2020.10.19-23.23.03:238][303]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GameOver.GameOver
+[2020.10.19-23.24.00:984][180]LogUObjectHash: Compacting FUObjectHashTables data took   4.49ms
+[2020.10.19-23.24.01:081][180]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld_Auto253ABBE94496171BA81290EA983C93590.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Autosaves/Game/RobertFunZone/RobertsWorld_Auto2.umap'
+[2020.10.19-23.24.01:083][180]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/RobertFunZone/RobertsWorld' took 0.141
+[2020.10.19-23.24.01:084][180]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.141
+[2020.10.19-23.24.34:997][110]Cmd: DELETE
+[2020.10.19-23.24.34:997][110]Cmd: ACTOR DELETE
+[2020.10.19-23.24.35:008][110]LogEditorActor: Deleted Actor: BackButtonActor_C
+[2020.10.19-23.24.35:051][110]LogUObjectHash: Compacting FUObjectHashTables data took   3.48ms
+[2020.10.19-23.24.35:053][110]LogEditorActor: Deleted 1 Actors (0.055 secs)
+[2020.10.19-23.24.36:568][284]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.10.19-23.24.36:657][284]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorldA697BD984B33C63DB5CB3CA5CE70F9AB.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-23.24.36:718][284]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-23.24.36:719][284]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-23.26.35:714][ 75]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2020.10.19-23.26.37:300][249]AssetReimport: New page: Outstanding source content changes 3:26:37 PM
+[2020.10.19-23.26.37:301][249]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:/GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/UI_Assets/MainMenu/Main_Menu.png)
+[2020.10.19-23.26.37:509][250]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/Main_Menu72AEF56F471FFE6F17F0F78B0EC73E2A.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/UI_Assets/MainMenu/Main_Menu.uasset'
+[2020.10.19-23.26.37:629][251]AssetCheck: New page: Asset Save: Main_Menu
+[2020.10.19-23.26.37:629][251]LogContentValidation: Display: Validating Texture2D /Game/RobertFunZone/UI/UI_Assets/MainMenu/Main_Menu.Main_Menu
+[2020.10.19-23.26.40:591][589]AssetReimport: Importing new asset /Game/RobertFunZone/UI/UI_Assets/MainMenu/Main_Menu.
+[2020.10.19-23.26.52:940][  2]LogUObjectHash: Compacting FUObjectHashTables data took   3.38ms
+[2020.10.19-23.27.02:373][ 58]LogUObjectHash: Compacting FUObjectHashTables data took   3.84ms
+[2020.10.19-23.27.05:118][346]LogUObjectHash: Compacting FUObjectHashTables data took   3.32ms
+[2020.10.19-23.27.05:159][346]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.27.05:169][346]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuB5EBA23443592E9E08D7FEA02D6E81C4.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.27.05:171][346]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenuActor" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenuActor.uasset" SILENT=true
+[2020.10.19-23.27.05:179][346]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuActor4AC6CF1245340ABAE8D9C296D516990A.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenuActor.uasset'
+[2020.10.19-23.27.05:203][346]AssetCheck: New page: Asset Save: multiple assets
+[2020.10.19-23.27.05:203][346]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.27.05:203][346]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/MainMenuActor.MainMenuActor
+[2020.10.19-23.27.49:004][565]LogUObjectHash: Compacting FUObjectHashTables data took   4.11ms
+[2020.10.19-23.27.52:314][928]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.28.13:014][572]BlueprintLog: New page: Compile MainMenu
+[2020.10.19-23.28.13:056][572]LogUObjectHash: Compacting FUObjectHashTables data took   3.57ms
+[2020.10.19-23.28.13:652][609]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.28.13:671][609]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuEDA21C254D5F5BB64943E797531F9DF7.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.28.13:688][609]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.28.13:688][609]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.28.24:329][532]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.28.24:343][532]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuDDF5A68B41AE19D72ABFB1A5AC4241D0.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.28.24:363][532]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.28.24:363][532]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.28.28:911][918]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.28.28:911][918]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.28.28:941][918]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.28.28:941][918]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.28.29:379][946]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.28.29:379][946]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.28.31:953][178]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/UI/MainMenuActor.MainMenuActor
+[2020.10.19-23.28.36:955][550]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2020.10.19-23.28.39:281][734]BlueprintLog: New page: Compile MainMenuActor
+[2020.10.19-23.28.39:363][734]LogUObjectHash: Compacting FUObjectHashTables data took   4.60ms
+[2020.10.19-23.28.39:795][760]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenuActor" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenuActor.uasset" SILENT=true
+[2020.10.19-23.28.39:814][760]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuActor59778AF04BACAC8D51ED2ABC02556069.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenuActor.uasset'
+[2020.10.19-23.28.39:835][760]AssetCheck: New page: Asset Save: MainMenuActor
+[2020.10.19-23.28.39:835][760]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/MainMenuActor.MainMenuActor
+[2020.10.19-23.28.53:468][342]LogUObjectHash: Compacting FUObjectHashTables data took   3.99ms
+[2020.10.19-23.28.53:560][342]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorldF7EE12504FA11ECBE9B2F3924EB0CC82.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-23.28.53:620][342]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-23.28.53:620][342]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-23.29.07:057][920]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2020.10.19-23.29.07:153][920]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld4AE9CDC04196F3B14760A0AB07DC9500.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-23.29.07:209][920]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-23.29.07:209][920]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-23.29.11:677][439]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2020.10.19-23.29.11:768][439]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorldEC1DE9904E4713889046DBBD1F47F7B2.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-23.29.11:833][439]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-23.29.11:833][439]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-23.30.45:018][916]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2020.10.19-23.30.47:379][193]Cmd: SELECT NONE
+[2020.10.19-23.30.47:513][209]Cmd: SELECT NONE
+[2020.10.19-23.30.50:352][549]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube11)
+[2020.10.19-23.30.52:587][809]Cmd: TRANSACTION UNDO
+[2020.10.19-23.30.52:587][809]LogEditorTransaction: Undo Move Actors
+[2020.10.19-23.30.54:034][935]LogEditorViewport: Clicking on Actor (LMB): MainMenuActor_C (MainMenuActor)
+[2020.10.19-23.30.57:984][400]LogEditorViewport: Clicking Background
+[2020.10.19-23.30.58:913][510]LogEditorViewport: Clicking Background
+[2020.10.19-23.30.59:245][549]LogEditorViewport: Clicking on Actor (LMB): GameOverActor_C (GameOverActor)
+[2020.10.19-23.31.01:889][832]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/RobertFunZone/UI/GameOver.GameOver
+[2020.10.19-23.31.07:193][294]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOver" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset" SILENT=true
+[2020.10.19-23.31.07:213][294]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOverA85D5C21493EB3AAA732928D213214B6.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOver.uasset'
+[2020.10.19-23.31.07:228][294]AssetCheck: New page: Asset Save: GameOver
+[2020.10.19-23.31.07:228][294]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/GameOver.GameOver
+[2020.10.19-23.31.11:078][657]LogEditorViewport: Clicking on Actor (LMB): MainMenuActor_C (MainMenuActor)
+[2020.10.19-23.31.44:165][ 92]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/RobertFunZone/UI/Quit.Quit
+[2020.10.19-23.31.52:691][796]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.31.52:691][796]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.31.52:697][796]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.31.52:697][796]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.31.56:042][134]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/RobertFunZone/UI/Reset.Reset
+[2020.10.19-23.32.02:503][686]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.32.02:503][686]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.32.02:509][686]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2020.10.19-23.32.02:509][686]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.10.19-23.32.04:275][819]BlueprintLog: New page: Compile MainMenu
+[2020.10.19-23.32.04:436][819]LogUObjectHash: Compacting FUObjectHashTables data took   3.06ms
+[2020.10.19-23.32.06:220][982]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.32.06:235][982]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenu230F392246E0C582DB1722AC7B63E10E.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.32.06:251][982]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.32.06:251][982]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.32.35:290][670]BlueprintLog: New page: Compile MainMenu
+[2020.10.19-23.32.35:357][670]LogUObjectHash: Compacting FUObjectHashTables data took   3.73ms
+[2020.10.19-23.32.35:817][707]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.32.35:833][707]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuF6DA4A054800BACA3EC9ED9145CD3368.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.32.35:854][707]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.32.35:854][707]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.32.38:069][925]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.32.38:085][925]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuBB3E8FA5489A586DAF6B5CBFD1809808.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.32.38:102][925]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.32.38:102][925]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.33.56:014][403]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.33.56:036][403]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenu30F77C944E5623FC5BB14A8DB7170C89.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.33.56:052][403]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.33.56:052][403]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.34.03:306][216]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.34.03:321][216]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenu71DD4C6F420F658CF20B35A014577C8F.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.34.03:336][216]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.34.03:336][216]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.34.13:716][365]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.34.13:732][365]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuD602055844CC3949BDB3A79E64141AB4.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.34.13:747][365]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.34.13:747][365]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.34.17:752][771]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenu" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset" SILENT=true
+[2020.10.19-23.34.17:767][771]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuDBBE775248D21B36967F8681FF8B6F3C.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenu.uasset'
+[2020.10.19-23.34.17:781][771]AssetCheck: New page: Asset Save: MainMenu
+[2020.10.19-23.34.17:781][771]LogContentValidation: Display: Validating WidgetBlueprint /Game/RobertFunZone/UI/MainMenu.MainMenu
+[2020.10.19-23.34.27:658][649]BlueprintLog: New page: Compile MainMenuActor
+[2020.10.19-23.34.27:716][649]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2020.10.19-23.34.28:480][707]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/MainMenuActor" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenuActor.uasset" SILENT=true
+[2020.10.19-23.34.28:499][707]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/MainMenuActor6B87ACD54BA528A9D8B761ABD7BD16C3.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/MainMenuActor.uasset'
+[2020.10.19-23.34.28:515][707]AssetCheck: New page: Asset Save: MainMenuActor
+[2020.10.19-23.34.28:515][707]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/MainMenuActor.MainMenuActor
+[2020.10.19-23.34.33:106][182]LogEditorViewport: Clicking on Actor (LMB): GameOverActor_C (GameOverActor)
+[2020.10.19-23.34.42:534][228]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/RobertFunZone/UI/GameOverActor.GameOverActor
+[2020.10.19-23.34.51:325][963]BlueprintLog: New page: Compile GameOverActor
+[2020.10.19-23.34.51:386][963]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
+[2020.10.19-23.34.51:821][993]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/RobertFunZone/UI/GameOverActor" FILE="../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset" SILENT=true
+[2020.10.19-23.34.51:838][993]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/GameOverActor35D8139849F26379CD62308F2DAD5CA5.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/UI/GameOverActor.uasset'
+[2020.10.19-23.34.51:858][993]AssetCheck: New page: Asset Save: GameOverActor
+[2020.10.19-23.34.51:858][993]LogContentValidation: Display: Validating Blueprint /Game/RobertFunZone/UI/GameOverActor.GameOverActor
+[2020.10.19-23.34.55:124][328]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2020.10.19-23.34.56:504][490]Cmd: SELECT NONE
+[2020.10.19-23.34.56:637][506]Cmd: SELECT NONE
+[2020.10.19-23.34.58:264][686]LogUObjectHash: Compacting FUObjectHashTables data took   3.14ms
+[2020.10.19-23.34.58:361][686]LogSavePackage: Moving '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Saved/RobertsWorld3BA919CC42860D5C72B0F59D8FDED3F9.tmp' to '../../../../../GitHub/ProductionTest/DriveInDisaster/DriveInDisaster/Content/RobertFunZone/RobertsWorld.umap'
+[2020.10.19-23.34.58:427][686]AssetCheck: New page: Asset Save: RobertsWorld
+[2020.10.19-23.34.58:427][686]LogContentValidation: Display: Validating World /Game/RobertFunZone/RobertsWorld.RobertsWorld
+[2020.10.19-23.35.05:510][505]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2020.10.19-23.35.05:716][505]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.206 s
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: === Handled ensure: ===
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: 
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: Ensure condition failed: Cast<APawn>(NewUpdatedComponent->GetOwner()) [File:D:/Build/++UE4+Licensee/Sync/Engine/Source/Runtime/Engine/Private/Components/PawnMovementComponent.cpp] [Line: 18]
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: FloatingPawnMovement must update a component owned by a Pawn
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: Stack: 
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffebc0e6aa2 UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffebac814cd UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffebac6b883 UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeba85e4ed UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeba865834 UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeba84c59c UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeba86947a UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffebb0f2ce8 UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffebb0f3158 UE4Editor-Engine.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeb99bf9af UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeb9987103 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeb96aaace UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeb8e82b2b UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeb8dd0689 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeb91aa14e UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ffeb9a81d06 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ff677b97800 UE4Editor.exe!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ff677baba7c UE4Editor.exe!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ff677babb5a UE4Editor.exe!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ff677bbe31d UE4Editor.exe!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007ff677bc145a UE4Editor.exe!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007fff3b2d7034 KERNEL32.DLL!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: [Callstack] 0x00007fff3b5dcec1 ntdll.dll!UnknownFunction []
+[2020.10.19-23.35.05:716][505]LogOutputDevice: Error: 
