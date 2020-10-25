@@ -392,7 +392,6 @@ struct FParamMap0_Transient
 	float PhysicsDrag;
 	float3 PhysicsForce;
 	float3 PhysicsRotationalForce;
-	int ScalabilityEmitterExecutionState;
 	float ScalabilityEmitterSpawnCountScale;
 	bool SpawningbCanEverSpawn;
 };
@@ -449,6 +448,7 @@ struct FParamMap0_Particles
 	float3 BeamSplineNormal;
 	float3 BeamSplineTangent;
 	float4 Color;
+	float JitterDelayTimer;
 	float Lifetime;
 	float Mass;
 	float MaterialRandom;
@@ -527,12 +527,9 @@ struct FParamMap0_Local_SolveForcesAndVelocity
 	float3 PhysicsForce;
 };
 
-struct FParamMap0_Local_EmitterState
+struct FParamMap0_Local_JitterPosition
 {
-	bool LoopCountIncreased;
-	float LoopDuration;
-	bool NoActiveEmitterParticles;
-	int PreviousEmitterState;
+	float3 ModuleJitterOffset;
 };
 
 struct FParamMap0_Local_BeamEmitterSetup
@@ -547,10 +544,17 @@ struct FParamMap0_Local_BeamEmitterSetup
 struct FParamMap0_Local
 {
 	FParamMap0_Local_BeamEmitterSetup BeamEmitterSetup;
-	FParamMap0_Local_EmitterState EmitterState;
+	FParamMap0_Local_JitterPosition JitterPosition;
 	FParamMap0_Local_SolveForcesAndVelocity SolveForcesAndVelocity;
 	FParamMap0_Local_SpawnBeam SpawnBeam;
 	FParamMap0_Local_VectorNoiseForce VectorNoiseForce;
+};
+
+struct FParamMap0_JitterPosition
+{
+	float JitterAmount;
+	float JitterDelay;
+	float3 JitterOffset;
 };
 
 struct FParamMap0_InitializeParticle
@@ -587,7 +591,6 @@ struct FParamMap0_FloatFromCurve001
 
 struct FParamMap0_Engine_Owner
 {
-	float LODDistanceFraction;
 	float3 Position;
 	float4x4 SystemLocalToWorld;
 	float4x4 SystemLocalToWorldNoScale;
@@ -602,7 +605,6 @@ struct FParamMap0_Engine_Emitter
 
 struct FParamMap0_Engine_B_Emitter
 {
-	int NumParticles;
 	float SpawnCountScale;
 };
 
@@ -616,13 +618,6 @@ struct FParamMap0_Engine
 	FParamMap0_Engine_Owner Owner;
 	float RealTime;
 	float Time;
-};
-
-struct FParamMap0_EmitterState
-{
-	float LoopDelay;
-	float LoopDuration;
-	bool RecalculateDurationEachLoop;
 };
 
 struct FParamMap0_Emitter
@@ -664,14 +659,8 @@ struct FParamMap0_B_Emitter_SpawnBurst_Instantaneous
 	NiagaraSpawnInfo SpawnBurst;
 };
 
-struct FParamMap0_B_Emitter_Scalability
-{
-	float DistanceFraction;
-};
-
 struct FParamMap0_B_Emitter
 {
-	float Age;
 	float AlphaScale;
 	float3 BeamDirection;
 	float3 BeamEnd;
@@ -681,14 +670,9 @@ struct FParamMap0_B_Emitter
 	float BeamStartEndLength;
 	float3 BeamStartTangent;
 	float3 BeamVector;
-	float CurrentLoopDuration;
-	int ExecutionState;
-	int ExecutionStateSource;
 	bool LocalSpace;
 	int LoopCount;
 	float LoopedAge;
-	float NormalizedLoopAge;
-	FParamMap0_B_Emitter_Scalability Scalability;
 	FParamMap0_B_Emitter_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
 	bool UseBeamTangents;
 };
@@ -710,11 +694,11 @@ struct FParamMap0
 	FParamMap0_Color Color;
 	FParamMap0_DataInstance DataInstance;
 	FParamMap0_Emitter Emitter;
-	FParamMap0_EmitterState EmitterState;
 	FParamMap0_Engine Engine;
 	FParamMap0_FloatFromCurve001 FloatFromCurve001;
 	FParamMap0_FloatFromCurve002 FloatFromCurve002;
 	FParamMap0_InitializeParticle InitializeParticle;
+	FParamMap0_JitterPosition JitterPosition;
 	FParamMap0_Local Local;
 	FParamMap0_Multiply_VectorByFloat Multiply_VectorByFloat;
 	FParamMap0_Multiply_VectorByFloat001 Multiply_VectorByFloat001;
@@ -760,62 +744,50 @@ void Simulate(inout FSimulationContext Context)
 {
 	EnterStatScope(0 );
 
-	int Constant = 0;
-	Context.Map.B_Emitter.ExecutionState = Constant;
-	float Constant1 = 0;
-	Context.Map.B_Emitter.Age = Constant1;
-	float Constant2 = 0;
-	Context.Map.B_Emitter.CurrentLoopDuration = Constant2;
-	float Constant3 = 0;
-	Context.Map.B_Emitter.LoopedAge = Constant3;
-	int Constant4 = 0;
-	Context.Map.B_Emitter.LoopCount = Constant4;
-	float Constant5 = (0.0);
-	Context.Map.B_Emitter.NormalizedLoopAge = Constant5;
+	bool Constant = false;
+	Context.Map.B_Emitter.LocalSpace = Constant;
+	float3 Constant1 = float3(0.0, 0.0, 0.0);
+	Context.Map.B_Emitter.BeamStart = Constant1;
+	float3 Constant2 = float3(0.0, 0.0, 0.0);
+	Context.Map.B_Emitter.BeamStartTangent = Constant2;
+	float3 Constant3 = float3(0.0, 0.0, 0.0);
+	Context.Map.B_Emitter.BeamEnd = Constant3;
+	float3 Constant4 = float3(0.0, 0.0, 0.0);
+	Context.Map.B_Emitter.BeamEndTangent = Constant4;
+	bool Constant5 = (false);
+	Context.Map.B_Emitter.UseBeamTangents = Constant5;
 	float Constant6 = (0.0);
-	Context.Map.B_Emitter.Scalability.DistanceFraction = Constant6;
-	int Constant7 = 0;
-	Context.Map.System.ExecutionState = Constant7;
-	int Constant8 = 0;
-	Context.Map.System.ExecutionStateSource = Constant8;
+	Context.Map.B_Emitter.BeamStartEndLength = Constant6;
+	float3 Constant7 = float3(0.0, 0.0, 0.0);
+	Context.Map.B_Emitter.BeamVector = Constant7;
+	float3 Constant8 = float3(0.0, 0.0, 0.0);
+	Context.Map.B_Emitter.BeamDirection = Constant8;
 	int Constant9 = 0;
-	Context.Map.B_Emitter.ExecutionStateSource = Constant9;
-	bool Constant10 = false;
-	Context.Map.B_Emitter.LocalSpace = Constant10;
-	float3 Constant11 = float3(0.0, 0.0, 0.0);
-	Context.Map.B_Emitter.BeamStart = Constant11;
-	float3 Constant12 = float3(0.0, 0.0, 0.0);
-	Context.Map.B_Emitter.BeamStartTangent = Constant12;
-	float3 Constant13 = float3(0.0, 0.0, 0.0);
-	Context.Map.B_Emitter.BeamEnd = Constant13;
-	float3 Constant14 = float3(0.0, 0.0, 0.0);
-	Context.Map.B_Emitter.BeamEndTangent = Constant14;
-	bool Constant15 = (false);
-	Context.Map.B_Emitter.UseBeamTangents = Constant15;
-	float Constant16 = (0.0);
-	Context.Map.B_Emitter.BeamStartEndLength = Constant16;
-	float3 Constant17 = float3(0.0, 0.0, 0.0);
-	Context.Map.B_Emitter.BeamVector = Constant17;
-	float3 Constant18 = float3(0.0, 0.0, 0.0);
-	Context.Map.B_Emitter.BeamDirection = Constant18;
-	int Constant19 = -1;
-	Context.Map.B_Emitter.BeamID = Constant19;
-	NiagaraSpawnInfo Constant20 = (NiagaraSpawnInfo)0;
-	Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst = Constant20;
-	float Constant21 = 1;
-	Context.Map.B_Emitter.AlphaScale = Constant21;
-	float Constant22 = 0;
-	Context.Map.System.Age = Constant22;
-	float Constant23 = 0;
-	Context.Map.System.CurrentLoopDuration = Constant23;
-	float Constant24 = 0;
-	Context.Map.System.LoopedAge = Constant24;
-	int Constant25 = 0;
-	Context.Map.System.LoopCount = Constant25;
-	float Constant26 = (0.0);
-	Context.Map.System.NormalizedLoopAge = Constant26;
-	bool Constant27 = false;
-	Context.Map.System.bCompleteOnInactive = Constant27;
+	Context.Map.B_Emitter.LoopCount = Constant9;
+	int Constant10 = -1;
+	Context.Map.B_Emitter.BeamID = Constant10;
+	float Constant11 = 0;
+	Context.Map.B_Emitter.LoopedAge = Constant11;
+	NiagaraSpawnInfo Constant12 = (NiagaraSpawnInfo)0;
+	Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst = Constant12;
+	float Constant13 = 1;
+	Context.Map.B_Emitter.AlphaScale = Constant13;
+	float Constant14 = 0;
+	Context.Map.System.Age = Constant14;
+	float Constant15 = 0;
+	Context.Map.System.CurrentLoopDuration = Constant15;
+	float Constant16 = 0;
+	Context.Map.System.LoopedAge = Constant16;
+	int Constant17 = 0;
+	Context.Map.System.LoopCount = Constant17;
+	float Constant18 = (0.0);
+	Context.Map.System.NormalizedLoopAge = Constant18;
+	int Constant19 = 0;
+	Context.Map.System.ExecutionState = Constant19;
+	int Constant20 = 0;
+	Context.Map.System.ExecutionStateSource = Constant20;
+	bool Constant21 = false;
+	Context.Map.System.bCompleteOnInactive = Constant21;
 
 	EnterStatScope(1 );
 	B_Emitter_Func_(Context);
@@ -831,7 +803,6 @@ void SimulateMain()
 EnterStatScope(2 );
 
 	FSimulationContext Context = (FSimulationContext)0;
-	Context.Map.B_Emitter.Age = 0.0f;
 	Context.Map.B_Emitter.AlphaScale = 0.0f;
 	Context.Map.B_Emitter.BeamDirection.x = 0.0f;
 	Context.Map.B_Emitter.BeamDirection.y = 0.0f;
@@ -853,14 +824,9 @@ EnterStatScope(2 );
 	Context.Map.B_Emitter.BeamVector.x = 0.0f;
 	Context.Map.B_Emitter.BeamVector.y = 0.0f;
 	Context.Map.B_Emitter.BeamVector.z = 0.0f;
-	Context.Map.B_Emitter.CurrentLoopDuration = 0.0f;
-	Context.Map.B_Emitter.ExecutionState = 0;
-	Context.Map.B_Emitter.ExecutionStateSource = 0;
 	Context.Map.B_Emitter.LocalSpace = false;
 	Context.Map.B_Emitter.LoopCount = 0;
 	Context.Map.B_Emitter.LoopedAge = 0.0f;
-	Context.Map.B_Emitter.NormalizedLoopAge = 0.0f;
-	Context.Map.B_Emitter.Scalability.DistanceFraction = 0.0f;
 	Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.Count = 0;
 	Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt = 0.0f;
 	Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt = 0.0f;
@@ -882,50 +848,44 @@ EnterStatScope(2 );
 	WriteDataSets(Context);
 	{
 	int TmpWriteIndex = OutputIndex(0, false, true);
-	OutputDataFloat(0, 0, TmpWriteIndex, Context.Map.B_Emitter.Age);
-	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.B_Emitter.AlphaScale);
-	OutputDataFloat(0, 2, TmpWriteIndex, Context.Map.B_Emitter.BeamDirection.x);
-	OutputDataFloat(0, 3, TmpWriteIndex, Context.Map.B_Emitter.BeamDirection.y);
-	OutputDataFloat(0, 4, TmpWriteIndex, Context.Map.B_Emitter.BeamDirection.z);
-	OutputDataFloat(0, 5, TmpWriteIndex, Context.Map.B_Emitter.BeamEnd.x);
-	OutputDataFloat(0, 6, TmpWriteIndex, Context.Map.B_Emitter.BeamEnd.y);
-	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.B_Emitter.BeamEnd.z);
-	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.B_Emitter.BeamEndTangent.x);
-	OutputDataFloat(0, 9, TmpWriteIndex, Context.Map.B_Emitter.BeamEndTangent.y);
-	OutputDataFloat(0, 10, TmpWriteIndex, Context.Map.B_Emitter.BeamEndTangent.z);
-	OutputDataInt(0, 11, TmpWriteIndex, Context.Map.B_Emitter.BeamID);
-	OutputDataFloat(0, 12, TmpWriteIndex, Context.Map.B_Emitter.BeamStart.x);
-	OutputDataFloat(0, 13, TmpWriteIndex, Context.Map.B_Emitter.BeamStart.y);
-	OutputDataFloat(0, 14, TmpWriteIndex, Context.Map.B_Emitter.BeamStart.z);
-	OutputDataFloat(0, 15, TmpWriteIndex, Context.Map.B_Emitter.BeamStartEndLength);
-	OutputDataFloat(0, 16, TmpWriteIndex, Context.Map.B_Emitter.BeamStartTangent.x);
-	OutputDataFloat(0, 17, TmpWriteIndex, Context.Map.B_Emitter.BeamStartTangent.y);
-	OutputDataFloat(0, 18, TmpWriteIndex, Context.Map.B_Emitter.BeamStartTangent.z);
-	OutputDataFloat(0, 19, TmpWriteIndex, Context.Map.B_Emitter.BeamVector.x);
-	OutputDataFloat(0, 20, TmpWriteIndex, Context.Map.B_Emitter.BeamVector.y);
-	OutputDataFloat(0, 21, TmpWriteIndex, Context.Map.B_Emitter.BeamVector.z);
-	OutputDataFloat(0, 22, TmpWriteIndex, Context.Map.B_Emitter.CurrentLoopDuration);
-	OutputDataInt(0, 23, TmpWriteIndex, Context.Map.B_Emitter.ExecutionState);
-	OutputDataInt(0, 24, TmpWriteIndex, Context.Map.B_Emitter.ExecutionStateSource);
-	OutputDataBool(0, 25, TmpWriteIndex, Context.Map.B_Emitter.LocalSpace);
-	OutputDataInt(0, 26, TmpWriteIndex, Context.Map.B_Emitter.LoopCount);
-	OutputDataFloat(0, 27, TmpWriteIndex, Context.Map.B_Emitter.LoopedAge);
-	OutputDataFloat(0, 28, TmpWriteIndex, Context.Map.B_Emitter.NormalizedLoopAge);
-	OutputDataFloat(0, 29, TmpWriteIndex, Context.Map.B_Emitter.Scalability.DistanceFraction);
-	OutputDataInt(0, 30, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.Count);
-	OutputDataFloat(0, 31, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt);
-	OutputDataFloat(0, 32, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt);
-	OutputDataInt(0, 33, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup);
-	OutputDataBool(0, 34, TmpWriteIndex, Context.Map.B_Emitter.UseBeamTangents);
-	OutputDataInt(0, 35, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
-	OutputDataFloat(0, 36, TmpWriteIndex, Context.Map.System.Age);
-	OutputDataBool(0, 37, TmpWriteIndex, Context.Map.System.bCompleteOnInactive);
-	OutputDataFloat(0, 38, TmpWriteIndex, Context.Map.System.CurrentLoopDuration);
-	OutputDataInt(0, 39, TmpWriteIndex, Context.Map.System.ExecutionState);
-	OutputDataInt(0, 40, TmpWriteIndex, Context.Map.System.ExecutionStateSource);
-	OutputDataInt(0, 41, TmpWriteIndex, Context.Map.System.LoopCount);
-	OutputDataFloat(0, 42, TmpWriteIndex, Context.Map.System.LoopedAge);
-	OutputDataFloat(0, 43, TmpWriteIndex, Context.Map.System.NormalizedLoopAge);
+	OutputDataFloat(0, 0, TmpWriteIndex, Context.Map.B_Emitter.AlphaScale);
+	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.B_Emitter.BeamDirection.x);
+	OutputDataFloat(0, 2, TmpWriteIndex, Context.Map.B_Emitter.BeamDirection.y);
+	OutputDataFloat(0, 3, TmpWriteIndex, Context.Map.B_Emitter.BeamDirection.z);
+	OutputDataFloat(0, 4, TmpWriteIndex, Context.Map.B_Emitter.BeamEnd.x);
+	OutputDataFloat(0, 5, TmpWriteIndex, Context.Map.B_Emitter.BeamEnd.y);
+	OutputDataFloat(0, 6, TmpWriteIndex, Context.Map.B_Emitter.BeamEnd.z);
+	OutputDataFloat(0, 7, TmpWriteIndex, Context.Map.B_Emitter.BeamEndTangent.x);
+	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.B_Emitter.BeamEndTangent.y);
+	OutputDataFloat(0, 9, TmpWriteIndex, Context.Map.B_Emitter.BeamEndTangent.z);
+	OutputDataInt(0, 10, TmpWriteIndex, Context.Map.B_Emitter.BeamID);
+	OutputDataFloat(0, 11, TmpWriteIndex, Context.Map.B_Emitter.BeamStart.x);
+	OutputDataFloat(0, 12, TmpWriteIndex, Context.Map.B_Emitter.BeamStart.y);
+	OutputDataFloat(0, 13, TmpWriteIndex, Context.Map.B_Emitter.BeamStart.z);
+	OutputDataFloat(0, 14, TmpWriteIndex, Context.Map.B_Emitter.BeamStartEndLength);
+	OutputDataFloat(0, 15, TmpWriteIndex, Context.Map.B_Emitter.BeamStartTangent.x);
+	OutputDataFloat(0, 16, TmpWriteIndex, Context.Map.B_Emitter.BeamStartTangent.y);
+	OutputDataFloat(0, 17, TmpWriteIndex, Context.Map.B_Emitter.BeamStartTangent.z);
+	OutputDataFloat(0, 18, TmpWriteIndex, Context.Map.B_Emitter.BeamVector.x);
+	OutputDataFloat(0, 19, TmpWriteIndex, Context.Map.B_Emitter.BeamVector.y);
+	OutputDataFloat(0, 20, TmpWriteIndex, Context.Map.B_Emitter.BeamVector.z);
+	OutputDataBool(0, 21, TmpWriteIndex, Context.Map.B_Emitter.LocalSpace);
+	OutputDataInt(0, 22, TmpWriteIndex, Context.Map.B_Emitter.LoopCount);
+	OutputDataFloat(0, 23, TmpWriteIndex, Context.Map.B_Emitter.LoopedAge);
+	OutputDataInt(0, 24, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.Count);
+	OutputDataFloat(0, 25, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt);
+	OutputDataFloat(0, 26, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt);
+	OutputDataInt(0, 27, TmpWriteIndex, Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup);
+	OutputDataBool(0, 28, TmpWriteIndex, Context.Map.B_Emitter.UseBeamTangents);
+	OutputDataInt(0, 29, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
+	OutputDataFloat(0, 30, TmpWriteIndex, Context.Map.System.Age);
+	OutputDataBool(0, 31, TmpWriteIndex, Context.Map.System.bCompleteOnInactive);
+	OutputDataFloat(0, 32, TmpWriteIndex, Context.Map.System.CurrentLoopDuration);
+	OutputDataInt(0, 33, TmpWriteIndex, Context.Map.System.ExecutionState);
+	OutputDataInt(0, 34, TmpWriteIndex, Context.Map.System.ExecutionStateSource);
+	OutputDataInt(0, 35, TmpWriteIndex, Context.Map.System.LoopCount);
+	OutputDataFloat(0, 36, TmpWriteIndex, Context.Map.System.LoopedAge);
+	OutputDataFloat(0, 37, TmpWriteIndex, Context.Map.System.NormalizedLoopAge);
 	}
 ExitStatScope( );
 }
