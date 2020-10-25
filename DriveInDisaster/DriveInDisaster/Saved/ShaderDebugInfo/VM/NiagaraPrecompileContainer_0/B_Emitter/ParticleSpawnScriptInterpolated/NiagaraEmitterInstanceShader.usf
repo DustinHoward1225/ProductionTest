@@ -1264,69 +1264,69 @@ void BeamWidth_Emitter_Func_(inout FSimulationContext Context)
 
 void RandomRangeFloat_Func_(float2 In_Min, float2 In_Max, int In_Seed, int In_RandomnessMode, bool In_OverrideSeed, bool In_FixedOverrideSeed, out float2 Out_Result, inout FSimulationContext Context)
 {
-	int Constant74 = (0);
-	bool Constant75 = false;
-	int Constant76 = 0;
-	int Constant77 = (0);
+	int Constant76 = (0);
+	bool Constant77 = false;
+	int Constant78 = 0;
+	int Constant79 = (0);
 	NiagaraRandInfo GetRandomInfo_Emitter_Determinism_false_Func_Output_RandomInfo1;
 	bool GetRandomInfo_Emitter_Determinism_false_Func_Output_UseDeterministicRandoms1;
-	GetRandomInfo_Emitter_Determinism_false_Func_(In_Seed, Constant74, In_OverrideSeed, Constant76, Constant77, In_FixedOverrideSeed, In_RandomnessMode, GetRandomInfo_Emitter_Determinism_false_Func_Output_RandomInfo1, GetRandomInfo_Emitter_Determinism_false_Func_Output_UseDeterministicRandoms1, Context);
-	float2 Result20 = In_Max - In_Min;
+	GetRandomInfo_Emitter_Determinism_false_Func_(In_Seed, Constant76, In_OverrideSeed, Constant78, Constant79, In_FixedOverrideSeed, In_RandomnessMode, GetRandomInfo_Emitter_Determinism_false_Func_Output_RandomInfo1, GetRandomInfo_Emitter_Determinism_false_Func_Output_UseDeterministicRandoms1, Context);
+	float2 Result21 = In_Max - In_Min;
 	int Seed11;
 	int Seed21;
 	int Seed31;
 	Seed11 = GetRandomInfo_Emitter_Determinism_false_Func_Output_RandomInfo1.Seed1;
 	Seed21 = GetRandomInfo_Emitter_Determinism_false_Func_Output_RandomInfo1.Seed2;
 	Seed31 = GetRandomInfo_Emitter_Determinism_false_Func_Output_RandomInfo1.Seed3;
-	float2 Result21 = rand_float(Result20, Seed11, Seed21, Seed31);
-	float2 Result22 = rand_float(Result20);
+	float2 Result22 = rand_float(Result21, Seed11, Seed21, Seed31);
+	float2 Result23 = rand_float(Result21);
 	float2 Random_IfResult1;
 	if(GetRandomInfo_Emitter_Determinism_false_Func_Output_UseDeterministicRandoms1)
 	{
-	Random_IfResult1 = Result21;
+	Random_IfResult1 = Result22;
 	}
 	else
 	{
-	Random_IfResult1 = Result22;
+	Random_IfResult1 = Result23;
 	}
-	float2 Result23 = In_Min + Random_IfResult1;
-	Out_Result = Result23;
+	float2 Result24 = In_Min + Random_IfResult1;
+	Out_Result = Result24;
 }
 
 void RandomUnitVector_Func_(int In_Seed, int In_RandomnessMode, bool In_OverrideSeed, out float3 Out_UnitVector3D, out float2 Out_UnitVector2D, inout FSimulationContext Context)
 {
-	float2 Constant71 = float2(0,-1);
-	float2 Constant72 = float2(6.28319,1);
-	bool Constant73 = false;
+	float2 Constant73 = float2(0,-1);
+	float2 Constant74 = float2(6.28319,1);
+	bool Constant75 = false;
 	float2 RandomRangeFloat_Func_Output_Result1;
-	RandomRangeFloat_Func_(Constant71, Constant72, In_Seed, In_RandomnessMode, In_OverrideSeed, Constant73, RandomRangeFloat_Func_Output_Result1, Context);
+	RandomRangeFloat_Func_(Constant73, Constant74, In_Seed, In_RandomnessMode, In_OverrideSeed, Constant75, RandomRangeFloat_Func_Output_Result1, Context);
 	float Phi;
 	float CosASC40ThetaASC41;
 	Phi = RandomRangeFloat_Func_Output_Result1.x;
 	CosASC40ThetaASC41 = RandomRangeFloat_Func_Output_Result1.y;
-	float Result24 = cos(Phi);
-	float Result25 = CosASC40ThetaASC41 * CosASC40ThetaASC41;
-	float Result26 = 1 - Result25;
-	float Result27 = sqrt(Result26);
-	float Result28 = Result24 * Result27;
-	float Result29 = sin(Phi);
-	float Result30 = Result29 * Result27;
+	float Result25 = cos(Phi);
+	float Result26 = CosASC40ThetaASC41 * CosASC40ThetaASC41;
+	float Result27 = 1 - Result26;
+	float Result28 = sqrt(Result27);
+	float Result29 = Result25 * Result28;
+	float Result30 = sin(Phi);
+	float Result31 = Result30 * Result28;
 	float3 PositionOnSphere;
-	PositionOnSphere.x = Result28;
-	PositionOnSphere.y = Result30;
+	PositionOnSphere.x = Result29;
+	PositionOnSphere.y = Result31;
 	PositionOnSphere.z = CosASC40ThetaASC41;
-	float Constant78 = 0;
-	float Constant79 = 6.28319;
-	int Constant80 = -1;
-	int Constant81 = 0;
-	bool Constant82 = false;
+	float Constant80 = 0;
+	float Constant81 = 6.28319;
+	int Constant82 = -1;
+	int Constant83 = 0;
+	bool Constant84 = false;
 	float RandomRangeFloat_Func_Output_Result2;
-	RandomRangeFloat_Func_(Constant78, Constant79, Constant80, Constant81, Constant82, RandomRangeFloat_Func_Output_Result2, Context);
-	float Result31 = cos(RandomRangeFloat_Func_Output_Result2);
-	float Result32 = sin(RandomRangeFloat_Func_Output_Result2);
+	RandomRangeFloat_Func_(Constant80, Constant81, Constant82, Constant83, Constant84, RandomRangeFloat_Func_Output_Result2, Context);
+	float Result32 = cos(RandomRangeFloat_Func_Output_Result2);
+	float Result33 = sin(RandomRangeFloat_Func_Output_Result2);
 	float2 PositionOnCircle;
-	PositionOnCircle.x = Result31;
-	PositionOnCircle.y = Result32;
+	PositionOnCircle.x = Result32;
+	PositionOnCircle.y = Result33;
 	Out_UnitVector3D = PositionOnSphere;
 	Out_UnitVector2D = PositionOnCircle;
 }
@@ -1341,20 +1341,22 @@ void RandomVector_Func_(int In_Seed, int In_RandomnessMode, bool In_OverrideSeed
 
 void VectorNoiseForce_Emitter_Func_(inout FSimulationContext Context)
 {
-	bool Result17 = NiagaraAll(Context.MapSpawn.Particles.VectorNoiseInterval > Context.MapSpawn.Constants.Emitter.VectorNoiseForce.RandomNoiseTimeInterval);
-	float Constant64 = 0;
 	float Constant65 = 0;
+	bool Result17 = NiagaraAll(Context.MapSpawn.Particles.VectorNoiseInterval > Context.MapSpawn.Constants.Emitter.VectorNoiseForce.RandomNoiseTimeInterval);
+	float Constant66 = 0;
+	float Constant67 = 0;
+	float Result18 = Context.MapSpawn.Particles.VectorNoiseInterval + Constant65;
 	float ForceAmt_IfResult;
 	float VecNoiseInterval_IfResult;
 	if(Result17)
 	{
 	ForceAmt_IfResult = Context.MapSpawn.Constants.Emitter.VectorNoiseForce.ForceAmount;
-	VecNoiseInterval_IfResult = Constant64;
+	VecNoiseInterval_IfResult = Constant66;
 	}
 	else
 	{
-	ForceAmt_IfResult = Constant65;
-	VecNoiseInterval_IfResult = Context.MapSpawn.Particles.VectorNoiseInterval;
+	ForceAmt_IfResult = Constant67;
+	VecNoiseInterval_IfResult = Result18;
 	}
 	float float_IfResult;
 	if(Context.MapSpawn.VectorNoiseForce.UseRandomNoiseTimeInterval)
@@ -1365,7 +1367,7 @@ void VectorNoiseForce_Emitter_Func_(inout FSimulationContext Context)
 	{
 	float_IfResult = Context.MapSpawn.Constants.Emitter.VectorNoiseForce.ForceAmount;
 	}
-	float Constant66 = 0;
+	float Constant68 = 0;
 	float float_IfResult1;
 	if(Context.MapSpawn.VectorNoiseForce.UseRandomNoiseTimeInterval)
 	{
@@ -1373,82 +1375,82 @@ void VectorNoiseForce_Emitter_Func_(inout FSimulationContext Context)
 	}
 	else
 	{
-	float_IfResult1 = Constant66;
+	float_IfResult1 = Constant68;
 	}
 	Context.MapSpawn.Local.VectorNoiseForce.ForceAmount = float_IfResult;
 	Context.MapSpawn.Particles.VectorNoiseInterval = float_IfResult1;
-	float Result18 = length(Context.MapSpawn.Particles.Velocity);
-	float Constant67 = 0.001;
-	bool Result19 = NiagaraAll(Result18 <= Constant67);
-	int Constant68 = -1;
-	int Constant69 = 0;
-	bool Constant70 = false;
+	float Result19 = length(Context.MapSpawn.Particles.Velocity);
+	float Constant69 = 0.001;
+	bool Result20 = NiagaraAll(Result19 <= Constant69);
+	int Constant70 = -1;
+	int Constant71 = 0;
+	bool Constant72 = false;
 	float3 RandomVector_Func_Output_Vector;
-	RandomVector_Func_(Constant68, Constant69, Constant70, RandomVector_Func_Output_Vector, Context);
-	float3 Result33 = normalize(Context.MapSpawn.Particles.Velocity);
-	float3 Result34 = cross(Result33,RandomVector_Func_Output_Vector);
+	RandomVector_Func_(Constant70, Constant71, Constant72, RandomVector_Func_Output_Vector, Context);
+	float3 Result34 = normalize(Context.MapSpawn.Particles.Velocity);
+	float3 Result35 = cross(Result34,RandomVector_Func_Output_Vector);
 	float3 Vector_IfResult2;
-	if(Result19)
+	if(Result20)
 	{
 	Vector_IfResult2 = RandomVector_Func_Output_Vector;
 	}
 	else
 	{
-	Vector_IfResult2 = Result34;
+	Vector_IfResult2 = Result35;
 	}
-	float3 Result35 = Vector_IfResult2 * Context.MapSpawn.Local.VectorNoiseForce.ForceAmount + Context.MapSpawn.Transient.PhysicsForce;
-	Context.MapSpawn.Transient.PhysicsForce = Result35;
+	float3 Result36 = Vector_IfResult2 * Context.MapSpawn.Local.VectorNoiseForce.ForceAmount + Context.MapSpawn.Transient.PhysicsForce;
+	Context.MapSpawn.Transient.PhysicsForce = Result36;
 }
 
 void ApplyInitialForces_Emitter_Func_(inout FSimulationContext Context)
 {
-	float Constant87 = 1e-06;
-	float Result36 = max(Context.MapSpawn.Particles.Mass, Constant87);
-	float3 Result37 = Context.MapSpawn.Transient.PhysicsForce / Result36;
-	float3 Result38 = Result37 + Context.MapSpawn.Particles.Velocity;
+	float Constant89 = 1e-06;
+	float Result37 = max(Context.MapSpawn.Particles.Mass, Constant89);
+	float3 Result38 = Context.MapSpawn.Transient.PhysicsForce / Result37;
+	float3 Result39 = Result38 + Context.MapSpawn.Particles.Velocity;
 	float3 Velocity_IfResult;
 	if(Context.MapSpawn.ApplyInitialForces.ApplyForcetoVelocity)
 	{
-	Velocity_IfResult = Result38;
+	Velocity_IfResult = Result39;
 	}
 	else
 	{
 	Velocity_IfResult = Context.MapSpawn.Particles.Velocity;
 	}
-	float Constant88 = 1e-06;
-	float Result39 = max(Context.MapSpawn.Particles.RotationalInertia, Constant88);
-	float3 Result40 = Context.MapSpawn.Transient.PhysicsRotationalForce / Result39;
-	float3 Result41 = Context.MapSpawn.Particles.RotationalVelocity + Result40;
-	float3 Constant89 = float3(0,0,0);
+	float Constant90 = 1e-06;
+	float Result40 = max(Context.MapSpawn.Particles.RotationalInertia, Constant90);
+	float3 Result41 = Context.MapSpawn.Transient.PhysicsRotationalForce / Result40;
+	float3 Result42 = Context.MapSpawn.Particles.RotationalVelocity + Result41;
+	float3 Constant91 = float3(0,0,0);
 	float3 RotVelocity_IfResult;
 	float3 RotationalForce_IfResult;
 	if(Context.MapSpawn.ApplyInitialForces.ApplyRotationalForcetoRotationalVelocity)
 	{
-	RotVelocity_IfResult = Result41;
-	RotationalForce_IfResult = Constant89;
+	RotVelocity_IfResult = Result42;
+	RotationalForce_IfResult = Constant91;
 	}
 	else
 	{
 	RotVelocity_IfResult = Context.MapSpawn.Particles.RotationalVelocity;
 	RotationalForce_IfResult = Context.MapSpawn.Transient.PhysicsRotationalForce;
 	}
-	float3 Result42 = Context.MapSpawn.Transient.PhysicsForce * Context.MapSpawn.Constants.Emitter.ApplyInitialForces.PositionalForceWarmupTime;
-	float3 Result43 = Context.MapSpawn.Particles.Position + Result42;
+	float3 Result43 = Context.MapSpawn.Transient.PhysicsForce * Context.MapSpawn.Constants.Emitter.ApplyInitialForces.PositionalForceWarmupTime;
+	float3 Result44 = Context.MapSpawn.Particles.Position + Result43;
 	float3 Position_IfResult;
 	if(Context.MapSpawn.ApplyInitialForces.ApplyForcetoPosition)
 	{
-	Position_IfResult = Result43;
+	Position_IfResult = Result44;
 	}
 	else
 	{
 	Position_IfResult = Context.MapSpawn.Particles.Position;
 	}
-	bool Result44 = Context.MapSpawn.ApplyInitialForces.ApplyForcetoVelocity || Context.MapSpawn.ApplyInitialForces.ApplyForcetoPosition;
-	float3 Constant90 = float3(0,0,0);
+	bool Result45 = Context.MapSpawn.ApplyInitialForces.ApplyForcetoVelocity || Context.MapSpawn.ApplyInitialForces.ApplyForcetoPosition;
+	float3 Constant92 = float3(0,0,0);
 	float3 Force_IfResult;
-	if(Result44)
+	if(Result45)
 	{
-	Force_IfResult = Constant90;
+	Force_IfResult = Constant92;
 	}
 	else
 	{
@@ -1465,36 +1467,36 @@ void ApplyInitialForces_Emitter_Func_(inout FSimulationContext Context)
 
 void ParticleState_Emitter_Func_(inout FSimulationContext Context)
 {
-	bool Result45 = NiagaraAll(Context.MapUpdate.Particles.Age <= Context.MapUpdate.Engine.DeltaTime);
-	Context.MapUpdate.OUTPUT_VAR.ParticleState.FirstFrame = Result45;
-	float Result46 = Context.MapUpdate.Particles.Age + Context.MapUpdate.ParticleState.DeltaTime;
-	float Constant92 = 1e-05;
-	float Result47 = max(Context.MapUpdate.ParticleState.Lifetime, Constant92);
-	float Constant93 = 0.0001;
-	float Result48 = Result47 - Constant93;
-	bool Result49 = NiagaraAll(Result46 < Result48);
-	bool Constant94 = false;
+	bool Result46 = NiagaraAll(Context.MapUpdate.Particles.Age <= Context.MapUpdate.Engine.DeltaTime);
+	Context.MapUpdate.OUTPUT_VAR.ParticleState.FirstFrame = Result46;
+	float Result47 = Context.MapUpdate.Particles.Age + Context.MapUpdate.ParticleState.DeltaTime;
+	float Constant94 = 1e-05;
+	float Result48 = max(Context.MapUpdate.ParticleState.Lifetime, Constant94);
+	float Constant95 = 0.0001;
+	float Result49 = Result48 - Constant95;
+	bool Result50 = NiagaraAll(Result47 < Result49);
+	bool Constant96 = false;
 	bool bool_IfResult;
-	if(Result49)
+	if(Result50)
 	{
 	bool_IfResult = Context.MapUpdate.DataInstance.Alive;
 	}
 	else
 	{
-	bool_IfResult = Constant94;
+	bool_IfResult = Constant96;
 	}
-	float Result50 = Result46 / Result47;
+	float Result51 = Result47 / Result48;
 	Context.MapUpdate.DataInstance.Alive = bool_IfResult;
-	Context.MapUpdate.Particles.Age = Result46;
-	Context.MapUpdate.Particles.NormalizedAge = Result50;
+	Context.MapUpdate.Particles.Age = Result47;
+	Context.MapUpdate.Particles.NormalizedAge = Result51;
 }
 
 void FloatFromCurve001_Emitter_Func_(out float Out_Value, inout FSimulationContext Context)
 {
 	float SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value;
 	SampleCurve_EmitterScaleAlphaFloatCurve(Context.MapUpdate.FloatFromCurve001.CurveIndex, SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value);
-	float Result51 = SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value * Context.MapUpdate.Constants.Emitter.FloatFromCurve001.ScaleCurve;
-	Out_Value = Result51;
+	float Result52 = SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value * Context.MapUpdate.Constants.Emitter.FloatFromCurve001.ScaleCurve;
+	Out_Value = Result52;
 }
 
 void Color_Emitter_Func_(inout FSimulationContext Context)
@@ -1505,14 +1507,14 @@ void Color_Emitter_Func_(inout FSimulationContext Context)
 	Output02.y = Context.MapUpdate.Constants.Emitter.Color.Color.g;
 	Output02.z = Context.MapUpdate.Constants.Emitter.Color.Color.b;
 	Output2 = Context.MapUpdate.Constants.Emitter.Color.Color.a;
-	float3 Result52 = Output02 * Context.MapUpdate.Constants.Emitter.Color.ScaleColor;
-	float Result53 = Output2 * Context.MapUpdate.Color.ScaleAlpha;
-	float Result54 = Result53 * Context.MapUpdate.Emitter.AlphaScale;
+	float3 Result53 = Output02 * Context.MapUpdate.Constants.Emitter.Color.ScaleColor;
+	float Result54 = Output2 * Context.MapUpdate.Color.ScaleAlpha;
+	float Result55 = Result54 * Context.MapUpdate.Emitter.AlphaScale;
 	float4 Output03;
-	Output03.g = Result52.y;
-	Output03.a = Result54;
-	Output03.r = Result52.x;
-	Output03.b = Result52.z;
+	Output03.g = Result53.y;
+	Output03.a = Result55;
+	Output03.r = Result53.x;
+	Output03.b = Result53.z;
 	Context.MapUpdate.Particles.Color = Output03;
 }
 
@@ -1523,24 +1525,24 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.IncomingPhysicsForce = Context.MapUpdate.SolveForcesAndVelocity.Force;
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.MapUpdate.SolveForcesAndVelocity.Velocity;
 	Context.MapUpdate.Local.SolveForcesAndVelocity.Mass = Context.MapUpdate.SolveForcesAndVelocity.Mass;
-	float Constant106 = 0.0001;
-	float Result55 = max(Context.MapUpdate.Local.SolveForcesAndVelocity.Mass, Constant106);
-	float Result56 = Reciprocal(Result55);
-	float3 Result57 = Result56 * Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce;
-	Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce = Result57;
-	float3 Result58 = Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
-	float Constant107 = 0;
-	float Result59 = max(Context.MapUpdate.Transient.PhysicsDrag, Constant107);
-	float Result60 = Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime * Result59;
-	float Constant108 = 1;
-	float Result61 = Result60 + Constant108;
-	float3 Result62 = Result58 / Result61;
-	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result62;
+	float Constant108 = 0.0001;
+	float Result56 = max(Context.MapUpdate.Local.SolveForcesAndVelocity.Mass, Constant108);
+	float Result57 = Reciprocal(Result56);
+	float3 Result58 = Result57 * Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce;
+	Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce = Result58;
+	float3 Result59 = Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
+	float Constant109 = 0;
+	float Result60 = max(Context.MapUpdate.Transient.PhysicsDrag, Constant109);
+	float Result61 = Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime * Result60;
+	float Constant110 = 1;
+	float Result62 = Result61 + Constant110;
+	float3 Result63 = Result59 / Result62;
+	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result63;
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.IncomingPhysicsDrag = Context.MapUpdate.Transient.PhysicsDrag;
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
 	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
-	float3 Result63 = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.SolveForcesAndVelocity.Position;
-	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result63;
+	float3 Result64 = Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime + Context.MapUpdate.SolveForcesAndVelocity.Position;
+	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result64;
 	float3 Position_IfResult1;
 	float3 Velocity_IfResult1;
 	float3 PreviousVelocity_IfResult;
@@ -1559,14 +1561,14 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 	Context.MapUpdate.Particles.Position = Position_IfResult1;
 	Context.MapUpdate.Particles.Velocity = Velocity_IfResult1;
 	Context.MapUpdate.Particles.PreviousVelocity = PreviousVelocity_IfResult;
-	float3 Constant109 = float3(0,0,0);
-	float Constant110 = 0;
+	float3 Constant111 = float3(0,0,0);
+	float Constant112 = 0;
 	float3 ForceVector_IfResult;
 	float Drag_IfResult;
 	if(Context.MapUpdate.SolveForcesAndVelocity.WritetoIntrinsicProperties)
 	{
-	ForceVector_IfResult = Constant109;
-	Drag_IfResult = Constant110;
+	ForceVector_IfResult = Constant111;
+	Drag_IfResult = Constant112;
 	}
 	else
 	{
@@ -1580,21 +1582,21 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 void JitterPosition_Emitter_Func_(inout FSimulationContext Context)
 {
 	Context.MapUpdate.Local.JitterPosition.ModuleJitterOffset = Context.MapUpdate.JitterPosition.JitterOffset;
-	bool Result64 = NiagaraAll(Context.MapUpdate.Particles.JitterDelayTimer > Context.MapUpdate.Constants.Emitter.JitterPosition.JitterDelay);
-	float3 Result65 = Context.MapUpdate.Local.JitterPosition.ModuleJitterOffset * Context.MapUpdate.Constants.Emitter.JitterPosition.JitterAmount + Context.MapUpdate.Particles.Position;
-	float Constant115 = 0;
-	float Result66 = Context.MapUpdate.Engine.DeltaTime + Context.MapUpdate.Particles.JitterDelayTimer;
+	bool Result65 = NiagaraAll(Context.MapUpdate.Particles.JitterDelayTimer > Context.MapUpdate.Constants.Emitter.JitterPosition.JitterDelay);
+	float3 Result66 = Context.MapUpdate.Local.JitterPosition.ModuleJitterOffset * Context.MapUpdate.Constants.Emitter.JitterPosition.JitterAmount + Context.MapUpdate.Particles.Position;
+	float Constant117 = 0;
+	float Result67 = Context.MapUpdate.Engine.DeltaTime + Context.MapUpdate.Particles.JitterDelayTimer;
 	float3 Position_IfResult2;
 	float JitterDelayTimer_IfResult;
-	if(Result64)
+	if(Result65)
 	{
-	Position_IfResult2 = Result65;
-	JitterDelayTimer_IfResult = Constant115;
+	Position_IfResult2 = Result66;
+	JitterDelayTimer_IfResult = Constant117;
 	}
 	else
 	{
 	Position_IfResult2 = Context.MapUpdate.Particles.Position;
-	JitterDelayTimer_IfResult = Result66;
+	JitterDelayTimer_IfResult = Result67;
 	}
 	Context.MapUpdate.Particles.Position = Position_IfResult2;
 	Context.MapUpdate.Particles.JitterDelayTimer = JitterDelayTimer_IfResult;
@@ -1712,13 +1714,13 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 	SimulationPosition_Emitter_Func_(SimulationPosition_Emitter_Func_Output_OutPosition, Context);
 	bool Constant24 = false;
 	bool Constant25 = false;
+	bool Constant26 = false;
 	Context.MapSpawn.InitializeParticle.Position = SimulationPosition_Emitter_Func_Output_OutPosition;
 	Context.MapSpawn.InitializeParticle.WriteMass = Constant24;
 	Context.MapSpawn.InitializeParticle.WriteColor = Constant25;
-	bool Constant26 = true;
-	Context.MapSpawn.InitializeParticle.WriteLifetime = Constant26;
-	bool Constant27 = false;
-	Context.MapSpawn.InitializeParticle.WriteSpriteSize = Constant27;
+	Context.MapSpawn.InitializeParticle.WriteSpriteSize = Constant26;
+	bool Constant27 = true;
+	Context.MapSpawn.InitializeParticle.WriteLifetime = Constant27;
 	bool Constant28 = false;
 	Context.MapSpawn.InitializeParticle.WriteSpriteRotation = Constant28;
 	bool Constant29 = false;
@@ -1759,21 +1761,22 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 	ExitStatScope( );
 	bool Constant61 = false;
 	Context.MapSpawn.VectorNoiseForce.UseRandomNoiseTimeInterval = Constant61;
-	float Constant62 = (0.0);
-	Context.MapSpawn.Local.VectorNoiseForce.ForceAmount = Constant62;
-	float3 Constant63 = float3(0,0,0);
-	Context.MapSpawn.Transient.PhysicsForce = Constant63;
+	float Constant62 = 0;
+	float Constant63 = (0.0);
+	Context.MapSpawn.Local.VectorNoiseForce.ForceAmount = Constant63;
+	float3 Constant64 = float3(0,0,0);
+	Context.MapSpawn.Transient.PhysicsForce = Constant64;
 	EnterStatScope(4 );
 	VectorNoiseForce_Emitter_Func_(Context);
 	ExitStatScope( );
-	bool Constant83 = true;
-	Context.MapSpawn.ApplyInitialForces.ApplyForcetoVelocity = Constant83;
-	bool Constant84 = false;
-	Context.MapSpawn.ApplyInitialForces.ApplyForcetoPosition = Constant84;
 	bool Constant85 = true;
-	Context.MapSpawn.ApplyInitialForces.ApplyRotationalForcetoRotationalVelocity = Constant85;
-	float3 Constant86 = float3(0,0,0);
-	Context.MapSpawn.Transient.PhysicsRotationalForce = Constant86;
+	Context.MapSpawn.ApplyInitialForces.ApplyForcetoVelocity = Constant85;
+	bool Constant86 = false;
+	Context.MapSpawn.ApplyInitialForces.ApplyForcetoPosition = Constant86;
+	bool Constant87 = true;
+	Context.MapSpawn.ApplyInitialForces.ApplyRotationalForcetoRotationalVelocity = Constant87;
+	float3 Constant88 = float3(0,0,0);
+	Context.MapSpawn.Transient.PhysicsRotationalForce = Constant88;
 	EnterStatScope(5 );
 	ApplyInitialForces_Emitter_Func_(Context);
 	ExitStatScope( );
@@ -1789,8 +1792,8 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 void SimulateMapUpdate(inout FSimulationContext Context)
 {
 
-	bool Constant91 = true;
-	Context.MapUpdate.DataInstance.Alive = Constant91;
+	bool Constant93 = true;
+	Context.MapUpdate.DataInstance.Alive = Constant93;
 	Context.MapUpdate.ParticleState.DeltaTime = Context.MapUpdate.Engine.DeltaTime;
 	Context.MapUpdate.ParticleState.Lifetime = Context.MapUpdate.Particles.Lifetime;
 	EnterStatScope(6 );
@@ -1803,43 +1806,43 @@ void SimulateMapUpdate(inout FSimulationContext Context)
 	EnterStatScope(7 );
 	Color_Emitter_Func_(Context);
 	ExitStatScope( );
-	bool Constant95 = false;
-	int Constant96 = (0);
+	bool Constant97 = false;
+	int Constant98 = (0);
 	Context.MapUpdate.Transient.PhysicsDeltaTime = Context.MapUpdate.Engine.DeltaTime;
 	Context.MapUpdate.SolveForcesAndVelocity.DeltaTime = Context.MapUpdate.Transient.PhysicsDeltaTime;
-	float Constant97 = (0.0);
-	Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime = Constant97;
-	float3 Constant98 = float3(0,0,0);
-	Context.MapUpdate.Transient.PhysicsForce = Constant98;
+	float Constant99 = (0.0);
+	Context.MapUpdate.Local.SolveForcesAndVelocity.DeltaTime = Constant99;
+	float3 Constant100 = float3(0,0,0);
+	Context.MapUpdate.Transient.PhysicsForce = Constant100;
 	Context.MapUpdate.SolveForcesAndVelocity.Force = Context.MapUpdate.Transient.PhysicsForce;
 	Context.MapUpdate.SolveForcesAndVelocity.Velocity = Context.MapUpdate.Particles.Velocity;
 	Context.MapUpdate.SolveForcesAndVelocity.Mass = Context.MapUpdate.Particles.Mass;
-	float3 Constant99 = float3(0.0, 0.0, 0.0);
-	Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce = Constant99;
-	float3 Constant100 = float3(0.0, 0.0, 0.0);
-	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Constant100;
-	float Constant101 = (0.0);
-	Context.MapUpdate.Local.SolveForcesAndVelocity.Mass = Constant101;
-	float Constant102 = 0;
-	Context.MapUpdate.Transient.PhysicsDrag = Constant102;
+	float3 Constant101 = float3(0.0, 0.0, 0.0);
+	Context.MapUpdate.Local.SolveForcesAndVelocity.PhysicsForce = Constant101;
+	float3 Constant102 = float3(0.0, 0.0, 0.0);
+	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Constant102;
+	float Constant103 = (0.0);
+	Context.MapUpdate.Local.SolveForcesAndVelocity.Mass = Constant103;
+	float Constant104 = 0;
+	Context.MapUpdate.Transient.PhysicsDrag = Constant104;
 	Context.MapUpdate.SolveForcesAndVelocity.PreviousVelocity = Context.MapUpdate.Particles.PreviousVelocity;
-	bool Constant103 = false;
+	bool Constant105 = false;
 	Context.MapUpdate.SolveForcesAndVelocity.Position = Context.MapUpdate.Particles.Position;
-	float3 Constant104 = float3(0.0, 0.0, 0.0);
-	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Position = Constant104;
-	bool Constant105 = true;
-	Context.MapUpdate.SolveForcesAndVelocity.WritetoIntrinsicProperties = Constant105;
+	float3 Constant106 = float3(0.0, 0.0, 0.0);
+	Context.MapUpdate.OUTPUT_VAR.SolveForcesAndVelocity.Position = Constant106;
+	bool Constant107 = true;
+	Context.MapUpdate.SolveForcesAndVelocity.WritetoIntrinsicProperties = Constant107;
 	EnterStatScope(8 );
 	SolveForcesAndVelocity_Emitter_Func_(Context);
 	ExitStatScope( );
-	int Constant111 = -1;
-	int Constant112 = 0;
-	bool Constant113 = false;
+	int Constant113 = -1;
+	int Constant114 = 0;
+	bool Constant115 = false;
 	float3 RandomVector_Func_Output_Vector1;
-	RandomVector_Func_(Constant111, Constant112, Constant113, RandomVector_Func_Output_Vector1, Context);
+	RandomVector_Func_(Constant113, Constant114, Constant115, RandomVector_Func_Output_Vector1, Context);
 	Context.MapUpdate.JitterPosition.JitterOffset = RandomVector_Func_Output_Vector1;
-	float3 Constant114 = float3(0.0, 0.0, 0.0);
-	Context.MapUpdate.Local.JitterPosition.ModuleJitterOffset = Constant114;
+	float3 Constant116 = float3(0.0, 0.0, 0.0);
+	Context.MapUpdate.Local.JitterPosition.ModuleJitterOffset = Constant116;
 	EnterStatScope(9 );
 	JitterPosition_Emitter_Func_(Context);
 	ExitStatScope( );
