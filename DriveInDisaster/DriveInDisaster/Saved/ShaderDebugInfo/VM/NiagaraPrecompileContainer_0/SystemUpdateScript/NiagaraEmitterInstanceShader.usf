@@ -467,7 +467,6 @@ struct FParamMap0_Particles
 	float3 BeamSplineNormal;
 	float3 BeamSplineTangent;
 	float4 Color;
-	float JitterDelayTimer;
 	float Lifetime;
 	float Mass;
 	float MaterialRandom;
@@ -551,11 +550,6 @@ struct FParamMap0_Local_SolveForcesAndVelocity
 	float3 PhysicsForce;
 };
 
-struct FParamMap0_Local_JitterPosition
-{
-	float3 ModuleJitterOffset;
-};
-
 struct FParamMap0_Local_EmitterState
 {
 	bool LoopCountIncreased;
@@ -577,18 +571,10 @@ struct FParamMap0_Local
 {
 	FParamMap0_Local_BeamEmitterSetup BeamEmitterSetup;
 	FParamMap0_Local_EmitterState EmitterState;
-	FParamMap0_Local_JitterPosition JitterPosition;
 	FParamMap0_Local_SolveForcesAndVelocity SolveForcesAndVelocity;
 	FParamMap0_Local_SpawnBeam SpawnBeam;
 	FParamMap0_Local_SystemState SystemState;
 	FParamMap0_Local_VectorNoiseForce VectorNoiseForce;
-};
-
-struct FParamMap0_JitterPosition
-{
-	float JitterAmount;
-	float JitterDelay;
-	float3 JitterOffset;
 };
 
 struct FParamMap0_InitializeParticle
@@ -799,7 +785,6 @@ struct FParamMap0
 	FParamMap0_FloatFromCurve001 FloatFromCurve001;
 	FParamMap0_FloatFromCurve002 FloatFromCurve002;
 	FParamMap0_InitializeParticle InitializeParticle;
-	FParamMap0_JitterPosition JitterPosition;
 	FParamMap0_Local Local;
 	FParamMap0_Multiply_VectorByFloat Multiply_VectorByFloat;
 	FParamMap0_Multiply_VectorByFloat001 Multiply_VectorByFloat001;
@@ -1159,21 +1144,21 @@ void Multiply_VectorByFloat001_B_Emitter_Func_(out float3 Out_Result, inout FSim
 
 void TransformBase_Func_(int In_SourceSpace, int In_DestinationSpace, float4x4 In_LocalToWorldTransform, float4x4 In_WorldToLocalTransform, bool In_bLocalSpace, out bool Out_bUseOriginal, out float4x4 Out_OutTransform, inout FSimulationContext Context)
 {
-	int Constant46 = 0;
-	bool Result59 = NiagaraAll(In_SourceSpace == Constant46);
 	int Constant47 = 0;
-	bool Result60 = NiagaraAll(In_DestinationSpace == Constant47);
+	bool Result59 = NiagaraAll(In_SourceSpace == Constant47);
+	int Constant48 = 0;
+	bool Result60 = NiagaraAll(In_DestinationSpace == Constant48);
 	bool Result61 = Result59 && Result60;
-	int Constant48 = 1;
-	bool Result62 = NiagaraAll(In_SourceSpace == Constant48);
 	int Constant49 = 1;
-	bool Result63 = NiagaraAll(In_DestinationSpace == Constant49);
+	bool Result62 = NiagaraAll(In_SourceSpace == Constant49);
+	int Constant50 = 1;
+	bool Result63 = NiagaraAll(In_DestinationSpace == Constant50);
 	bool Result64 = Result62 && Result63;
 	bool Result65 = Result61 || Result64;
-	int Constant50 = 2;
-	bool Result66 = NiagaraAll(In_SourceSpace == Constant50);
 	int Constant51 = 2;
-	bool Result67 = NiagaraAll(In_DestinationSpace == Constant51);
+	bool Result66 = NiagaraAll(In_SourceSpace == Constant51);
+	int Constant52 = 2;
+	bool Result67 = NiagaraAll(In_DestinationSpace == Constant52);
 	bool Result68 = Result66 && Result67;
 	bool Result69 = Result65 || Result68;
 	bool Result70 = Result59 && Result67;
@@ -1207,7 +1192,7 @@ void TransformBase_Func_(int In_SourceSpace, int In_DestinationSpace, float4x4 I
 
 void BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_(float3 In_InPosition, int In_SourceSpace, int In_DestinationSpace, bool In_ApplyScale, out float3 Out_OutPosition, inout FSimulationContext Context)
 {
-	bool Constant45 = false;
+	bool Constant46 = false;
 	float4x4 Matrix_IfResult;
 	float4x4 Matrix001_IfResult;
 	if(In_ApplyScale)
@@ -1222,7 +1207,7 @@ void BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_(float3 In_InPosition,
 	}
 	bool TransformBase_Func_Output_bUseOriginal;
 	float4x4 TransformBase_Func_Output_OutTransform;
-	TransformBase_Func_(In_SourceSpace, In_DestinationSpace, Matrix_IfResult, Matrix001_IfResult, Constant45, TransformBase_Func_Output_bUseOriginal, TransformBase_Func_Output_OutTransform, Context);
+	TransformBase_Func_(In_SourceSpace, In_DestinationSpace, Matrix_IfResult, Matrix001_IfResult, Constant46, TransformBase_Func_Output_bUseOriginal, TransformBase_Func_Output_OutTransform, Context);
 	float3 Result86 = mul(float4(In_InPosition,1.0),TransformBase_Func_Output_OutTransform).xyz;
 	float3 Vector_IfResult;
 	if(TransformBase_Func_Output_bUseOriginal)
@@ -1273,24 +1258,24 @@ void DirectionAndLengthSafe_Func_(float3 In_V, float3 In_Fallback, float In_Thre
 
 void BeamEmitterSetup_B_Emitter_Func_(inout FSimulationContext Context)
 {
-	int Constant42 = 2;
-	int Constant43 = 0;
-	bool Constant44 = false;
+	int Constant43 = 2;
+	int Constant44 = 0;
+	bool Constant45 = false;
 	float3 BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_Output_OutPosition;
-	BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_(Context.Map.BeamEmitterSetup.BeamStart, Constant42, Constant43, Constant44, BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_Output_OutPosition, Context);
+	BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_(Context.Map.BeamEmitterSetup.BeamStart, Constant43, Constant44, Constant45, BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_Output_OutPosition, Context);
 	float3 Result87 = Context.Map.BeamEmitterSetup.BeamStart - Context.Map.BeamEmitterSetup.BeamEnd;
-	float3 Constant52 = float3(0,0,1);
-	float Constant53 = 1e-05;
-	float Constant54 = 1;
+	float3 Constant53 = float3(0,0,1);
+	float Constant54 = 1e-05;
+	float Constant55 = 1;
 	float3 DirectionAndLengthSafe_Func_Output_Direction;
 	float DirectionAndLengthSafe_Func_Output_Length;
 	bool DirectionAndLengthSafe_Func_Output_BelowThreshold;
-	DirectionAndLengthSafe_Func_(Result87, Constant52, Constant53, Constant54, DirectionAndLengthSafe_Func_Output_Direction, DirectionAndLengthSafe_Func_Output_Length, DirectionAndLengthSafe_Func_Output_BelowThreshold, Context);
+	DirectionAndLengthSafe_Func_(Result87, Constant53, Constant54, Constant55, DirectionAndLengthSafe_Func_Output_Direction, DirectionAndLengthSafe_Func_Output_Length, DirectionAndLengthSafe_Func_Output_BelowThreshold, Context);
 	Context.Map.Local.BeamEmitterSetup.BeamStart = BeamEmitterSetup_NF_TransformPosition_B_Emitter_Func_Output_OutPosition;
 	Context.Map.Local.BeamEmitterSetup.BeamStartEndLength = DirectionAndLengthSafe_Func_Output_Length;
 	Context.Map.Local.BeamEmitterSetup.BeamEnd = Context.Map.BeamEmitterSetup.BeamEnd;
-	bool Constant55 = false;
-	Context.Map.BeamEmitterSetup.AbsoluteStartTangent = Constant55;
+	bool Constant56 = false;
+	Context.Map.BeamEmitterSetup.AbsoluteStartTangent = Constant56;
 	float3 Result92 = Context.Map.BeamEmitterSetup.BeamStartTangent * Context.Map.Local.BeamEmitterSetup.BeamStartEndLength;
 	float3 Result93 = Context.Map.Local.BeamEmitterSetup.BeamStart + Result92;
 	float3 Vector_IfResult3;
@@ -1302,8 +1287,8 @@ void BeamEmitterSetup_B_Emitter_Func_(inout FSimulationContext Context)
 	{
 	Vector_IfResult3 = Result93;
 	}
-	bool Constant56 = false;
-	Context.Map.BeamEmitterSetup.AbsoluteEndTangent = Constant56;
+	bool Constant57 = false;
+	Context.Map.BeamEmitterSetup.AbsoluteEndTangent = Constant57;
 	float3 Result94 = Context.Map.Local.BeamEmitterSetup.BeamStartEndLength * Context.Map.BeamEmitterSetup.BeamEndTangent;
 	float3 Result95 = Result94 + Context.Map.Local.BeamEmitterSetup.BeamEnd;
 	float3 Vector_IfResult4;
@@ -1318,13 +1303,13 @@ void BeamEmitterSetup_B_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.Local.BeamEmitterSetup.BeamStartTangent = Vector_IfResult3;
 	Context.Map.Local.BeamEmitterSetup.BeamEndTangent = Vector_IfResult4;
 	float3 Result96 = Context.Map.Local.BeamEmitterSetup.BeamEnd - Context.Map.Local.BeamEmitterSetup.BeamStart;
-	float3 Constant57 = float3(0,0,1);
-	float Constant58 = 1e-05;
-	float Constant59 = 1;
+	float3 Constant58 = float3(0,0,1);
+	float Constant59 = 1e-05;
+	float Constant60 = 1;
 	float3 DirectionAndLengthSafe_Func_Output_Direction1;
 	float DirectionAndLengthSafe_Func_Output_Length1;
 	bool DirectionAndLengthSafe_Func_Output_BelowThreshold1;
-	DirectionAndLengthSafe_Func_(Result96, Constant57, Constant58, Constant59, DirectionAndLengthSafe_Func_Output_Direction1, DirectionAndLengthSafe_Func_Output_Length1, DirectionAndLengthSafe_Func_Output_BelowThreshold1, Context);
+	DirectionAndLengthSafe_Func_(Result96, Constant58, Constant59, Constant60, DirectionAndLengthSafe_Func_Output_Direction1, DirectionAndLengthSafe_Func_Output_Length1, DirectionAndLengthSafe_Func_Output_BelowThreshold1, Context);
 	Context.Map.B_Emitter.BeamStart = Context.Map.Local.BeamEmitterSetup.BeamStart;
 	Context.Map.B_Emitter.BeamStartTangent = Context.Map.Local.BeamEmitterSetup.BeamStartTangent;
 	Context.Map.B_Emitter.BeamEnd = Context.Map.Local.BeamEmitterSetup.BeamEnd;
@@ -1334,7 +1319,7 @@ void BeamEmitterSetup_B_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.B_Emitter.BeamVector = Result96;
 	Context.Map.B_Emitter.BeamDirection = DirectionAndLengthSafe_Func_Output_Direction1;
 	bool Result97 = NiagaraAll(Context.Map.B_Emitter.LoopCount > Context.Map.B_Emitter.BeamID);
-	int Constant60 = -1;
+	int Constant61 = -1;
 	int int32_IfResult;
 	if(Result97)
 	{
@@ -1342,7 +1327,7 @@ void BeamEmitterSetup_B_Emitter_Func_(inout FSimulationContext Context)
 	}
 	else
 	{
-	int32_IfResult = Constant60;
+	int32_IfResult = Constant61;
 	}
 	Context.Map.B_Emitter.BeamID = int32_IfResult;
 }
@@ -1352,44 +1337,44 @@ void SpawnBurst_Instantaneous_B_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.SpawnBurst_Instantaneous.Age = Context.Map.B_Emitter.LoopedAge;
 	float Result98 = Context.Map.SpawnBurst_Instantaneous.Age - Context.Map.Engine.DeltaTime;
 	float Result99 = Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnTime - Result98;
-	float Constant61 = 0;
+	float Constant62 = 0;
 	float Output1;
-	Output1 = Constant61;
+	Output1 = Constant62;
 	bool Result100 = NiagaraAll(Result99 >= Output1);
 	float Result101 = Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnTime - Context.Map.SpawnBurst_Instantaneous.Age;
 	bool Result102 = NiagaraAll(Result101 < Output1);
 	bool Result103 = Result100 && Result102;
-	float Constant62 = 1;
-	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant62;
-	int Constant63 = 0;
-	bool Result104 = NiagaraAll(Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnCount == Constant63);
-	float Constant64 = 0;
+	float Constant63 = 1;
+	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant63;
+	int Constant64 = 0;
+	bool Result104 = NiagaraAll(Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnCount == Constant64);
+	float Constant65 = 0;
 	float Result105 = Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnCount * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.B_Emitter.SpawnCountScale;
-	float Constant65 = 1;
-	float Result106 = max(Result105, Constant65);
+	float Constant66 = 1;
+	float Result106 = max(Result105, Constant66);
 	float float_IfResult4;
 	if(Result104)
 	{
-	float_IfResult4 = Constant64;
+	float_IfResult4 = Constant65;
 	}
 	else
 	{
 	float_IfResult4 = Result106;
 	}
-	float Constant66 = 0;
+	float Constant67 = 0;
 	NiagaraSpawnInfo Output11;
 	Output11.Count = float_IfResult4;
 	Output11.InterpStartDt = Result99;
-	Output11.IntervalDt = Constant66;
+	Output11.IntervalDt = Constant67;
 	Output11.SpawnGroup = Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnGroup;
-	int Constant67 = 0;
-	float Constant68 = 0;
+	int Constant68 = 0;
 	float Constant69 = 0;
+	float Constant70 = 0;
 	NiagaraSpawnInfo Output12;
-	Output12.Count = Constant67;
-	Output12.InterpStartDt = Constant68;
+	Output12.Count = Constant68;
+	Output12.InterpStartDt = Constant69;
 	Output12.SpawnGroup = Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnGroup;
-	Output12.IntervalDt = Constant69;
+	Output12.IntervalDt = Constant70;
 	NiagaraSpawnInfo SpawnInfo_IfResult;
 	if(Result103)
 	{
@@ -1400,8 +1385,8 @@ void SpawnBurst_Instantaneous_B_Emitter_Func_(inout FSimulationContext Context)
 	SpawnInfo_IfResult = Output12;
 	}
 	Context.Map.B_Emitter.SpawnBurst_Instantaneous.SpawnBurst = SpawnInfo_IfResult;
-	bool Constant70 = false;
-	Context.Map.Transient.SpawningbCanEverSpawn = Constant70;
+	bool Constant71 = false;
+	Context.Map.Transient.SpawningbCanEverSpawn = Constant71;
 	bool Result107 = NiagaraAll(Context.Map.B_Emitter.LoopedAge <= Context.Map.Constants.B_Emitter.SpawnBurst_Instantaneous.SpawnTime);
 	bool Result108 = Context.Map.Transient.SpawningbCanEverSpawn || Result107;
 	Context.Map.Transient.SpawningbCanEverSpawn = Result108;
@@ -1414,15 +1399,16 @@ void B_Emitter_Func_(inout FSimulationContext Context)
 	ExitStatScope( );
 	Context.Map.Multiply_VectorByFloat.VECTOR_VAR = Context.Map.User.Vector_BeamStartTangent;
 	Context.Map.Multiply_VectorByFloat001.VECTOR_VAR = Context.Map.User.Vector_BeamEndTangent;
-	bool Constant41 = false;
+	float3 Constant41 = float3(4,0,0);
+	bool Constant42 = false;
 	float3 Multiply_VectorByFloat_B_Emitter_Func_Output_Result;
 	Multiply_VectorByFloat_B_Emitter_Func_(Multiply_VectorByFloat_B_Emitter_Func_Output_Result, Context);
 	float3 Multiply_VectorByFloat001_B_Emitter_Func_Output_Result;
 	Multiply_VectorByFloat001_B_Emitter_Func_(Multiply_VectorByFloat001_B_Emitter_Func_Output_Result, Context);
-	Context.Map.BeamEmitterSetup.UseBeamTangents = Constant41;
+	Context.Map.BeamEmitterSetup.BeamStart = Constant41;
+	Context.Map.BeamEmitterSetup.UseBeamTangents = Constant42;
 	Context.Map.BeamEmitterSetup.BeamStartTangent = Multiply_VectorByFloat_B_Emitter_Func_Output_Result;
 	Context.Map.BeamEmitterSetup.BeamEndTangent = Multiply_VectorByFloat001_B_Emitter_Func_Output_Result;
-	Context.Map.BeamEmitterSetup.BeamStart = Context.Map.User.Vector_BeamStartTangent;
 	Context.Map.BeamEmitterSetup.BeamEnd = Context.Map.User.BeamEnd;
 	EnterStatScope(4 );
 	BeamEmitterSetup_B_Emitter_Func_(Context);

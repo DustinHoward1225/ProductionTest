@@ -449,7 +449,6 @@ struct FParamMap0_Particles
 	float3 BeamSplineNormal;
 	float3 BeamSplineTangent;
 	float4 Color;
-	float JitterDelayTimer;
 	float Lifetime;
 	float Mass;
 	float MaterialRandom;
@@ -528,11 +527,6 @@ struct FParamMap0_Local_SolveForcesAndVelocity
 	float3 PhysicsForce;
 };
 
-struct FParamMap0_Local_JitterPosition
-{
-	float3 ModuleJitterOffset;
-};
-
 struct FParamMap0_Local_EmitterState
 {
 	bool LoopCountIncreased;
@@ -554,17 +548,9 @@ struct FParamMap0_Local
 {
 	FParamMap0_Local_BeamEmitterSetup BeamEmitterSetup;
 	FParamMap0_Local_EmitterState EmitterState;
-	FParamMap0_Local_JitterPosition JitterPosition;
 	FParamMap0_Local_SolveForcesAndVelocity SolveForcesAndVelocity;
 	FParamMap0_Local_SpawnBeam SpawnBeam;
 	FParamMap0_Local_VectorNoiseForce VectorNoiseForce;
-};
-
-struct FParamMap0_JitterPosition
-{
-	float JitterAmount;
-	float JitterDelay;
-	float3 JitterOffset;
 };
 
 struct FParamMap0_InitializeParticle
@@ -729,7 +715,6 @@ struct FParamMap0
 	FParamMap0_FloatFromCurve001 FloatFromCurve001;
 	FParamMap0_FloatFromCurve002 FloatFromCurve002;
 	FParamMap0_InitializeParticle InitializeParticle;
-	FParamMap0_JitterPosition JitterPosition;
 	FParamMap0_Local Local;
 	FParamMap0_Multiply_VectorByFloat Multiply_VectorByFloat;
 	FParamMap0_Multiply_VectorByFloat001 Multiply_VectorByFloat001;
