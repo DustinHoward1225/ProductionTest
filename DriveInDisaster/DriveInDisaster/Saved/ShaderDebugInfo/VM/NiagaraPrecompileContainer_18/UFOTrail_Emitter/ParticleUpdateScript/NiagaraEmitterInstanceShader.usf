@@ -390,9 +390,28 @@ cbuffer FNiagaraEmitterParameters
 
 cbuffer FNiagaraExternalParameters
 {
+	float User_VortexForceAmount;
+	float Constants_Emitter_VortexForce_InfluenceFalloffRadius;
+	float3 Constants_Emitter_VortexForce_VortexAxis;
+	float Constants_Emitter_VortexForce_OriginPullAmount;
+	float3 Constants_Emitter_GravityForce_Gravity;
 	float Constants_Emitter_SolveForcesAndVelocity_SpeedLimit;
 	float Constants_Emitter_SolveForcesAndVelocity_AccelerationLimit;
 }
+
+struct FParamMap0_VortexForce
+{
+	float InfluenceFalloffRadius;
+	float OriginPullAmount;
+	float3 VortexAxis;
+	float VortexForceAmount;
+	float3 VortexOrigin;
+};
+
+struct FParamMap0_User
+{
+	float VortexForceAmount;
+};
 
 struct FParamMap0_Transient
 {
@@ -456,6 +475,17 @@ struct FParamMap0_OUTPUT_VAR
 	FParamMap0_OUTPUT_VAR_SolveForcesAndVelocity SolveForcesAndVelocity;
 };
 
+struct FParamMap0_Local_VortexForce
+{
+	float ForceAmount;
+	float InverseNormalizedRange;
+	float NormalizedRange;
+	float3 OriginVector;
+	float3 ParticlesPosition;
+	float3 VortexOrigin;
+	float3 VortexVector;
+};
+
 struct FParamMap0_Local_SolveForcesAndVelocity
 {
 	float DeltaTime;
@@ -466,6 +496,12 @@ struct FParamMap0_Local_SolveForcesAndVelocity
 struct FParamMap0_Local
 {
 	FParamMap0_Local_SolveForcesAndVelocity SolveForcesAndVelocity;
+	FParamMap0_Local_VortexForce VortexForce;
+};
+
+struct FParamMap0_GravityForce
+{
+	float3 Gravity;
 };
 
 struct FParamMap0_Engine_System
@@ -530,15 +566,29 @@ struct FParamMap0_DataInstance
 	bool Alive;
 };
 
+struct FParamMap0_Constants_Emitter_VortexForce
+{
+	float InfluenceFalloffRadius;
+	float OriginPullAmount;
+	float3 VortexAxis;
+};
+
 struct FParamMap0_Constants_Emitter_SolveForcesAndVelocity
 {
 	float AccelerationLimit;
 	float SpeedLimit;
 };
 
+struct FParamMap0_Constants_Emitter_GravityForce
+{
+	float3 Gravity;
+};
+
 struct FParamMap0_Constants_Emitter
 {
+	FParamMap0_Constants_Emitter_GravityForce GravityForce;
 	FParamMap0_Constants_Emitter_SolveForcesAndVelocity SolveForcesAndVelocity;
+	FParamMap0_Constants_Emitter_VortexForce VortexForce;
 };
 
 struct FParamMap0_Constants
@@ -552,12 +602,15 @@ struct FParamMap0
 	FParamMap0_DataInstance DataInstance;
 	FParamMap0_Emitter Emitter;
 	FParamMap0_Engine Engine;
+	FParamMap0_GravityForce GravityForce;
 	FParamMap0_Local Local;
 	FParamMap0_OUTPUT_VAR OUTPUT_VAR;
 	FParamMap0_Particles Particles;
 	FParamMap0_ParticleState ParticleState;
 	FParamMap0_SolveForcesAndVelocity SolveForcesAndVelocity;
 	FParamMap0_Transient Transient;
+	FParamMap0_User User;
+	FParamMap0_VortexForce VortexForce;
 };
 
 struct FSimulationContext
@@ -567,6 +620,11 @@ struct FSimulationContext
 
 static float HackSpawnInterp = 1.0;
 void ParticleState_Emitter_Func_(inout FSimulationContext Context);
+void VortexForce_SimulationPosition_Emitter_Func_(out float3 Out_OutPosition, inout FSimulationContext Context);
+void DirectionAndLengthSafe_Func_(float3 In_V, float3 In_Fallback, float In_Threshold, float In_FallbackLength, out float3 Out_Direction, out float Out_Length, out bool Out_BelowThreshold, inout FSimulationContext Context);
+void NormalizeDistanceRange_Func_(float3 In_StartPosition, float3 In_EndPosition, float In_Distance, float3 In_FallbackVector, out float Out_NormalizedRange, out float Out_InverseNormalizedRange, out float3 Out_NormalizedVectorBetweenPositions, out bool Out_WithinRange, inout FSimulationContext Context);
+void VortexForce_Emitter_Func_(inout FSimulationContext Context);
+void GravityForce_Emitter_Func_(inout FSimulationContext Context);
 void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context);
 float GetSpawnInterpolation();
 void ParticleState_Emitter_Func_(inout FSimulationContext Context)
@@ -595,6 +653,120 @@ void ParticleState_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.Particles.NormalizedAge = Result5;
 }
 
+void VortexForce_SimulationPosition_Emitter_Func_(out float3 Out_OutPosition, inout FSimulationContext Context)
+{
+	bool Constant5 = false;
+	float3 Constant6 = float3(0,0,0);
+	float3 Vector_IfResult;
+	if(Constant5)
+	{
+	Vector_IfResult = Constant6;
+	}
+	else
+	{
+	Vector_IfResult = Context.Map.Engine.Owner.Position;
+	}
+	Out_OutPosition = Vector_IfResult;
+}
+
+void DirectionAndLengthSafe_Func_(float3 In_V, float3 In_Fallback, float In_Threshold, float In_FallbackLength, out float3 Out_Direction, out float Out_Length, out bool Out_BelowThreshold, inout FSimulationContext Context)
+{
+	float Result7 = length(In_V);
+	bool Result8 = NiagaraAll(Result7 < In_Threshold);
+	float Result9 = length(In_Fallback);
+	float3 Vector_IfResult1;
+	float float_IfResult;
+	if(Result8)
+	{
+	Vector_IfResult1 = In_Fallback;
+	float_IfResult = In_FallbackLength;
+	}
+	else
+	{
+	Vector_IfResult1 = In_V;
+	float_IfResult = Result7;
+	}
+	float3 Result10 = Vector_IfResult1 / float_IfResult;
+	float3 Vector_IfResult2;
+	float float_IfResult1;
+	if(Result8)
+	{
+	Vector_IfResult2 = In_Fallback;
+	float_IfResult1 = Result9;
+	}
+	else
+	{
+	Vector_IfResult2 = Result10;
+	float_IfResult1 = float_IfResult;
+	}
+	Out_Direction = Vector_IfResult2;
+	Out_Length = float_IfResult1;
+	Out_BelowThreshold = Result8;
+}
+
+void NormalizeDistanceRange_Func_(float3 In_StartPosition, float3 In_EndPosition, float In_Distance, float3 In_FallbackVector, out float Out_NormalizedRange, out float Out_InverseNormalizedRange, out float3 Out_NormalizedVectorBetweenPositions, out bool Out_WithinRange, inout FSimulationContext Context)
+{
+	float3 Result6 = In_StartPosition - In_EndPosition;
+	float Constant14 = 1e-05;
+	float Constant15 = 1;
+	float3 DirectionAndLengthSafe_Func_Output_Direction;
+	float DirectionAndLengthSafe_Func_Output_Length;
+	bool DirectionAndLengthSafe_Func_Output_BelowThreshold;
+	DirectionAndLengthSafe_Func_(Result6, In_FallbackVector, Constant14, Constant15, DirectionAndLengthSafe_Func_Output_Direction, DirectionAndLengthSafe_Func_Output_Length, DirectionAndLengthSafe_Func_Output_BelowThreshold, Context);
+	float Constant16 = 0;
+	float float_IfResult2;
+	if(DirectionAndLengthSafe_Func_Output_BelowThreshold)
+	{
+	float_IfResult2 = Constant16;
+	}
+	else
+	{
+	float_IfResult2 = DirectionAndLengthSafe_Func_Output_Length;
+	}
+	float Result11 = min(float_IfResult2, In_Distance);
+	float Constant17 = 0.0001;
+	float Result12 = max(In_Distance, Constant17);
+	float Result13 = Result11 / Result12;
+	float Result14 = 1 - Result13;
+	bool Result15 = NiagaraAll(float_IfResult2 <= In_Distance);
+	Out_NormalizedRange = Result13;
+	Out_InverseNormalizedRange = Result14;
+	Out_NormalizedVectorBetweenPositions = DirectionAndLengthSafe_Func_Output_Direction;
+	Out_WithinRange = Result15;
+}
+
+void VortexForce_Emitter_Func_(inout FSimulationContext Context)
+{
+	Context.Map.Local.VortexForce.VortexOrigin = Context.Map.VortexForce.VortexOrigin;
+	Context.Map.Local.VortexForce.ParticlesPosition = Context.Map.Particles.Position;
+	float3 Constant13 = float3(0,0,1);
+	float NormalizeDistanceRange_Func_Output_NormalizedRange;
+	float NormalizeDistanceRange_Func_Output_InverseNormalizedRange;
+	float3 NormalizeDistanceRange_Func_Output_NormalizedVectorBetweenPositions;
+	bool NormalizeDistanceRange_Func_Output_WithinRange;
+	NormalizeDistanceRange_Func_(Context.Map.Local.VortexForce.VortexOrigin, Context.Map.Local.VortexForce.ParticlesPosition, Context.Map.Constants.Emitter.VortexForce.InfluenceFalloffRadius, Constant13, NormalizeDistanceRange_Func_Output_NormalizedRange, NormalizeDistanceRange_Func_Output_InverseNormalizedRange, NormalizeDistanceRange_Func_Output_NormalizedVectorBetweenPositions, NormalizeDistanceRange_Func_Output_WithinRange, Context);
+	float3 Result16 = cross(NormalizeDistanceRange_Func_Output_NormalizedVectorBetweenPositions,Context.Map.Constants.Emitter.VortexForce.VortexAxis);
+	Context.Map.Local.VortexForce.NormalizedRange = NormalizeDistanceRange_Func_Output_NormalizedRange;
+	Context.Map.Local.VortexForce.InverseNormalizedRange = NormalizeDistanceRange_Func_Output_InverseNormalizedRange;
+	Context.Map.Local.VortexForce.OriginVector = NormalizeDistanceRange_Func_Output_NormalizedVectorBetweenPositions;
+	Context.Map.Local.VortexForce.VortexVector = Result16;
+	Context.Map.Local.VortexForce.ForceAmount = Context.Map.VortexForce.VortexForceAmount;
+	float3 Constant18 = float3(0,0,0);
+	float Result17 = -(Context.Map.Constants.Emitter.VortexForce.OriginPullAmount);
+	float3 Result18 = lerp(Context.Map.Local.VortexForce.OriginVector,Constant18,Result17);
+	float3 Result19 = Context.Map.Local.VortexForce.VortexVector + Result18;
+	float3 Result20 = normalize(Result19);
+	float3 Result21 = Result20 * Context.Map.Local.VortexForce.ForceAmount + Context.Map.Transient.PhysicsForce;
+	Context.Map.Transient.PhysicsForce = Result21;
+}
+
+void GravityForce_Emitter_Func_(inout FSimulationContext Context)
+{
+	float3 Result22 = Context.Map.Constants.Emitter.GravityForce.Gravity * Context.Map.Particles.Mass;
+	float3 Result23 = Context.Map.Transient.PhysicsForce + Result22;
+	Context.Map.Transient.PhysicsForce = Result23;
+}
+
 void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 {
 	Context.Map.Local.SolveForcesAndVelocity.DeltaTime = Context.Map.SolveForcesAndVelocity.DeltaTime;
@@ -602,24 +774,24 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.IncomingPhysicsForce = Context.Map.SolveForcesAndVelocity.Force;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.Map.SolveForcesAndVelocity.Velocity;
 	Context.Map.Local.SolveForcesAndVelocity.Mass = Context.Map.SolveForcesAndVelocity.Mass;
-	float Constant13 = 0.0001;
-	float Result6 = max(Context.Map.Local.SolveForcesAndVelocity.Mass, Constant13);
-	float Result7 = Reciprocal(Result6);
-	float3 Result8 = Result7 * Context.Map.Local.SolveForcesAndVelocity.PhysicsForce;
-	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Result8;
-	float3 Result9 = Context.Map.Local.SolveForcesAndVelocity.PhysicsForce * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
-	float Constant14 = 0;
-	float Result10 = max(Context.Map.Transient.PhysicsDrag, Constant14);
-	float Result11 = Context.Map.Local.SolveForcesAndVelocity.DeltaTime * Result10;
-	float Constant15 = 1;
-	float Result12 = Result11 + Constant15;
-	float3 Result13 = Result9 / Result12;
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result13;
+	float Constant26 = 0.0001;
+	float Result24 = max(Context.Map.Local.SolveForcesAndVelocity.Mass, Constant26);
+	float Result25 = Reciprocal(Result24);
+	float3 Result26 = Result25 * Context.Map.Local.SolveForcesAndVelocity.PhysicsForce;
+	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Result26;
+	float3 Result27 = Context.Map.Local.SolveForcesAndVelocity.PhysicsForce * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
+	float Constant27 = 0;
+	float Result28 = max(Context.Map.Transient.PhysicsDrag, Constant27);
+	float Result29 = Context.Map.Local.SolveForcesAndVelocity.DeltaTime * Result28;
+	float Constant28 = 1;
+	float Result30 = Result29 + Constant28;
+	float3 Result31 = Result27 / Result30;
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result31;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.IncomingPhysicsDrag = Context.Map.Transient.PhysicsDrag;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
-	float3 Result14 = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.SolveForcesAndVelocity.Position;
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result14;
+	float3 Result32 = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.SolveForcesAndVelocity.Position;
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result32;
 	float3 Position_IfResult;
 	float3 Velocity_IfResult;
 	float3 PreviousVelocity_IfResult;
@@ -638,14 +810,14 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.Particles.Position = Position_IfResult;
 	Context.Map.Particles.Velocity = Velocity_IfResult;
 	Context.Map.Particles.PreviousVelocity = PreviousVelocity_IfResult;
-	float3 Constant16 = float3(0,0,0);
-	float Constant17 = 0;
+	float3 Constant29 = float3(0,0,0);
+	float Constant30 = 0;
 	float3 ForceVector_IfResult;
 	float Drag_IfResult;
 	if(Context.Map.SolveForcesAndVelocity.WritetoIntrinsicProperties)
 	{
-	ForceVector_IfResult = Constant16;
-	Drag_IfResult = Constant17;
+	ForceVector_IfResult = Constant29;
+	Drag_IfResult = Constant30;
 	}
 	else
 	{
@@ -681,38 +853,58 @@ void Simulate(inout FSimulationContext Context)
 	EnterStatScope(1 );
 	ParticleState_Emitter_Func_(Context);
 	ExitStatScope( );
+	Context.Map.VortexForce.VortexForceAmount = Context.Map.User.VortexForceAmount;
+	bool Constant4 = false;
+	float3 VortexForce_SimulationPosition_Emitter_Func_Output_OutPosition;
+	VortexForce_SimulationPosition_Emitter_Func_(VortexForce_SimulationPosition_Emitter_Func_Output_OutPosition, Context);
+	Context.Map.VortexForce.VortexOrigin = VortexForce_SimulationPosition_Emitter_Func_Output_OutPosition;
+	float3 Constant7 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.VortexForce.VortexOrigin = Constant7;
+	float3 Constant8 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.VortexForce.ParticlesPosition = Constant8;
+	float3 Constant9 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.VortexForce.OriginVector = Constant9;
+	float3 Constant10 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.VortexForce.VortexVector = Constant10;
+	float Constant11 = (0.0);
+	Context.Map.Local.VortexForce.ForceAmount = Constant11;
+	float3 Constant12 = float3(0,0,0);
+	Context.Map.Transient.PhysicsForce = Constant12;
+	EnterStatScope(2 );
+	VortexForce_Emitter_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(3 );
+	GravityForce_Emitter_Func_(Context);
+	ExitStatScope( );
 	Context.Map.Transient.PhysicsDeltaTime = Context.Map.Engine.DeltaTime;
 	Context.Map.SolveForcesAndVelocity.DeltaTime = Context.Map.Transient.PhysicsDeltaTime;
-	float Constant4 = (0.0);
-	Context.Map.Local.SolveForcesAndVelocity.DeltaTime = Constant4;
-	float3 Constant5 = float3(0,0,0);
-	Context.Map.Transient.PhysicsForce = Constant5;
+	float Constant19 = (0.0);
+	Context.Map.Local.SolveForcesAndVelocity.DeltaTime = Constant19;
 	Context.Map.SolveForcesAndVelocity.Force = Context.Map.Transient.PhysicsForce;
 	Context.Map.SolveForcesAndVelocity.Velocity = Context.Map.Particles.Velocity;
 	Context.Map.SolveForcesAndVelocity.Mass = Context.Map.Particles.Mass;
-	float3 Constant6 = float3(0.0, 0.0, 0.0);
-	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Constant6;
-	float3 Constant7 = float3(0.0, 0.0, 0.0);
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Constant7;
-	float Constant8 = (0.0);
-	Context.Map.Local.SolveForcesAndVelocity.Mass = Constant8;
-	float Constant9 = 0;
-	Context.Map.Transient.PhysicsDrag = Constant9;
+	float3 Constant20 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Constant20;
+	float3 Constant21 = float3(0.0, 0.0, 0.0);
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Constant21;
+	float Constant22 = (0.0);
+	Context.Map.Local.SolveForcesAndVelocity.Mass = Constant22;
+	float Constant23 = 0;
+	Context.Map.Transient.PhysicsDrag = Constant23;
 	Context.Map.SolveForcesAndVelocity.PreviousVelocity = Context.Map.Particles.PreviousVelocity;
-	bool Constant10 = false;
 	Context.Map.SolveForcesAndVelocity.Position = Context.Map.Particles.Position;
-	float3 Constant11 = float3(0.0, 0.0, 0.0);
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Constant11;
-	bool Constant12 = true;
-	Context.Map.SolveForcesAndVelocity.WritetoIntrinsicProperties = Constant12;
-	EnterStatScope(2 );
+	float3 Constant24 = float3(0.0, 0.0, 0.0);
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Constant24;
+	bool Constant25 = true;
+	Context.Map.SolveForcesAndVelocity.WritetoIntrinsicProperties = Constant25;
+	EnterStatScope(4 );
 	SolveForcesAndVelocity_Emitter_Func_(Context);
 	ExitStatScope( );
 	ExitStatScope( );
 }
 void SimulateMain()
 {
-EnterStatScope(3 );
+EnterStatScope(5 );
 
 	FSimulationContext Context = (FSimulationContext)0;
 	Context.Map.Particles.Age = InputDataFloat(0, 0);
@@ -741,9 +933,14 @@ EnterStatScope(3 );
 	Context.Map.Particles.Velocity.y = InputDataFloat(0, 23);
 	Context.Map.Particles.Velocity.z = InputDataFloat(0, 24);
 	Context.Map.Engine.DeltaTime = Engine_DeltaTime;
+	Context.Map.User.VortexForceAmount = User_VortexForceAmount;
+	Context.Map.Engine.Owner.Position = Engine_Owner_Position.xyz;
+	Context.Map.Constants.Emitter.VortexForce.InfluenceFalloffRadius = Constants_Emitter_VortexForce_InfluenceFalloffRadius;
+	Context.Map.Constants.Emitter.VortexForce.VortexAxis = Constants_Emitter_VortexForce_VortexAxis;
+	Context.Map.Constants.Emitter.VortexForce.OriginPullAmount = Constants_Emitter_VortexForce_OriginPullAmount;
+	Context.Map.Constants.Emitter.GravityForce.Gravity = Constants_Emitter_GravityForce_Gravity;
 	Context.Map.Constants.Emitter.SolveForcesAndVelocity.SpeedLimit = Constants_Emitter_SolveForcesAndVelocity_SpeedLimit;
 	Context.Map.Constants.Emitter.SolveForcesAndVelocity.AccelerationLimit = Constants_Emitter_SolveForcesAndVelocity_AccelerationLimit;
-	Context.Map.Engine.Owner.Position = Engine_Owner_Position.xyz;
 	Context.Map.Engine.Emitter.TotalSpawnedParticles = Engine_Emitter_TotalSpawnedParticles;
 	Context.Map.Emitter.RandomSeed = Emitter_RandomSeed;
 	ReadDataSets(Context);
