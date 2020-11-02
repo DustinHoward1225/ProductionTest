@@ -390,8 +390,14 @@ cbuffer FNiagaraEmitterParameters
 
 cbuffer FNiagaraExternalParameters
 {
-	float Constants_Emitter_Drag_Drag;
+	float Constants_Emitter_FloatFromCurve002_ScaleCurve;
 	float Constants_Emitter_Drag_RotationalDrag;
+	float Constants_Emitter_FloatFromCurve001_ScaleCurve;
+	int Constants_Emitter_CurlNoiseForce_RandomSeed;
+	float Constants_Emitter_CurlNoiseForce_NoiseFrequency;
+	float3 Constants_Emitter_CurlNoiseForce_PanNoiseField;
+	float Constants_Emitter_CurlNoiseForce_CurlNoiseConeMaskAngle;
+	float Constants_Emitter_CurlNoiseForce_CurlNoiseConeMaskFalloffAngle;
 	float Constants_Emitter_SolveForcesAndVelocity_SpeedLimit;
 	float Constants_Emitter_SolveForcesAndVelocity_AccelerationLimit;
 	float Constants_Emitter_FloatFromCurve_ScaleCurve;
@@ -485,9 +491,31 @@ struct FParamMap0_Local_SolveForcesAndVelocity
 	float3 PhysicsForce;
 };
 
+struct FParamMap0_Local_CurlNoiseForce
+{
+	float AgeAdvancement;
+	float DeterministicOffset;
+	float Falloff;
+	float3 SampledNoise;
+	float3 SamplePosition;
+};
+
 struct FParamMap0_Local
 {
+	FParamMap0_Local_CurlNoiseForce CurlNoiseForce;
 	FParamMap0_Local_SolveForcesAndVelocity SolveForcesAndVelocity;
+};
+
+struct FParamMap0_FloatFromCurve002
+{
+	float CurveIndex;
+	float ScaleCurve;
+};
+
+struct FParamMap0_FloatFromCurve001
+{
+	float CurveIndex;
+	float ScaleCurve;
 };
 
 struct FParamMap0_FloatFromCurve
@@ -565,6 +593,18 @@ struct FParamMap0_DataInstance
 	bool Alive;
 };
 
+struct FParamMap0_CurlNoiseForce
+{
+	float CurlNoiseConeMaskAngle;
+	float3 CurlNoiseConeMaskAxis;
+	float CurlNoiseConeMaskFalloffAngle;
+	float NoiseFrequency;
+	float NoiseStrength;
+	float3 PanNoiseField;
+	int RandomSeed;
+	float3 SamplePosition;
+};
+
 struct FParamMap0_Constants_Emitter_SolveForcesAndVelocity
 {
 	float AccelerationLimit;
@@ -576,6 +616,16 @@ struct FParamMap0_Constants_Emitter_ScaleColor
 	float3 ScaleRGB;
 };
 
+struct FParamMap0_Constants_Emitter_FloatFromCurve002
+{
+	float ScaleCurve;
+};
+
+struct FParamMap0_Constants_Emitter_FloatFromCurve001
+{
+	float ScaleCurve;
+};
+
 struct FParamMap0_Constants_Emitter_FloatFromCurve
 {
 	float ScaleCurve;
@@ -583,8 +633,16 @@ struct FParamMap0_Constants_Emitter_FloatFromCurve
 
 struct FParamMap0_Constants_Emitter_Drag
 {
-	float Drag;
 	float RotationalDrag;
+};
+
+struct FParamMap0_Constants_Emitter_CurlNoiseForce
+{
+	float CurlNoiseConeMaskAngle;
+	float CurlNoiseConeMaskFalloffAngle;
+	float NoiseFrequency;
+	float3 PanNoiseField;
+	int RandomSeed;
 };
 
 struct FParamMap0_Constants_Emitter_Color
@@ -596,8 +654,11 @@ struct FParamMap0_Constants_Emitter_Color
 struct FParamMap0_Constants_Emitter
 {
 	FParamMap0_Constants_Emitter_Color Color;
+	FParamMap0_Constants_Emitter_CurlNoiseForce CurlNoiseForce;
 	FParamMap0_Constants_Emitter_Drag Drag;
 	FParamMap0_Constants_Emitter_FloatFromCurve FloatFromCurve;
+	FParamMap0_Constants_Emitter_FloatFromCurve001 FloatFromCurve001;
+	FParamMap0_Constants_Emitter_FloatFromCurve002 FloatFromCurve002;
 	FParamMap0_Constants_Emitter_ScaleColor ScaleColor;
 	FParamMap0_Constants_Emitter_SolveForcesAndVelocity SolveForcesAndVelocity;
 };
@@ -624,11 +685,14 @@ struct FParamMap0
 	FParamMap0_Color Color;
 	FParamMap0_ColorFromCurve ColorFromCurve;
 	FParamMap0_Constants Constants;
+	FParamMap0_CurlNoiseForce CurlNoiseForce;
 	FParamMap0_DataInstance DataInstance;
 	FParamMap0_Drag Drag;
 	FParamMap0_Emitter Emitter;
 	FParamMap0_Engine Engine;
 	FParamMap0_FloatFromCurve FloatFromCurve;
+	FParamMap0_FloatFromCurve001 FloatFromCurve001;
+	FParamMap0_FloatFromCurve002 FloatFromCurve002;
 	FParamMap0_Local Local;
 	FParamMap0_OUTPUT_VAR OUTPUT_VAR;
 	FParamMap0_Particles Particles;
@@ -645,7 +709,13 @@ struct FSimulationContext
 
 static float HackSpawnInterp = 1.0;
 void ParticleState_Emitter_Func_(inout FSimulationContext Context);
+void SampleCurve_EmitterDragFloatCurve(float In_X, out float Out_Value);
+void FloatFromCurve002_Emitter_Func_(out float Out_Value, inout FSimulationContext Context);
 void Drag_Emitter_Func_(inout FSimulationContext Context);
+void SampleCurve_EmitterNoiseStrengthFloatCurve(float In_X, out float Out_Value);
+void FloatFromCurve001_Emitter_Func_(out float Out_Value, inout FSimulationContext Context);
+void SampleField_EmitterVectorField32(float3 In_SamplePoint, out float3 Out_SampledValue);
+void CurlNoiseForce_Emitter_Func_(int In_Emitter_RandomSeed, inout FSimulationContext Context);
 void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context);
 void SampleCurve_EmitterScaleAlphaFloatCurve(float In_X, out float Out_Value);
 void FloatFromCurve_Emitter_Func_(out float Out_Value, inout FSimulationContext Context);
@@ -680,10 +750,62 @@ void ParticleState_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.Particles.NormalizedAge = Result5;
 }
 
+void FloatFromCurve002_Emitter_Func_(out float Out_Value, inout FSimulationContext Context)
+{
+	float SampleCurve_EmitterDragFloatCurveOutput_Value;
+	SampleCurve_EmitterDragFloatCurve(Context.Map.FloatFromCurve002.CurveIndex, SampleCurve_EmitterDragFloatCurveOutput_Value);
+	float Result6 = SampleCurve_EmitterDragFloatCurveOutput_Value * Context.Map.Constants.Emitter.FloatFromCurve002.ScaleCurve;
+	Out_Value = Result6;
+}
+
 void Drag_Emitter_Func_(inout FSimulationContext Context)
 {
-	Context.Map.Transient.PhysicsDrag = Context.Map.Transient.PhysicsDrag;
+	float Result7 = Context.Map.Drag.Drag + Context.Map.Transient.PhysicsDrag;
+	Context.Map.Transient.PhysicsDrag = Result7;
 	Context.Map.Transient.PhysicsRotationalDrag = Context.Map.Transient.PhysicsRotationalDrag;
+}
+
+void FloatFromCurve001_Emitter_Func_(out float Out_Value, inout FSimulationContext Context)
+{
+	float SampleCurve_EmitterNoiseStrengthFloatCurveOutput_Value;
+	SampleCurve_EmitterNoiseStrengthFloatCurve(Context.Map.FloatFromCurve001.CurveIndex, SampleCurve_EmitterNoiseStrengthFloatCurveOutput_Value);
+	float Result8 = SampleCurve_EmitterNoiseStrengthFloatCurveOutput_Value * Context.Map.Constants.Emitter.FloatFromCurve001.ScaleCurve;
+	Out_Value = Result8;
+}
+
+void CurlNoiseForce_Emitter_Func_(int In_Emitter_RandomSeed, inout FSimulationContext Context)
+{
+	bool Constant15 = false;
+	float AgeAdvancement_IfResult;
+	if(Constant15)
+	{
+	AgeAdvancement_IfResult = Context.Map.Emitter.Age;
+	}
+	else
+	{
+	AgeAdvancement_IfResult = Context.Map.Engine.Time;
+	}
+	float Constant16 = 4096;
+	int Constant17 = 0;
+	float Result9 = rand_float(Constant16, Context.Map.Constants.Emitter.CurlNoiseForce.RandomSeed, Context.Map.Emitter.RandomSeed, Constant17);
+	Context.Map.Local.CurlNoiseForce.AgeAdvancement = AgeAdvancement_IfResult;
+	Context.Map.Local.CurlNoiseForce.DeterministicOffset = Result9;
+	Context.Map.Local.CurlNoiseForce.SamplePosition = Context.Map.CurlNoiseForce.SamplePosition;
+	float3 Result10 = Context.Map.Local.CurlNoiseForce.DeterministicOffset + Context.Map.Local.CurlNoiseForce.SamplePosition;
+	float3 Result11 = Result10 * Context.Map.Constants.Emitter.CurlNoiseForce.NoiseFrequency;
+	float Constant18 = 125;
+	float3 Result12 = Result11 * Constant18;
+	float3 SampleField_EmitterVectorField32Output_SampledValue;
+	SampleField_EmitterVectorField32(Result12, SampleField_EmitterVectorField32Output_SampledValue);
+	Context.Map.Local.CurlNoiseForce.SampledNoise = SampleField_EmitterVectorField32Output_SampledValue;
+	float Constant19 = 1;
+	Context.Map.Local.CurlNoiseForce.Falloff = Constant19;
+	Context.Map.CurlNoiseForce.CurlNoiseConeMaskAngle = Context.Map.Constants.Emitter.CurlNoiseForce.CurlNoiseConeMaskAngle;
+	Context.Map.CurlNoiseForce.CurlNoiseConeMaskFalloffAngle = Context.Map.Constants.Emitter.CurlNoiseForce.CurlNoiseConeMaskFalloffAngle;
+	Context.Map.CurlNoiseForce.CurlNoiseConeMaskAxis = Context.Map.CurlNoiseForce.CurlNoiseConeMaskAxis;
+	float3 Result13 = Context.Map.Local.CurlNoiseForce.SampledNoise * Context.Map.CurlNoiseForce.NoiseStrength;
+	float3 Result14 = Context.Map.Transient.PhysicsForce + Result13;
+	Context.Map.Transient.PhysicsForce = Result14;
 }
 
 void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
@@ -693,24 +815,24 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.IncomingPhysicsForce = Context.Map.SolveForcesAndVelocity.Force;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.Map.SolveForcesAndVelocity.Velocity;
 	Context.Map.Local.SolveForcesAndVelocity.Mass = Context.Map.SolveForcesAndVelocity.Mass;
-	float Constant16 = 0.0001;
-	float Result6 = max(Context.Map.Local.SolveForcesAndVelocity.Mass, Constant16);
-	float Result7 = Reciprocal(Result6);
-	float3 Result8 = Result7 * Context.Map.Local.SolveForcesAndVelocity.PhysicsForce;
-	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Result8;
-	float3 Result9 = Context.Map.Local.SolveForcesAndVelocity.PhysicsForce * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
-	float Constant17 = 0;
-	float Result10 = max(Context.Map.Transient.PhysicsDrag, Constant17);
-	float Result11 = Context.Map.Local.SolveForcesAndVelocity.DeltaTime * Result10;
-	float Constant18 = 1;
-	float Result12 = Result11 + Constant18;
-	float3 Result13 = Result9 / Result12;
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result13;
+	float Constant26 = 0.0001;
+	float Result15 = max(Context.Map.Local.SolveForcesAndVelocity.Mass, Constant26);
+	float Result16 = Reciprocal(Result15);
+	float3 Result17 = Result16 * Context.Map.Local.SolveForcesAndVelocity.PhysicsForce;
+	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Result17;
+	float3 Result18 = Context.Map.Local.SolveForcesAndVelocity.PhysicsForce * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
+	float Constant27 = 0;
+	float Result19 = max(Context.Map.Transient.PhysicsDrag, Constant27);
+	float Result20 = Context.Map.Local.SolveForcesAndVelocity.DeltaTime * Result19;
+	float Constant28 = 1;
+	float Result21 = Result20 + Constant28;
+	float3 Result22 = Result18 / Result21;
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Result22;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.IncomingPhysicsDrag = Context.Map.Transient.PhysicsDrag;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
 	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity;
-	float3 Result14 = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.SolveForcesAndVelocity.Position;
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result14;
+	float3 Result23 = Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity * Context.Map.Local.SolveForcesAndVelocity.DeltaTime + Context.Map.SolveForcesAndVelocity.Position;
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Result23;
 	float3 Position_IfResult;
 	float3 Velocity_IfResult;
 	float3 PreviousVelocity_IfResult;
@@ -729,14 +851,14 @@ void SolveForcesAndVelocity_Emitter_Func_(inout FSimulationContext Context)
 	Context.Map.Particles.Position = Position_IfResult;
 	Context.Map.Particles.Velocity = Velocity_IfResult;
 	Context.Map.Particles.PreviousVelocity = PreviousVelocity_IfResult;
-	float3 Constant19 = float3(0,0,0);
-	float Constant20 = 0;
+	float3 Constant29 = float3(0,0,0);
+	float Constant30 = 0;
 	float3 ForceVector_IfResult;
 	float Drag_IfResult;
 	if(Context.Map.SolveForcesAndVelocity.WritetoIntrinsicProperties)
 	{
-	ForceVector_IfResult = Constant19;
-	Drag_IfResult = Constant20;
+	ForceVector_IfResult = Constant29;
+	Drag_IfResult = Constant30;
 	}
 	else
 	{
@@ -751,8 +873,8 @@ void FloatFromCurve_Emitter_Func_(out float Out_Value, inout FSimulationContext 
 {
 	float SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value;
 	SampleCurve_EmitterScaleAlphaFloatCurve(Context.Map.FloatFromCurve.CurveIndex, SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value);
-	float Result15 = SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value * Context.Map.Constants.Emitter.FloatFromCurve.ScaleCurve;
-	Out_Value = Result15;
+	float Result24 = SampleCurve_EmitterScaleAlphaFloatCurveOutput_Value * Context.Map.Constants.Emitter.FloatFromCurve.ScaleCurve;
+	Out_Value = Result24;
 }
 
 void ScaleColor_Emitter_Func_(inout FSimulationContext Context)
@@ -762,10 +884,10 @@ void ScaleColor_Emitter_Func_(inout FSimulationContext Context)
 	Output0.g = Context.Map.Constants.Emitter.ScaleColor.ScaleRGB.y;
 	Output0.b = Context.Map.Constants.Emitter.ScaleColor.ScaleRGB.z;
 	Output0.a = Context.Map.ScaleColor.ScaleAlpha;
-	float4 Result16 = Context.Map.Transient.ParticleColorScaleFactor * Output0;
-	float4 Result17 = Context.Map.ScaleColor.ColorValueToScale * Result16;
-	Context.Map.Particles.Color = Result17;
-	Context.Map.Transient.ParticleColorScaleFactor = Result16;
+	float4 Result25 = Context.Map.Transient.ParticleColorScaleFactor * Output0;
+	float4 Result26 = Context.Map.ScaleColor.ColorValueToScale * Result25;
+	Context.Map.Particles.Color = Result26;
+	Context.Map.Transient.ParticleColorScaleFactor = Result25;
 }
 
 void ColorFromCurve_Emitter_Func_(out float4 Out_Value, inout FSimulationContext Context)
@@ -783,14 +905,14 @@ void Color_Emitter_Func_(inout FSimulationContext Context)
 	Output01.y = Context.Map.Color.Color.g;
 	Output01.z = Context.Map.Color.Color.b;
 	Output2 = Context.Map.Color.Color.a;
-	float3 Result18 = Output01 * Context.Map.Constants.Emitter.Color.ScaleColor;
-	float Result19 = Output2 * Context.Map.Constants.Emitter.Color.ScaleAlpha;
-	float Result20 = Result19 * Context.Map.Emitter.AlphaScale;
+	float3 Result27 = Output01 * Context.Map.Constants.Emitter.Color.ScaleColor;
+	float Result28 = Output2 * Context.Map.Constants.Emitter.Color.ScaleAlpha;
+	float Result29 = Result28 * Context.Map.Emitter.AlphaScale;
 	float4 Output02;
-	Output02.g = Result18.y;
-	Output02.a = Result20;
-	Output02.r = Result18.x;
-	Output02.b = Result18.z;
+	Output02.g = Result27.y;
+	Output02.a = Result29;
+	Output02.r = Result27.x;
+	Output02.b = Result27.z;
 	Context.Map.Particles.Color = Output02;
 }
 
@@ -819,6 +941,10 @@ void Simulate(inout FSimulationContext Context)
 	EnterStatScope(1 );
 	ParticleState_Emitter_Func_(Context);
 	ExitStatScope( );
+	Context.Map.FloatFromCurve002.CurveIndex = Context.Map.Particles.NormalizedAge;
+	float FloatFromCurve002_Emitter_Func_Output_Value;
+	FloatFromCurve002_Emitter_Func_(FloatFromCurve002_Emitter_Func_Output_Value, Context);
+	Context.Map.Drag.Drag = FloatFromCurve002_Emitter_Func_Output_Value;
 	float Constant4 = 0;
 	Context.Map.Transient.PhysicsDrag = Constant4;
 	float Constant5 = 0;
@@ -826,31 +952,50 @@ void Simulate(inout FSimulationContext Context)
 	EnterStatScope(2 );
 	Drag_Emitter_Func_(Context);
 	ExitStatScope( );
+	Context.Map.FloatFromCurve001.CurveIndex = Context.Map.Particles.NormalizedAge;
+	float FloatFromCurve001_Emitter_Func_Output_Value;
+	FloatFromCurve001_Emitter_Func_(FloatFromCurve001_Emitter_Func_Output_Value, Context);
+	Context.Map.CurlNoiseForce.NoiseStrength = FloatFromCurve001_Emitter_Func_Output_Value;
 	bool Constant6 = false;
 	int Constant7 = (0);
+	float Constant8 = (0.0);
+	Context.Map.Local.CurlNoiseForce.AgeAdvancement = Constant8;
+	float Constant9 = (0.0);
+	Context.Map.Local.CurlNoiseForce.DeterministicOffset = Constant9;
+	bool Constant10 = false;
+	Context.Map.CurlNoiseForce.SamplePosition = Context.Map.Particles.Position;
+	float3 Constant11 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.CurlNoiseForce.SamplePosition = Constant11;
+	float3 Constant12 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.CurlNoiseForce.SampledNoise = Constant12;
+	float Constant13 = 1;
+	Context.Map.Local.CurlNoiseForce.Falloff = Constant13;
+	Context.Map.CurlNoiseForce.CurlNoiseConeMaskAxis = Context.Map.Particles.Velocity;
+	float3 Constant14 = float3(0,0,0);
+	Context.Map.Transient.PhysicsForce = Constant14;
+	EnterStatScope(3 );
+	CurlNoiseForce_Emitter_Func_(Constant7, Context);
+	ExitStatScope( );
 	Context.Map.Transient.PhysicsDeltaTime = Context.Map.Engine.DeltaTime;
 	Context.Map.SolveForcesAndVelocity.DeltaTime = Context.Map.Transient.PhysicsDeltaTime;
-	float Constant8 = (0.0);
-	Context.Map.Local.SolveForcesAndVelocity.DeltaTime = Constant8;
-	float3 Constant9 = float3(0,0,0);
-	Context.Map.Transient.PhysicsForce = Constant9;
+	float Constant20 = (0.0);
+	Context.Map.Local.SolveForcesAndVelocity.DeltaTime = Constant20;
 	Context.Map.SolveForcesAndVelocity.Force = Context.Map.Transient.PhysicsForce;
 	Context.Map.SolveForcesAndVelocity.Velocity = Context.Map.Particles.Velocity;
 	Context.Map.SolveForcesAndVelocity.Mass = Context.Map.Particles.Mass;
-	float3 Constant10 = float3(0.0, 0.0, 0.0);
-	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Constant10;
-	float3 Constant11 = float3(0.0, 0.0, 0.0);
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Constant11;
-	float Constant12 = (0.0);
-	Context.Map.Local.SolveForcesAndVelocity.Mass = Constant12;
+	float3 Constant21 = float3(0.0, 0.0, 0.0);
+	Context.Map.Local.SolveForcesAndVelocity.PhysicsForce = Constant21;
+	float3 Constant22 = float3(0.0, 0.0, 0.0);
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Velocity = Constant22;
+	float Constant23 = (0.0);
+	Context.Map.Local.SolveForcesAndVelocity.Mass = Constant23;
 	Context.Map.SolveForcesAndVelocity.PreviousVelocity = Context.Map.Particles.PreviousVelocity;
-	bool Constant13 = false;
 	Context.Map.SolveForcesAndVelocity.Position = Context.Map.Particles.Position;
-	float3 Constant14 = float3(0.0, 0.0, 0.0);
-	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Constant14;
-	bool Constant15 = true;
-	Context.Map.SolveForcesAndVelocity.WritetoIntrinsicProperties = Constant15;
-	EnterStatScope(3 );
+	float3 Constant24 = float3(0.0, 0.0, 0.0);
+	Context.Map.OUTPUT_VAR.SolveForcesAndVelocity.Position = Constant24;
+	bool Constant25 = true;
+	Context.Map.SolveForcesAndVelocity.WritetoIntrinsicProperties = Constant25;
+	EnterStatScope(4 );
 	SolveForcesAndVelocity_Emitter_Func_(Context);
 	ExitStatScope( );
 	Context.Map.FloatFromCurve.CurveIndex = Context.Map.Particles.NormalizedAge;
@@ -858,23 +1003,23 @@ void Simulate(inout FSimulationContext Context)
 	FloatFromCurve_Emitter_Func_(FloatFromCurve_Emitter_Func_Output_Value, Context);
 	Context.Map.ScaleColor.ScaleAlpha = FloatFromCurve_Emitter_Func_Output_Value;
 	Context.Map.ScaleColor.ColorValueToScale = Context.Map.Particles.Initial.Color;
-	float4 Constant21 = float4(1,1,1,1);
-	Context.Map.Transient.ParticleColorScaleFactor = Constant21;
-	EnterStatScope(4 );
+	float4 Constant31 = float4(1,1,1,1);
+	Context.Map.Transient.ParticleColorScaleFactor = Constant31;
+	EnterStatScope(5 );
 	ScaleColor_Emitter_Func_(Context);
 	ExitStatScope( );
 	Context.Map.ColorFromCurve.CurveIndex = Context.Map.Particles.NormalizedAge;
 	float4 ColorFromCurve_Emitter_Func_Output_Value;
 	ColorFromCurve_Emitter_Func_(ColorFromCurve_Emitter_Func_Output_Value, Context);
 	Context.Map.Color.Color = ColorFromCurve_Emitter_Func_Output_Value;
-	EnterStatScope(5 );
+	EnterStatScope(6 );
 	Color_Emitter_Func_(Context);
 	ExitStatScope( );
 	ExitStatScope( );
 }
 void SimulateMain()
 {
-EnterStatScope(6 );
+EnterStatScope(7 );
 
 	FSimulationContext Context = (FSimulationContext)0;
 	Context.Map.Particles.Age = InputDataFloat(0, 0);
@@ -907,18 +1052,26 @@ EnterStatScope(6 );
 	Context.Map.Particles.Velocity.y = InputDataFloat(0, 27);
 	Context.Map.Particles.Velocity.z = InputDataFloat(0, 28);
 	Context.Map.Engine.DeltaTime = Engine_DeltaTime;
-	Context.Map.Constants.Emitter.Drag.Drag = Constants_Emitter_Drag_Drag;
+	Context.Map.Constants.Emitter.FloatFromCurve002.ScaleCurve = Constants_Emitter_FloatFromCurve002_ScaleCurve;
 	Context.Map.Constants.Emitter.Drag.RotationalDrag = Constants_Emitter_Drag_RotationalDrag;
+	Context.Map.Constants.Emitter.FloatFromCurve001.ScaleCurve = Constants_Emitter_FloatFromCurve001_ScaleCurve;
+	Context.Map.Emitter.Age = Emitter_Age;
+	Context.Map.Engine.Time = Engine_Time;
+	Context.Map.Constants.Emitter.CurlNoiseForce.RandomSeed = Constants_Emitter_CurlNoiseForce_RandomSeed;
+	Context.Map.Engine.Owner.Position = Engine_Owner_Position.xyz;
+	Context.Map.Constants.Emitter.CurlNoiseForce.NoiseFrequency = Constants_Emitter_CurlNoiseForce_NoiseFrequency;
+	Context.Map.Constants.Emitter.CurlNoiseForce.PanNoiseField = Constants_Emitter_CurlNoiseForce_PanNoiseField;
+	Context.Map.Constants.Emitter.CurlNoiseForce.CurlNoiseConeMaskAngle = Constants_Emitter_CurlNoiseForce_CurlNoiseConeMaskAngle;
+	Context.Map.Constants.Emitter.CurlNoiseForce.CurlNoiseConeMaskFalloffAngle = Constants_Emitter_CurlNoiseForce_CurlNoiseConeMaskFalloffAngle;
+	Context.Map.Emitter.RandomSeed = Emitter_RandomSeed;
 	Context.Map.Constants.Emitter.SolveForcesAndVelocity.SpeedLimit = Constants_Emitter_SolveForcesAndVelocity_SpeedLimit;
 	Context.Map.Constants.Emitter.SolveForcesAndVelocity.AccelerationLimit = Constants_Emitter_SolveForcesAndVelocity_AccelerationLimit;
-	Context.Map.Engine.Owner.Position = Engine_Owner_Position.xyz;
 	Context.Map.Constants.Emitter.FloatFromCurve.ScaleCurve = Constants_Emitter_FloatFromCurve_ScaleCurve;
 	Context.Map.Constants.Emitter.ScaleColor.ScaleRGB = Constants_Emitter_ScaleColor_ScaleRGB;
 	Context.Map.Constants.Emitter.Color.ScaleColor = Constants_Emitter_Color_ScaleColor;
 	Context.Map.Constants.Emitter.Color.ScaleAlpha = Constants_Emitter_Color_ScaleAlpha;
 	Context.Map.Emitter.AlphaScale = Emitter_AlphaScale;
 	Context.Map.Engine.Emitter.TotalSpawnedParticles = Engine_Emitter_TotalSpawnedParticles;
-	Context.Map.Emitter.RandomSeed = Emitter_RandomSeed;
 	ReadDataSets(Context);
 	Simulate(Context);
 	WriteDataSets(Context);

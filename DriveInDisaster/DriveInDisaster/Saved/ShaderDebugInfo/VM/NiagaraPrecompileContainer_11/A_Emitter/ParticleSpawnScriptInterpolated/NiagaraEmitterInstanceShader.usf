@@ -1078,8 +1078,8 @@ void InitializeParticle_Emitter_Func_(inout FSimulationContext Context);
 void TransformBase_Func_(int In_SourceSpace, int In_DestinationSpace, float4x4 In_LocalToWorldTransform, float4x4 In_WorldToLocalTransform, bool In_bLocalSpace, out bool Out_bUseOriginal, out float4x4 Out_OutTransform, inout FSimulationContext Context);
 void SphereLocation_NF_TransformVector_Emitter_Func_(float3 In_InVector, int In_SourceSpace, int In_DestinationSpace, bool In_ApplyScale, out float3 Out_OutVector, inout FSimulationContext Context);
 void SphereLocation_Emitter_Func_(inout FSimulationContext Context);
-void RandomTriCoord_SystemParticles_StaticMesh(int In_InstanceData, out MeshTriCoordinate Out_Coord);
-void GetTriPositionWS_SystemParticles_StaticMesh(int In_InstanceData, MeshTriCoordinate In_Coord, out float3 Out_Position);
+void RandomTriCoord_EmitterParticles_StaticMesh(int In_InstanceData, out MeshTriCoordinate Out_Coord);
+void GetTriPositionWS_EmitterParticles_StaticMesh(int In_InstanceData, MeshTriCoordinate In_Coord, out float3 Out_Position);
 void A_ModuleScript_Emitter_Func_(inout FSimulationContext Context);
 void ParticleState_Emitter_Func_(inout FSimulationContext Context);
 void SampleCurve_EmitterDragFloatCurve(float In_X, out float Out_Value);
@@ -1550,11 +1550,11 @@ void SphereLocation_Emitter_Func_(inout FSimulationContext Context)
 
 void A_ModuleScript_Emitter_Func_(inout FSimulationContext Context)
 {
-	MeshTriCoordinate RandomTriCoord_SystemParticles_StaticMeshOutput_Coord;
-	RandomTriCoord_SystemParticles_StaticMesh(0, RandomTriCoord_SystemParticles_StaticMeshOutput_Coord);
-	float3 GetTriPositionWS_SystemParticles_StaticMeshOutput_Position;
-	GetTriPositionWS_SystemParticles_StaticMesh(0, RandomTriCoord_SystemParticles_StaticMeshOutput_Coord, GetTriPositionWS_SystemParticles_StaticMeshOutput_Position);
-	Context.MapSpawn.Particles.Position = GetTriPositionWS_SystemParticles_StaticMeshOutput_Position;
+	MeshTriCoordinate RandomTriCoord_EmitterParticles_StaticMeshOutput_Coord;
+	RandomTriCoord_EmitterParticles_StaticMesh(0, RandomTriCoord_EmitterParticles_StaticMeshOutput_Coord);
+	float3 GetTriPositionWS_EmitterParticles_StaticMeshOutput_Position;
+	GetTriPositionWS_EmitterParticles_StaticMesh(0, RandomTriCoord_EmitterParticles_StaticMeshOutput_Coord, GetTriPositionWS_EmitterParticles_StaticMeshOutput_Position);
+	Context.MapSpawn.Particles.Position = GetTriPositionWS_EmitterParticles_StaticMeshOutput_Position;
 }
 
 void ParticleState_Emitter_Func_(inout FSimulationContext Context)
@@ -2188,7 +2188,7 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 	float UniformRangedFloat004_Emitter_Func_Output_UniformRangedFloat;
 	UniformRangedFloat004_Emitter_Func_(UniformRangedFloat004_Emitter_Func_Output_UniformRangedFloat, Context);
 	bool Constant34 = true;
-	bool Constant35 = true;
+	bool Constant35 = false;
 	float NormalizedAngleToDegrees001_Emitter_Func_Output_NewOutput;
 	NormalizedAngleToDegrees001_Emitter_Func_(NormalizedAngleToDegrees001_Emitter_Func_Output_NewOutput, Context);
 	bool Constant37 = false;
