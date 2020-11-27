@@ -1270,3 +1270,749 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.11.26-04.15.07:435][267]LogHttp: Warning: 000002742AA55600 Response Header Content-Type: text/html
 [2020.11.26-04.15.07:435][267]LogHttp: Warning: 000002742AA55600 Response Header Content-Length: 122
 [2020.11.26-04.15.07:435][267]LogHttp: Warning: 000002742AA55600 Response Header Connection: keep-alive
+[2020.11.26-04.17.07:657][568]LogHttp: Warning: 00000273D3235600: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-04.17.07:657][568]LogHttp: Warning: 00000273D3235600 Response Header Server: awselb/2.0
+[2020.11.26-04.17.07:657][568]LogHttp: Warning: 00000273D3235600 Response Header Date: Thu, 26 Nov 2020 04:17:08 GMT
+[2020.11.26-04.17.07:657][568]LogHttp: Warning: 00000273D3235600 Response Header Content-Type: text/html
+[2020.11.26-04.17.07:657][568]LogHttp: Warning: 00000273D3235600 Response Header Content-Length: 122
+[2020.11.26-04.17.07:657][568]LogHttp: Warning: 00000273D3235600 Response Header Connection: keep-alive
+[2020.11.26-04.17.23:607][118]LogRenderer: Reallocating scene render targets to support 1320x680 Format 26 NumSamples 1 (Frame:63019).
+[2020.11.26-04.17.23:675][119]LogRenderer: Reallocating scene render targets to support 1320x700 Format 26 NumSamples 1 (Frame:63021).
+[2020.11.26-04.17.23:784][124]LogRenderer: Reallocating scene render targets to support 1320x708 Format 26 NumSamples 1 (Frame:63025).
+[2020.11.26-04.17.23:837][125]LogRenderer: Reallocating scene render targets to support 1320x720 Format 26 NumSamples 1 (Frame:63027).
+[2020.11.26-04.17.23:882][126]LogRenderer: Reallocating scene render targets to support 1320x724 Format 26 NumSamples 1 (Frame:63029).
+[2020.11.26-04.19.08:031][310]LogHttp: Warning: 00000273F0F26400: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-04.19.08:031][310]LogHttp: Warning: 00000273F0F26400 Response Header Server: awselb/2.0
+[2020.11.26-04.19.08:031][310]LogHttp: Warning: 00000273F0F26400 Response Header Date: Thu, 26 Nov 2020 04:19:08 GMT
+[2020.11.26-04.19.08:031][310]LogHttp: Warning: 00000273F0F26400 Response Header Content-Type: text/html
+[2020.11.26-04.19.08:031][310]LogHttp: Warning: 00000273F0F26400 Response Header Content-Length: 122
+[2020.11.26-04.19.08:031][310]LogHttp: Warning: 00000273F0F26400 Response Header Connection: keep-alive
+[2020.11.26-04.23.07:600][ 25]LogHttp: Warning: 00000273E5056B00: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-04.23.07:600][ 25]LogHttp: Warning: 00000273E5056B00 Response Header Server: awselb/2.0
+[2020.11.26-04.23.07:600][ 25]LogHttp: Warning: 00000273E5056B00 Response Header Date: Thu, 26 Nov 2020 04:23:07 GMT
+[2020.11.26-04.23.07:600][ 25]LogHttp: Warning: 00000273E5056B00 Response Header Content-Type: text/html
+[2020.11.26-04.23.07:600][ 25]LogHttp: Warning: 00000273E5056B00 Response Header Content-Length: 122
+[2020.11.26-04.23.07:600][ 25]LogHttp: Warning: 00000273E5056B00 Response Header Connection: keep-alive
+[2020.11.26-04.25.08:541][386]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-04.25.08:541][386]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.25.08:541][386]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:25:08 GMT
+[2020.11.26-04.25.08:541][386]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.25.08:541][386]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.25.08:541][386]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.27.09:155][746]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-04.27.09:155][746]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.27.09:155][746]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:27:09 GMT
+[2020.11.26-04.27.09:155][746]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.27.09:155][746]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.27.09:155][746]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.29.09:564][105]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-04.29.09:564][105]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.29.09:564][105]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:29:09 GMT
+[2020.11.26-04.29.09:564][105]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.29.09:564][105]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.29.09:564][105]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.31.10:421][464]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-04.31.10:421][464]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.31.10:421][464]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:31:10 GMT
+[2020.11.26-04.31.10:421][464]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.31.10:421][464]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.31.10:421][464]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.33.10:898][823]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-04.33.10:898][823]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.33.10:898][823]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:33:11 GMT
+[2020.11.26-04.33.10:898][823]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.33.10:898][823]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.33.10:898][823]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.37.46:133][643]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 170, actual payload size: 170, elapsed: 38.62s
+[2020.11.26-04.37.46:133][643]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:37:46 GMT
+[2020.11.26-04.37.46:133][643]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.37.46:133][643]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 170
+[2020.11.26-04.37.46:133][643]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.39.46:937][  3]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-04.39.46:937][  3]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.39.46:937][  3]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:39:47 GMT
+[2020.11.26-04.39.46:937][  3]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.39.46:937][  3]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.39.46:937][  3]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.41.47:763][363]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-04.41.47:763][363]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.41.47:763][363]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:41:48 GMT
+[2020.11.26-04.41.47:763][363]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.41.47:763][363]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.41.47:763][363]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.43.48:601][723]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.19s
+[2020.11.26-04.43.48:601][723]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.43.48:601][723]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:43:48 GMT
+[2020.11.26-04.43.48:601][723]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.43.48:601][723]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.43.48:601][723]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.45.49:437][ 83]LogHttp: Warning: 000002744965B900: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-04.45.49:437][ 83]LogHttp: Warning: 000002744965B900 Response Header Server: awselb/2.0
+[2020.11.26-04.45.49:437][ 83]LogHttp: Warning: 000002744965B900 Response Header Date: Thu, 26 Nov 2020 04:45:49 GMT
+[2020.11.26-04.45.49:437][ 83]LogHttp: Warning: 000002744965B900 Response Header Content-Type: text/html
+[2020.11.26-04.45.49:437][ 83]LogHttp: Warning: 000002744965B900 Response Header Content-Length: 122
+[2020.11.26-04.45.49:437][ 83]LogHttp: Warning: 000002744965B900 Response Header Connection: keep-alive
+[2020.11.26-04.47.50:275][443]LogHttp: Warning: 0000027434CA6400: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-04.47.50:275][443]LogHttp: Warning: 0000027434CA6400 Response Header Server: awselb/2.0
+[2020.11.26-04.47.50:275][443]LogHttp: Warning: 0000027434CA6400 Response Header Date: Thu, 26 Nov 2020 04:47:50 GMT
+[2020.11.26-04.47.50:275][443]LogHttp: Warning: 0000027434CA6400 Response Header Content-Type: text/html
+[2020.11.26-04.47.50:275][443]LogHttp: Warning: 0000027434CA6400 Response Header Content-Length: 122
+[2020.11.26-04.47.50:275][443]LogHttp: Warning: 0000027434CA6400 Response Header Connection: keep-alive
+[2020.11.26-04.49.51:088][803]LogHttp: Warning: 000002742E3A9D00: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-04.49.51:088][803]LogHttp: Warning: 000002742E3A9D00 Response Header Server: awselb/2.0
+[2020.11.26-04.49.51:088][803]LogHttp: Warning: 000002742E3A9D00 Response Header Date: Thu, 26 Nov 2020 04:49:51 GMT
+[2020.11.26-04.49.51:088][803]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Type: text/html
+[2020.11.26-04.49.51:088][803]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Length: 122
+[2020.11.26-04.49.51:088][803]LogHttp: Warning: 000002742E3A9D00 Response Header Connection: keep-alive
+[2020.11.26-04.51.51:900][163]LogHttp: Warning: 000002742E3A9D00: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-04.51.51:900][163]LogHttp: Warning: 000002742E3A9D00 Response Header Server: awselb/2.0
+[2020.11.26-04.51.51:900][163]LogHttp: Warning: 000002742E3A9D00 Response Header Date: Thu, 26 Nov 2020 04:51:52 GMT
+[2020.11.26-04.51.51:900][163]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Type: text/html
+[2020.11.26-04.51.51:900][163]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Length: 122
+[2020.11.26-04.51.51:900][163]LogHttp: Warning: 000002742E3A9D00 Response Header Connection: keep-alive
+[2020.11.26-04.53.52:709][523]LogHttp: Warning: 000002742E3A9D00: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-04.53.52:709][523]LogHttp: Warning: 000002742E3A9D00 Response Header Server: awselb/2.0
+[2020.11.26-04.53.52:709][523]LogHttp: Warning: 000002742E3A9D00 Response Header Date: Thu, 26 Nov 2020 04:53:53 GMT
+[2020.11.26-04.53.52:709][523]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Type: text/html
+[2020.11.26-04.53.52:709][523]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Length: 122
+[2020.11.26-04.53.52:709][523]LogHttp: Warning: 000002742E3A9D00 Response Header Connection: keep-alive
+[2020.11.26-04.55.53:604][883]LogHttp: Warning: 000002742E3A9D00: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-04.55.53:604][883]LogHttp: Warning: 000002742E3A9D00 Response Header Server: awselb/2.0
+[2020.11.26-04.55.53:604][883]LogHttp: Warning: 000002742E3A9D00 Response Header Date: Thu, 26 Nov 2020 04:55:53 GMT
+[2020.11.26-04.55.53:604][883]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Type: text/html
+[2020.11.26-04.55.53:604][883]LogHttp: Warning: 000002742E3A9D00 Response Header Content-Length: 122
+[2020.11.26-04.55.53:604][883]LogHttp: Warning: 000002742E3A9D00 Response Header Connection: keep-alive
+[2020.11.26-04.59.07:245][460]LogHttp: Warning: 00000273E5054800: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.04s
+[2020.11.26-04.59.07:245][460]LogHttp: Warning: 00000273E5054800 Response Header Server: awselb/2.0
+[2020.11.26-04.59.07:245][460]LogHttp: Warning: 00000273E5054800 Response Header Date: Thu, 26 Nov 2020 04:59:07 GMT
+[2020.11.26-04.59.07:245][460]LogHttp: Warning: 00000273E5054800 Response Header Content-Type: text/html
+[2020.11.26-04.59.07:245][460]LogHttp: Warning: 00000273E5054800 Response Header Content-Length: 122
+[2020.11.26-04.59.07:245][460]LogHttp: Warning: 00000273E5054800 Response Header Connection: keep-alive
+[2020.11.26-05.01.07:722][819]LogHttp: Warning: 000002742E3A8800: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.01.07:722][819]LogHttp: Warning: 000002742E3A8800 Response Header Server: awselb/2.0
+[2020.11.26-05.01.07:722][819]LogHttp: Warning: 000002742E3A8800 Response Header Date: Thu, 26 Nov 2020 05:01:08 GMT
+[2020.11.26-05.01.07:722][819]LogHttp: Warning: 000002742E3A8800 Response Header Content-Type: text/html
+[2020.11.26-05.01.07:722][819]LogHttp: Warning: 000002742E3A8800 Response Header Content-Length: 122
+[2020.11.26-05.01.07:722][819]LogHttp: Warning: 000002742E3A8800 Response Header Connection: keep-alive
+[2020.11.26-05.03.08:530][179]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.03.08:530][179]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.03.08:530][179]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:03:08 GMT
+[2020.11.26-05.03.08:530][179]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.03.08:530][179]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.03.08:530][179]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.05.09:347][539]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.05.09:347][539]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.05.09:347][539]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:05:09 GMT
+[2020.11.26-05.05.09:347][539]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.05.09:347][539]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.05.09:347][539]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.07.10:136][899]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-05.07.10:136][899]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.07.10:136][899]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:07:10 GMT
+[2020.11.26-05.07.10:136][899]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.07.10:136][899]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.07.10:136][899]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.09.10:920][259]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.09.10:920][259]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.09.10:920][259]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:09:11 GMT
+[2020.11.26-05.09.10:920][259]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.09.10:920][259]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.09.10:920][259]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.11.11:698][619]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-05.11.11:698][619]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.11.11:698][619]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:11:11 GMT
+[2020.11.26-05.11.11:698][619]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.11.11:698][619]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.11.11:698][619]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.13.12:592][979]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.13.12:592][979]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.13.12:592][979]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:13:12 GMT
+[2020.11.26-05.13.12:592][979]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.13.12:592][979]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.13.12:592][979]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.15.13:781][340]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.36s
+[2020.11.26-05.15.13:781][340]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.15.13:781][340]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:15:13 GMT
+[2020.11.26-05.15.13:781][340]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.15.13:781][340]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.15.13:781][340]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.17.14:315][699]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.17.14:315][699]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.17.14:315][699]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:17:14 GMT
+[2020.11.26-05.17.14:315][699]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.17.14:315][699]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.17.14:315][699]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.19.15:143][ 59]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.19.15:143][ 59]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.19.15:143][ 59]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:19:15 GMT
+[2020.11.26-05.19.15:143][ 59]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.19.15:143][ 59]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.19.15:143][ 59]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.21.16:000][419]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.21.16:000][419]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.21.16:000][419]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:21:16 GMT
+[2020.11.26-05.21.16:000][419]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.21.16:000][419]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.21.16:000][419]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.23.16:940][779]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.23.16:940][779]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.23.16:940][779]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:23:17 GMT
+[2020.11.26-05.23.16:940][779]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.23.16:940][779]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.23.16:940][779]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.25.17:874][139]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.25.17:874][139]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.25.17:874][139]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:25:18 GMT
+[2020.11.26-05.25.17:874][139]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.25.17:874][139]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.25.17:874][139]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.27.18:730][499]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.27.18:730][499]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.27.18:730][499]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:27:19 GMT
+[2020.11.26-05.27.18:730][499]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.27.18:730][499]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.27.18:730][499]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.29.19:722][859]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.29.19:722][859]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.29.19:722][859]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:29:20 GMT
+[2020.11.26-05.29.19:722][859]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.29.19:722][859]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.29.19:722][859]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.31.20:659][219]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.19s
+[2020.11.26-05.31.20:659][219]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.31.20:659][219]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:31:20 GMT
+[2020.11.26-05.31.20:659][219]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.31.20:659][219]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.31.20:659][219]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.33.21:467][579]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.33.21:467][579]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.33.21:467][579]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:33:21 GMT
+[2020.11.26-05.33.21:467][579]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.33.21:467][579]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.33.21:467][579]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.35.22:399][939]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.35.22:399][939]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.35.22:399][939]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:35:22 GMT
+[2020.11.26-05.35.22:400][939]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.35.22:400][939]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.35.22:400][939]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.37.23:315][299]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.37.23:315][299]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.37.23:315][299]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:37:23 GMT
+[2020.11.26-05.37.23:316][299]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.37.23:316][299]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.37.23:316][299]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.39.24:224][659]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.39.24:224][659]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.39.24:224][659]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:39:24 GMT
+[2020.11.26-05.39.24:224][659]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.39.24:224][659]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.39.24:225][659]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.41.25:082][ 19]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-05.41.25:082][ 19]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.41.25:082][ 19]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:41:25 GMT
+[2020.11.26-05.41.25:082][ 19]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.41.25:082][ 19]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.41.25:082][ 19]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.45.07:359][681]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.19s
+[2020.11.26-05.45.07:359][681]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.45.07:359][681]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:45:07 GMT
+[2020.11.26-05.45.07:359][681]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.45.07:359][681]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.45.07:359][681]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.49.07:475][396]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.49.07:475][396]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.49.07:475][396]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:49:07 GMT
+[2020.11.26-05.49.07:475][396]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.49.07:475][396]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.49.07:475][396]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.51.07:964][755]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-05.51.07:964][755]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.51.07:964][755]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:51:08 GMT
+[2020.11.26-05.51.07:964][755]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.51.07:964][755]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.51.07:964][755]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.53.08:760][115]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.53.08:760][115]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.53.08:760][115]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:53:09 GMT
+[2020.11.26-05.53.08:760][115]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.53.08:760][115]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.53.08:760][115]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.55.09:592][475]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.55.09:592][475]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.55.09:592][475]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:55:09 GMT
+[2020.11.26-05.55.09:592][475]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.55.09:592][475]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.55.09:592][475]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.57.10:393][835]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-05.57.10:393][835]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.57.10:393][835]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:57:10 GMT
+[2020.11.26-05.57.10:393][835]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.57.10:393][835]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.57.10:393][835]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-05.59.11:203][195]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.18s
+[2020.11.26-05.59.11:203][195]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-05.59.11:203][195]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 05:59:11 GMT
+[2020.11.26-05.59.11:204][195]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-05.59.11:204][195]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-05.59.11:204][195]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-06.01.12:043][555]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-06.01.12:043][555]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-06.01.12:043][555]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 06:01:12 GMT
+[2020.11.26-06.01.12:043][555]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-06.01.12:043][555]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-06.01.12:043][555]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-06.03.12:917][915]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-06.03.12:917][915]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-06.03.12:917][915]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 06:03:13 GMT
+[2020.11.26-06.03.12:917][915]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-06.03.12:917][915]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-06.03.12:917][915]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-06.07.07:201][613]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-06.07.07:201][613]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-06.07.07:201][613]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 06:07:07 GMT
+[2020.11.26-06.07.07:201][613]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-06.07.07:201][613]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-06.07.07:201][613]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-06.09.08:030][973]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-06.09.08:030][973]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-06.09.08:030][973]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 06:09:08 GMT
+[2020.11.26-06.09.08:030][973]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-06.09.08:030][973]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-06.09.08:030][973]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-06.11.08:859][333]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.16s
+[2020.11.26-06.11.08:859][333]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-06.11.08:859][333]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 06:11:09 GMT
+[2020.11.26-06.11.08:859][333]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-06.11.08:859][333]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-06.11.08:859][333]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-06.13.09:681][693]LogHttp: Warning: 00000273F0F27200: request has been successfully processed. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 502, content length: 122, actual payload size: 122, elapsed: 0.17s
+[2020.11.26-06.13.09:681][693]LogHttp: Warning: 00000273F0F27200 Response Header Server: awselb/2.0
+[2020.11.26-06.13.09:681][693]LogHttp: Warning: 00000273F0F27200 Response Header Date: Thu, 26 Nov 2020 06:13:09 GMT
+[2020.11.26-06.13.09:681][693]LogHttp: Warning: 00000273F0F27200 Response Header Content-Type: text/html
+[2020.11.26-06.13.09:681][693]LogHttp: Warning: 00000273F0F27200 Response Header Content-Length: 122
+[2020.11.26-06.13.09:681][693]LogHttp: Warning: 00000273F0F27200 Response Header Connection: keep-alive
+[2020.11.26-06.27.52:587][359]LogUObjectHash: Compacting FUObjectHashTables data took   3.17ms
+[2020.11.26-06.27.52:624][359]LogSlate: Window 'ElectricGun' being destroyed
+[2020.11.26-06.27.52:665][359]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2020.11.26-06.27.52:665][359]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.11.26-06.27.52:835][359]LogSlate: Window 'DriveInDisaster - Unreal Editor' being destroyed
+[2020.11.26-06.27.52:836][359]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.11.26-06.27.53:028][360]Cmd: QUIT_EDITOR
+[2020.11.26-06.27.53:028][360]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2020.11.26-06.27.53:063][360]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2020.11.26-06.27.53:104][360]LogExit: Preparing to exit.
+[2020.11.26-06.27.54:022][360]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.11.26-06.27.54:026][360]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.11.26-06.27.54:109][360]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2020.11.26-06.27.54:110][360]LogExit: Editor shut down
+[2020.11.26-06.27.54:110][360]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2020.11.26-06.27.54:117][360]LogExit: Transaction tracking system shut down
+[2020.11.26-06.27.54:332][360]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000027370241E00), frame # 155360
+[2020.11.26-06.27.54:342][360]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (00000273702A9340), frame # 155360
+[2020.11.26-06.27.54:342][360]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027370220900), frame # 155360
+[2020.11.26-06.27.54:475][360]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000273B4DD8CC0), frame # 155360
+[2020.11.26-06.27.54:476][360]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000273B4E1BC00), frame # 155360
+[2020.11.26-06.27.54:534][360]LogExit: Object subsystem successfully closed.
+[2020.11.26-06.27.54:577][360]LogShaderCompilers: Display: Shaders left to compile 0
+[2020.11.26-06.27.54:590][360]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (794)
+[2020.11.26-06.27.54:590][360]LogModuleManager: Shutting down and abandoning module BlueprintGraph (792)
+[2020.11.26-06.27.54:590][360]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (790)
+[2020.11.26-06.27.54:590][360]LogModuleManager: Shutting down and abandoning module SceneOutliner (788)
+[2020.11.26-06.27.54:590][360]LogModuleManager: Shutting down and abandoning module AddContentDialog (786)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module WidgetCarousel (785)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module EditorWidgets (782)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module CollectionManager (780)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module StatsViewer (778)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (776)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module FoliageEdit (774)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module LandscapeEditor (772)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module MeshPaintMode (770)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (768)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module ActorPickerMode (766)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (764)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (762)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module AutomationWorker (760)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module SteamVREditor (758)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module OculusMR (756)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module GooglePADEditor (754)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (752)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (750)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (748)
+[2020.11.26-06.27.54:592][360]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (746)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (744)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (742)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (740)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (738)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (736)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module WebMMedia (734)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (732)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (730)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module SequenceRecorder (729)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (726)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (724)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (722)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (720)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (718)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (716)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (714)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (712)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (710)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (708)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module PlanarCut (706)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module CharacterAI (704)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module TextureAlignMode (702)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module BspMode (700)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module PlacementMode (699)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module GeometryMode (696)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (694)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module SmartSnapping (692)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module SessionServices (690)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module MeshPaint (688)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module ViewportSnapping (686)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module ViewportInteraction (684)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module ClothPainter (682)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (681)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module LogVisualizer (678)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module IntroTutorials (676)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (675)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (672)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (670)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (668)
+[2020.11.26-06.27.54:593][360]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (667)
+[2020.11.26-06.27.56:522][360]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (664)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (662)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (660)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (658)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module TraceInsights (656)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module TraceServices (655)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (652)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (650)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module InputBindingEditor (648)
+[2020.11.26-06.27.56:523][360]LogModuleManager: Shutting down and abandoning module MergeActors (646)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (644)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module LocalizationService (643)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module HardwareTargeting (640)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (638)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module UndoHistory (636)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module XmlParser (634)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module Blutility (632)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (630)
+[2020.11.26-06.27.56:525][360]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (629)
+[2020.11.26-06.27.56:526][360]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (626)
+[2020.11.26-06.27.56:526][360]LogModuleManager: Shutting down and abandoning module SettingsEditor (624)
+[2020.11.26-06.27.56:526][360]LogModuleManager: Shutting down and abandoning module ProjectLauncher (622)
+[2020.11.26-06.27.56:526][360]LogModuleManager: Shutting down and abandoning module SessionFrontend (620)
+[2020.11.26-06.27.56:526][360]LogModuleManager: Shutting down and abandoning module ProfilerClient (618)
+[2020.11.26-06.27.56:526][360]LogModuleManager: Shutting down and abandoning module DeviceManager (616)
+[2020.11.26-06.27.56:526][360]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (615)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module AutomationController (612)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module AutomationWindow (610)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module Layers (608)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (606)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module DetailCustomizations (604)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module PackagesDialog (602)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (600)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module Persona (598)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (597)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module AnimGraph (595)
+[2020.11.26-06.27.56:559][360]LogModuleManager: Shutting down and abandoning module Kismet (592)
+[2020.11.26-06.27.56:571][360]LogModuleManager: Shutting down and abandoning module KismetWidgets (591)
+[2020.11.26-06.27.56:571][360]LogModuleManager: Shutting down and abandoning module GraphEditor (588)
+[2020.11.26-06.27.56:571][360]LogModuleManager: Shutting down and abandoning module StructViewer (586)
+[2020.11.26-06.27.56:571][360]LogModuleManager: Shutting down and abandoning module ClassViewer (584)
+[2020.11.26-06.27.56:571][360]LogModuleManager: Shutting down and abandoning module Toolbox (582)
+[2020.11.26-06.27.56:571][360]LogModuleManager: Shutting down and abandoning module ModuleUI (580)
+[2020.11.26-06.27.56:571][360]LogModuleManager: Shutting down and abandoning module OutputLog (578)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module GammaUI (576)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module Documentation (574)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module LiveCoding (572)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module LevelSequence (570)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (568)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module MovieScene (566)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (564)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module LauncherPlatform (562)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module AnalyticsET (560)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module PortalServices (558)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module PortalRpc (556)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module MessagingRpc (554)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (552)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module AudioMixerCore (551)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module AIModule (548)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module GameplayDebugger (547)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module AITestSuite (545)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module NavigationSystem (543)
+[2020.11.26-06.27.56:572][360]LogModuleManager: Shutting down and abandoning module ProfilerService (540)
+[2020.11.26-06.27.56:699][360]LogModuleManager: Shutting down and abandoning module TaskGraph (538)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module ScreenshotTools (536)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module SynthesisEditor (534)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module Synthesis (532)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (530)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (528)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module OculusEditor (526)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module OculusInput (524)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (522)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module GooglePAD (520)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module EditableMesh (518)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (516)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module CableComponent (514)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module AudioCapture (512)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (511)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module AssetTags (508)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (506)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (504)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module AppleImageUtils (502)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module AndroidPermission (500)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (498)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (496)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module TemplateSequence (494)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (492)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (490)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (488)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (486)
+[2020.11.26-06.27.56:700][360]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (485)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (482)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (480)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module MediaCompositing (478)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module ImgMedia (476)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (474)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (472)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (470)
+[2020.11.26-06.27.56:705][360]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (468)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (466)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (464)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (462)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module MeshConversion (460)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module DynamicMesh (458)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (456)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometricObjects (454)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (452)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (451)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (448)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (446)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (444)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (442)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module ChaosNiagara (440)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module FractureEditor (438)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (436)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module ChaosCloth (434)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module BackChannel (432)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (430)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module AutomationUtils (428)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module AlembicImporter (426)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module AlembicLibrary (425)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryCache (424)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (423)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (418)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (416)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (414)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module PluginBrowser (412)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (410)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (408)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (406)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module CurveEditorTools (404)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (402)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module CryptoKeys (400)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (398)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (396)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module UObjectPlugin (394)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (392)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (390)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (388)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (386)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module GitSourceControl (384)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module SourceControl (383)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (380)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (378)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (376)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (374)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (372)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (370)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (368)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module Paper2DEditor (366)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module SoundFields (364)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module SignificanceManager (362)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (360)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (358)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (354)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module ActorSequence (352)
+[2020.11.26-06.27.56:706][360]LogModuleManager: Shutting down and abandoning module UdpMessaging (350)
+[2020.11.26-06.27.56:808][360]LogModuleManager: Shutting down and abandoning module TcpMessaging (348)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (346)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (344)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (342)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (340)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (338)
+[2020.11.26-06.27.56:909][360]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (336)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (334)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (332)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (330)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapController (328)
+[2020.11.26-06.27.56:909][360]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (326)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module MagicLeapAR (324)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module AugmentedReality (323)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (320)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module Niagara (318)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module SignalProcessing (317)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module NiagaraEditor (315)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module NiagaraCore (312)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (310)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (308)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module FacialAnimation (306)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module DataValidation (304)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (302)
+[2020.11.26-06.27.56:909][360]LogModuleManager: Shutting down and abandoning module LevelEditor (301)
+[2020.11.26-06.27.56:910][360]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (300)
+[2020.11.26-06.27.56:910][360]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (298)
+[2020.11.26-06.27.56:910][360]LogModuleManager: Shutting down and abandoning module MainFrame (296)
+[2020.11.26-06.27.56:910][360]LogModuleManager: Shutting down and abandoning module HotReload (295)
+[2020.11.26-06.27.56:911][360]LogModuleManager: Shutting down and abandoning module ToolMenus (291)
+[2020.11.26-06.27.56:911][360]LogModuleManager: Shutting down and abandoning module TreeMap (289)
+[2020.11.26-06.27.56:911][360]LogModuleManager: Shutting down and abandoning module AnimationSharing (286)
+[2020.11.26-06.27.56:911][360]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (284)
+[2020.11.26-06.27.56:911][360]LogModuleManager: Shutting down and abandoning module Paper2D (282)
+[2020.11.26-06.27.56:911][360]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (280)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (278)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (276)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module PacketHandler (274)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (272)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (270)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module MediaAssets (268)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module Overlay (266)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module OverlayEditor (265)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module VREditor (262)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module StringTableEditor (260)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (258)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (256)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module FunctionalTesting (254)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (252)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module UMG (250)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module UMGEditor (249)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module MessageLog (247)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module MaterialEditor (245)
+[2020.11.26-06.27.56:916][360]LogModuleManager: Shutting down and abandoning module ContentBrowser (244)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (243)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module SlateReflector (236)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module Slate (234)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module SlateCore (232)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (230)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module UnrealEd (228)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module MRMesh (226)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (224)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (222)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module XAudio2 (220)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module Networking (218)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module Core (216)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module MovieSceneTools (214)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module CurveEditor (213)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module Sequencer (211)
+[2020.11.26-06.27.56:918][360]LogModuleManager: Shutting down and abandoning module EditorStyle (210)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module KismetCompiler (206)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module MeshBuilder (204)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module MeshUtilities (202)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (201)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (200)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (199)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (197)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (195)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (193)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module MaterialBaking (189)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (184)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module DerivedDataCache (182)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module XGEController (180)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module TargetPlatform (178)
+[2020.11.26-06.27.56:919][360]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (177)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (175)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (173)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (171)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (169)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (167)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (165)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (163)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (161)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (159)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module ImageWrapper (158)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (155)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (153)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (151)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (149)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (147)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (145)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (143)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (141)
+[2020.11.26-06.27.56:920][360]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (139)
+[2020.11.26-06.27.56:921][360]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (137)
+[2020.11.26-06.27.56:922][360]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (135)
+[2020.11.26-06.27.56:922][360]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (133)
+[2020.11.26-06.27.56:922][360]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (131)
+[2020.11.26-06.27.56:922][360]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (129)
+[2020.11.26-06.27.56:922][360]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (127)
+[2020.11.26-06.27.56:923][360]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (125)
+[2020.11.26-06.27.56:923][360]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2020.11.26-06.27.56:923][360]LogModuleManager: Shutting down and abandoning module Messaging (121)
+[2020.11.26-06.27.56:923][360]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (119)
+[2020.11.26-06.27.56:924][360]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (117)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (115)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module InputCore (112)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module Settings (110)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (108)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module PhysXCooking (106)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module ChaosSolvers (104)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (103)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module Chaos (100)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (98)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (97)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module AVEncoder (96)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (92)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module SteamVRInput (90)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module SteamVR (88)
+[2020.11.26-06.27.56:932][360]LogHMD: Freeing OpenVRDLLHandle.
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module OculusHMD (86)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (82)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2020.11.26-06.27.56:932][360]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (76)
+[2020.11.26-06.27.56:934][360]LogModuleManager: Shutting down and abandoning module XMPP (71)
+[2020.11.26-06.27.56:934][360]LogModuleManager: Shutting down and abandoning module WebSockets (70)
+[2020.11.26-06.27.56:947][360]LogModuleManager: Shutting down and abandoning module HTTP (67)
+[2020.11.26-06.27.56:947][360]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2020.11.26-06.27.56:947][360]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4EEE3985-4423-F4C4-FB71-53BAEDB14204%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.3-13942748%2B%2B%2BUE4%2BRelease-4.25&UserID=e7524c534d84956a215cc2b6a2384657%7Cf40e2e1d9a724e2fa5cfd61bd485045b%7Cf0aaaf78-ef25-4f93-b098-ec5790101d92&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2020.11.26-06.27.56:981][360]LogModuleManager: Shutting down and abandoning module SSL (66)
+[2020.11.26-06.27.56:982][360]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
+[2020.11.26-06.27.56:983][360]LogModuleManager: Shutting down and abandoning module Media (61)
+[2020.11.26-06.27.56:983][360]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2020.11.26-06.27.56:983][360]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2020.11.26-06.27.56:983][360]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2020.11.26-06.27.56:983][360]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2020.11.26-06.27.56:983][360]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2020.11.26-06.27.56:984][360]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2020.11.26-06.27.56:985][360]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2020.11.26-06.27.56:985][360]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2020.11.26-06.27.56:985][360]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2020.11.26-06.27.56:985][360]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2020.11.26-06.27.56:985][360]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2020.11.26-06.27.56:986][360]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2020.11.26-06.27.56:986][360]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2020.11.26-06.27.56:986][360]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2020.11.26-06.27.56:986][360]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2020.11.26-06.27.56:986][360]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2020.11.26-06.27.56:986][360]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2020.11.26-06.27.56:986][360]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2020.11.26-06.27.56:986][360]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2020.11.26-06.27.56:989][360]LogD3D11RHI: Shutdown
+[2020.11.26-06.27.56:989][360]LogD3D11RHI: CleanupD3DDevice
+[2020.11.26-06.27.57:015][360]LogExit: Exiting.
+[2020.11.26-06.27.57:052][360]Log file closed, 11/26/20 01:27:57
