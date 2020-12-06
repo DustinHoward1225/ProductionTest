@@ -403,11 +403,11 @@ cbuffer FNiagaraExternalParameters
 	float Constants_Emitter_InitializeParticle_Mass;
 	float Constants_Emitter_InitializeParticle_SpriteRotation;
 	float3 Constants_Emitter_InitializeParticle_MeshScale;
-	float3 User_Offset;
 	int Constants_Emitter_CylinderLocation001_RandomSeed;
 	float Constants_Emitter_CylinderLocation001_CylinderHeight;
 	float Constants_Emitter_CylinderLocation001_CylinderRadius;
 	float Constants_Emitter_CylinderLocation001_SurfaceOnlyBandThickness;
+	float3 Constants_Emitter_CylinderLocation001_Offset;
 	float3 Constants_Emitter_CylinderLocation001_NonUniformScale;
 	int Constants_Emitter_CylinderLocation001_SpawnGroupMask;
 	float3 Constants_Emitter_AddRotationalVelocity_RotationRate;
@@ -482,11 +482,11 @@ cbuffer PREV_FNiagaraExternalParameters
 	float PREV_Constants_Emitter_InitializeParticle_Mass;
 	float PREV_Constants_Emitter_InitializeParticle_SpriteRotation;
 	float3 PREV_Constants_Emitter_InitializeParticle_MeshScale;
-	float3 PREV_User_Offset;
 	int PREV_Constants_Emitter_CylinderLocation001_RandomSeed;
 	float PREV_Constants_Emitter_CylinderLocation001_CylinderHeight;
 	float PREV_Constants_Emitter_CylinderLocation001_CylinderRadius;
 	float PREV_Constants_Emitter_CylinderLocation001_SurfaceOnlyBandThickness;
+	float3 PREV_Constants_Emitter_CylinderLocation001_Offset;
 	float3 PREV_Constants_Emitter_CylinderLocation001_NonUniformScale;
 	int PREV_Constants_Emitter_CylinderLocation001_SpawnGroupMask;
 	float3 PREV_Constants_Emitter_AddRotationalVelocity_RotationRate;
@@ -514,11 +514,6 @@ struct FParamMap0_Vector2DFromCurve
 {
 	float CurveIndex;
 	float2 ScaleCurve;
-};
-
-struct FParamMap0_User
-{
-	float3 Offset;
 };
 
 struct FParamMap0_Transient
@@ -816,6 +811,7 @@ struct FParamMap0_Constants_Emitter_CylinderLocation001
 	float CylinderHeight;
 	float CylinderRadius;
 	float3 NonUniformScale;
+	float3 Offset;
 	int RandomSeed;
 	int SpawnGroupMask;
 	float SurfaceOnlyBandThickness;
@@ -888,7 +884,6 @@ struct FParamMap0
 	FParamMap0_ScaleSpriteSize ScaleSpriteSize;
 	FParamMap0_SolveForcesAndVelocity SolveForcesAndVelocity;
 	FParamMap0_Transient Transient;
-	FParamMap0_User User;
 	FParamMap0_Vector2DFromCurve Vector2DFromCurve;
 	FParamMap0_Vector2DFromCurve001 Vector2DFromCurve001;
 };
@@ -1624,7 +1619,7 @@ void CylinderLocation001_Emitter_Func_(inout FSimulationContext Context)
 	Vector_IfResult7 = Context.MapSpawn.Local.CylinderLocation001.CylinderVector;
 	}
 	Context.MapSpawn.Local.CylinderLocation001.CylinderVector = Vector_IfResult7;
-	float3 Result50 = Context.MapSpawn.CylinderLocation001.CylinderOrigin + Context.MapSpawn.CylinderLocation001.Offset;
+	float3 Result50 = Context.MapSpawn.CylinderLocation001.CylinderOrigin + Context.MapSpawn.Constants.Emitter.CylinderLocation001.Offset;
 	float3 Result51 = Context.MapSpawn.Local.CylinderLocation001.CylinderVector * Context.MapSpawn.Constants.Emitter.CylinderLocation001.NonUniformScale;
 	int Constant106 = 0;
 	bool Constant107 = true;
@@ -1948,7 +1943,6 @@ void InterpolateParameters(inout FSimulationContext Context)
 	Context.MapSpawn.Engine.Owner.SystemZAxis = lerp(PREV_Engine_Owner_SystemZAxis.xyz, Engine_Owner_SystemZAxis.xyz, SpawnInterp);
 	Context.MapSpawn.Engine.Owner.Scale = lerp(PREV_Engine_Owner_Scale.xyz, Engine_Owner_Scale.xyz, SpawnInterp);
 	Context.MapSpawn.Emitter.Age = lerp(PREV_Emitter_Age, Emitter_Age, SpawnInterp);
-	Context.MapSpawn.User.Offset = lerp(PREV_User_Offset, User_Offset, SpawnInterp);
 	Context.MapSpawn.Engine.DeltaTime = 0.0f;
 	Context.MapSpawn.Engine.InverseDeltaTime = 0.0f;
 	Context.MapUpdate.Engine.DeltaTime = InterpSpawn_UpdateTime;
@@ -2044,7 +2038,6 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 	Context.MapSpawn.CylinderLocation001.UseEndcapsInSurfaceOnlyMode = Constant46;
 	Context.MapSpawn.CylinderLocation001.HemisphereY = Constant47;
 	Context.MapSpawn.CylinderLocation001.OrientationAxis = Constant48;
-	Context.MapSpawn.CylinderLocation001.Offset = Context.MapSpawn.User.Offset;
 	Context.MapSpawn.CylinderLocation001.HemisphereX = Constant49;
 	Context.MapSpawn.CylinderLocation001.CoordinateSpace = Constant50;
 	bool Constant51 = false;
@@ -2228,11 +2221,11 @@ EnterStatScope(10 );
 	Context.MapSpawn.Constants.Emitter.InitializeParticle.MeshScale = Constants_Emitter_InitializeParticle_MeshScale;
 	Context.MapSpawn.Emitter.RandomSeed = Emitter_RandomSeed;
 	Context.MapSpawn.Engine.System.TickCount = Engine_System_TickCount;
-	Context.MapSpawn.User.Offset = User_Offset;
 	Context.MapSpawn.Constants.Emitter.CylinderLocation001.RandomSeed = Constants_Emitter_CylinderLocation001_RandomSeed;
 	Context.MapSpawn.Constants.Emitter.CylinderLocation001.CylinderHeight = Constants_Emitter_CylinderLocation001_CylinderHeight;
 	Context.MapSpawn.Constants.Emitter.CylinderLocation001.CylinderRadius = Constants_Emitter_CylinderLocation001_CylinderRadius;
 	Context.MapSpawn.Constants.Emitter.CylinderLocation001.SurfaceOnlyBandThickness = Constants_Emitter_CylinderLocation001_SurfaceOnlyBandThickness;
+	Context.MapSpawn.Constants.Emitter.CylinderLocation001.Offset = Constants_Emitter_CylinderLocation001_Offset;
 	Context.MapSpawn.Constants.Emitter.CylinderLocation001.NonUniformScale = Constants_Emitter_CylinderLocation001_NonUniformScale;
 	Context.MapSpawn.Constants.Emitter.CylinderLocation001.SpawnGroupMask = Constants_Emitter_CylinderLocation001_SpawnGroupMask;
 	Context.MapSpawn.Engine.Owner.SystemLocalToWorld = Engine_Owner_SystemLocalToWorld;
