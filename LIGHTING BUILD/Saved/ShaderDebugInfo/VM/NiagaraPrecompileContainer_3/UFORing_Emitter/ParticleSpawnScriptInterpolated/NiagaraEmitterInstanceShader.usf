@@ -1991,7 +1991,7 @@ void SimulateMapSpawn(inout FSimulationContext Context)
 	Context.MapSpawn.Particles.Age = Constant13;
 
 	bool Constant14 = true;
-	bool Constant15 = true;
+	bool Constant15 = false;
 	bool Constant16 = false;
 	bool Constant17 = false;
 	float3 ParticleOwnerPosition_Emitter_Func_Output_OutPosition;
